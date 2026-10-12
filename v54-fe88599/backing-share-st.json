@@ -1,0 +1,240 @@
+{
+ "_meta": {
+  "engine": "release engine (harness.js testbed, section backing)",
+  "manifest": {
+   "commit": "fe88599f9d2f4d26651f6e01370454206257beab",
+   "dirty": false,
+   "node": "v22.22.0",
+   "harnessSha256": "7f28093ffe8619d2914e1fe48f8e4ca0e09b6b109cd2d1b9ee028a8f534006da",
+   "engineBlockSha256": "99fb4b577ef1bb095cf24287abdddd2c8f60379e339e3cd1ad90ca16a485dc0b",
+   "indexSha256": "92721cf4ad2850093140e921b0bbc749bbc0c544e5f980134ae110820370a760",
+   "engineSha256": "2b3e042d4f528202905ade0f39ecda611833b18b1138358514e7be7df0fcc33c"
+  },
+  "seeds": 500,
+  "agents": 500,
+  "written": "2026-10-12",
+  "years": 20,
+  "shares": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "command": "node harness.js testbed 500 backing st --v54 --json=dev/runs/backing-share-ENV.json"
+ },
+ "envs": {
+  "st": {
+   "name": "Stress Test",
+   "base": {
+    "fgt0PY": 65.97536000000002,
+    "pov": 45.05840000000001,
+    "bOAPy": 31.536720000000024,
+    "bNAPy": 31.536720000000024,
+    "epPY": 0.34411238986758413
+   },
+   "rows": {
+    "a0": {
+     "a": 0,
+     "pov": 75.4,
+     "fgt0PY": 52.3,
+     "bOAPy": 35,
+     "bNAPy": 36.7,
+     "infl": 26.8,
+     "pLevEnd": 135.707,
+     "pLevEndMed": 132.164,
+     "pLevEndP10": 95.117,
+     "pLevEndP90": 179.967,
+     "cost": 11723,
+     "srcPay": 11112,
+     "srcM": 257,
+     "dPov": [
+      30.39,
+      30.15,
+      30.63
+     ],
+     "dF0": [
+      -13.65,
+      -13.8,
+      -13.49
+     ],
+     "dBO": [
+      3.43,
+      3.31,
+      3.55
+     ],
+     "dBN": [
+      5.18,
+      5.06,
+      5.3
+     ],
+     "dInfl": [
+      26.76,
+      26.61,
+      26.9
+     ]
+    },
+    "a25": {
+     "a": 0.25,
+     "pov": 67.6,
+     "fgt0PY": 51.5,
+     "bOAPy": 32.2,
+     "bNAPy": 33.7,
+     "infl": 20.4,
+     "pLevEnd": 50.581,
+     "pLevEndMed": 49.714,
+     "pLevEndP10": 38.03,
+     "pLevEndP90": 63.995,
+     "cost": 12054,
+     "srcPay": 11437,
+     "srcM": 275,
+     "dPov": [
+      22.56,
+      22.33,
+      22.79
+     ],
+     "dF0": [
+      -14.47,
+      -14.63,
+      -14.31
+     ],
+     "dBO": [
+      0.7,
+      0.58,
+      0.82
+     ],
+     "dBN": [
+      2.19,
+      2.08,
+      2.3
+     ],
+     "dInfl": [
+      20.4,
+      20.29,
+      20.52
+     ]
+    },
+    "a50": {
+     "a": 0.5,
+     "pov": 57,
+     "fgt0PY": 50.5,
+     "bOAPy": 29,
+     "bNAPy": 30.2,
+     "infl": 13.8,
+     "pLevEnd": 17.276,
+     "pLevEndMed": 17.115,
+     "pLevEndP10": 14.096,
+     "pLevEndP90": 20.579,
+     "cost": 12425,
+     "srcPay": 11803,
+     "srcM": 300,
+     "dPov": [
+      11.93,
+      11.71,
+      12.15
+     ],
+     "dF0": [
+      -15.49,
+      -15.65,
+      -15.33
+     ],
+     "dBO": [
+      -2.54,
+      -2.65,
+      -2.43
+     ],
+     "dBN": [
+      -1.3,
+      -1.41,
+      -1.19
+     ],
+     "dInfl": [
+      13.84,
+      13.76,
+      13.92
+     ]
+    },
+    "a75": {
+     "a": 0.75,
+     "pov": 44.4,
+     "fgt0PY": 49.2,
+     "bOAPy": 25.5,
+     "bNAPy": 26.5,
+     "infl": 7,
+     "pLevEnd": 5.322,
+     "pLevEndMed": 5.309,
+     "pLevEndP10": 4.767,
+     "pLevEndP90": 5.874,
+     "cost": 12842,
+     "srcPay": 12214,
+     "srcM": 332,
+     "dPov": [
+      -0.65,
+      -0.84,
+      -0.46
+     ],
+     "dF0": [
+      -16.78,
+      -16.95,
+      -16.61
+     ],
+     "dBO": [
+      -6.05,
+      -6.16,
+      -5.94
+     ],
+     "dBN": [
+      -5.04,
+      -5.15,
+      -4.94
+     ],
+     "dInfl": [
+      7.04,
+      7,
+      7.08
+     ]
+    },
+    "a100": {
+     "a": 1,
+     "pov": 35.9,
+     "fgt0PY": 52.3,
+     "bOAPy": 23.8,
+     "bNAPy": 24.4,
+     "infl": 0,
+     "pLevEnd": 1.457,
+     "pLevEndMed": 1.457,
+     "pLevEndP10": 1.457,
+     "pLevEndP90": 1.457,
+     "cost": 9578,
+     "srcPay": 8948,
+     "srcM": 248,
+     "dPov": [
+      -9.13,
+      -9.27,
+      -8.98
+     ],
+     "dF0": [
+      -13.72,
+      -13.86,
+      -13.58
+     ],
+     "dBO": [
+      -7.76,
+      -7.87,
+      -7.66
+     ],
+     "dBN": [
+      -7.14,
+      -7.24,
+      -7.04
+     ],
+     "dInfl": [
+      0,
+      0,
+      0
+     ]
+    }
+   }
+  }
+ }
+}

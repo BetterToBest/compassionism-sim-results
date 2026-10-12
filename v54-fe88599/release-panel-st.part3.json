@@ -1,0 +1,5822 @@
+{
+ "_meta": {
+  "engine": "release engine (harness.js testbed, section release)",
+  "manifest": {
+   "commit": "fe88599f9d2f4d26651f6e01370454206257beab",
+   "dirty": false,
+   "node": "v22.22.0",
+   "harnessSha256": "7f28093ffe8619d2914e1fe48f8e4ca0e09b6b109cd2d1b9ee028a8f534006da",
+   "engineBlockSha256": "99fb4b577ef1bb095cf24287abdddd2c8f60379e339e3cd1ad90ca16a485dc0b",
+   "indexSha256": "92721cf4ad2850093140e921b0bbc749bbc0c544e5f980134ae110820370a760",
+   "engineSha256": "2b3e042d4f528202905ade0f39ecda611833b18b1138358514e7be7df0fcc33c"
+  },
+  "seeds": 500,
+  "agents": 500,
+  "written": "2026-10-12",
+  "years": 20,
+  "command": "node harness.js testbed 500 release st --json=dev/runs/release-panel.json --v54",
+  "v52": {
+   "report": {
+    "rep52": true,
+    "giniNN1": true
+   },
+   "thresholdOne2025": 16749
+  },
+  "v53": {
+   "households": {
+    "pool": "household",
+    "childBU": 0.25,
+    "shock": "shore",
+    "wealth": "scf"
+   },
+   "buScope": "hub",
+   "spendGrade": 0.5573,
+   "corrections": {
+    "PTH_APPR_CONSERVE": true,
+    "SURP_CUT_MARKUP": true
+   }
+  },
+  "v54": {
+   "parts": {
+    "rk": true,
+    "empl": {},
+    "pthb": {},
+    "ptfs": {}
+   },
+   "empl": {
+    "auto": "jobs",
+    "cut": 0.1,
+    "rec": "replace",
+    "ui": true,
+    "occ": true
+   },
+   "pthb": {
+    "cap": "hub",
+    "x": 0.4,
+    "exit": 0.062
+   },
+   "ptfs": {
+    "other": 0,
+    "leave": 0.032
+   },
+   "dis": {
+    "yr": 6,
+    "share": 0.25,
+    "loss": 10000,
+    "weeks": 4,
+    "emerg": 0.2
+   }
+  },
+  "part": {
+   "i": 3,
+   "k": 4,
+   "rows": [
+    "v422",
+    "release",
+    "v53",
+    "cut0",
+    "cut20",
+    "autopay",
+    "pthbold",
+    "ptfs25",
+    "dis",
+    "h1",
+    "face",
+    "tax",
+    "cost",
+    "cap5",
+    "all",
+    "free",
+    "standins",
+    "sav",
+    "sav0",
+    "idx",
+    "h1idx",
+    "mid",
+    "midlo",
+    "midhi",
+    "slack",
+    "hcap",
+    "hcaphi",
+    "rev10",
+    "rev20n",
+    "giftrun",
+    "progtax",
+    "landtax",
+    "age",
+    "agenone",
+    "agepia",
+    "ageleave",
+    "agecps",
+    "fixr",
+    "fixs",
+    "fixm",
+    "fixall",
+    "v52",
+    "adults",
+    "core",
+    "indiv",
+    "cb0",
+    "cb50",
+    "wmodel",
+    "nosg",
+    "shock50",
+    "fbs50"
+   ],
+   "bases": [
+    "sv",
+    "sv0",
+    "ag",
+    "agpia",
+    "agleave",
+    "agcps",
+    "ltr",
+    "lts",
+    "ltm",
+    "lta",
+    "b52",
+    "badults",
+    "bindiv",
+    "bwmodel",
+    "bnosg",
+    "bshock50",
+    "b53",
+    "bcut0",
+    "bcut20",
+    "bautopay",
+    "bdis"
+   ]
+  }
+ },
+ "envs": {
+  "st": {
+   "name": "Stress Test",
+   "base": {
+    "fgt2PY": 13.045561779789493,
+    "fgt0PY": 65.97536000000002,
+    "pov": 45.05840000000001,
+    "bOAPy": 31.536720000000024,
+    "bNAPy": 31.536720000000024,
+    "bOAMd": 213.07475086221643,
+    "bNAMd": 213.07475086221643,
+    "epPY": 0.34411238986758413,
+    "giniD": 0.26308029854715226,
+    "giniX": 0.26308029854715226,
+    "rep": {
+     "y7": {
+      "fpl": 7.9,
+      "fplX": 4.2,
+      "fplNom": 5.4,
+      "f0": 63.2,
+      "bO": 28,
+      "bN": 28,
+      "bONom": 27.7,
+      "bNNom": 27.7,
+      "pov": 33,
+      "povNom": 32.3,
+      "ep": 0.313,
+      "giniD": 0.243,
+      "giniX": 0.243,
+      "giniW": 0.7817,
+      "giniWN": 0.7893
+     },
+     "end": {
+      "fpl": 15.4,
+      "fplX": 10.2,
+      "fplNom": 5.5,
+      "f0": 73.1,
+      "bO": 42,
+      "bN": 42,
+      "bONom": 41.6,
+      "bNNom": 41.6,
+      "pov": 45.1,
+      "povNom": 43.8,
+      "ep": 0.438,
+      "giniD": 0.2631,
+      "giniX": 0.2631,
+      "giniW": 0.8029,
+      "giniWN": 0.8142
+     },
+     "py": {
+      "fpl": 10,
+      "fplX": 5.9,
+      "fplNom": 5.6,
+      "bONom": 31.2,
+      "bNNom": 31.2
+     }
+    },
+    "path": {
+     "f0": [
+      57.7,
+      59.5,
+      60.5,
+      61.5,
+      61.7,
+      62.4,
+      63.2,
+      63.9,
+      64.7,
+      65.5,
+      66.4,
+      67.4,
+      68,
+      68.7,
+      69.7,
+      70.5,
+      71.2,
+      71.8,
+      72.2,
+      73.1
+     ],
+     "pov": [
+      25.9,
+      27.2,
+      28.3,
+      29.5,
+      30.7,
+      31.9,
+      33,
+      34,
+      35.1,
+      36,
+      37.1,
+      38.1,
+      39,
+      39.9,
+      40.8,
+      41.7,
+      42.6,
+      43.5,
+      44.3,
+      45.1
+     ],
+     "bO": [
+      17.7,
+      19.9,
+      21.7,
+      23.4,
+      25,
+      26.5,
+      28,
+      29.4,
+      30.6,
+      31.8,
+      33,
+      34.1,
+      35.2,
+      36.3,
+      37.3,
+      38.3,
+      39.2,
+      40.2,
+      41.1,
+      42
+     ],
+     "medW": [
+      124247,
+      120962,
+      117888,
+      114626,
+      111466,
+      108332,
+      104953,
+      101922,
+      99007,
+      95581,
+      92346,
+      88829,
+      85130,
+      81531,
+      77643,
+      73495,
+      69454,
+      65122,
+      60602,
+      55853
+     ],
+     "buR": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "wageR": [
+      3316,
+      3244,
+      3203,
+      3162,
+      3153,
+      3117,
+      3072,
+      3040,
+      3002,
+      2957,
+      2913,
+      2861,
+      2825,
+      2782,
+      2734,
+      2685,
+      2649,
+      2617,
+      2591,
+      2557
+     ]
+    },
+    "hhCostPY": 72.27,
+    "hhCostKidPY": 88.95,
+    "hhFplPY": 7.25,
+    "hhFplKidPY": 10.97,
+    "hhWlthPY": 39.9,
+    "hhWlthKidPY": 50.81,
+    "hhBleiPY": 35.46,
+    "hhBleiKidPY": 45.86,
+    "hhCost7": 69.9,
+    "hhCostKid7": 87.55,
+    "hhCostEnd": 78.49,
+    "hhCostKidEnd": 92.88,
+    "hhWlthEnd": 50,
+    "hhWlthKidEnd": 64.29,
+    "hhGiniEq": 0.2897,
+    "hhMedEq": 34025,
+    "hhPer": 688.68,
+    "hhKid": 188.68,
+    "hhCost_sg": 73.38,
+    "hhCost_sp": 96.89,
+    "hhCost_cn": 38.29,
+    "hhCost_ck": 84.62,
+    "hhWlth_sg": 53.41,
+    "hhWlth_sp": 87.38,
+    "hhWlth_cn": 20.67,
+    "hhWlth_ck": 55.95,
+    "hhShare_sg": 22.22,
+    "hhShare_sp": 9.57,
+    "hhShare_cn": 23.82,
+    "hhShare_ck": 44.39,
+    "hhCostA25": 0,
+    "hhCostA35": 0,
+    "hhCostA50": 0,
+    "hhCostA67": 0,
+    "hhSpEx1": 0.45,
+    "hhSpN": 214.76,
+    "edcM": 34.39,
+    "edcMagg": 27,
+    "edcProxy": 49.44,
+    "fbsAbove": 0,
+    "fbsAboveKids": 0,
+    "rkDdW": 13.827,
+    "rkDdW6": 63.532,
+    "rkDdB": 189.291,
+    "rkDdB30": 72.743,
+    "rkEv": 6.785,
+    "rkRec1": 18.505,
+    "rkRec3": 34.122,
+    "rkRec5": 38.249,
+    "rkRecM": 2.039,
+    "rkRecB3": 8.197,
+    "rkReC1": 40.685,
+    "rkReC3": 66.754,
+    "rkReC5": 77.462,
+    "rkReF5": 47.628,
+    "emUrate": 3.587,
+    "emSpells": 11.192,
+    "emWeeks": 12.689,
+    "emAuto": 2.377,
+    "emUI": 6.827,
+    "emCut": 10.001,
+    "emLong": 18.068,
+    "emRho": 0.997,
+    "pbV": 0,
+    "pbD": 0,
+    "pbME": 0,
+    "pbCE": 0,
+    "pbCover": 0,
+    "pbExit": 0,
+    "pbCash": 0,
+    "pbAprP": 0,
+    "pbAprR": 0,
+    "pbAprC": 0,
+    "pbFill": 0,
+    "pfCut": 0,
+    "pfLeave": 0,
+    "pfMem": 0
+   },
+   "rows": {
+    "v422": {
+     "label": "TODAY (v4.22, Hub spec): the s34 main row (wage contribution)",
+     "cost": 10307,
+     "tau": 26,
+     "infl": 0,
+     "pLevEnd": 1.457,
+     "pLevEndMed": 1.457,
+     "pLevEndP10": 1.457,
+     "pLevEndP90": 1.457,
+     "giniD": 0.2678,
+     "giniX": 0.2461,
+     "epPY": 0.323,
+     "hrs": -4.8,
+     "fgt2PY": 12.89,
+     "fgt0PY": 68.1,
+     "pov": 49.8,
+     "bOAPy": 32.8,
+     "bNAPy": 34.4,
+     "bOAMd": 121,
+     "bNAMd": 111,
+     "dFgt2": [
+      -0.16,
+      -0.18,
+      -0.14
+     ],
+     "dF0": [
+      2.13,
+      2.03,
+      2.22
+     ],
+     "dPov": [
+      4.73,
+      4.59,
+      4.87
+     ],
+     "dBO": [
+      1.31,
+      1.23,
+      1.39
+     ],
+     "dBN": [
+      2.84,
+      2.77,
+      2.91
+     ],
+     "grp": {
+      "part": 3260,
+      "non": -3680,
+      "low": 748,
+      "top": -2923
+     },
+     "worse": "non (riw), PTH (w), low (w), top (riw)",
+     "unhousedAvoided": 0.21,
+     "avoidLo": 2,
+     "avoidHi": 21,
+     "avoidW": 0,
+     "avoidWHi": 0,
+     "avoidJail": 0,
+     "avoidHealth": 0,
+     "srcPay": 9560,
+     "srcTax": 2098,
+     "srcM": 0,
+     "part19": 0,
+     "medWealth": 26808,
+     "hhCostPY": 74.06,
+     "hhCostKidPY": 89.86,
+     "hhFplPY": 5.7,
+     "hhFplKidPY": 8.83,
+     "hhWlthPY": 42.85,
+     "hhWlthKidPY": 53.86,
+     "hhBleiPY": 36.6,
+     "hhBleiKidPY": 46.54,
+     "hhCost7": 72.71,
+     "hhCostKid7": 89.23,
+     "hhCostEnd": 80.17,
+     "hhCostKidEnd": 93.69,
+     "hhWlthEnd": 54.67,
+     "hhWlthKidEnd": 68.76,
+     "hhGiniEq": 0.2946,
+     "hhMedEq": 29186,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 76.07,
+     "hhCost_sp": 97.45,
+     "hhCost_cn": 40.82,
+     "hhCost_ck": 85.83,
+     "hhWlth_sg": 58.48,
+     "hhWlth_sp": 89.39,
+     "hhWlth_cn": 24.86,
+     "hhWlth_ck": 61.25,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.29,
+     "hhSpN": 196.17,
+     "d53": {
+      "hhCostPY": [
+       1.79,
+       1.71,
+       1.88
+      ],
+      "hhCostKidPY": [
+       0.91,
+       0.79,
+       1.03
+      ],
+      "hhWlthEnd": [
+       4.67,
+       4.52,
+       4.81
+      ],
+      "hhWlthKidEnd": [
+       4.47,
+       4.25,
+       4.69
+      ],
+      "hhBleiPY": [
+       1.13,
+       1.04,
+       1.22
+      ],
+      "hhBleiKidPY": [
+       0.67,
+       0.53,
+       0.82
+      ],
+      "hhFplKidPY": [
+       -2.15,
+       -2.21,
+       -2.08
+      ],
+      "hhCostKid7": [
+       1.68,
+       1.49,
+       1.88
+      ]
+     },
+     "kind": "today",
+     "rkDdW": 15.553,
+     "rkDdW6": 65.425,
+     "rkDdB": 234.66,
+     "rkDdB30": 74.512,
+     "rkEv": 5.824,
+     "rkRec1": 13.015,
+     "rkRec3": 31.089,
+     "rkRec5": 35.937,
+     "rkRecM": 2.329,
+     "rkRecB3": 7.514,
+     "rkReC1": 50.48,
+     "rkReC3": 72.217,
+     "rkReC5": 81.482,
+     "rkReF5": 45.475,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.826,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 41792.132,
+     "pbME": 4908.866,
+     "pbCE": 49066.688,
+     "pbCover": 86.608,
+     "pbExit": 5.898,
+     "pbCash": 2543.749,
+     "pbAprP": 2139.059,
+     "pbAprR": 1959.952,
+     "pbAprC": 3867.63,
+     "pbFill": 100,
+     "pfCut": 6.062,
+     "pfLeave": 1.714,
+     "pfMem": 15.286,
+     "d54": {
+      "rkDdW": [
+       1.725,
+       1.626,
+       1.824
+      ],
+      "rkDdW6": [
+       1.892,
+       1.765,
+       2.02
+      ],
+      "rkDdB30": [
+       1.768,
+       1.653,
+       1.884
+      ],
+      "rkEv": [
+       -0.962,
+       -0.992,
+       -0.931
+      ],
+      "rkRec3": [
+       -3.033,
+       -3.208,
+       -2.858
+      ],
+      "rkRecB3": [
+       -0.683,
+       -0.799,
+       -0.567
+      ],
+      "rkReC5": [
+       4.02,
+       3.556,
+       4.485
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 6.1,
+       "fplX": 4.1,
+       "fplNom": 4.2,
+       "f0": 66.5,
+       "bO": 28.7,
+       "bN": 30.2,
+       "bONom": 27.5,
+       "bNNom": 29.9,
+       "pov": 35.3,
+       "povNom": 34.7,
+       "ep": 0.284,
+       "giniD": 0.2474,
+       "giniX": 0.2312,
+       "giniW": 0.7898,
+       "giniWN": 0.7984
+      },
+      "end": {
+       "fpl": 12.1,
+       "fplX": 8.9,
+       "fplNom": 4.2,
+       "f0": 75.1,
+       "bO": 45.5,
+       "bN": 46.9,
+       "bONom": 41.2,
+       "bNNom": 46.3,
+       "pov": 49.8,
+       "povNom": 48.6,
+       "ep": 0.434,
+       "giniD": 0.2678,
+       "giniX": 0.2461,
+       "giniW": 0.8204,
+       "giniWN": 0.8336
+      },
+      "py": {
+       "fpl": 7.9,
+       "fplX": 5.4,
+       "fplNom": 4.4,
+       "bONom": 30.8,
+       "bNNom": 34
+      },
+      "d": {
+       "y7Fpl": [
+        -1.79,
+        -1.85,
+        -1.72
+       ],
+       "eFpl": [
+        -3.29,
+        -3.38,
+        -3.2
+       ],
+       "fplPY": [
+        -2.11,
+        -2.14,
+        -2.08
+       ],
+       "y7FplX": [
+        -0.1,
+        -0.19,
+        -0.02
+       ],
+       "eFplX": [
+        -1.31,
+        -1.43,
+        -1.18
+       ],
+       "y7BO": [
+        0.68,
+        0.56,
+        0.8
+       ],
+       "eBO": [
+        3.43,
+        3.29,
+        3.57
+       ],
+       "y7F0": [
+        3.22,
+        3.05,
+        3.4
+       ],
+       "y7Pov": [
+        2.37,
+        2.25,
+        2.48
+       ],
+       "y7GiniD": [
+        0.0045,
+        0.0042,
+        0.0047
+       ],
+       "eGiniW": [
+        0.0176,
+        0.0173,
+        0.0179
+       ]
+      }
+     }
+    },
+    "release": {
+     "label": "RELEASE (v5.4): Compassionism with every mechanism, paid for by the Source; households and children; job loss and re-employment, PTH's books, PTF by sector",
+     "bkA": 0,
+     "bkPY": 28.5,
+     "cost": 11723,
+     "tau": 1.6,
+     "infl": 26.8,
+     "pLevEnd": 135.707,
+     "pLevEndMed": 132.164,
+     "pLevEndP10": 95.117,
+     "pLevEndP90": 179.967,
+     "giniD": 0.2781,
+     "giniX": 0.2626,
+     "epPY": 0.369,
+     "hrs": -3.7,
+     "fgt2PY": 8.14,
+     "fgt0PY": 52.3,
+     "pov": 75.4,
+     "bOAPy": 35,
+     "bNAPy": 36.7,
+     "bOAMd": 24,
+     "bNAMd": 20,
+     "dFgt2": [
+      -4.91,
+      -4.96,
+      -4.85
+     ],
+     "dF0": [
+      -13.65,
+      -13.8,
+      -13.49
+     ],
+     "dPov": [
+      30.39,
+      30.15,
+      30.63
+     ],
+     "dBO": [
+      3.43,
+      3.31,
+      3.55
+     ],
+     "dBN": [
+      5.18,
+      5.06,
+      5.3
+     ],
+     "grp": {
+      "part": 17748,
+      "non": 3548,
+      "low": 9013,
+      "top": 9560
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.25,
+     "avoidLo": -3,
+     "avoidHi": -25,
+     "avoidW": 486,
+     "avoidWHi": 4321,
+     "avoidJail": 472,
+     "avoidHealth": 14,
+     "srcPay": 11112,
+     "srcTax": 2659,
+     "srcM": 257,
+     "part19": 43.7,
+     "medWealth": -19,
+     "hhCostPY": 58.16,
+     "hhCostKidPY": 73.6,
+     "hhFplPY": 7.97,
+     "hhFplKidPY": 11.97,
+     "hhWlthPY": 53.01,
+     "hhWlthKidPY": 64.02,
+     "hhBleiPY": 38.28,
+     "hhBleiKidPY": 46.81,
+     "hhCost7": 53.89,
+     "hhCostKid7": 69.64,
+     "hhCostEnd": 67.13,
+     "hhCostKidEnd": 81.08,
+     "hhWlthEnd": 77.02,
+     "hhWlthKidEnd": 88.2,
+     "hhGiniEq": 0.3004,
+     "hhMedEq": 32013,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 62,
+     "hhCost_sp": 91.8,
+     "hhCost_cn": 26.39,
+     "hhCost_ck": 66,
+     "hhWlth_sg": 79.72,
+     "hhWlth_sp": 94.76,
+     "hhWlth_cn": 52.29,
+     "hhWlth_ck": 85.1,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.43,
+     "hhSpN": 204.78,
+     "edcM": 26.94,
+     "edcMagg": 23.16,
+     "edcProxy": 17.24,
+     "fbsAbove": 73.45,
+     "fbsAboveKids": 71.78,
+     "d53": {
+      "hhCostPY": [
+       -14.11,
+       -14.28,
+       -13.95
+      ],
+      "hhCostKidPY": [
+       -15.34,
+       -15.62,
+       -15.07
+      ],
+      "hhWlthEnd": [
+       27.02,
+       26.79,
+       27.25
+      ],
+      "hhWlthKidEnd": [
+       23.91,
+       23.54,
+       24.28
+      ],
+      "hhBleiPY": [
+       2.82,
+       2.67,
+       2.96
+      ],
+      "hhBleiKidPY": [
+       0.94,
+       0.66,
+       1.23
+      ],
+      "hhFplKidPY": [
+       1,
+       0.88,
+       1.12
+      ],
+      "hhCostKid7": [
+       -17.91,
+       -18.28,
+       -17.54
+      ],
+      "edcM": [
+       -7.45,
+       -7.52,
+       -7.37
+      ]
+     },
+     "kind": "main",
+     "paired": {
+      "bOAPy": {
+       "n": 500,
+       "better": 0.4,
+       "worse": 99.6,
+       "p10": 1.6,
+       "p50": 3.54,
+       "p90": 5.06
+      },
+      "bNAPy": {
+       "n": 500,
+       "better": 0,
+       "worse": 100,
+       "p10": 3.39,
+       "p50": 5.25,
+       "p90": 6.83
+      },
+      "fgt0PY": {
+       "n": 500,
+       "better": 100,
+       "worse": 0,
+       "p10": -15.96,
+       "p50": -13.55,
+       "p90": -11.49
+      },
+      "pov": {
+       "n": 500,
+       "better": 0,
+       "worse": 100,
+       "p10": 26.8,
+       "p50": 30.4,
+       "p90": 33.8
+      },
+      "hhCostKidPY": {
+       "n": 500,
+       "better": 100,
+       "worse": 0,
+       "p10": -19.48,
+       "p50": -15.03,
+       "p90": -11.53
+      },
+      "hhWlthKidEnd": {
+       "n": 500,
+       "better": 0,
+       "worse": 100,
+       "p10": 18.93,
+       "p50": 23.72,
+       "p90": 29.59
+      }
+     },
+     "rkDdW": 27.658,
+     "rkDdW6": 74.255,
+     "rkDdB": 434.296,
+     "rkDdB30": 84.283,
+     "rkEv": 6.406,
+     "rkRec1": 16.614,
+     "rkRec3": 29.659,
+     "rkRec5": 32.709,
+     "rkRecM": 1.837,
+     "rkRecB3": 2.968,
+     "rkReC1": 37.593,
+     "rkReC3": 60.735,
+     "rkReC5": 69.6,
+     "rkReF5": 51.259,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.74,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33859.623,
+     "pbME": 5931.125,
+     "pbCE": 55976.938,
+     "pbCover": 88.34,
+     "pbExit": 5.898,
+     "pbCash": 2241.512,
+     "pbAprP": 24865.788,
+     "pbAprR": 1959.952,
+     "pbAprC": 25122.307,
+     "pbFill": 100,
+     "pfCut": 6.08,
+     "pfLeave": 1.386,
+     "pfMem": 12.628,
+     "d54": {
+      "rkDdW": [
+       13.83,
+       13.59,
+       14.07
+      ],
+      "rkDdW6": [
+       10.722,
+       10.52,
+       10.925
+      ],
+      "rkDdB30": [
+       11.54,
+       11.338,
+       11.742
+      ],
+      "rkEv": [
+       -0.38,
+       -0.432,
+       -0.327
+      ],
+      "rkRec3": [
+       -4.464,
+       -4.629,
+       -4.298
+      ],
+      "rkRecB3": [
+       -5.229,
+       -5.393,
+       -5.065
+      ],
+      "rkReC5": [
+       -7.861,
+       -8.344,
+       -7.379
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 9,
+       "fplX": 2.2,
+       "fplNom": 0.5,
+       "f0": 47.9,
+       "bO": 26.3,
+       "bN": 27.5,
+       "bONom": 16.9,
+       "bNNom": 17,
+       "pov": 39.5,
+       "povNom": 28.3,
+       "ep": 0.296,
+       "giniD": 0.2636,
+       "giniX": 0.2512,
+       "giniW": 0.7496,
+       "giniWN": 0.7561
+      },
+      "end": {
+       "fpl": 18.2,
+       "fplX": 5.5,
+       "fplNom": 0.3,
+       "f0": 61.9,
+       "bO": 55.3,
+       "bN": 58.2,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 75.4,
+       "povNom": 54.5,
+       "ep": 0.545,
+       "giniD": 0.2781,
+       "giniX": 0.2626,
+       "giniW": 0.758,
+       "giniWN": 0.761
+      },
+      "py": {
+       "fpl": 11.5,
+       "fplX": 3.1,
+       "fplNom": 1,
+       "bONom": 7.3,
+       "bNNom": 7.6
+      },
+      "d": {
+       "y7Fpl": [
+        1.12,
+        1.01,
+        1.24
+       ],
+       "eFpl": [
+        2.88,
+        2.7,
+        3.05
+       ],
+       "fplPY": [
+        1.52,
+        1.47,
+        1.57
+       ],
+       "y7FplX": [
+        -2.05,
+        -2.17,
+        -1.94
+       ],
+       "eFplX": [
+        -4.67,
+        -4.86,
+        -4.49
+       ],
+       "y7BO": [
+        -1.65,
+        -1.81,
+        -1.5
+       ],
+       "eBO": [
+        13.26,
+        13.05,
+        13.47
+       ],
+       "y7F0": [
+        -15.31,
+        -15.6,
+        -15.01
+       ],
+       "y7Pov": [
+        6.53,
+        6.35,
+        6.72
+       ],
+       "y7GiniD": [
+        0.0207,
+        0.0203,
+        0.0211
+       ],
+       "eGiniW": [
+        -0.0449,
+        -0.0468,
+        -0.043
+       ]
+      }
+     },
+     "path": {
+      "f0": [
+       50.7,
+       43.2,
+       45,
+       45.9,
+       46.4,
+       47.1,
+       47.9,
+       48.9,
+       49.9,
+       50.8,
+       52,
+       53.2,
+       54.4,
+       55.5,
+       56.7,
+       57.7,
+       58.8,
+       59.8,
+       60.8,
+       61.9
+      ],
+      "pov": [
+       25.4,
+       26,
+       28.1,
+       30.7,
+       33.4,
+       36.4,
+       39.5,
+       42.6,
+       45.9,
+       49.2,
+       52.4,
+       55.7,
+       58.8,
+       61.8,
+       64.5,
+       67.2,
+       69.5,
+       71.7,
+       73.7,
+       75.4
+      ],
+      "bO": [
+       14.4,
+       15.5,
+       17.3,
+       19.3,
+       21.6,
+       23.9,
+       26.3,
+       28.8,
+       31.4,
+       33.9,
+       36.5,
+       39,
+       41.5,
+       44,
+       46.2,
+       48.3,
+       50.3,
+       52.1,
+       53.8,
+       55.3
+      ],
+      "medW": [
+       125594,
+       114404,
+       93453,
+       77003,
+       64159,
+       53709,
+       44922,
+       37634,
+       31488,
+       26325,
+       21629,
+       17256,
+       13327,
+       9888,
+       6720,
+       4021,
+       1905,
+       634,
+       119,
+       -19
+      ],
+      "buR": [
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900,
+       900
+      ],
+      "wageR": [
+       3248,
+       3147,
+       3109,
+       3073,
+       3049,
+       3012,
+       2967,
+       2924,
+       2875,
+       2827,
+       2774,
+       2717,
+       2661,
+       2607,
+       2553,
+       2501,
+       2452,
+       2402,
+       2359,
+       2311
+      ]
+     }
+    },
+    "cut0": {
+     "label": "no pay cut on return to work (people find work at their old pay)",
+     "vsBase": "bcut0",
+     "cost": 11783,
+     "tau": 1.5,
+     "infl": 25.5,
+     "pLevEnd": 112.592,
+     "pLevEndMed": 109.751,
+     "pLevEndP10": 80.597,
+     "pLevEndP90": 147.46,
+     "giniD": 0.26,
+     "giniX": 0.2484,
+     "epPY": 0.345,
+     "hrs": -3.4,
+     "fgt2PY": 7.01,
+     "fgt0PY": 48.8,
+     "pov": 69.5,
+     "bOAPy": 32.8,
+     "bNAPy": 34.5,
+     "bOAMd": 33,
+     "bNAMd": 27,
+     "dFgt2": [
+      -4.37,
+      -4.42,
+      -4.32
+     ],
+     "dF0": [
+      -13.5,
+      -13.66,
+      -13.33
+     ],
+     "dPov": [
+      26.69,
+      26.45,
+      26.92
+     ],
+     "dBO": [
+      2.15,
+      2.02,
+      2.27
+     ],
+     "dBN": [
+      3.81,
+      3.68,
+      3.93
+     ],
+     "grp": {
+      "part": 17805,
+      "non": 3511,
+      "low": 9035,
+      "top": 9542
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.11,
+     "avoidLo": -1,
+     "avoidHi": -11,
+     "avoidW": 451,
+     "avoidWHi": 4002,
+     "avoidJail": 437,
+     "avoidHealth": 14,
+     "srcPay": 11171,
+     "srcTax": 2667,
+     "srcM": 260,
+     "part19": 43.7,
+     "medWealth": 2537,
+     "hhCostPY": 54.81,
+     "hhCostKidPY": 70.84,
+     "hhFplPY": 6.27,
+     "hhFplKidPY": 9.69,
+     "hhWlthPY": 50.95,
+     "hhWlthKidPY": 62.53,
+     "hhBleiPY": 36.23,
+     "hhBleiKidPY": 45.09,
+     "hhCost7": 52.13,
+     "hhCostKid7": 68.06,
+     "hhCostEnd": 60.03,
+     "hhCostKidEnd": 75.48,
+     "hhWlthEnd": 71.79,
+     "hhWlthKidEnd": 84.83,
+     "hhGiniEq": 0.2844,
+     "hhMedEq": 36732,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 58.63,
+     "hhCost_sp": 90.94,
+     "hhCost_cn": 22.25,
+     "hhCost_ck": 62.55,
+     "hhWlth_sg": 75.42,
+     "hhWlth_sp": 93.63,
+     "hhWlth_cn": 42.85,
+     "hhWlth_ck": 80.77,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.48,
+     "hhSpN": 197.42,
+     "edcM": 25.55,
+     "edcMagg": 21.29,
+     "edcProxy": 17.11,
+     "fbsAbove": 75.11,
+     "fbsAboveKids": 73.42,
+     "d53": {
+      "hhCostPY": [
+       -14.24,
+       -14.42,
+       -14.06
+      ],
+      "hhCostKidPY": [
+       -16.2,
+       -16.5,
+       -15.91
+      ],
+      "hhWlthEnd": [
+       23.81,
+       23.58,
+       24.05
+      ],
+      "hhWlthKidEnd": [
+       22.01,
+       21.63,
+       22.39
+      ],
+      "hhBleiPY": [
+       1.6,
+       1.45,
+       1.75
+      ],
+      "hhBleiKidPY": [
+       -0.1,
+       -0.39,
+       0.19
+      ],
+      "hhFplKidPY": [
+       0.84,
+       0.73,
+       0.95
+      ],
+      "hhCostKid7": [
+       -18.27,
+       -18.66,
+       -17.89
+      ],
+      "edcM": [
+       -6.86,
+       -6.94,
+       -6.79
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 26.702,
+     "rkDdW6": 72.75,
+     "rkDdB": 419.31,
+     "rkDdB30": 82.952,
+     "rkEv": 5.056,
+     "rkRec1": 27.607,
+     "rkRec3": 52.024,
+     "rkRec5": 58.071,
+     "rkRecM": 1.974,
+     "rkRecB3": 4.209,
+     "rkReC1": 35.248,
+     "rkReC3": 57.586,
+     "rkReC5": 66.271,
+     "rkReF5": 45.57,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.76,
+     "emCut": 0,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 34000.957,
+     "pbME": 5883.255,
+     "pbCE": 55883.474,
+     "pbCover": 88.269,
+     "pbExit": 5.898,
+     "pbCash": 2260.368,
+     "pbAprP": 24003.393,
+     "pbAprR": 1959.952,
+     "pbAprC": 24318.494,
+     "pbFill": 100,
+     "pfCut": 6.08,
+     "pfLeave": 1.384,
+     "pfMem": 12.611,
+     "d54": {
+      "rkDdW": [
+       14.764,
+       14.533,
+       14.995
+      ],
+      "rkDdW6": [
+       12.616,
+       12.418,
+       12.814
+      ],
+      "rkDdB30": [
+       13.586,
+       13.366,
+       13.806
+      ],
+      "rkEv": [
+       -0.431,
+       -0.487,
+       -0.376
+      ],
+      "rkRec3": [
+       -4.799,
+       -5.126,
+       -4.472
+      ],
+      "rkRecB3": [
+       -7.071,
+       -7.287,
+       -6.856
+      ],
+      "rkReC5": [
+       -7.116,
+       -7.62,
+       -6.613
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 8,
+       "fplX": 1.8,
+       "fplNom": 0.5,
+       "f0": 46.1,
+       "bO": 25.7,
+       "bN": 26.9,
+       "bONom": 16.5,
+       "bNNom": 16.6,
+       "pov": 38.8,
+       "povNom": 27.8,
+       "ep": 0.288,
+       "giniD": 0.2606,
+       "giniX": 0.2486,
+       "giniW": 0.747,
+       "giniWN": 0.7534
+      },
+      "end": {
+       "fpl": 11.6,
+       "fplX": 3,
+       "fplNom": 0.3,
+       "f0": 54.2,
+       "bO": 49.4,
+       "bN": 52,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 69.5,
+       "povNom": 48.1,
+       "ep": 0.482,
+       "giniD": 0.26,
+       "giniX": 0.2484,
+       "giniW": 0.7228,
+       "giniWN": 0.7254
+      },
+      "py": {
+       "fpl": 8.9,
+       "fplX": 2.2,
+       "fplNom": 1,
+       "bONom": 7.1,
+       "bNNom": 7.4
+      },
+      "d": {
+       "y7Fpl": [
+        1.08,
+        0.98,
+        1.19
+       ],
+       "eFpl": [
+        1.93,
+        1.8,
+        2.07
+       ],
+       "fplPY": [
+        1.24,
+        1.19,
+        1.29
+       ],
+       "y7FplX": [
+        -1.79,
+        -1.89,
+        -1.69
+       ],
+       "eFplX": [
+        -2.84,
+        -2.98,
+        -2.7
+       ],
+       "y7BO": [
+        -1.9,
+        -2.05,
+        -1.74
+       ],
+       "eBO": [
+        9.67,
+        9.46,
+        9.88
+       ],
+       "y7F0": [
+        -15.08,
+        -15.39,
+        -14.78
+       ],
+       "y7Pov": [
+        6.15,
+        5.97,
+        6.33
+       ],
+       "y7GiniD": [
+        0.0201,
+        0.0197,
+        0.0205
+       ],
+       "eGiniW": [
+        -0.07,
+        -0.0718,
+        -0.0681
+       ]
+      }
+     }
+    },
+    "ptfs25": {
+     "label": "PTF cutting prices 25% in transport, health care and childcare (no Hub figure; the main row assumes no cut there)",
+     "cost": 12176,
+     "tau": 2.8,
+     "infl": 26.9,
+     "pLevEnd": 137.682,
+     "pLevEndMed": 133.98,
+     "pLevEndP10": 96.706,
+     "pLevEndP90": 182.962,
+     "giniD": 0.2795,
+     "giniX": 0.2611,
+     "epPY": 0.369,
+     "hrs": -4.1,
+     "fgt2PY": 8.1,
+     "fgt0PY": 52.6,
+     "pov": 76.1,
+     "bOAPy": 35.4,
+     "bNAPy": 37.1,
+     "bOAMd": 23,
+     "bNAMd": 19,
+     "dFgt2": [
+      -4.94,
+      -4.99,
+      -4.89
+     ],
+     "dF0": [
+      -13.41,
+      -13.57,
+      -13.26
+     ],
+     "dPov": [
+      31.07,
+      30.83,
+      31.3
+     ],
+     "dBO": [
+      3.83,
+      3.71,
+      3.95
+     ],
+     "dBN": [
+      5.59,
+      5.47,
+      5.71
+     ],
+     "grp": {
+      "part": 17603,
+      "non": 3424,
+      "low": 9077,
+      "top": 9191
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.25,
+     "avoidLo": -3,
+     "avoidHi": -25,
+     "avoidW": 486,
+     "avoidWHi": 4324,
+     "avoidJail": 473,
+     "avoidHealth": 14,
+     "srcPay": 11107,
+     "srcTax": 2659,
+     "srcM": 257,
+     "part19": 43.7,
+     "medWealth": -44,
+     "hhCostPY": 58.33,
+     "hhCostKidPY": 73.58,
+     "hhFplPY": 8.16,
+     "hhFplKidPY": 12.26,
+     "hhWlthPY": 53.36,
+     "hhWlthKidPY": 64.32,
+     "hhBleiPY": 38.64,
+     "hhBleiKidPY": 47.08,
+     "hhCost7": 53.94,
+     "hhCostKid7": 69.5,
+     "hhCostEnd": 67.48,
+     "hhCostKidEnd": 81.17,
+     "hhWlthEnd": 77.66,
+     "hhWlthKidEnd": 88.71,
+     "hhGiniEq": 0.302,
+     "hhMedEq": 31175,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 62.33,
+     "hhCost_sp": 91.84,
+     "hhCost_cn": 26.8,
+     "hhCost_ck": 65.99,
+     "hhWlth_sg": 80.33,
+     "hhWlth_sp": 94.92,
+     "hhWlth_cn": 53.21,
+     "hhWlth_ck": 85.72,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.42,
+     "hhSpN": 204.41,
+     "edcM": 27.07,
+     "edcMagg": 23.28,
+     "edcProxy": 17.22,
+     "fbsAbove": 74.02,
+     "fbsAboveKids": 72.48,
+     "d53": {
+      "hhCostPY": [
+       -13.94,
+       -14.11,
+       -13.78
+      ],
+      "hhCostKidPY": [
+       -15.36,
+       -15.64,
+       -15.09
+      ],
+      "hhWlthEnd": [
+       27.66,
+       27.43,
+       27.89
+      ],
+      "hhWlthKidEnd": [
+       24.41,
+       24.05,
+       24.78
+      ],
+      "hhBleiPY": [
+       3.18,
+       3.03,
+       3.33
+      ],
+      "hhBleiKidPY": [
+       1.22,
+       0.93,
+       1.51
+      ],
+      "hhFplKidPY": [
+       1.29,
+       1.17,
+       1.41
+      ],
+      "hhCostKid7": [
+       -18.04,
+       -18.42,
+       -17.67
+      ],
+      "edcM": [
+       -7.32,
+       -7.39,
+       -7.24
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 27.744,
+     "rkDdW6": 74.334,
+     "rkDdB": 435.235,
+     "rkDdB30": 84.292,
+     "rkEv": 6.436,
+     "rkRec1": 16.481,
+     "rkRec3": 29.399,
+     "rkRec5": 32.416,
+     "rkRecM": 1.831,
+     "rkRecB3": 2.917,
+     "rkReC1": 37.712,
+     "rkReC3": 60.744,
+     "rkReC5": 69.574,
+     "rkReF5": 51.624,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.739,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33888.249,
+     "pbME": 5877.445,
+     "pbCE": 56001.993,
+     "pbCover": 88.335,
+     "pbExit": 5.898,
+     "pbCash": 2229.028,
+     "pbAprP": 24930.823,
+     "pbAprR": 1959.952,
+     "pbAprC": 25192.798,
+     "pbFill": 100,
+     "pfCut": 14.637,
+     "pfLeave": 1.388,
+     "pfMem": 12.632,
+     "d54": {
+      "rkDdW": [
+       13.916,
+       13.675,
+       14.158
+      ],
+      "rkDdW6": [
+       10.802,
+       10.599,
+       11.004
+      ],
+      "rkDdB30": [
+       11.549,
+       11.346,
+       11.752
+      ],
+      "rkEv": [
+       -0.349,
+       -0.402,
+       -0.296
+      ],
+      "rkRec3": [
+       -4.723,
+       -4.891,
+       -4.556
+      ],
+      "rkRecB3": [
+       -5.28,
+       -5.444,
+       -5.117
+      ],
+      "rkReC5": [
+       -7.887,
+       -8.399,
+       -7.375
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 9.1,
+       "fplX": 2.2,
+       "fplNom": 0.5,
+       "f0": 48.1,
+       "bO": 26.6,
+       "bN": 27.8,
+       "bONom": 17,
+       "bNNom": 17.2,
+       "pov": 39.8,
+       "povNom": 28.6,
+       "ep": 0.296,
+       "giniD": 0.2643,
+       "giniX": 0.2504,
+       "giniW": 0.7506,
+       "giniWN": 0.7572
+      },
+      "end": {
+       "fpl": 18.7,
+       "fplX": 5.6,
+       "fplNom": 0.3,
+       "f0": 62.3,
+       "bO": 55.9,
+       "bN": 58.9,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 76.1,
+       "povNom": 55.4,
+       "ep": 0.544,
+       "giniD": 0.2795,
+       "giniX": 0.2611,
+       "giniW": 0.762,
+       "giniWN": 0.7652
+      },
+      "py": {
+       "fpl": 11.7,
+       "fplX": 3.1,
+       "fplNom": 1.1,
+       "bONom": 7.3,
+       "bNNom": 7.7
+      },
+      "d": {
+       "y7Fpl": [
+        1.26,
+        1.15,
+        1.38
+       ],
+       "eFpl": [
+        3.32,
+        3.15,
+        3.5
+       ],
+       "fplPY": [
+        1.74,
+        1.69,
+        1.79
+       ],
+       "y7FplX": [
+        -2.04,
+        -2.15,
+        -1.92
+       ],
+       "eFplX": [
+        -4.63,
+        -4.82,
+        -4.44
+       ],
+       "y7BO": [
+        -1.38,
+        -1.54,
+        -1.22
+       ],
+       "eBO": [
+        13.92,
+        13.71,
+        14.13
+       ],
+       "y7F0": [
+        -15.18,
+        -15.48,
+        -14.87
+       ],
+       "y7Pov": [
+        6.77,
+        6.59,
+        6.95
+       ],
+       "y7GiniD": [
+        0.0213,
+        0.0209,
+        0.0217
+       ],
+       "eGiniW": [
+        -0.0408,
+        -0.0427,
+        -0.039
+       ]
+      }
+     }
+    },
+    "tax": {
+     "label": "paid for by a flat contribution on wages instead of the Source",
+     "taxAvg": 25.1,
+     "taxCover": 97.9,
+     "cost": 9635,
+     "tau": 25.1,
+     "infl": 0,
+     "pLevEnd": 1.457,
+     "pLevEndMed": 1.457,
+     "pLevEndP10": 1.457,
+     "pLevEndP90": 1.457,
+     "giniD": 0.2829,
+     "giniX": 0.2743,
+     "epPY": 0.349,
+     "hrs": -7.4,
+     "fgt2PY": 15.35,
+     "fgt0PY": 71.3,
+     "pov": 53.2,
+     "bOAPy": 36.2,
+     "bNAPy": 37.4,
+     "bOAMd": 49,
+     "bNAMd": 42,
+     "dFgt2": [
+      2.31,
+      2.26,
+      2.36
+     ],
+     "dF0": [
+      5.28,
+      5.14,
+      5.42
+     ],
+     "dPov": [
+      8.11,
+      7.91,
+      8.3
+     ],
+     "dBO": [
+      4.68,
+      4.56,
+      4.8
+     ],
+     "dBN": [
+      5.83,
+      5.72,
+      5.95
+     ],
+     "grp": {
+      "part": 5560,
+      "non": -7279,
+      "low": 736,
+      "top": -5649
+     },
+     "worse": "non (riw), PTH (riw), low (w), top (riw)",
+     "unhousedAvoided": -0.05,
+     "avoidLo": 0,
+     "avoidHi": -5,
+     "avoidW": 0,
+     "avoidWHi": 0,
+     "avoidJail": 0,
+     "avoidHealth": 0,
+     "srcPay": 8994,
+     "srcTax": 1961,
+     "srcM": 254,
+     "part19": 30,
+     "medWealth": 4610,
+     "hhCostPY": 75.68,
+     "hhCostKidPY": 87.42,
+     "hhFplPY": 8.62,
+     "hhFplKidPY": 12.92,
+     "hhWlthPY": 44.85,
+     "hhWlthKidPY": 54.02,
+     "hhBleiPY": 39.17,
+     "hhBleiKidPY": 46.99,
+     "hhCost7": 75.12,
+     "hhCostKid7": 86.32,
+     "hhCostEnd": 80.97,
+     "hhCostKidEnd": 91.9,
+     "hhWlthEnd": 57.09,
+     "hhWlthKidEnd": 68.28,
+     "hhGiniEq": 0.3074,
+     "hhMedEq": 26798,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 79.05,
+     "hhCost_sp": 96.3,
+     "hhCost_cn": 49.82,
+     "hhCost_ck": 83.42,
+     "hhWlth_sg": 62.19,
+     "hhWlth_sp": 87.45,
+     "hhWlth_cn": 31.7,
+     "hhWlth_ck": 61.59,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.28,
+     "hhSpN": 200.56,
+     "edcM": 28.67,
+     "edcMagg": 22.44,
+     "edcProxy": 42.07,
+     "fbsAbove": 56,
+     "fbsAboveKids": 53.9,
+     "d53": {
+      "hhCostPY": [
+       3.41,
+       3.28,
+       3.55
+      ],
+      "hhCostKidPY": [
+       -1.52,
+       -1.73,
+       -1.31
+      ],
+      "hhWlthEnd": [
+       7.08,
+       6.88,
+       7.29
+      ],
+      "hhWlthKidEnd": [
+       3.99,
+       3.67,
+       4.32
+      ],
+      "hhBleiPY": [
+       3.7,
+       3.58,
+       3.83
+      ],
+      "hhBleiKidPY": [
+       1.12,
+       0.9,
+       1.35
+      ],
+      "hhFplKidPY": [
+       1.95,
+       1.83,
+       2.06
+      ],
+      "hhCostKid7": [
+       -1.22,
+       -1.53,
+       -0.92
+      ],
+      "edcM": [
+       -5.72,
+       -5.78,
+       -5.65
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 17.634,
+     "rkDdW6": 67.332,
+     "rkDdB": 273.785,
+     "rkDdB30": 75.786,
+     "rkEv": 7.114,
+     "rkRec1": 17.055,
+     "rkRec3": 32.904,
+     "rkRec5": 37.514,
+     "rkRecM": 2.382,
+     "rkRecB3": 8.452,
+     "rkReC1": 42.678,
+     "rkReC3": 64.343,
+     "rkReC5": 73.479,
+     "rkReF5": 50.527,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.827,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 41766.366,
+     "pbME": 4912.406,
+     "pbCE": 49088.914,
+     "pbCover": 86.61,
+     "pbExit": 5.898,
+     "pbCash": 2544.926,
+     "pbAprP": 2138.823,
+     "pbAprR": 1959.952,
+     "pbAprC": 3867.295,
+     "pbFill": 100,
+     "pfCut": 6.067,
+     "pfLeave": 1.572,
+     "pfMem": 14.092,
+     "d54": {
+      "rkDdW": [
+       3.806,
+       3.656,
+       3.956
+      ],
+      "rkDdW6": [
+       3.8,
+       3.636,
+       3.963
+      ],
+      "rkDdB30": [
+       3.043,
+       2.869,
+       3.216
+      ],
+      "rkEv": [
+       0.329,
+       0.313,
+       0.344
+      ],
+      "rkRec3": [
+       -1.218,
+       -1.35,
+       -1.087
+      ],
+      "rkRecB3": [
+       0.255,
+       0.104,
+       0.406
+      ],
+      "rkReC5": [
+       -3.983,
+       -4.511,
+       -3.455
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 10.4,
+       "fplX": 9.3,
+       "fplNom": 7.5,
+       "f0": 70.9,
+       "bO": 31.9,
+       "bN": 33.2,
+       "bONom": 31,
+       "bNNom": 32.9,
+       "pov": 38,
+       "povNom": 37.3,
+       "ep": 0.309,
+       "giniD": 0.2769,
+       "giniX": 0.2786,
+       "giniW": 0.7985,
+       "giniWN": 0.8081
+      },
+      "end": {
+       "fpl": 16.8,
+       "fplX": 12.8,
+       "fplNom": 6.5,
+       "f0": 76.8,
+       "bO": 49.9,
+       "bN": 50.8,
+       "bONom": 47.4,
+       "bNNom": 50.3,
+       "pov": 53.2,
+       "povNom": 52.2,
+       "ep": 0.47,
+       "giniD": 0.2829,
+       "giniX": 0.2743,
+       "giniW": 0.8322,
+       "giniWN": 0.8468
+      },
+      "py": {
+       "fpl": 12.1,
+       "fplX": 9.7,
+       "fplNom": 7.2,
+       "bONom": 34.9,
+       "bNNom": 37
+      },
+      "d": {
+       "y7Fpl": [
+        2.51,
+        2.43,
+        2.59
+       ],
+       "eFpl": [
+        1.44,
+        1.37,
+        1.51
+       ],
+       "fplPY": [
+        2.05,
+        2.01,
+        2.1
+       ],
+       "y7FplX": [
+        5.06,
+        4.88,
+        5.23
+       ],
+       "eFplX": [
+        2.58,
+        2.42,
+        2.74
+       ],
+       "y7BO": [
+        3.92,
+        3.76,
+        4.09
+       ],
+       "eBO": [
+        7.87,
+        7.68,
+        8.06
+       ],
+       "y7F0": [
+        7.65,
+        7.43,
+        7.88
+       ],
+       "y7Pov": [
+        4.99,
+        4.84,
+        5.15
+       ],
+       "y7GiniD": [
+        0.034,
+        0.0333,
+        0.0346
+       ],
+       "eGiniW": [
+        0.0294,
+        0.0288,
+        0.0299
+       ]
+      }
+     }
+    },
+    "free": {
+     "label": "price cuts free (PTF and PTH cuts counted as capacity, not a transfer)",
+     "cost": 11726,
+     "tau": 0,
+     "infl": 26.7,
+     "pLevEnd": 134.463,
+     "pLevEndMed": 130.976,
+     "pLevEndP10": 94.346,
+     "pLevEndP90": 178.051,
+     "giniD": 0.2776,
+     "giniX": 0.2616,
+     "epPY": 0.364,
+     "hrs": -3.4,
+     "fgt2PY": 7.84,
+     "fgt0PY": 51.2,
+     "pov": 74.3,
+     "bOAPy": 34,
+     "bNAPy": 35.7,
+     "bOAMd": 25,
+     "bNAMd": 21,
+     "dFgt2": [
+      -5.2,
+      -5.25,
+      -5.15
+     ],
+     "dF0": [
+      -14.76,
+      -14.92,
+      -14.6
+     ],
+     "dPov": [
+      29.2,
+      28.97,
+      29.44
+     ],
+     "dBO": [
+      2.49,
+      2.37,
+      2.61
+     ],
+     "dBN": [
+      4.15,
+      4.03,
+      4.26
+     ],
+     "grp": {
+      "part": 18427,
+      "non": 4242,
+      "low": 9473,
+      "top": 10529
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.2,
+     "avoidLo": -2,
+     "avoidHi": -20,
+     "avoidW": 519,
+     "avoidWHi": 4607,
+     "avoidJail": 504,
+     "avoidHealth": 15,
+     "srcPay": 11114,
+     "srcTax": 2660,
+     "srcM": 257,
+     "part19": 43.7,
+     "medWealth": 162,
+     "hhCostPY": 57.1,
+     "hhCostKidPY": 72.67,
+     "hhFplPY": 7.91,
+     "hhFplKidPY": 11.89,
+     "hhWlthPY": 52.21,
+     "hhWlthKidPY": 63.31,
+     "hhBleiPY": 37.36,
+     "hhBleiKidPY": 45.96,
+     "hhCost7": 52.93,
+     "hhCostKid7": 68.74,
+     "hhCostEnd": 65.83,
+     "hhCostKidEnd": 80.05,
+     "hhWlthEnd": 75.92,
+     "hhWlthKidEnd": 87.42,
+     "hhGiniEq": 0.2999,
+     "hhMedEq": 32802,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 60.93,
+     "hhCost_sp": 91.43,
+     "hhCost_cn": 25.22,
+     "hhCost_ck": 64.86,
+     "hhWlth_sg": 78.81,
+     "hhWlth_sp": 94.5,
+     "hhWlth_cn": 50.47,
+     "hhWlth_ck": 84.12,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.43,
+     "hhSpN": 206.11,
+     "edcM": 26.89,
+     "edcMagg": 23.1,
+     "edcProxy": 17.25,
+     "fbsAbove": 73.44,
+     "fbsAboveKids": 71.76,
+     "d53": {
+      "hhCostPY": [
+       -15.17,
+       -15.34,
+       -15
+      ],
+      "hhCostKidPY": [
+       -16.28,
+       -16.56,
+       -16
+      ],
+      "hhWlthEnd": [
+       25.92,
+       25.69,
+       26.16
+      ],
+      "hhWlthKidEnd": [
+       23.12,
+       22.75,
+       23.5
+      ],
+      "hhBleiPY": [
+       1.89,
+       1.75,
+       2.04
+      ],
+      "hhBleiKidPY": [
+       0.1,
+       -0.19,
+       0.39
+      ],
+      "hhFplKidPY": [
+       0.92,
+       0.8,
+       1.04
+      ],
+      "hhCostKid7": [
+       -18.8,
+       -19.18,
+       -18.43
+      ],
+      "edcM": [
+       -7.5,
+       -7.57,
+       -7.42
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 27.564,
+     "rkDdW6": 74.168,
+     "rkDdB": 433.314,
+     "rkDdB30": 84.392,
+     "rkEv": 6.403,
+     "rkRec1": 16.65,
+     "rkRec3": 29.751,
+     "rkRec5": 32.83,
+     "rkRecM": 1.84,
+     "rkRecB3": 3.066,
+     "rkReC1": 37.477,
+     "rkReC3": 60.482,
+     "rkReC5": 69.445,
+     "rkReF5": 51.105,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.74,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33830.56,
+     "pbME": 5930.355,
+     "pbCE": 56006.772,
+     "pbCover": 88.34,
+     "pbExit": 5.898,
+     "pbCash": 2242.958,
+     "pbAprP": 24824.419,
+     "pbAprR": 1959.952,
+     "pbAprC": 25083.326,
+     "pbFill": 100,
+     "pfCut": 6.08,
+     "pfLeave": 1.384,
+     "pfMem": 12.615,
+     "d54": {
+      "rkDdW": [
+       13.737,
+       13.498,
+       13.975
+      ],
+      "rkDdW6": [
+       10.635,
+       10.434,
+       10.836
+      ],
+      "rkDdB30": [
+       11.649,
+       11.447,
+       11.851
+      ],
+      "rkEv": [
+       -0.383,
+       -0.435,
+       -0.33
+      ],
+      "rkRec3": [
+       -4.372,
+       -4.537,
+       -4.206
+      ],
+      "rkRecB3": [
+       -5.131,
+       -5.297,
+       -4.965
+      ],
+      "rkReC5": [
+       -8.017,
+       -8.501,
+       -7.532
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 8.9,
+       "fplX": 2.1,
+       "fplNom": 0.5,
+       "f0": 47,
+       "bO": 25.6,
+       "bN": 26.7,
+       "bONom": 16.4,
+       "bNNom": 16.5,
+       "pov": 38.8,
+       "povNom": 27.6,
+       "ep": 0.292,
+       "giniD": 0.2633,
+       "giniX": 0.2506,
+       "giniW": 0.7463,
+       "giniWN": 0.7525
+      },
+      "end": {
+       "fpl": 18,
+       "fplX": 5.1,
+       "fplNom": 0.3,
+       "f0": 60.5,
+       "bO": 53.9,
+       "bN": 56.6,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 74.3,
+       "povNom": 52.5,
+       "ep": 0.537,
+       "giniD": 0.2776,
+       "giniX": 0.2616,
+       "giniW": 0.7488,
+       "giniWN": 0.7517
+      },
+      "py": {
+       "fpl": 11.4,
+       "fplX": 2.9,
+       "fplNom": 1,
+       "bONom": 7.2,
+       "bNNom": 7.5
+      },
+      "d": {
+       "y7Fpl": [
+        1.07,
+        0.96,
+        1.18
+       ],
+       "eFpl": [
+        2.7,
+        2.52,
+        2.87
+       ],
+       "fplPY": [
+        1.43,
+        1.38,
+        1.48
+       ],
+       "y7FplX": [
+        -2.18,
+        -2.3,
+        -2.07
+       ],
+       "eFplX": [
+        -5.11,
+        -5.3,
+        -4.92
+       ],
+       "y7BO": [
+        -2.37,
+        -2.53,
+        -2.21
+       ],
+       "eBO": [
+        11.87,
+        11.67,
+        12.08
+       ],
+       "y7F0": [
+        -16.29,
+        -16.59,
+        -16
+       ],
+       "y7Pov": [
+        5.8,
+        5.62,
+        5.98
+       ],
+       "y7GiniD": [
+        0.0203,
+        0.0199,
+        0.0207
+       ],
+       "eGiniW": [
+        -0.054,
+        -0.0559,
+        -0.0522
+       ]
+      }
+     }
+    },
+    "idx": {
+     "label": "the BU indexed to prices every year (the Hub indexes it only in a year prices rise faster than 5%)",
+     "cost": 11723,
+     "tau": 1.6,
+     "infl": 26.8,
+     "pLevEnd": 135.707,
+     "pLevEndMed": 132.164,
+     "pLevEndP10": 95.117,
+     "pLevEndP90": 179.967,
+     "giniD": 0.2781,
+     "giniX": 0.2626,
+     "epPY": 0.369,
+     "hrs": -3.7,
+     "fgt2PY": 8.14,
+     "fgt0PY": 52.3,
+     "pov": 75.4,
+     "bOAPy": 35,
+     "bNAPy": 36.7,
+     "bOAMd": 24,
+     "bNAMd": 20,
+     "dFgt2": [
+      -4.91,
+      -4.96,
+      -4.85
+     ],
+     "dF0": [
+      -13.65,
+      -13.8,
+      -13.49
+     ],
+     "dPov": [
+      30.39,
+      30.15,
+      30.63
+     ],
+     "dBO": [
+      3.43,
+      3.31,
+      3.55
+     ],
+     "dBN": [
+      5.18,
+      5.06,
+      5.3
+     ],
+     "grp": {
+      "part": 17748,
+      "non": 3548,
+      "low": 9013,
+      "top": 9560
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.25,
+     "avoidLo": -3,
+     "avoidHi": -25,
+     "avoidW": 486,
+     "avoidWHi": 4321,
+     "avoidJail": 472,
+     "avoidHealth": 14,
+     "srcPay": 11112,
+     "srcTax": 2659,
+     "srcM": 257,
+     "part19": 43.7,
+     "medWealth": -19,
+     "hhCostPY": 58.16,
+     "hhCostKidPY": 73.6,
+     "hhFplPY": 7.97,
+     "hhFplKidPY": 11.97,
+     "hhWlthPY": 53.01,
+     "hhWlthKidPY": 64.02,
+     "hhBleiPY": 38.28,
+     "hhBleiKidPY": 46.81,
+     "hhCost7": 53.89,
+     "hhCostKid7": 69.64,
+     "hhCostEnd": 67.13,
+     "hhCostKidEnd": 81.08,
+     "hhWlthEnd": 77.02,
+     "hhWlthKidEnd": 88.2,
+     "hhGiniEq": 0.3004,
+     "hhMedEq": 32013,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 62,
+     "hhCost_sp": 91.8,
+     "hhCost_cn": 26.39,
+     "hhCost_ck": 66,
+     "hhWlth_sg": 79.72,
+     "hhWlth_sp": 94.76,
+     "hhWlth_cn": 52.29,
+     "hhWlth_ck": 85.1,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.43,
+     "hhSpN": 204.78,
+     "edcM": 26.94,
+     "edcMagg": 23.16,
+     "edcProxy": 17.24,
+     "fbsAbove": 73.45,
+     "fbsAboveKids": 71.78,
+     "d53": {
+      "hhCostPY": [
+       -14.11,
+       -14.28,
+       -13.95
+      ],
+      "hhCostKidPY": [
+       -15.34,
+       -15.62,
+       -15.07
+      ],
+      "hhWlthEnd": [
+       27.02,
+       26.79,
+       27.25
+      ],
+      "hhWlthKidEnd": [
+       23.91,
+       23.54,
+       24.28
+      ],
+      "hhBleiPY": [
+       2.82,
+       2.67,
+       2.96
+      ],
+      "hhBleiKidPY": [
+       0.94,
+       0.66,
+       1.23
+      ],
+      "hhFplKidPY": [
+       1,
+       0.88,
+       1.12
+      ],
+      "hhCostKid7": [
+       -17.91,
+       -18.28,
+       -17.54
+      ],
+      "edcM": [
+       -7.45,
+       -7.52,
+       -7.37
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 27.658,
+     "rkDdW6": 74.255,
+     "rkDdB": 434.296,
+     "rkDdB30": 84.283,
+     "rkEv": 6.406,
+     "rkRec1": 16.614,
+     "rkRec3": 29.659,
+     "rkRec5": 32.709,
+     "rkRecM": 1.837,
+     "rkRecB3": 2.968,
+     "rkReC1": 37.593,
+     "rkReC3": 60.735,
+     "rkReC5": 69.6,
+     "rkReF5": 51.259,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.74,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33859.623,
+     "pbME": 5931.125,
+     "pbCE": 55976.938,
+     "pbCover": 88.34,
+     "pbExit": 5.898,
+     "pbCash": 2241.512,
+     "pbAprP": 24865.788,
+     "pbAprR": 1959.952,
+     "pbAprC": 25122.307,
+     "pbFill": 100,
+     "pfCut": 6.08,
+     "pfLeave": 1.386,
+     "pfMem": 12.628,
+     "d54": {
+      "rkDdW": [
+       13.83,
+       13.59,
+       14.07
+      ],
+      "rkDdW6": [
+       10.722,
+       10.52,
+       10.925
+      ],
+      "rkDdB30": [
+       11.54,
+       11.338,
+       11.742
+      ],
+      "rkEv": [
+       -0.38,
+       -0.432,
+       -0.327
+      ],
+      "rkRec3": [
+       -4.464,
+       -4.629,
+       -4.298
+      ],
+      "rkRecB3": [
+       -5.229,
+       -5.393,
+       -5.065
+      ],
+      "rkReC5": [
+       -7.861,
+       -8.344,
+       -7.379
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 9,
+       "fplX": 2.2,
+       "fplNom": 0.5,
+       "f0": 47.9,
+       "bO": 26.3,
+       "bN": 27.5,
+       "bONom": 16.9,
+       "bNNom": 17,
+       "pov": 39.5,
+       "povNom": 28.3,
+       "ep": 0.296,
+       "giniD": 0.2636,
+       "giniX": 0.2512,
+       "giniW": 0.7496,
+       "giniWN": 0.7561
+      },
+      "end": {
+       "fpl": 18.2,
+       "fplX": 5.5,
+       "fplNom": 0.3,
+       "f0": 61.9,
+       "bO": 55.3,
+       "bN": 58.2,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 75.4,
+       "povNom": 54.5,
+       "ep": 0.545,
+       "giniD": 0.2781,
+       "giniX": 0.2626,
+       "giniW": 0.758,
+       "giniWN": 0.761
+      },
+      "py": {
+       "fpl": 11.5,
+       "fplX": 3.1,
+       "fplNom": 1,
+       "bONom": 7.3,
+       "bNNom": 7.6
+      },
+      "d": {
+       "y7Fpl": [
+        1.12,
+        1.01,
+        1.24
+       ],
+       "eFpl": [
+        2.88,
+        2.7,
+        3.05
+       ],
+       "fplPY": [
+        1.52,
+        1.47,
+        1.57
+       ],
+       "y7FplX": [
+        -2.05,
+        -2.17,
+        -1.94
+       ],
+       "eFplX": [
+        -4.67,
+        -4.86,
+        -4.49
+       ],
+       "y7BO": [
+        -1.65,
+        -1.81,
+        -1.5
+       ],
+       "eBO": [
+        13.26,
+        13.05,
+        13.47
+       ],
+       "y7F0": [
+        -15.31,
+        -15.6,
+        -15.01
+       ],
+       "y7Pov": [
+        6.53,
+        6.35,
+        6.72
+       ],
+       "y7GiniD": [
+        0.0207,
+        0.0203,
+        0.0211
+       ],
+       "eGiniW": [
+        -0.0449,
+        -0.0468,
+        -0.043
+       ]
+      }
+     }
+    },
+    "midhi": {
+     "label": "middle band, high end: up to 16% a year (the Kenya study's peak year)",
+     "bkA": 53.2,
+     "bkPY": 29.6,
+     "cost": 12456,
+     "tau": 1.6,
+     "infl": 12.9,
+     "pLevEnd": 15.296,
+     "pLevEndMed": 14.734,
+     "pLevEndP10": 10.092,
+     "pLevEndP90": 21.269,
+     "giniD": 0.2852,
+     "giniX": 0.2692,
+     "epPY": 0.308,
+     "hrs": -3.7,
+     "fgt2PY": 7.71,
+     "fgt0PY": 50.2,
+     "pov": 55.6,
+     "bOAPy": 28,
+     "bNAPy": 29.2,
+     "bOAMd": 73,
+     "bNAMd": 66,
+     "dFgt2": [
+      -5.33,
+      -5.38,
+      -5.28
+     ],
+     "dF0": [
+      -15.77,
+      -15.93,
+      -15.62
+     ],
+     "dPov": [
+      10.53,
+      10.24,
+      10.82
+     ],
+     "dBO": [
+      -3.5,
+      -3.61,
+      -3.39
+     ],
+     "dBN": [
+      -2.31,
+      -2.42,
+      -2.2
+     ],
+     "grp": {
+      "part": 19814,
+      "non": 4620,
+      "low": 10054,
+      "top": 11532
+     },
+     "worse": "non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": 0.37,
+     "avoidLo": 4,
+     "avoidHi": 37,
+     "avoidW": 539,
+     "avoidWHi": 4782,
+     "avoidJail": 523,
+     "avoidHealth": 16,
+     "srcPay": 11832,
+     "srcTax": 2740,
+     "srcM": 307,
+     "part19": 43.7,
+     "medWealth": 14350,
+     "hhCostPY": 55.98,
+     "hhCostKidPY": 71.29,
+     "hhFplPY": 7.54,
+     "hhFplKidPY": 11.34,
+     "hhWlthPY": 41.05,
+     "hhWlthKidPY": 51.41,
+     "hhBleiPY": 31.15,
+     "hhBleiKidPY": 39.27,
+     "hhCost7": 52.23,
+     "hhCostKid7": 67.61,
+     "hhCostEnd": 63.67,
+     "hhCostKidEnd": 77.68,
+     "hhWlthEnd": 58.93,
+     "hhWlthKidEnd": 71.57,
+     "hhGiniEq": 0.3071,
+     "hhMedEq": 33770,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 60.02,
+     "hhCost_sp": 90.8,
+     "hhCost_cn": 24.52,
+     "hhCost_ck": 63.31,
+     "hhWlth_sg": 64.48,
+     "hhWlth_sp": 89.43,
+     "hhWlth_cn": 30.41,
+     "hhWlth_ck": 64.86,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.44,
+     "hhSpN": 201.44,
+     "edcM": 26.5,
+     "edcMagg": 21.71,
+     "edcProxy": 24.89,
+     "fbsAbove": 66.84,
+     "fbsAboveKids": 65.31,
+     "d53": {
+      "hhCostPY": [
+       -16.29,
+       -16.46,
+       -16.12
+      ],
+      "hhCostKidPY": [
+       -17.66,
+       -17.95,
+       -17.37
+      ],
+      "hhWlthEnd": [
+       8.93,
+       8.64,
+       9.22
+      ],
+      "hhWlthKidEnd": [
+       7.28,
+       6.86,
+       7.7
+      ],
+      "hhBleiPY": [
+       -4.31,
+       -4.45,
+       -4.18
+      ],
+      "hhBleiKidPY": [
+       -6.6,
+       -6.85,
+       -6.34
+      ],
+      "hhFplKidPY": [
+       0.36,
+       0.25,
+       0.48
+      ],
+      "hhCostKid7": [
+       -19.94,
+       -20.31,
+       -19.57
+      ],
+      "edcM": [
+       -7.9,
+       -7.97,
+       -7.82
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 24.877,
+     "rkDdW6": 72.85,
+     "rkDdB": 395.347,
+     "rkDdB30": 83.185,
+     "rkEv": 6.32,
+     "rkRec1": 17.347,
+     "rkRec3": 31.692,
+     "rkRec5": 35.393,
+     "rkRecM": 1.961,
+     "rkRecB3": 5.329,
+     "rkReC1": 36.157,
+     "rkReC3": 58.485,
+     "rkReC5": 67.324,
+     "rkReF5": 49.768,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.777,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 37192.189,
+     "pbME": 5438.455,
+     "pbCE": 53137.042,
+     "pbCover": 87.389,
+     "pbExit": 5.898,
+     "pbCash": 2380.613,
+     "pbAprP": 14550.75,
+     "pbAprR": 1959.952,
+     "pbAprC": 15519.06,
+     "pbFill": 100,
+     "pfCut": 6.073,
+     "pfLeave": 1.462,
+     "pfMem": 13.23,
+     "d54": {
+      "rkDdW": [
+       11.05,
+       10.846,
+       11.254
+      ],
+      "rkDdW6": [
+       9.318,
+       9.123,
+       9.513
+      ],
+      "rkDdB30": [
+       10.442,
+       10.247,
+       10.637
+      ],
+      "rkEv": [
+       -0.465,
+       -0.518,
+       -0.412
+      ],
+      "rkRec3": [
+       -2.43,
+       -2.593,
+       -2.267
+      ],
+      "rkRecB3": [
+       -2.868,
+       -3.034,
+       -2.702
+      ],
+      "rkReC5": [
+       -10.137,
+       -10.628,
+       -9.647
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 8.8,
+       "fplX": 2.1,
+       "fplNom": 1.5,
+       "f0": 46.4,
+       "bO": 22.1,
+       "bN": 23,
+       "bONom": 16.4,
+       "bNNom": 16.8,
+       "pov": 30.8,
+       "povNom": 26,
+       "ep": 0.255,
+       "giniD": 0.2665,
+       "giniX": 0.2546,
+       "giniW": 0.7531,
+       "giniWN": 0.7589
+      },
+      "end": {
+       "fpl": 16.3,
+       "fplX": 4.8,
+       "fplNom": 0.4,
+       "f0": 58.4,
+       "bO": 43.7,
+       "bN": 45.4,
+       "bONom": 3.3,
+       "bNNom": 3.6,
+       "pov": 55.6,
+       "povNom": 43.9,
+       "ep": 0.446,
+       "giniD": 0.2852,
+       "giniX": 0.2692,
+       "giniW": 0.7402,
+       "giniWN": 0.747
+      },
+      "py": {
+       "fpl": 10.8,
+       "fplX": 2.9,
+       "fplNom": 1.7,
+       "bONom": 14.6,
+       "bNNom": 15.1
+      },
+      "d": {
+       "y7Fpl": [
+        0.97,
+        0.86,
+        1.08
+       ],
+       "eFpl": [
+        0.96,
+        0.79,
+        1.13
+       ],
+       "fplPY": [
+        0.83,
+        0.78,
+        0.88
+       ],
+       "y7FplX": [
+        -2.13,
+        -2.24,
+        -2.01
+       ],
+       "eFplX": [
+        -5.34,
+        -5.53,
+        -5.15
+       ],
+       "y7BO": [
+        -5.89,
+        -6.03,
+        -5.75
+       ],
+       "eBO": [
+        1.64,
+        1.43,
+        1.85
+       ],
+       "y7F0": [
+        -16.82,
+        -17.12,
+        -16.53
+       ],
+       "y7Pov": [
+        -2.18,
+        -2.32,
+        -2.04
+       ],
+       "y7GiniD": [
+        0.0235,
+        0.0231,
+        0.024
+       ],
+       "eGiniW": [
+        -0.0627,
+        -0.0637,
+        -0.0616
+       ]
+      }
+     }
+    },
+    "rev10": {
+     "label": "10% of high conversion rates unearned, audits catch half",
+     "rvX": 2,
+     "rvC": 2,
+     "cost": 11721,
+     "tau": 1.6,
+     "infl": 26.8,
+     "pLevEnd": 135.81,
+     "pLevEndMed": 132.265,
+     "pLevEndP10": 95.169,
+     "pLevEndP90": 180.122,
+     "giniD": 0.2781,
+     "giniX": 0.2626,
+     "epPY": 0.369,
+     "hrs": -3.7,
+     "fgt2PY": 8.14,
+     "fgt0PY": 52.3,
+     "pov": 75.5,
+     "bOAPy": 35,
+     "bNAPy": 36.7,
+     "bOAMd": 24,
+     "bNAMd": 20,
+     "dFgt2": [
+      -4.91,
+      -4.96,
+      -4.85
+     ],
+     "dF0": [
+      -13.65,
+      -13.8,
+      -13.49
+     ],
+     "dPov": [
+      30.39,
+      30.16,
+      30.63
+     ],
+     "dBO": [
+      3.44,
+      3.32,
+      3.56
+     ],
+     "dBN": [
+      5.19,
+      5.07,
+      5.31
+     ],
+     "grp": {
+      "part": 17744,
+      "non": 3547,
+      "low": 9011,
+      "top": 9557
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.25,
+     "avoidLo": -3,
+     "avoidHi": -25,
+     "avoidW": 486,
+     "avoidWHi": 4320,
+     "avoidJail": 472,
+     "avoidHealth": 14,
+     "srcPay": 11109,
+     "srcTax": 2659,
+     "srcM": 253,
+     "part19": 43.7,
+     "medWealth": -19,
+     "hhCostPY": 58.16,
+     "hhCostKidPY": 73.61,
+     "hhFplPY": 7.97,
+     "hhFplKidPY": 11.97,
+     "hhWlthPY": 53.02,
+     "hhWlthKidPY": 64.03,
+     "hhBleiPY": 38.29,
+     "hhBleiKidPY": 46.81,
+     "hhCost7": 53.89,
+     "hhCostKid7": 69.64,
+     "hhCostEnd": 67.14,
+     "hhCostKidEnd": 81.08,
+     "hhWlthEnd": 77.02,
+     "hhWlthKidEnd": 88.2,
+     "hhGiniEq": 0.3004,
+     "hhMedEq": 32012,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 62.01,
+     "hhCost_sp": 91.81,
+     "hhCost_cn": 26.39,
+     "hhCost_ck": 66,
+     "hhWlth_sg": 79.72,
+     "hhWlth_sp": 94.76,
+     "hhWlth_cn": 52.3,
+     "hhWlth_ck": 85.1,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.43,
+     "hhSpN": 204.65,
+     "edcM": 26.95,
+     "edcMagg": 23.17,
+     "edcProxy": 17.23,
+     "fbsAbove": 73.46,
+     "fbsAboveKids": 71.79,
+     "d53": {
+      "hhCostPY": [
+       -14.11,
+       -14.27,
+       -13.94
+      ],
+      "hhCostKidPY": [
+       -15.34,
+       -15.61,
+       -15.07
+      ],
+      "hhWlthEnd": [
+       27.02,
+       26.79,
+       27.25
+      ],
+      "hhWlthKidEnd": [
+       23.91,
+       23.54,
+       24.28
+      ],
+      "hhBleiPY": [
+       2.82,
+       2.68,
+       2.97
+      ],
+      "hhBleiKidPY": [
+       0.95,
+       0.66,
+       1.24
+      ],
+      "hhFplKidPY": [
+       1,
+       0.88,
+       1.12
+      ],
+      "hhCostKid7": [
+       -17.91,
+       -18.28,
+       -17.54
+      ],
+      "edcM": [
+       -7.45,
+       -7.52,
+       -7.37
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 27.658,
+     "rkDdW6": 74.254,
+     "rkDdB": 434.296,
+     "rkDdB30": 84.277,
+     "rkEv": 6.403,
+     "rkRec1": 16.625,
+     "rkRec3": 29.677,
+     "rkRec5": 32.732,
+     "rkRecM": 1.837,
+     "rkRecB3": 2.965,
+     "rkReC1": 37.566,
+     "rkReC3": 60.7,
+     "rkReC5": 69.571,
+     "rkReF5": 51.248,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.74,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33858.758,
+     "pbME": 5931.236,
+     "pbCE": 55977.693,
+     "pbCover": 88.34,
+     "pbExit": 5.898,
+     "pbCash": 2241.498,
+     "pbAprP": 24868.829,
+     "pbAprR": 1959.952,
+     "pbAprC": 25125.116,
+     "pbFill": 100,
+     "pfCut": 6.08,
+     "pfLeave": 1.385,
+     "pfMem": 12.628,
+     "d54": {
+      "rkDdW": [
+       13.83,
+       13.59,
+       14.07
+      ],
+      "rkDdW6": [
+       10.722,
+       10.519,
+       10.925
+      ],
+      "rkDdB30": [
+       11.534,
+       11.332,
+       11.736
+      ],
+      "rkEv": [
+       -0.382,
+       -0.435,
+       -0.329
+      ],
+      "rkRec3": [
+       -4.445,
+       -4.61,
+       -4.28
+      ],
+      "rkRecB3": [
+       -5.233,
+       -5.397,
+       -5.068
+      ],
+      "rkReC5": [
+       -7.891,
+       -8.373,
+       -7.409
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 9,
+       "fplX": 2.2,
+       "fplNom": 0.5,
+       "f0": 47.9,
+       "bO": 26.3,
+       "bN": 27.6,
+       "bONom": 16.9,
+       "bNNom": 17,
+       "pov": 39.5,
+       "povNom": 28.4,
+       "ep": 0.296,
+       "giniD": 0.2636,
+       "giniX": 0.2512,
+       "giniW": 0.7496,
+       "giniWN": 0.7561
+      },
+      "end": {
+       "fpl": 18.2,
+       "fplX": 5.5,
+       "fplNom": 0.3,
+       "f0": 61.9,
+       "bO": 55.3,
+       "bN": 58.2,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 75.5,
+       "povNom": 54.5,
+       "ep": 0.545,
+       "giniD": 0.2781,
+       "giniX": 0.2626,
+       "giniW": 0.758,
+       "giniWN": 0.761
+      },
+      "py": {
+       "fpl": 11.5,
+       "fplX": 3.1,
+       "fplNom": 1,
+       "bONom": 7.3,
+       "bNNom": 7.6
+      },
+      "d": {
+       "y7Fpl": [
+        1.12,
+        1.01,
+        1.24
+       ],
+       "eFpl": [
+        2.88,
+        2.71,
+        3.05
+       ],
+       "fplPY": [
+        1.52,
+        1.47,
+        1.57
+       ],
+       "y7FplX": [
+        -2.05,
+        -2.17,
+        -1.94
+       ],
+       "eFplX": [
+        -4.67,
+        -4.86,
+        -4.49
+       ],
+       "y7BO": [
+        -1.65,
+        -1.81,
+        -1.49
+       ],
+       "eBO": [
+        13.27,
+        13.06,
+        13.47
+       ],
+       "y7F0": [
+        -15.3,
+        -15.6,
+        -15.01
+       ],
+       "y7Pov": [
+        6.55,
+        6.37,
+        6.73
+       ],
+       "y7GiniD": [
+        0.0207,
+        0.0203,
+        0.0211
+       ],
+       "eGiniW": [
+        -0.0449,
+        -0.0467,
+        -0.043
+       ]
+      }
+     }
+    },
+    "landtax": {
+     "label": "paid for by a land-value tax instead of the Source (falling on adults in proportion to their savings; not specified by the Hub)",
+     "taxAvg": 23.7,
+     "taxCover": 94.6,
+     "cost": 10213,
+     "tau": 3.2,
+     "infl": 1.3,
+     "pLevEnd": 1.868,
+     "pLevEndMed": 1.872,
+     "pLevEndP10": 1.776,
+     "pLevEndP90": 1.943,
+     "giniD": 0.2732,
+     "giniX": 0.2624,
+     "epPY": 0.287,
+     "hrs": 0.7,
+     "fgt2PY": 25.84,
+     "fgt0PY": 63,
+     "pov": 41.7,
+     "bOAPy": 25.8,
+     "bNAPy": 26.6,
+     "bOAMd": 258,
+     "bNAMd": 246,
+     "dFgt2": [
+      12.79,
+      12.27,
+      13.32
+     ],
+     "dF0": [
+      -2.93,
+      -3.06,
+      -2.81
+     ],
+     "dPov": [
+      -3.32,
+      -3.49,
+      -3.14
+     ],
+     "dBO": [
+      -5.71,
+      -5.82,
+      -5.61
+     ],
+     "dBN": [
+      -4.98,
+      -5.08,
+      -4.88
+     ],
+     "grp": {
+      "part": 8668,
+      "non": -3442,
+      "low": 5139,
+      "top": -3927
+     },
+     "worse": "non (riw), top (ri)",
+     "unhousedAvoided": 0.57,
+     "avoidLo": 6,
+     "avoidHi": 57,
+     "avoidW": 3,
+     "avoidWHi": 3,
+     "avoidJail": 0,
+     "avoidHealth": 3,
+     "srcPay": 9582,
+     "srcTax": 2107,
+     "srcM": 262,
+     "part19": 31.1,
+     "medWealth": 64866,
+     "hhCostPY": 68.25,
+     "hhCostKidPY": 82.06,
+     "hhFplPY": 7.36,
+     "hhFplKidPY": 11.1,
+     "hhWlthPY": 36.28,
+     "hhWlthKidPY": 46.77,
+     "hhBleiPY": 29.06,
+     "hhBleiKidPY": 37.75,
+     "hhCost7": 65.1,
+     "hhCostKid7": 78.38,
+     "hhCostEnd": 77.04,
+     "hhCostKidEnd": 89.77,
+     "hhWlthEnd": 46.54,
+     "hhWlthKidEnd": 60.32,
+     "hhGiniEq": 0.2843,
+     "hhMedEq": 31375,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 68.5,
+     "hhCost_sp": 93.11,
+     "hhCost_cn": 41.83,
+     "hhCost_ck": 76.93,
+     "hhWlth_sg": 51.04,
+     "hhWlth_sp": 84.73,
+     "hhWlth_cn": 17.72,
+     "hhWlth_ck": 51.49,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.38,
+     "hhSpN": 252.33,
+     "edcM": 27.01,
+     "edcMagg": 20.86,
+     "edcProxy": 38.05,
+     "fbsAbove": 61.32,
+     "fbsAboveKids": 59.49,
+     "d53": {
+      "hhCostPY": [
+       -4.02,
+       -4.15,
+       -3.88
+      ],
+      "hhCostKidPY": [
+       -6.89,
+       -7.12,
+       -6.66
+      ],
+      "hhWlthEnd": [
+       -3.46,
+       -3.67,
+       -3.26
+      ],
+      "hhWlthKidEnd": [
+       -3.97,
+       -4.34,
+       -3.61
+      ],
+      "hhBleiPY": [
+       -6.4,
+       -6.53,
+       -6.27
+      ],
+      "hhBleiKidPY": [
+       -8.11,
+       -8.35,
+       -7.87
+      ],
+      "hhFplKidPY": [
+       0.12,
+       0.03,
+       0.22
+      ],
+      "hhCostKid7": [
+       -9.17,
+       -9.52,
+       -8.82
+      ],
+      "edcM": [
+       -7.38,
+       -7.46,
+       -7.31
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 15.343,
+     "rkDdW6": 65.745,
+     "rkDdB": 247.019,
+     "rkDdB30": 78.403,
+     "rkEv": 6.841,
+     "rkRec1": 18.088,
+     "rkRec3": 34.63,
+     "rkRec5": 39.399,
+     "rkRecM": 2.238,
+     "rkRecB3": 14.733,
+     "rkReC1": 40.97,
+     "rkReC3": 65.119,
+     "rkReC5": 74.685,
+     "rkReF5": 47.589,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.816,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 40751.766,
+     "pbME": 4963.696,
+     "pbCE": 50052.225,
+     "pbCover": 86.696,
+     "pbExit": 5.898,
+     "pbCash": 2554.313,
+     "pbAprP": 3303.539,
+     "pbAprR": 1959.952,
+     "pbAprC": 4959.283,
+     "pbFill": 100,
+     "pfCut": 6.065,
+     "pfLeave": 1.498,
+     "pfMem": 13.461,
+     "d54": {
+      "rkDdW": [
+       1.516,
+       1.388,
+       1.643
+      ],
+      "rkDdW6": [
+       2.212,
+       2.041,
+       2.384
+      ],
+      "rkDdB30": [
+       5.66,
+       5.485,
+       5.835
+      ],
+      "rkEv": [
+       0.056,
+       0.046,
+       0.066
+      ],
+      "rkRec3": [
+       0.508,
+       0.406,
+       0.609
+      ],
+      "rkRecB3": [
+       6.536,
+       6.367,
+       6.705
+      ],
+      "rkReC5": [
+       -2.777,
+       -3.229,
+       -2.325
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 8.3,
+       "fplX": 8.4,
+       "fplNom": 3,
+       "f0": 60.1,
+       "bO": 21.8,
+       "bN": 22.5,
+       "bONom": 19.5,
+       "bNNom": 20.5,
+       "pov": 29.1,
+       "povNom": 26.5,
+       "ep": 0.252,
+       "giniD": 0.3025,
+       "giniX": 0.2908,
+       "giniW": 0.7514,
+       "giniWN": 0.7578
+      },
+      "end": {
+       "fpl": 14.2,
+       "fplX": 8.9,
+       "fplNom": 2.8,
+       "f0": 72.2,
+       "bO": 36.8,
+       "bN": 37.4,
+       "bONom": 32.8,
+       "bNNom": 34.4,
+       "pov": 41.7,
+       "povNom": 39.1,
+       "ep": 0.385,
+       "giniD": 0.2732,
+       "giniX": 0.2624,
+       "giniW": 0.75,
+       "giniWN": 0.762
+      },
+      "py": {
+       "fpl": 9.9,
+       "fplX": 7.8,
+       "fplNom": 3.4,
+       "bONom": 23.2,
+       "bNNom": 24.5
+      },
+      "d": {
+       "y7Fpl": [
+        0.45,
+        0.39,
+        0.5
+       ],
+       "eFpl": [
+        -1.19,
+        -1.25,
+        -1.12
+       ],
+       "fplPY": [
+        -0.06,
+        -0.09,
+        -0.03
+       ],
+       "y7FplX": [
+        4.13,
+        4.02,
+        4.24
+       ],
+       "eFplX": [
+        -1.25,
+        -1.36,
+        -1.13
+       ],
+       "y7BO": [
+        -6.19,
+        -6.32,
+        -6.05
+       ],
+       "eBO": [
+        -5.2,
+        -5.36,
+        -5.03
+       ],
+       "y7F0": [
+        -3.16,
+        -3.35,
+        -2.96
+       ],
+       "y7Pov": [
+        -3.91,
+        -4.04,
+        -3.77
+       ],
+       "y7GiniD": [
+        0.0595,
+        0.0584,
+        0.0607
+       ],
+       "eGiniW": [
+        -0.0529,
+        -0.0537,
+        -0.0521
+       ]
+      }
+     }
+    },
+    "ageleave": {
+     "label": "ageing, every estate leaving the model (no heirs)",
+     "vsBase": "agleave",
+     "agRet": 28.8,
+     "agAge": 57.3,
+     "cost": 11033,
+     "tau": 1.9,
+     "infl": 26.7,
+     "pLevEnd": 133.969,
+     "pLevEndMed": 131.316,
+     "pLevEndP10": 95.635,
+     "pLevEndP90": 177.059,
+     "giniD": 0.2637,
+     "giniX": 0.2621,
+     "epPY": 0.383,
+     "hrs": -2.8,
+     "fgt2PY": 8.4,
+     "fgt0PY": 56.4,
+     "pov": 78.3,
+     "bOAPy": 36.9,
+     "bNAPy": 38.4,
+     "bOAMd": 19,
+     "bNAMd": 17,
+     "dFgt2": [
+      -4.98,
+      -5.03,
+      -4.94
+     ],
+     "dF0": [
+      -14.96,
+      -15.1,
+      -14.81
+     ],
+     "dPov": [
+      29.34,
+      29.13,
+      29.56
+     ],
+     "dBO": [
+      4.34,
+      4.22,
+      4.46
+     ],
+     "dBN": [
+      5.86,
+      5.74,
+      5.98
+     ],
+     "grp": {
+      "part": 17946,
+      "non": 2612,
+      "low": 8527,
+      "top": 9054
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.32,
+     "avoidLo": -3,
+     "avoidHi": -32,
+     "avoidW": 528,
+     "avoidWHi": 4688,
+     "avoidJail": 512,
+     "avoidHealth": 15,
+     "srcPay": 10429,
+     "srcTax": 2485,
+     "srcM": 246,
+     "part19": 40.9,
+     "medWealth": -60,
+     "hhCostPY": 59.24,
+     "hhCostKidPY": 70.37,
+     "hhFplPY": 6.72,
+     "hhFplKidPY": 11,
+     "hhWlthPY": 51.7,
+     "hhWlthKidPY": 56.83,
+     "hhBleiPY": 37.76,
+     "hhBleiKidPY": 41.13,
+     "hhCost7": 55.83,
+     "hhCostKid7": 67.78,
+     "hhCostEnd": 68.03,
+     "hhCostKidEnd": 80.41,
+     "hhWlthEnd": 75.29,
+     "hhWlthKidEnd": 86.41,
+     "hhGiniEq": 0.2866,
+     "hhMedEq": 31599,
+     "hhPer": 555.1,
+     "hhKid": 55.1,
+     "hhCost_sg": 69.88,
+     "hhCost_sp": 90.07,
+     "hhCost_cn": 35.37,
+     "hhCost_ck": 59.57,
+     "hhWlth_sg": 81.44,
+     "hhWlth_sp": 91.7,
+     "hhWlth_cn": 61.05,
+     "hhWlth_ck": 78.49,
+     "hhShare_sg": 31,
+     "hhShare_sp": 10.1,
+     "hhShare_cn": 27.39,
+     "hhShare_ck": 31.52,
+     "hhCostA25": 62.9,
+     "hhCostA35": 58.09,
+     "hhCostA50": 44.04,
+     "hhCostA67": 76.04,
+     "hhSpEx1": 0.31,
+     "hhSpN": 244.59,
+     "edcM": 28.6,
+     "edcMagg": 26.2,
+     "edcProxy": 17.57,
+     "fbsAbove": 76.44,
+     "fbsAboveKids": 74.83,
+     "hhBirthR": 28.82,
+     "hhKid0": 188.68,
+     "hhEntK": 72.47,
+     "hhEstP": 0,
+     "hhEstO": 100,
+     "d53": {
+      "hhCostPY": [
+       -15.19,
+       -15.34,
+       -15.04
+      ],
+      "hhCostKidPY": [
+       -16.13,
+       -16.39,
+       -15.87
+      ],
+      "hhWlthEnd": [
+       24.9,
+       24.68,
+       25.12
+      ],
+      "hhWlthKidEnd": [
+       17.3,
+       16.63,
+       17.97
+      ],
+      "hhBleiPY": [
+       3.42,
+       3.28,
+       3.55
+      ],
+      "hhBleiKidPY": [
+       -0.4,
+       -0.69,
+       -0.12
+      ],
+      "hhFplKidPY": [
+       1,
+       0.9,
+       1.1
+      ],
+      "hhCostKid7": [
+       -18.36,
+       -18.75,
+       -17.96
+      ],
+      "edcM": [
+       -7.63,
+       -7.7,
+       -7.56
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 20.038,
+     "rkDdW6": 70.224,
+     "rkDdB": 306.459,
+     "rkDdB30": 80.929,
+     "rkEv": 6.282,
+     "rkRec1": 13.837,
+     "rkRec3": 24.877,
+     "rkRec5": 27.677,
+     "rkRecM": 2.21,
+     "rkRecB3": 9.284,
+     "rkReC1": 32.891,
+     "rkReC3": 54.716,
+     "rkReC5": 64.083,
+     "rkReF5": 43.87,
+     "emUrate": 3.513,
+     "emSpells": 11.078,
+     "emWeeks": 12.641,
+     "emAuto": 2.259,
+     "emUI": 6.766,
+     "emCut": 10.001,
+     "emLong": 18.032,
+     "emRho": 0.997,
+     "pbV": 83272.73,
+     "pbD": 28022.793,
+     "pbME": 5285.785,
+     "pbCE": 49964.151,
+     "pbCover": 89.574,
+     "pbExit": 5.865,
+     "pbCash": 2255.434,
+     "pbAprP": 24499.929,
+     "pbAprR": 1950.986,
+     "pbAprC": 24753.082,
+     "pbFill": 100,
+     "pfCut": 6.103,
+     "pfLeave": 1.442,
+     "pfMem": 12.33,
+     "d54": {
+      "rkDdW": [
+       7.765,
+       7.629,
+       7.901
+      ],
+      "rkDdW6": [
+       6.25,
+       6.096,
+       6.403
+      ],
+      "rkDdB30": [
+       7.426,
+       7.299,
+       7.552
+      ],
+      "rkEv": [
+       -0.309,
+       -0.352,
+       -0.267
+      ],
+      "rkRec3": [
+       -3.095,
+       -3.252,
+       -2.939
+      ],
+      "rkRecB3": [
+       -6.352,
+       -6.522,
+       -6.182
+      ],
+      "rkReC5": [
+       -9.199,
+       -9.676,
+       -8.723
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 7.7,
+       "fplX": 2,
+       "fplNom": 0.4,
+       "f0": 52.1,
+       "bO": 27.1,
+       "bN": 28.3,
+       "bONom": 17.5,
+       "bNNom": 17.7,
+       "pov": 41,
+       "povNom": 29,
+       "ep": 0.302,
+       "giniD": 0.2737,
+       "giniX": 0.2622,
+       "giniW": 0.7545,
+       "giniWN": 0.7613
+      },
+      "end": {
+       "fpl": 12.6,
+       "fplX": 4.8,
+       "fplNom": 0.2,
+       "f0": 66.7,
+       "bO": 58.9,
+       "bN": 60.9,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 78.3,
+       "povNom": 56.1,
+       "ep": 0.573,
+       "giniD": 0.2637,
+       "giniX": 0.2621,
+       "giniW": 0.7863,
+       "giniWN": 0.7896
+      },
+      "py": {
+       "fpl": 9,
+       "fplX": 2.7,
+       "fplNom": 0.9,
+       "bONom": 7.3,
+       "bNNom": 7.7
+      },
+      "d": {
+       "y7Fpl": [
+        0.93,
+        0.83,
+        1.02
+       ],
+       "eFpl": [
+        1.84,
+        1.71,
+        1.97
+       ],
+       "fplPY": [
+        1.12,
+        1.08,
+        1.16
+       ],
+       "y7FplX": [
+        -1.86,
+        -1.97,
+        -1.76
+       ],
+       "eFplX": [
+        -3.39,
+        -3.52,
+        -3.25
+       ],
+       "y7BO": [
+        -1.3,
+        -1.46,
+        -1.14
+       ],
+       "eBO": [
+        14.53,
+        14.31,
+        14.75
+       ],
+       "y7F0": [
+        -16.57,
+        -16.85,
+        -16.3
+       ],
+       "y7Pov": [
+        7.02,
+        6.84,
+        7.19
+       ],
+       "y7GiniD": [
+        0.022,
+        0.0216,
+        0.0225
+       ],
+       "eGiniW": [
+        -0.0394,
+        -0.0414,
+        -0.0373
+       ]
+      }
+     }
+    },
+    "fixm": {
+     "label": "wages centred on the US survey's median ($54,698 instead of $39,945)",
+     "vsBase": "ltm",
+     "cost": 12059,
+     "tau": 1.2,
+     "infl": 20.4,
+     "pLevEnd": 50.949,
+     "pLevEndMed": 50.079,
+     "pLevEndP10": 38.227,
+     "pLevEndP90": 64.6,
+     "giniD": 0.2708,
+     "giniX": 0.2538,
+     "epPY": 0.339,
+     "hrs": -2.6,
+     "fgt2PY": 4.04,
+     "fgt0PY": 32.9,
+     "pov": 51.2,
+     "bOAPy": 21.9,
+     "bNAPy": 22.9,
+     "bOAMd": 108,
+     "bNAMd": 100,
+     "dFgt2": [
+      -2.72,
+      -2.75,
+      -2.68
+     ],
+     "dF0": [
+      -11.15,
+      -11.29,
+      -11.01
+     ],
+     "dPov": [
+      19.02,
+      18.8,
+      19.24
+     ],
+     "dBO": [
+      -0.54,
+      -0.64,
+      -0.43
+     ],
+     "dBN": [
+      0.45,
+      0.35,
+      0.55
+     ],
+     "grp": {
+      "part": 18242,
+      "non": 3587,
+      "low": 9198,
+      "top": 9930
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": 0.13,
+     "avoidLo": 1,
+     "avoidHi": 13,
+     "avoidW": 307,
+     "avoidWHi": 2708,
+     "avoidJail": 296,
+     "avoidHealth": 11,
+     "srcPay": 11441,
+     "srcTax": 2704,
+     "srcM": 274,
+     "part19": 43.7,
+     "medWealth": 23504,
+     "hhCostPY": 38.61,
+     "hhCostKidPY": 53.7,
+     "hhFplPY": 3.22,
+     "hhFplKidPY": 5.11,
+     "hhWlthPY": 37.65,
+     "hhWlthKidPY": 50.09,
+     "hhBleiPY": 25.33,
+     "hhBleiKidPY": 34.18,
+     "hhCost7": 34.32,
+     "hhCostKid7": 48.75,
+     "hhCostEnd": 47.92,
+     "hhCostKidEnd": 63.4,
+     "hhWlthEnd": 55.59,
+     "hhWlthKidEnd": 71.12,
+     "hhGiniEq": 0.2932,
+     "hhMedEq": 44530,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 41.86,
+     "hhCost_sp": 82.46,
+     "hhCost_cn": 10.02,
+     "hhCost_ck": 42.84,
+     "hhWlth_sg": 59.72,
+     "hhWlth_sp": 88.83,
+     "hhWlth_cn": 23.21,
+     "hhWlth_ck": 63.7,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.47,
+     "hhSpN": 218.48,
+     "edcM": 21.14,
+     "edcMagg": 17.74,
+     "edcProxy": 16.5,
+     "fbsAbove": 86.48,
+     "fbsAboveKids": 85.01,
+     "d53": {
+      "hhCostPY": [
+       -12.82,
+       -12.99,
+       -12.65
+      ],
+      "hhCostKidPY": [
+       -17.24,
+       -17.54,
+       -16.93
+      ],
+      "hhWlthEnd": [
+       17.7,
+       17.46,
+       17.95
+      ],
+      "hhWlthKidEnd": [
+       17.65,
+       17.25,
+       18.06
+      ],
+      "hhBleiPY": [
+       -1.24,
+       -1.38,
+       -1.11
+      ],
+      "hhBleiKidPY": [
+       -3.26,
+       -3.53,
+       -2.99
+      ],
+      "hhFplKidPY": [
+       0.41,
+       0.34,
+       0.48
+      ],
+      "hhCostKid7": [
+       -19.41,
+       -19.85,
+       -18.98
+      ],
+      "edcM": [
+       -5.02,
+       -5.08,
+       -4.96
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 24.714,
+     "rkDdW6": 74.22,
+     "rkDdB": 396.848,
+     "rkDdB30": 87.625,
+     "rkEv": 6.317,
+     "rkRec1": 17.146,
+     "rkRec3": 30.83,
+     "rkRec5": 34.028,
+     "rkRecM": 1.878,
+     "rkRecB3": 5.054,
+     "rkReC1": 33.943,
+     "rkReC3": 57.013,
+     "rkReC5": 66.694,
+     "rkReF5": 35.343,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.755,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 33183.119,
+     "pbME": 5802.279,
+     "pbCE": 56782.289,
+     "pbCover": 88.283,
+     "pbExit": 5.898,
+     "pbCash": 2336.807,
+     "pbAprP": 20423.274,
+     "pbAprR": 1959.952,
+     "pbAprC": 20975.526,
+     "pbFill": 100,
+     "pfCut": 6.067,
+     "pfLeave": 1.373,
+     "pfMem": 12.548,
+     "d54": {
+      "rkDdW": [
+       19.05,
+       18.853,
+       19.247
+      ],
+      "rkDdW6": [
+       25.19,
+       24.955,
+       25.425
+      ],
+      "rkDdB30": [
+       25.1,
+       24.78,
+       25.42
+      ],
+      "rkEv": [
+       -0.471,
+       -0.522,
+       -0.42
+      ],
+      "rkRec3": [
+       -3.923,
+       -4.085,
+       -3.761
+      ],
+      "rkRecB3": [
+       -18.04,
+       -18.286,
+       -17.795
+      ],
+      "rkReC5": [
+       -5.166,
+       -5.686,
+       -4.646
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 3.4,
+       "fplX": 0.7,
+       "fplNom": 0.5,
+       "f0": 28.9,
+       "bO": 16.4,
+       "bN": 17.1,
+       "bONom": 11.3,
+       "bNNom": 11.3,
+       "pov": 26,
+       "povNom": 18.4,
+       "ep": 0.27,
+       "giniD": 0.2554,
+       "giniX": 0.2417,
+       "giniW": 0.7007,
+       "giniWN": 0.7044
+      },
+      "end": {
+       "fpl": 7.6,
+       "fplX": 1.8,
+       "fplNom": 0.3,
+       "f0": 42.1,
+       "bO": 35.5,
+       "bN": 37.1,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 51.2,
+       "povNom": 34.2,
+       "ep": 0.516,
+       "giniD": 0.2708,
+       "giniX": 0.2538,
+       "giniW": 0.6479,
+       "giniWN": 0.6499
+      },
+      "py": {
+       "fpl": 4.6,
+       "fplX": 1,
+       "fplNom": 0.6,
+       "bONom": 5.8,
+       "bNNom": 6.1
+      },
+      "d": {
+       "y7Fpl": [
+        0.43,
+        0.38,
+        0.48
+       ],
+       "eFpl": [
+        1.21,
+        1.11,
+        1.3
+       ],
+       "fplPY": [
+        0.64,
+        0.61,
+        0.67
+       ],
+       "y7FplX": [
+        -0.7,
+        -0.75,
+        -0.65
+       ],
+       "eFplX": [
+        -1.77,
+        -1.87,
+        -1.67
+       ],
+       "y7BO": [
+        -3.54,
+        -3.67,
+        -3.41
+       ],
+       "eBO": [
+        6.15,
+        5.96,
+        6.33
+       ],
+       "y7F0": [
+        -12.19,
+        -12.45,
+        -11.92
+       ],
+       "y7Pov": [
+        1.39,
+        1.25,
+        1.53
+       ],
+       "y7GiniD": [
+        0.0141,
+        0.0138,
+        0.0144
+       ],
+       "eGiniW": [
+        -0.0888,
+        -0.0905,
+        -0.0871
+       ]
+      }
+     }
+    },
+    "core": {
+     "label": "BU buying only food, housing and medical care (v5.2's list)",
+     "cost": 12108,
+     "tau": 1.6,
+     "infl": 24.3,
+     "pLevEnd": 93.844,
+     "pLevEndMed": 91.822,
+     "pLevEndP10": 67.054,
+     "pLevEndP90": 124.69,
+     "giniD": 0.2702,
+     "giniX": 0.2628,
+     "epPY": 0.35,
+     "hrs": -2.7,
+     "fgt2PY": 7.95,
+     "fgt0PY": 51.2,
+     "pov": 71.5,
+     "bOAPy": 32.7,
+     "bNAPy": 34,
+     "bOAMd": 28,
+     "bNAMd": 24,
+     "dFgt2": [
+      -5.1,
+      -5.15,
+      -5.04
+     ],
+     "dF0": [
+      -14.79,
+      -14.95,
+      -14.63
+     ],
+     "dPov": [
+      26.45,
+      26.21,
+      26.69
+     ],
+     "dBO": [
+      1.14,
+      1.02,
+      1.26
+     ],
+     "dBN": [
+      2.51,
+      2.39,
+      2.63
+     ],
+     "grp": {
+      "part": 18781,
+      "non": 3767,
+      "low": 9469,
+      "top": 10153
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": -0.06,
+     "avoidLo": -1,
+     "avoidHi": -6,
+     "avoidW": 513,
+     "avoidWHi": 4558,
+     "avoidJail": 498,
+     "avoidHealth": 15,
+     "srcPay": 11496,
+     "srcTax": 2893,
+     "srcM": 1346,
+     "part19": 43.7,
+     "medWealth": 1200,
+     "hhCostPY": 57.02,
+     "hhCostKidPY": 72.47,
+     "hhFplPY": 6.94,
+     "hhFplKidPY": 10.48,
+     "hhWlthPY": 50.24,
+     "hhWlthKidPY": 61.01,
+     "hhBleiPY": 35.81,
+     "hhBleiKidPY": 44.08,
+     "hhCost7": 52,
+     "hhCostKid7": 67.43,
+     "hhCostEnd": 65.69,
+     "hhCostKidEnd": 79.83,
+     "hhWlthEnd": 73.19,
+     "hhWlthKidEnd": 84.56,
+     "hhGiniEq": 0.2929,
+     "hhMedEq": 33443,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 60.05,
+     "hhCost_sp": 91.2,
+     "hhCost_cn": 26.15,
+     "hhCost_ck": 64.68,
+     "hhWlth_sg": 76.46,
+     "hhWlth_sp": 93.83,
+     "hhWlth_cn": 48.13,
+     "hhWlth_ck": 80.54,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.45,
+     "hhSpN": 208.75,
+     "edcM": 26.42,
+     "edcMagg": 22.4,
+     "edcProxy": 17.94,
+     "fbsAbove": 72.96,
+     "fbsAboveKids": 71.3,
+     "d53": {
+      "hhCostPY": [
+       -15.25,
+       -15.42,
+       -15.08
+      ],
+      "hhCostKidPY": [
+       -16.48,
+       -16.76,
+       -16.19
+      ],
+      "hhWlthEnd": [
+       23.19,
+       22.95,
+       23.43
+      ],
+      "hhWlthKidEnd": [
+       20.26,
+       19.88,
+       20.65
+      ],
+      "hhBleiPY": [
+       0.35,
+       0.2,
+       0.5
+      ],
+      "hhBleiKidPY": [
+       -1.78,
+       -2.07,
+       -1.49
+      ],
+      "hhFplKidPY": [
+       -0.49,
+       -0.59,
+       -0.39
+      ],
+      "hhCostKid7": [
+       -20.12,
+       -20.49,
+       -19.75
+      ],
+      "edcM": [
+       -7.97,
+       -8.05,
+       -7.9
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 27.1,
+     "rkDdW6": 73.696,
+     "rkDdB": 426.6,
+     "rkDdB30": 83.955,
+     "rkEv": 6.535,
+     "rkRec1": 17.024,
+     "rkRec3": 30.103,
+     "rkRec5": 33.233,
+     "rkRecM": 1.891,
+     "rkRecB3": 4.495,
+     "rkReC1": 37.832,
+     "rkReC3": 60.747,
+     "rkReC5": 69.288,
+     "rkReF5": 49.636,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.746,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 34399.204,
+     "pbME": 5840.729,
+     "pbCE": 55527.754,
+     "pbCover": 88.19,
+     "pbExit": 5.898,
+     "pbCash": 2265.529,
+     "pbAprP": 23213.553,
+     "pbAprR": 1959.952,
+     "pbAprC": 23589.909,
+     "pbFill": 100,
+     "pfCut": 6.079,
+     "pfLeave": 1.396,
+     "pfMem": 12.701,
+     "d54": {
+      "rkDdW": [
+       13.273,
+       13.037,
+       13.508
+      ],
+      "rkDdW6": [
+       10.164,
+       9.96,
+       10.367
+      ],
+      "rkDdB30": [
+       11.212,
+       11.013,
+       11.411
+      ],
+      "rkEv": [
+       -0.251,
+       -0.305,
+       -0.196
+      ],
+      "rkRec3": [
+       -4.02,
+       -4.193,
+       -3.846
+      ],
+      "rkRecB3": [
+       -3.702,
+       -3.88,
+       -3.524
+      ],
+      "rkReC5": [
+       -8.174,
+       -8.668,
+       -7.68
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 7.5,
+       "fplX": 2.2,
+       "fplNom": 0.5,
+       "f0": 46.2,
+       "bO": 24.8,
+       "bN": 25.7,
+       "bONom": 17.1,
+       "bNNom": 17.2,
+       "pov": 37.3,
+       "povNom": 26.9,
+       "ep": 0.282,
+       "giniD": 0.2574,
+       "giniX": 0.2527,
+       "giniW": 0.7464,
+       "giniWN": 0.7525
+      },
+      "end": {
+       "fpl": 15.3,
+       "fplX": 5.4,
+       "fplNom": 0.2,
+       "f0": 60.4,
+       "bO": 51.6,
+       "bN": 53.7,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 71.5,
+       "povNom": 50,
+       "ep": 0.515,
+       "giniD": 0.2702,
+       "giniX": 0.2628,
+       "giniW": 0.7381,
+       "giniWN": 0.7415
+      },
+      "py": {
+       "fpl": 9.9,
+       "fplX": 3.1,
+       "fplNom": 0.9,
+       "bONom": 7.9,
+       "bNNom": 8.3
+      },
+      "d": {
+       "y7Fpl": [
+        -0.37,
+        -0.48,
+        -0.25
+       ],
+       "eFpl": [
+        -0.03,
+        -0.19,
+        0.14
+       ],
+       "fplPY": [
+        -0.13,
+        -0.17,
+        -0.08
+       ],
+       "y7FplX": [
+        -2.07,
+        -2.18,
+        -1.96
+       ],
+       "eFplX": [
+        -4.8,
+        -4.99,
+        -4.61
+       ],
+       "y7BO": [
+        -3.21,
+        -3.37,
+        -3.05
+       ],
+       "eBO": [
+        9.57,
+        9.36,
+        9.77
+       ],
+       "y7F0": [
+        -17.07,
+        -17.37,
+        -16.78
+       ],
+       "y7Pov": [
+        4.33,
+        4.16,
+        4.5
+       ],
+       "y7GiniD": [
+        0.0144,
+        0.014,
+        0.0148
+       ],
+       "eGiniW": [
+        -0.0648,
+        -0.0665,
+        -0.063
+       ]
+      }
+     }
+    },
+    "wmodel": {
+     "label": "households' starting savings from the model's own draw (not the SCF)",
+     "vsBase": "bwmodel",
+     "cost": 11726,
+     "tau": 1.6,
+     "infl": 26.7,
+     "pLevEnd": 134.516,
+     "pLevEndMed": 130.817,
+     "pLevEndP10": 94.443,
+     "pLevEndP90": 178.954,
+     "giniD": 0.2775,
+     "giniX": 0.2624,
+     "epPY": 0.422,
+     "hrs": -3.6,
+     "fgt2PY": 8.09,
+     "fgt0PY": 52.1,
+     "pov": 78.3,
+     "bOAPy": 38.5,
+     "bNAPy": 40.3,
+     "bOAMd": 22,
+     "bNAMd": 19,
+     "dFgt2": [
+      -5.03,
+      -5.09,
+      -4.98
+     ],
+     "dF0": [
+      -13.72,
+      -13.87,
+      -13.56
+     ],
+     "dPov": [
+      18.74,
+      18.52,
+      18.96
+     ],
+     "dBO": [
+      0.46,
+      0.32,
+      0.6
+     ],
+     "dBN": [
+      2.3,
+      2.17,
+      2.44
+     ],
+     "grp": {
+      "part": 17943,
+      "non": 3720,
+      "low": 9111,
+      "top": 9780
+     },
+     "worse": "part (w), non (w), PTH (w), low (w), top (w)",
+     "unhousedAvoided": 0.08,
+     "avoidLo": 1,
+     "avoidHi": 8,
+     "avoidW": 497,
+     "avoidWHi": 4420,
+     "avoidJail": 483,
+     "avoidHealth": 14,
+     "srcPay": 11115,
+     "srcTax": 2660,
+     "srcM": 257,
+     "part19": 43.7,
+     "medWealth": -67,
+     "hhCostPY": 58,
+     "hhCostKidPY": 73.51,
+     "hhFplPY": 7.85,
+     "hhFplKidPY": 11.82,
+     "hhWlthPY": 61.89,
+     "hhWlthKidPY": 76.04,
+     "hhBleiPY": 42.47,
+     "hhBleiKidPY": 52.81,
+     "hhCost7": 53.47,
+     "hhCostKid7": 69.34,
+     "hhCostEnd": 67.09,
+     "hhCostKidEnd": 81.05,
+     "hhWlthEnd": 79.59,
+     "hhWlthKidEnd": 90.41,
+     "hhGiniEq": 0.3,
+     "hhMedEq": 31991,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 61.77,
+     "hhCost_sp": 91.75,
+     "hhCost_cn": 26.21,
+     "hhCost_ck": 65.88,
+     "hhWlth_sg": 81.4,
+     "hhWlth_sp": 94.96,
+     "hhWlth_cn": 56.14,
+     "hhWlth_ck": 87.94,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.43,
+     "hhSpN": 205.44,
+     "edcM": 26.8,
+     "edcMagg": 23.13,
+     "edcProxy": 17.25,
+     "fbsAbove": 73.79,
+     "fbsAboveKids": 72.07,
+     "d53": {
+      "hhCostPY": [
+       -14.2,
+       -14.36,
+       -14.03
+      ],
+      "hhCostKidPY": [
+       -15.48,
+       -15.75,
+       -15.2
+      ],
+      "hhWlthEnd": [
+       13.66,
+       13.45,
+       13.87
+      ],
+      "hhWlthKidEnd": [
+       5,
+       4.68,
+       5.32
+      ],
+      "hhBleiPY": [
+       -2.18,
+       -2.36,
+       -2
+      ],
+      "hhBleiKidPY": [
+       -9.44,
+       -9.78,
+       -9.1
+      ],
+      "hhFplKidPY": [
+       0.86,
+       0.74,
+       0.97
+      ],
+      "hhCostKid7": [
+       -18.24,
+       -18.62,
+       -17.87
+      ],
+      "edcM": [
+       -7.7,
+       -7.77,
+       -7.62
+      ]
+     },
+     "kind": "s",
+     "rkDdW": 9.38,
+     "rkDdW6": 68.497,
+     "rkDdB": 149.917,
+     "rkDdB30": 90.688,
+     "rkEv": 6.4,
+     "rkRec1": 16.606,
+     "rkRec3": 29.609,
+     "rkRec5": 32.585,
+     "rkRecM": 1.824,
+     "rkRecB3": 4.462,
+     "rkReC1": 37.502,
+     "rkReC3": 60.623,
+     "rkReC5": 69.594,
+     "rkReF5": 51.204,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.74,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 95767.687,
+     "pbD": 34198.162,
+     "pbME": 5917.661,
+     "pbCE": 55651.864,
+     "pbCover": 88.296,
+     "pbExit": 5.898,
+     "pbCash": 2235.654,
+     "pbAprP": 24830.83,
+     "pbAprR": 1959.952,
+     "pbAprC": 25094.879,
+     "pbFill": 100,
+     "pfCut": 6.078,
+     "pfLeave": 1.392,
+     "pfMem": 12.688,
+     "d54": {
+      "rkDdW": [
+       2.944,
+       2.883,
+       3.004
+      ],
+      "rkDdW6": [
+       16.342,
+       16.082,
+       16.601
+      ],
+      "rkDdB30": [
+       22.026,
+       21.734,
+       22.317
+      ],
+      "rkEv": [
+       -0.401,
+       -0.455,
+       -0.348
+      ],
+      "rkRec3": [
+       -4.149,
+       -4.314,
+       -3.984
+      ],
+      "rkRecB3": [
+       -13.833,
+       -14.047,
+       -13.619
+      ],
+      "rkReC5": [
+       -7.801,
+       -8.29,
+       -7.312
+      ],
+      "emUrate": [
+       0,
+       0,
+       0
+      ]
+     },
+     "rep": {
+      "y7": {
+       "fpl": 8.7,
+       "fplX": 2.1,
+       "fplNom": 0.5,
+       "f0": 47.5,
+       "bO": 32.7,
+       "bN": 34.1,
+       "bONom": 20.6,
+       "bNNom": 20.8,
+       "pov": 53,
+       "povNom": 35.3,
+       "ep": 0.369,
+       "giniD": 0.2627,
+       "giniX": 0.2506,
+       "giniW": 0.6044,
+       "giniWN": 0.6341
+      },
+      "end": {
+       "fpl": 18.1,
+       "fplX": 5.4,
+       "fplNom": 0.3,
+       "f0": 61.8,
+       "bO": 57.2,
+       "bN": 60.3,
+       "bONom": 0,
+       "bNNom": 0,
+       "pov": 78.3,
+       "povNom": 56.5,
+       "ep": 0.587,
+       "giniD": 0.2775,
+       "giniX": 0.2624,
+       "giniW": 0.7645,
+       "giniWN": 0.7682
+      },
+      "py": {
+       "fpl": 11.4,
+       "fplX": 3,
+       "fplNom": 1,
+       "bONom": 7.4,
+       "bNNom": 7.6
+      },
+      "d": {
+       "y7Fpl": [
+        1.01,
+        0.9,
+        1.12
+       ],
+       "eFpl": [
+        2.64,
+        2.47,
+        2.82
+       ],
+       "fplPY": [
+        1.44,
+        1.39,
+        1.49
+       ],
+       "y7FplX": [
+        -2,
+        -2.11,
+        -1.89
+       ],
+       "eFplX": [
+        -4.63,
+        -4.82,
+        -4.44
+       ],
+       "y7BO": [
+        -0.61,
+        -0.82,
+        -0.4
+       ],
+       "eBO": [
+        2.71,
+        2.48,
+        2.95
+       ],
+       "y7F0": [
+        -15.63,
+        -15.93,
+        -15.34
+       ],
+       "y7Pov": [
+        9.77,
+        9.54,
+        10.01
+       ],
+       "y7GiniD": [
+        0.0208,
+        0.0204,
+        0.0212
+       ],
+       "eGiniW": [
+        0.015,
+        0.0133,
+        0.0167
+       ]
+      }
+     }
+    }
+   },
+   "bases": {
+    "agleave": {
+     "label": "no programme, households with ageing, every estate leaving the model",
+     "fgt2PY": 13.377507624004005,
+     "fgt0PY": 71.37209999999999,
+     "pov": 48.97719999999997,
+     "bOAPy": 32.52367999999999,
+     "bNAPy": 32.52367999999999,
+     "bOAMd": 106.79772574672357,
+     "bNAMd": 106.79772574672357,
+     "epPY": 0.3515888439605072,
+     "giniD": 0.250929699742197,
+     "giniX": 0.250929699742197,
+     "svInt": 0,
+     "svIntR": 0,
+     "agRet": 28.8,
+     "agAge": 57.3,
+     "rep": {
+      "y7": {
+       "fpl": 6.7,
+       "fplX": 3.9,
+       "fplNom": 4.6,
+       "f0": 68.7,
+       "bO": 28.4,
+       "bN": 28.4,
+       "bONom": 28.1,
+       "bNNom": 28.1,
+       "pov": 33.9,
+       "povNom": 33.1,
+       "ep": 0.317,
+       "giniD": 0.2517,
+       "giniX": 0.2517,
+       "giniW": 0.7872,
+       "giniWN": 0.7951
+      },
+      "end": {
+       "fpl": 10.7,
+       "fplX": 8.2,
+       "fplNom": 3.7,
+       "f0": 79.7,
+       "bO": 44.3,
+       "bN": 44.3,
+       "bONom": 43.5,
+       "bNNom": 43.5,
+       "pov": 49,
+       "povNom": 47,
+       "ep": 0.456,
+       "giniD": 0.2509,
+       "giniX": 0.2509,
+       "giniW": 0.8257,
+       "giniWN": 0.84
+      },
+      "py": {
+       "fpl": 7.9,
+       "fplX": 5.1,
+       "fplNom": 4.5,
+       "bONom": 32.1,
+       "bNNom": 32.1
+      }
+     },
+     "hhCostPY": 74.43,
+     "hhCostKidPY": 86.5,
+     "hhFplPY": 6.04,
+     "hhFplKidPY": 10,
+     "hhWlthPY": 39.39,
+     "hhWlthKidPY": 47.3,
+     "hhBleiPY": 34.35,
+     "hhBleiKidPY": 41.53,
+     "hhCost7": 72.82,
+     "hhCostKid7": 86.14,
+     "hhCostEnd": 80.88,
+     "hhCostKidEnd": 91.24,
+     "hhWlthEnd": 50.39,
+     "hhWlthKidEnd": 69.11,
+     "hhGiniEq": 0.2738,
+     "hhMedEq": 32878,
+     "hhPer": 555.1,
+     "hhKid": 55.1,
+     "hhCost_sg": 78.96,
+     "hhCost_sp": 96.27,
+     "hhCost_cn": 54.79,
+     "hhCost_ck": 80.01,
+     "hhWlth_sg": 56.01,
+     "hhWlth_sp": 80.68,
+     "hhWlth_cn": 32.88,
+     "hhWlth_ck": 53.21,
+     "hhShare_sg": 31,
+     "hhShare_sp": 10.1,
+     "hhShare_cn": 27.39,
+     "hhShare_ck": 31.52,
+     "hhCostA25": 74.37,
+     "hhCostA35": 73.11,
+     "hhCostA50": 57.57,
+     "hhCostA67": 96.22,
+     "hhSpEx1": 0.32,
+     "hhSpN": 248.88,
+     "edcM": 36.23,
+     "edcMagg": 29.67,
+     "edcProxy": 51.04,
+     "fbsAbove": 0,
+     "fbsAboveKids": 0,
+     "hhBirthR": 28.82,
+     "hhKid0": 188.68,
+     "hhEntK": 72.47,
+     "hhEstP": 0,
+     "hhEstO": 100,
+     "rkDdW": 12.273,
+     "rkDdW6": 63.974,
+     "rkDdB": 164.565,
+     "rkDdB30": 73.504,
+     "rkEv": 6.592,
+     "rkRec1": 15.3,
+     "rkRec3": 27.972,
+     "rkRec5": 31.295,
+     "rkRecM": 2.19,
+     "rkRecB3": 15.636,
+     "rkReC1": 37.315,
+     "rkReC3": 62.662,
+     "rkReC5": 73.283,
+     "rkReF5": 41.684,
+     "emUrate": 3.513,
+     "emSpells": 11.078,
+     "emWeeks": 12.641,
+     "emAuto": 2.259,
+     "emUI": 6.86,
+     "emCut": 10.001,
+     "emLong": 18.032,
+     "emRho": 0.997,
+     "pbV": 0,
+     "pbD": 0,
+     "pbME": 0,
+     "pbCE": 0,
+     "pbCover": 0,
+     "pbExit": 0,
+     "pbCash": 0,
+     "pbAprP": 0,
+     "pbAprR": 0,
+     "pbAprC": 0,
+     "pbFill": 0,
+     "pfCut": 0,
+     "pfLeave": 0,
+     "pfMem": 0
+    },
+    "ltm": {
+     "label": "no programme, wages centred on the US survey's median",
+     "fgt2PY": 6.763824941732025,
+     "fgt0PY": 44.05950000000001,
+     "pov": 32.18480000000002,
+     "bOAPy": 22.472060000000006,
+     "bNAPy": 22.472060000000006,
+     "bOAMd": 546.5587978506453,
+     "bNAMd": 546.5587978506453,
+     "epPY": 0.35260475428834787,
+     "giniD": 0.2572232592532751,
+     "giniX": 0.2572232592532751,
+     "svInt": 0,
+     "svIntR": 0,
+     "agRet": 0,
+     "agAge": 0,
+     "rep": {
+      "y7": {
+       "fpl": 3,
+       "fplX": 1.4,
+       "fplNom": 2,
+       "f0": 41.1,
+       "bO": 19.9,
+       "bN": 19.9,
+       "bONom": 19.7,
+       "bNNom": 19.7,
+       "pov": 24.6,
+       "povNom": 23.8,
+       "ep": 0.319,
+       "giniD": 0.2413,
+       "giniX": 0.2413,
+       "giniW": 0.7474,
+       "giniWN": 0.7524
+      },
+      "end": {
+       "fpl": 6.4,
+       "fplX": 3.5,
+       "fplNom": 2.2,
+       "f0": 52.1,
+       "bO": 29.4,
+       "bN": 29.4,
+       "bONom": 29,
+       "bNNom": 29,
+       "pov": 32.2,
+       "povNom": 30.9,
+       "ep": 0.45,
+       "giniD": 0.2572,
+       "giniX": 0.2572,
+       "giniW": 0.7366,
+       "giniWN": 0.7434
+      },
+      "py": {
+       "fpl": 4,
+       "fplX": 2,
+       "fplNom": 2.1,
+       "bONom": 22.2,
+       "bNNom": 22.2
+      }
+     },
+     "hhCostPY": 51.43,
+     "hhCostKidPY": 70.94,
+     "hhFplPY": 2.95,
+     "hhFplKidPY": 4.7,
+     "hhWlthPY": 31.1,
+     "hhWlthKidPY": 42.86,
+     "hhBleiPY": 26.58,
+     "hhBleiKidPY": 37.44,
+     "hhCost7": 48.49,
+     "hhCostKid7": 68.17,
+     "hhCostEnd": 59.3,
+     "hhCostKidEnd": 78.44,
+     "hhWlthEnd": 37.88,
+     "hhWlthKidEnd": 53.46,
+     "hhGiniEq": 0.2838,
+     "hhMedEq": 47131,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 52.8,
+     "hhCost_sp": 90.8,
+     "hhCost_cn": 14.86,
+     "hhCost_ck": 61.83,
+     "hhWlth_sg": 39.67,
+     "hhWlth_sp": 81.6,
+     "hhWlth_cn": 9.08,
+     "hhWlth_ck": 42.99,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.48,
+     "hhSpN": 254.92,
+     "edcM": 26.15,
+     "edcMagg": 20.2,
+     "edcProxy": 42.99,
+     "fbsAbove": 0,
+     "fbsAboveKids": 0,
+     "rkDdW": 5.664,
+     "rkDdW6": 49.03,
+     "rkDdB": 73.118,
+     "rkDdB30": 62.525,
+     "rkEv": 6.789,
+     "rkRec1": 18.709,
+     "rkRec3": 34.753,
+     "rkRec5": 39.053,
+     "rkRecM": 2.08,
+     "rkRecB3": 23.094,
+     "rkReC1": 36.101,
+     "rkReC3": 61.038,
+     "rkReC5": 71.86,
+     "rkReF5": 31.741,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.827,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 0,
+     "pbD": 0,
+     "pbME": 0,
+     "pbCE": 0,
+     "pbCover": 0,
+     "pbExit": 0,
+     "pbCash": 0,
+     "pbAprP": 0,
+     "pbAprR": 0,
+     "pbAprC": 0,
+     "pbFill": 0,
+     "pfCut": 0,
+     "pfLeave": 0,
+     "pfMem": 0
+    },
+    "bwmodel": {
+     "label": "no programme, households' starting savings from the model's own draw",
+     "fgt2PY": 13.12029724140734,
+     "fgt0PY": 65.86565999999995,
+     "pov": 59.53879999999999,
+     "bOAPy": 37.99809999999999,
+     "bNAPy": 37.99809999999999,
+     "bOAMd": 11.03080200243251,
+     "bNAMd": 11.03080200243251,
+     "epPY": 0.42977609139321216,
+     "giniD": 0.2635338813854917,
+     "giniX": 0.2635338813854917,
+     "svInt": 0,
+     "svIntR": 0,
+     "agRet": 0,
+     "agAge": 0,
+     "rep": {
+      "y7": {
+       "fpl": 7.7,
+       "fplX": 4.1,
+       "fplNom": 5.3,
+       "f0": 63.1,
+       "bO": 33.3,
+       "bN": 33.3,
+       "bONom": 32.8,
+       "bNNom": 32.8,
+       "pov": 43.2,
+       "povNom": 41.7,
+       "ep": 0.384,
+       "giniD": 0.2419,
+       "giniX": 0.2419,
+       "giniW": 0.6393,
+       "giniWN": 0.6916
+      },
+      "end": {
+       "fpl": 15.5,
+       "fplX": 10,
+       "fplNom": 5.4,
+       "f0": 73,
+       "bO": 54.5,
+       "bN": 54.5,
+       "bONom": 53.8,
+       "bNNom": 53.8,
+       "pov": 59.5,
+       "povNom": 57.4,
+       "ep": 0.573,
+       "giniD": 0.2635,
+       "giniX": 0.2635,
+       "giniW": 0.7494,
+       "giniWN": 0.8252
+      },
+      "py": {
+       "fpl": 9.9,
+       "fplX": 5.8,
+       "fplNom": 5.5,
+       "bONom": 37.5,
+       "bNNom": 37.5
+      }
+     },
+     "hhCostPY": 72.2,
+     "hhCostKidPY": 88.98,
+     "hhFplPY": 7.2,
+     "hhFplKidPY": 10.96,
+     "hhWlthPY": 53.28,
+     "hhWlthKidPY": 72.06,
+     "hhBleiPY": 44.65,
+     "hhBleiKidPY": 62.25,
+     "hhCost7": 69.82,
+     "hhCostKid7": 87.59,
+     "hhCostEnd": 78.42,
+     "hhCostKidEnd": 92.89,
+     "hhWlthEnd": 65.93,
+     "hhWlthKidEnd": 85.41,
+     "hhGiniEq": 0.2921,
+     "hhMedEq": 33167,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 73.24,
+     "hhCost_sp": 96.9,
+     "hhCost_cn": 38.04,
+     "hhCost_ck": 84.67,
+     "hhWlth_sg": 66.93,
+     "hhWlth_sp": 95.81,
+     "hhWlth_cn": 26.93,
+     "hhWlth_ck": 79.89,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.45,
+     "hhSpN": 215.67,
+     "edcM": 34.5,
+     "edcMagg": 27.08,
+     "edcProxy": 49.51,
+     "fbsAbove": 0,
+     "fbsAboveKids": 0,
+     "rkDdW": 6.436,
+     "rkDdW6": 52.156,
+     "rkDdB": 73.201,
+     "rkDdB30": 68.662,
+     "rkEv": 6.801,
+     "rkRec1": 18.353,
+     "rkRec3": 33.758,
+     "rkRec5": 37.742,
+     "rkRecM": 2.012,
+     "rkRecB3": 18.295,
+     "rkReC1": 40.492,
+     "rkReC3": 66.691,
+     "rkReC5": 77.395,
+     "rkReF5": 47.728,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.827,
+     "emCut": 10.001,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 0,
+     "pbD": 0,
+     "pbME": 0,
+     "pbCE": 0,
+     "pbCover": 0,
+     "pbExit": 0,
+     "pbCash": 0,
+     "pbAprP": 0,
+     "pbAprR": 0,
+     "pbAprC": 0,
+     "pbFill": 0,
+     "pfCut": 0,
+     "pfLeave": 0,
+     "pfMem": 0
+    },
+    "bcut0": {
+     "label": "no programme, no pay cut on return to work",
+     "fgt2PY": 11.380697264336476,
+     "fgt0PY": 62.25127999999999,
+     "pov": 42.792000000000016,
+     "bOAPy": 30.64986000000002,
+     "bNAPy": 30.64986000000002,
+     "bOAMd": 268.13371768772345,
+     "bNAMd": 268.13371768772345,
+     "epPY": 0.3338051542203581,
+     "giniD": 0.2475832090134518,
+     "giniX": 0.2475832090134518,
+     "svInt": 0,
+     "svIntR": 0,
+     "agRet": 0,
+     "agAge": 0,
+     "rep": {
+      "y7": {
+       "fpl": 6.9,
+       "fplX": 3.6,
+       "fplNom": 4.7,
+       "f0": 61.2,
+       "bO": 27.6,
+       "bN": 27.6,
+       "bONom": 27.3,
+       "bNNom": 27.3,
+       "pov": 32.6,
+       "povNom": 31.9,
+       "ep": 0.308,
+       "giniD": 0.2405,
+       "giniX": 0.2405,
+       "giniW": 0.7805,
+       "giniWN": 0.788
+      },
+      "end": {
+       "fpl": 9.7,
+       "fplX": 5.8,
+       "fplNom": 3.1,
+       "f0": 65.2,
+       "bO": 39.7,
+       "bN": 39.7,
+       "bONom": 39.3,
+       "bNNom": 39.3,
+       "pov": 42.8,
+       "povNom": 41.5,
+       "ep": 0.413,
+       "giniD": 0.2476,
+       "giniX": 0.2476,
+       "giniW": 0.7928,
+       "giniWN": 0.8033
+      },
+      "py": {
+       "fpl": 7.7,
+       "fplX": 4.3,
+       "fplNom": 4.3,
+       "bONom": 30.4,
+       "bNNom": 30.4
+      }
+     },
+     "hhCostPY": 69.05,
+     "hhCostKidPY": 87.05,
+     "hhFplPY": 5.68,
+     "hhFplKidPY": 8.85,
+     "hhWlthPY": 39.1,
+     "hhWlthKidPY": 50.21,
+     "hhBleiPY": 34.64,
+     "hhBleiKidPY": 45.19,
+     "hhCost7": 68.09,
+     "hhCostKid7": 86.34,
+     "hhCostEnd": 71.76,
+     "hhCostKidEnd": 89.17,
+     "hhWlthEnd": 47.97,
+     "hhWlthKidEnd": 62.82,
+     "hhGiniEq": 0.2767,
+     "hhMedEq": 38857,
+     "hhPer": 688.68,
+     "hhKid": 188.68,
+     "hhCost_sg": 70.41,
+     "hhCost_sp": 96.46,
+     "hhCost_cn": 32.55,
+     "hhCost_ck": 82.01,
+     "hhWlth_sg": 51.08,
+     "hhWlth_sp": 86.71,
+     "hhWlth_cn": 18.03,
+     "hhWlth_ck": 54.1,
+     "hhShare_sg": 22.22,
+     "hhShare_sp": 9.57,
+     "hhShare_cn": 23.82,
+     "hhShare_ck": 44.39,
+     "hhCostA25": 0,
+     "hhCostA35": 0,
+     "hhCostA50": 0,
+     "hhCostA67": 0,
+     "hhSpEx1": 0.49,
+     "hhSpN": 212.41,
+     "edcM": 32.41,
+     "edcMagg": 25.55,
+     "edcProxy": 48.37,
+     "fbsAbove": 0,
+     "fbsAboveKids": 0,
+     "rkDdW": 11.939,
+     "rkDdW6": 60.134,
+     "rkDdB": 159.051,
+     "rkDdB30": 69.366,
+     "rkEv": 5.487,
+     "rkRec1": 29.566,
+     "rkRec3": 56.822,
+     "rkRec5": 64.746,
+     "rkRecM": 2.2,
+     "rkRecB3": 11.281,
+     "rkReC1": 37.798,
+     "rkReC3": 62.78,
+     "rkReC5": 73.387,
+     "rkReF5": 42.119,
+     "emUrate": 3.587,
+     "emSpells": 11.192,
+     "emWeeks": 12.689,
+     "emAuto": 2.377,
+     "emUI": 6.833,
+     "emCut": 0,
+     "emLong": 18.068,
+     "emRho": 0.997,
+     "pbV": 0,
+     "pbD": 0,
+     "pbME": 0,
+     "pbCE": 0,
+     "pbCover": 0,
+     "pbExit": 0,
+     "pbCash": 0,
+     "pbAprP": 0,
+     "pbAprR": 0,
+     "pbAprC": 0,
+     "pbFill": 0,
+     "pfCut": 0,
+     "pfLeave": 0,
+     "pfMem": 0
+    }
+   }
+  }
+ }
+}

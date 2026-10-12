@@ -1,0 +1,35 @@
+start 2026-10-12T18:57:49Z at fe88599, 16 at a time, max 7 h
+p40 st 1 6 done 2026-10-12T20:01:15Z exit 0
+p40 st 3 6 done 2026-10-12T20:10:12Z exit 0
+p40 st 0 6 done 2026-10-12T20:11:05Z exit 0
+p40 ref 4 6 done 2026-10-12T20:14:43Z exit 0
+p40 st 2 6 done 2026-10-12T20:17:19Z exit 0
+p40 ref 1 6 done 2026-10-12T20:17:51Z exit 0
+p40 adv 1 6 done 2026-10-12T20:19:42Z exit 0
+p40 ref 3 6 done 2026-10-12T20:21:37Z exit 0
+p40 ref 5 6 done 2026-10-12T20:23:19Z exit 0
+p40 ref 0 6 done 2026-10-12T20:24:41Z exit 0
+p40 adv 5 6 done 2026-10-12T20:26:11Z exit 0
+p40 adv 0 6 done 2026-10-12T20:26:11Z exit 0
+p40 adv 3 6 done 2026-10-12T20:26:12Z exit 0
+p40 adv 4 6 done 2026-10-12T20:28:14Z exit 0
+p40 ref 2 6 done 2026-10-12T20:34:30Z exit 0
+p40 adv 2 6 done 2026-10-12T20:36:50Z exit 0
+bk ref done 2026-10-12T20:52:24Z exit 0
+bk adv done 2026-10-12T20:54:29Z exit 0
+bk st done 2026-10-12T21:05:45Z exit 0
+p20 ref 1 4 done 2026-10-12T21:10:57Z exit 0
+p40 st 4 6 done 2026-10-12T21:13:00Z exit 0
+p20 st 1 4 done 2026-10-12T21:14:52Z exit 0
+p20 st 3 4 done 2026-10-12T21:15:06Z exit 0
+p20 ref 2 4 done 2026-10-12T21:17:02Z exit 0
+p20 ref 0 4 done 2026-10-12T21:17:09Z exit 0
+p20 st 2 4 done 2026-10-12T21:17:14Z exit 0
+p20 ref 3 4 done 2026-10-12T21:17:26Z exit 0
+p20 st 0 4 done 2026-10-12T21:17:33Z exit 0
+p40 st 5 6 done 2026-10-12T21:17:57Z exit 0
+p20 adv 1 4 done 2026-10-12T21:18:25Z exit 0
+p20 adv 2 4 done 2026-10-12T21:20:50Z exit 0
+p20 adv 3 4 done 2026-10-12T21:20:50Z exit 0
+p20 adv 0 4 done 2026-10-12T21:21:03Z exit 0
+all done 2026-10-12T21:21:05Z
