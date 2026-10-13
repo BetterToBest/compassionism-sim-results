@@ -1,0 +1,6 @@
+gsa sobol st (1588 s) -> dev/runs/v54/s137b-sobol-st-lo27.json
+fgt0PY: part S 1.01 ST 0.55; bu S 0.43 ST 0.46; rho S 0.32 ST 0.11; spend S -0.00 ST 0.00; payCut S -0.02 ST 0.00; bleiBonus S 0.02 ST 0.06; tax S -0.11 ST 0.01; eps S 0.02 ST 0.00; pthUptake S -0.00 ST 0.00; maxMult S -0.01 ST 0.00; ptfOther S 0.00 ST 0.00
+pov: part S 0.53 ST 0.14; bu S 0.16 ST 0.14; rho S -0.17 ST 0.14; spend S 0.00 ST 0.47; payCut S 0.08 ST 0.10; bleiBonus S 0.03 ST 0.02; tax S 0.04 ST 0.01; eps S -0.06 ST 0.01; pthUptake S -0.01 ST 0.00; maxMult S 0.01 ST 0.01; ptfOther S -0.00 ST 0.00
+bOAPy: part S 1.05 ST 0.84; bu S 0.21 ST 0.27; rho S 0.06 ST 0.01; spend S 0.01 ST 0.00; payCut S -0.04 ST 0.01; bleiBonus S 0.01 ST 0.00; tax S -0.01 ST 0.00; eps S 0.00 ST 0.00; pthUptake S -0.00 ST 0.01; maxMult S -0.00 ST 0.00; ptfOther S -0.00 ST 0.00
+cost: part S 1.30 ST 0.61; bu S 0.53 ST 0.54; rho S 0.02 ST 0.00; spend S -0.00 ST 0.00; payCut S -0.03 ST 0.00; bleiBonus S 0.00 ST 0.00; tax S -0.15 ST 0.01; eps S 0.01 ST 0.00; pthUptake S -0.00 ST 0.00; maxMult S -0.02 ST 0.01; ptfOther S 0.00 ST 0.00
+endoAnn: part S 1.90 ST 0.86; bu S 0.21 ST 0.20; rho S -0.10 ST 0.04; spend S 0.00 ST 0.00; payCut S 0.18 ST 0.02; bleiBonus S -0.01 ST 0.00; tax S -0.09 ST 0.00; eps S -0.04 ST 0.00; pthUptake S 0.00 ST 0.00; maxMult S 0.01 ST 0.00; ptfOther S 0.00 ST 0.00
