@@ -17,3 +17,10 @@ trajectory 16 of 20 (1723 s)
 trajectory 17 of 20 (1821 s)
 trajectory 18 of 20 (1931 s)
 trajectory 19 of 20 (2034 s)
+trajectory 20 of 20 (2146 s)
+gsa morris adv (2146 s) -> dev/runs/v54/s137-morris-adv-lo11.json
+fgt0PY: part 19.09, bu 12.73, rho 9.13, bleiBonus 5.54, tax 1.45, eps 1.23
+pov: spend 16.24, rho 7.22, part 7.00, payCut 6.49, bu 5.73, eps 2.61
+bOAPy: part 19.44, bu 8.63, rho 2.27, payCut 1.74, pthUptake 1.49, bleiBonus 0.88
+cost: part 13999.34, bu 10412.26, tax 1589.81, maxMult 1218.00, ptfOther 1045.62, ptfShare 861.24
+endoAnn: part 33.57, bu 14.80, rho 7.68, payCut 4.69, eps 2.59, bleiBonus 2.18
