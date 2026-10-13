@@ -66,3 +66,4 @@ hc table adv 301 25 done 2026-10-13T11:25:10Z exit 0
 hc table adv 401 25 done 2026-10-13T11:25:35Z exit 0
 hc table adv 326 25 done 2026-10-13T11:25:56Z exit 0
 hc table adv 351 25 done 2026-10-13T11:26:32Z exit 0
+hc table st 1 25 done 2026-10-13T11:26:37Z exit 0
