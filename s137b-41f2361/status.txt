@@ -13,3 +13,4 @@ sobol st lo23 done 2026-10-13T18:41:39Z exit 0
 sobol st lo29 done 2026-10-13T18:41:45Z exit 0
 sobol st lo11 done 2026-10-13T18:41:45Z exit 0
 sobol st lo31 done 2026-10-13T18:41:46Z exit 0
+sobol st lo17 done 2026-10-13T18:41:47Z exit 0
