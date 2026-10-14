@@ -20,3 +20,4 @@ bk ref done 2026-10-14T06:16:31Z exit 0
 iso ref 40 done 2026-10-14T06:31:53Z exit 0
 bk adv done 2026-10-14T06:35:31Z exit 0
 iso adv 20 done 2026-10-14T06:44:04Z exit 0
+p40 st 4 6 done 2026-10-14T06:44:12Z exit 0
