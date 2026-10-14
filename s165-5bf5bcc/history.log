@@ -1,0 +1,11 @@
+history check, 500 seeds, 197 s; model = shock minus no shock (points), data = change from the base year
+  rec: 2007 x1.000 noSN 0.00 SN 0.00 [0.00, 0.00] off 0; 2008 x0.966 noSN 1.53 SN 1.53 [0.20, 3.00] off 0.7; 2009 x0.960 noSN 2.90 SN 2.89 [1.20, 4.80] off 1.8; 2010 x0.937 noSN 4.92 SN 4.90 [2.80, 7.20] off 2.6; 2011 x0.923 noSN 6.48 SN 6.43 [4.20, 8.80] off 2.5; 2012 x0.923 noSN 6.90 SN 6.86 [4.40, 9.40] off 2.5
+  c20: 2019 x1.000 noSN 0.00 SN 0.00 [0.00, 0.00] off 0; 2020 x0.980 noSN 1.53 SN 1.53 [0.20, 3.00] off 1; 2021 x0.976 noSN 2.90 SN 2.89 [1.20, 4.80] off 1.1
+  1. matches: model 2.89 / 4.9, data 1.8 / 2.6
+  2. same direction, different size: model 6.86 (2012), data 2.6
+  3. does not match: model 2012, data 2010
+  4. reported: model -, data 3.85
+  5. same direction, different size: model 0.48, data 72.96
+  6. matches: model 1.53, data 1
+  7. reported: model 1.53, data -2.6
+wrote /w/res/s165-5bf5bcc/history-check.json.tmp
