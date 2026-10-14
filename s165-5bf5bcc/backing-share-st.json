@@ -1,0 +1,251 @@
+{
+ "_meta": {
+  "engine": "release engine (harness.js testbed, section backing)",
+  "manifest": {
+   "commit": "5bf5bcc0e31d10e8fab8443f4d3972988e4bdf3b",
+   "dirty": false,
+   "node": "v22.22.0",
+   "harnessSha256": "bed37dfc44ebea534098903eeaba8332c9c9837be1043eec615da7679449eedb",
+   "engineBlockSha256": "973e7ce472d159cdcd17fe2cb38d0fc9b4c604bc1db641e3298ef513155136da",
+   "indexSha256": "4e82ae901a797eacdfce32b9e889161aae155a2d06cb3ad1ef995e8ab09f8b64",
+   "engineSha256": "85425e6400d1fa08ad019584d65c22b9097c659e59a3de27442f926e1691ac2f"
+  },
+  "seeds": 500,
+  "agents": 500,
+  "written": "2026-10-14",
+  "years": 20,
+  "shares": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "command": "node harness.js testbed 500 backing st --v54 --json=dev/runs/backing-share-ENV.json --snab --slope",
+  "sn": {
+   "gross": 2,
+   "snapTake": 0.88,
+   "taxTake": 0.808,
+   "snap": true,
+   "eitc": true,
+   "ctc": true,
+   "abawd": true,
+   "abawdEx": 0.08,
+   "slope": true
+  }
+ },
+ "envs": {
+  "st": {
+   "name": "Stress Test",
+   "base": {
+    "fgt0PY": 65.99382000000006,
+    "pov": 45.086800000000004,
+    "bOAPy": 31.56534000000002,
+    "bNAPy": 31.56534000000002,
+    "epPY": 0.3464838347885294
+   },
+   "rows": {
+    "a0": {
+     "a": 0,
+     "pov": 76.3,
+     "fgt0PY": 52.8,
+     "bOAPy": 35.3,
+     "bNAPy": 37.2,
+     "infl": 27.4,
+     "pLevEnd": 149.683,
+     "pLevEndMed": 145.138,
+     "pLevEndP10": 104.524,
+     "pLevEndP90": 201.702,
+     "cost": 11693,
+     "srcPay": 11082,
+     "srcM": 255,
+     "dPov": [
+      31.16,
+      30.93,
+      31.4
+     ],
+     "dF0": [
+      -13.19,
+      -13.34,
+      -13.04
+     ],
+     "dBO": [
+      3.77,
+      3.65,
+      3.89
+     ],
+     "dBN": [
+      5.64,
+      5.53,
+      5.76
+     ],
+     "dInfl": [
+      27.4,
+      27.25,
+      27.55
+     ]
+    },
+    "a25": {
+     "a": 0.25,
+     "pov": 68.6,
+     "fgt0PY": 52,
+     "bOAPy": 32.5,
+     "bNAPy": 34.1,
+     "infl": 20.9,
+     "pLevEnd": 54.714,
+     "pLevEndMed": 53.563,
+     "pLevEndP10": 41.042,
+     "pLevEndP90": 70.213,
+     "cost": 12029,
+     "srcPay": 11413,
+     "srcM": 274,
+     "dPov": [
+      23.5,
+      23.26,
+      23.73
+     ],
+     "dF0": [
+      -14,
+      -14.15,
+      -13.84
+     ],
+     "dBO": [
+      0.97,
+      0.85,
+      1.08
+     ],
+     "dBN": [
+      2.55,
+      2.44,
+      2.66
+     ],
+     "dInfl": [
+      20.9,
+      20.78,
+      21.01
+     ]
+    },
+    "a50": {
+     "a": 0.5,
+     "pov": 57.9,
+     "fgt0PY": 51,
+     "bOAPy": 29.2,
+     "bNAPy": 30.5,
+     "infl": 14.2,
+     "pLevEnd": 18.276,
+     "pLevEndMed": 18.055,
+     "pLevEndP10": 14.881,
+     "pLevEndP90": 21.995,
+     "cost": 12409,
+     "srcPay": 11786,
+     "srcM": 299,
+     "dPov": [
+      12.85,
+      12.63,
+      13.07
+     ],
+     "dF0": [
+      -15.02,
+      -15.17,
+      -14.86
+     ],
+     "dBO": [
+      -2.38,
+      -2.49,
+      -2.27
+     ],
+     "dBN": [
+      -1.1,
+      -1.21,
+      -0.99
+     ],
+     "dInfl": [
+      14.17,
+      14.09,
+      14.25
+     ]
+    },
+    "a75": {
+     "a": 0.75,
+     "pov": 45.1,
+     "fgt0PY": 49.7,
+     "bOAPy": 25.5,
+     "bNAPy": 26.6,
+     "infl": 7.2,
+     "pLevEnd": 5.487,
+     "pLevEndMed": 5.466,
+     "pLevEndP10": 4.909,
+     "pLevEndP90": 6.096,
+     "cost": 12836,
+     "srcPay": 12208,
+     "srcM": 331,
+     "dPov": [
+      -0.02,
+      -0.21,
+      0.17
+     ],
+     "dF0": [
+      -16.34,
+      -16.51,
+      -16.18
+     ],
+     "dBO": [
+      -6.02,
+      -6.13,
+      -5.9
+     ],
+     "dBN": [
+      -5,
+      -5.11,
+      -4.89
+     ],
+     "dInfl": [
+      7.21,
+      7.17,
+      7.25
+     ]
+    },
+    "a100": {
+     "a": 1,
+     "pov": 36.1,
+     "fgt0PY": 52.6,
+     "bOAPy": 23.8,
+     "bNAPy": 24.4,
+     "infl": 0,
+     "pLevEnd": 1.457,
+     "pLevEndMed": 1.457,
+     "pLevEndP10": 1.457,
+     "pLevEndP90": 1.457,
+     "cost": 9566,
+     "srcPay": 8935,
+     "srcM": 247,
+     "dPov": [
+      -8.96,
+      -9.11,
+      -8.81
+     ],
+     "dF0": [
+      -13.41,
+      -13.55,
+      -13.27
+     ],
+     "dBO": [
+      -7.74,
+      -7.85,
+      -7.64
+     ],
+     "dBN": [
+      -7.12,
+      -7.22,
+      -7.02
+     ],
+     "dInfl": [
+      0,
+      0,
+      0
+     ]
+    }
+   }
+  }
+ }
+}

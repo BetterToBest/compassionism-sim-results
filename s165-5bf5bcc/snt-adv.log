@@ -1,0 +1,3 @@
+[adv, released]
+  base slope: basket +0.020 [0.018, 0.022]  depth -1.098 [-1.115, -1.081]  wealth +0.031 [0.012, 0.050]  hours -0.038 [-0.038, -0.038]  benefits $1617  rate 22.9%
+  prog slope: basket -0.258 [-0.292, -0.225]  depth -0.469 [-0.476, -0.462]  wealth +0.955 [0.904, 1.006]  hours -0.036 [-0.036, -0.035]  benefits $1603  rate 20.1%
