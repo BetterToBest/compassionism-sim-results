@@ -42,3 +42,4 @@ iso st 40 done 2026-10-14T07:00:51Z exit 0
 ex st 20 done 2026-10-14T07:03:25Z exit 0
 ex ref 20 done 2026-10-14T07:04:11Z exit 0
 snt st done 2026-10-14T07:07:25Z exit 0
+snt ref done 2026-10-14T07:09:02Z exit 0
