@@ -1,3 +1,6 @@
 [ref, released]
   base slope: basket +0.051 [0.048, 0.055]  depth -0.399 [-0.411, -0.387]  wealth +0.088 [0.069, 0.107]  hours -0.027 [-0.027, -0.027]  benefits $1084  rate 26.6%
   prog slope: basket -0.081 [-0.113, -0.050]  depth -0.222 [-0.226, -0.217]  wealth +0.751 [0.705, 0.797]  hours -0.027 [-0.027, -0.026]  benefits $1112  rate 24.4%
+[ref, noWork]
+  base slope: basket +0.104 [0.100, 0.109]  depth -1.077 [-1.090, -1.063]  wealth -0.026 [-0.045, -0.008]  hours +0.000 [0.000, 0.000]  benefits $735  rate 23.5%
+  prog slope: basket -1.257 [-1.296, -1.217]  depth -0.278 [-0.283, -0.273]  wealth +0.051 [0.029, 0.073]  hours +0.000 [0.000, 0.000]  benefits $569  rate 22.4%
