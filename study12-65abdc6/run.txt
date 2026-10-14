@@ -1,0 +1,1 @@
+study study12; engine 65abdc6b7575c30ef0b1218f62069219e49d410b; runner 23c509554a8cefd88b164739e85f8f0b31e7676d; node v22.22.0; 16 vCPU; pod hsa5yxhf0lwj4s; start 2026-10-14T11:52:59Z; command: ON_DONE=... dev/tools/study12_jobs.sh /w/engine /w/res/study12-65abdc6 --max-hours=4
