@@ -4,3 +4,7 @@
 [st, noWork]
   base slope: basket -0.011 [-0.014, -0.009]  depth -2.092 [-2.114, -2.071]  wealth -0.187 [-0.210, -0.164]  hours +0.000 [0.000, 0.000]  benefits $1226  rate 23.5%
   prog slope: basket -0.439 [-0.456, -0.423]  depth -1.365 [-1.381, -1.350]  wealth -0.024 [-0.042, -0.006]  hours +0.000 [0.000, 0.000]  benefits $1120  rate 23.5%
+[st, flat]
+  base slope: basket +0.015 [0.013, 0.017]  depth -1.100 [-1.117, -1.083]  wealth +0.028 [0.009, 0.047]  hours -0.038 [-0.038, -0.038]  benefits $1617  rate 22.9%
+  prog slope: basket +0.268 [0.253, 0.284]  depth -0.824 [-0.837, -0.811]  wealth +0.164 [0.126, 0.202]  hours -0.035 [-0.035, -0.035]  benefits $1521  rate 22.4%
+wrote /w/res/s165-5bf5bcc/sn-trace-st.json.tmp (1105 s)
