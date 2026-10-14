@@ -45,3 +45,4 @@ snt st done 2026-10-14T07:07:25Z exit 0
 snt ref done 2026-10-14T07:09:02Z exit 0
 snt adv done 2026-10-14T07:09:32Z exit 0
 ex adv 20 done 2026-10-14T07:10:00Z exit 0
+ex st 40 done 2026-10-14T07:10:23Z exit 0
