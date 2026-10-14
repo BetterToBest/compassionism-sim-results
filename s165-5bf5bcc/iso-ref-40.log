@@ -1,0 +1,3 @@
+[ref] base, rule off -> on: fgt0PY 42.153 -> 42.152; fgt2PY 6.076 -> 6.080; pov 31.478 -> 31.478; bOAPy 28.736 -> 28.735; snSnap 15.473 -> 15.460; snSnapM 601.344 -> 595.986; snAll 947.618 -> 942.203; hrs -0.023 -> -0.023; emp 99.808 -> 99.808; snAbN 0.000 -> 0.624; snAbM 0.000 -> 5.123; snAbLost 0.000 -> 0.026
+[ref] release, rule off -> on: fgt0PY 16.059 -> 16.063; fgt2PY 1.054 -> 1.056; pov 32.808 -> 32.803; bOAPy 11.292 -> 11.293; snSnap 16.783 -> 16.761; snSnapM 639.834 -> 633.845; snAll 1005.564 -> 999.322; hrs -0.079 -> -0.078; emp 99.805 -> 99.805; snAbN 0.000 -> 0.654; snAbM 0.000 -> 5.527; snAbLost 0.000 -> 0.029
+[ref] wrote /w/res/s165-5bf5bcc/snap-iso-ref-40.json.tmp (1204 s)
