@@ -4,3 +4,4 @@ study ref 20 done 2026-10-14T12:10:22Z exit 0
 study adv 20 done 2026-10-14T12:10:28Z exit 0
 study st 40 done 2026-10-14T12:24:00Z exit 0
 study adv 40 done 2026-10-14T12:27:22Z exit 0
+study ref 40 done 2026-10-14T12:29:04Z exit 0
