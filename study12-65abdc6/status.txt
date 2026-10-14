@@ -2,3 +2,4 @@ start 2026-10-14T11:52:59Z at 65abdc6, 16 at a time, max 4 h
 study st 20 done 2026-10-14T12:06:52Z exit 0
 study ref 20 done 2026-10-14T12:10:22Z exit 0
 study adv 20 done 2026-10-14T12:10:28Z exit 0
+study st 40 done 2026-10-14T12:24:00Z exit 0
