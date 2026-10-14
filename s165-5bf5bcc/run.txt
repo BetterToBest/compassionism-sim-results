@@ -1,0 +1,1 @@
+study s165; engine 5bf5bcc0e31d10e8fab8443f4d3972988e4bdf3b; runner 1125516da28cbeb0927901c9887867c57ad1f9a1; node v22.22.0; 16 vCPU; pod objddch5qd3pa8; start 2026-10-14T04:16:56Z; command: ON_DONE=... dev/tools/s165_jobs.sh /w/engine /w/res/s165-5bf5bcc --max-hours=5
