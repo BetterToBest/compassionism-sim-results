@@ -1,0 +1,2 @@
+start 2026-10-15T22:34:07Z at cfc3322, 32 at a time, max 14 h
+cmp ref 20 money done 2026-10-15T22:41:18Z exit 0

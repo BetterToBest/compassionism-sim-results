@@ -1,0 +1,1 @@
+study s171; engine cfc33228015b7b1f016e9181486588c1d6867aa7; runner ab49ab428a6cb1aafd3fbe6db372672b6bec148b; node v22.22.0; 32 vCPU; pod 7yzaxvjm0tbraq; start 2026-10-15T22:34:07Z; command: ON_DONE=... dev/tools/s171_jobs.sh /w/engine /w/res/s171-cfc3322 --max-hours=14
