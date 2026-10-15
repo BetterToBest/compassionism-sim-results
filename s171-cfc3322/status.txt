@@ -10,3 +10,4 @@ cmp ref 40 money done 2026-10-15T22:46:23Z exit 0
 cmp st 40 tax done 2026-10-15T22:47:35Z exit 0
 cmp st 40 money done 2026-10-15T22:48:06Z exit 0
 cmp adv 40 tax done 2026-10-15T22:48:43Z exit 0
+cmp adv 40 money done 2026-10-15T22:49:07Z exit 0
