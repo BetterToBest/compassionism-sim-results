@@ -31,3 +31,4 @@ p40 st 4 6 done 2026-10-16T00:25:26Z exit 0
 p40 st 0 6 done 2026-10-16T00:26:04Z exit 0
 p40 st 2 6 done 2026-10-16T00:30:27Z exit 0
 p40 ref 1 6 done 2026-10-16T00:31:44Z exit 0
+p40 adv 1 6 done 2026-10-16T00:31:50Z exit 0
