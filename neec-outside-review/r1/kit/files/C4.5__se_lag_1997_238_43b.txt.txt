@@ -1,0 +1,6 @@
+SOURCE: se_lag_1997_238_43b.txt (cached for C4.5)
+
+Source: https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-1997238-om-arbetsloshetsforsakring_sfs-1997-238/
+SFS 1997:238, 43 b (text as served; whitespace collapsed)
+
+43 b § En sökande ska stängas av från rätt till ersättning i 45 ersättningsdagar, om han eller hon 1. utan giltig anledning lämnat sitt arbete, 2. på grund av otillbörligt uppförande skilts från sitt arbete, 3. utan giltig anledning lämnat ett arbetsmarknadspolitiskt program för vilket aktivitetsstöd lämnas, eller 4. uppträtt på ett sådant sätt att den offentliga arbetsförmedlingen återkallat en anvisning till ett arbetsmarknadspolitiskt program för vilket aktivitetsstöd lämnas. Den sökande ska dock stängas av i 20 ersättningsdagar

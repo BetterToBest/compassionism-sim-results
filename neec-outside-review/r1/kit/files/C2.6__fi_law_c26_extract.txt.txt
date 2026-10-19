@@ -1,0 +1,49 @@
+SOURCE: fi_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Laki potilaan asemasta ja oikeuksista 785/1992: https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/1992/785 (md5 233d5d8682848677c64f4837614eee58)
+--- from line 336 (anchor /^6 §$/)
+6 §
+Potilaan itsemääräämisoikeus
+Potilasta on hoidettava yhteisymmärryksessä hänen kanssaan. Jos potilas kieltäytyy tietystä hoidosta tai hoitotoimenpiteestä, häntä on mahdollisuuksien mukaan hoidettava yhteisymmärryksessä hänen kanssaan muulla lääketieteellisesti hyväksyttävällä tavalla.
+Jos täysi-ikäinen potilas ei mielenterveydenhäiriön, kehitysvammaisuuden tai muun syyn vuoksi pysty päättämään hoidostaan, potilaan laillista edustajaa taikka lähiomaista tai muuta läheistä on ennen tärkeän hoitopäätöksen tekemistä kuultava sen selvittämiseksi, millainen hoito parhaiten vastaisi potilaan tahtoa. Jos tästä ei saada selvitystä, potilasta on hoidettava tavalla, jota voidaan pitää hänen henkilökohtaisen etunsa mukaisena.
+Tapauksissa, joita 2 momentissa tarkoitetaan, tulee hoitoon saada potilaan laillisen edustajan taikka lähiomaisen tai muun läheisen suostumus. Laillisen edustajan, lähiomaisen ja muun läheisen tulee suostumusta antaessaan ottaa huomioon potilaan aiemmin ilmaisema tahto tai, jos hoitotahtoa ei ole ilmaistu, hänen henkilökohtainen etunsa. Jos laillinen edustaja, lähiomainen tai muu läheinen kieltää hoidon antamisen tai hoitotoimenpiteen tekemisen potilaalle, potilasta on mahdollisuuksien mukaan hoidettava yhteisymmärryksessä suostumisesta kieltäytyvän henkilön kanssa muulla lääketieteellisesti hyväksyttävällä tavalla. Jos laillisen edustajan, lähiomaisen tai muun läheisen näkemykset hoidosta eroavat toisistaan, potilasta on hoidettava tavalla, jota voidaan pitää hänen henkilökohtaisen etunsa mukaisena.
+Potilaan tahdosta riippumatta annettavasta hoidosta on voimassa, mitä siitä mielenterveyslaissa, päihdehuoltolaissa
+(41/86) , tartuntatautilaissa ja kehitysvammaisten erityishuollosta annetussa laissa
+
+=== Tartuntatautilaki 1227/2016: https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2016/1227 (md5 2425db268e8dd42f997ea34e3ce9b8a0)
+--- from line 730 (anchor /^48 §$/)
+48 §
+Työntekijän ja opiskelijan rokotussuoja potilaiden suojaamiseksi
+Työskentelyyn sosiaalihuollon ja terveydenhuollon toimintayksiköiden asiakas- ja potilastiloissa, joissa hoidetaan lääketieteellisesti arvioituna tartuntatautien vakaville seuraamuksille alttiita asiakkaita tai potilaita, saa käyttää vain erityisestä syystä henkilöä, jolla on puutteellinen rokotussuoja.
+Työntekijällä ja työharjoitteluun osallistuvalla opiskelijalla on oltava joko rokotuksen tai sairastetun taudin antama suoja tuhkarokkoa ja vesirokkoa vastaan. Lisäksi edellytetään rokotuksen antama suoja influenssaa vastaan ja imeväisikäisiä hoitavilla hinkuyskää vastaan.
+Opiskeluterveydenhuollon on huolehdittava, että työharjoitteluun osallistuvilla opiskelijoilla on 2 momentissa tarkoitettu rokotussuoja.
+Työnantajalla on oikeus käsitellä työntekijän tai työharjoittelussa olevan opiskelijan 1 momentissa tarkoitettuihin tehtäviin soveltuvuutta koskevia tietoja riittävän rokotussuojan osalta työntekijän tai opiskelijan suostumuksella yksityisyyden suojasta työelämässä annetun lain
+(759/2004) , työterveyshuoltolain ja henkilötietolain mukaisesti.
+
+--- from line 861 (anchor /^60 §$/)
+60 §
+Karanteeni
+Jos yleisvaarallisen tartuntataudin tai yleisvaaralliseksi perustellusti epäillyn tartuntataudin leviämisen vaara on ilmeinen eikä taudin leviämistä voida muulla tavoin estää, virkasuhteinen kunnan tartuntataudeista vastaava lääkäri tai virkasuhteinen sairaanhoitopiirin kuntayhtymän tartuntataudeista vastaava lääkäri voi päättää henkilön karanteenista enintään yhden kuukauden ajaksi. Päätös karanteenista voidaan tehdä henkilölle, jonka on todettu tai perustellusti epäilty altistuneen yleisvaaralliselle tartuntataudille.
+Virkasuhteinen kunnan tartuntataudeista vastaava lääkäri tai virkasuhteinen sairaanhoitopiirin kuntayhtymän tartuntataudeista vastaava lääkäri voi tehdä päätöksen karanteenista myös 1 momentissa tarkoitetun henkilön tahdosta riippumatta.
+
+--- from line 880 (anchor /^63 §$/)
+63 §
+Eristäminen
+Kunnan tai sairaanhoitopiirin kuntayhtymän virkasuhteinen tartuntataudeista vastaava lääkäri voi päättää yleisvaaralliseen tai yleisvaaralliseksi perustellusti epäiltyyn tartuntatautiin sairastuneen tai sairastuneeksi perustellusti epäillyn henkilön eristämisestä terveydenhuollon toimintayksikköön enintään kahden kuukauden ajaksi, jos taudin leviämisen vaara on ilmeinen ja jos taudin leviämistä ei voida estää muilla toimenpiteillä. Päätöksen tehneen lääkärin on annettava eristettävälle henkilölle ja häntä hoitaville työntekijöille tartunnan leviämisen ehkäisemiseksi välttämättömät ohjeet.
+Virkasuhteinen kunnan tai sairaanhoitopiirin kuntayhtymän tartuntataudeista vastaava lääkäri voi tehdä päätöksen eristämisestä myös 1 momentissa tarkoitetun henkilön tahdosta riippumatta.
+
+--- from line 1093 (anchor /^Muutoksenhaku$/)
+Muutoksenhaku
+Tässä laissa tarkoitettuun päätökseen saa hakea muutosta valittamalla hallinto-oikeuteen siten kuin hallintolainkäyttölaissa
+(586/1996)
+säädetään.
+Hallinto-oikeuden päätökseen muussa kuin 18 §:n 4 momentissa tarkoitetussa toimiluvan peruuttamista koskevassa asiassa saa hakea muutosta valittamalla vain, jos korkein hallinto-oikeus myöntää valitusluvan.
+91 §
+Päätösten täytäntöönpano
+Edellä 16, 57–67 ja 69–71 §:ssä tarkoitetut päätökset voidaan panna täytäntöön heti muutoksenhausta huolimatta.
+Kun muutosta on haettu, muutoksenhakuviranomainen voi kieltää päätöksen täytäntöönpanon tai määrätä sen keskeytettäväksi.
+92 §
+Käsittelyn kiireellisyys
+Tässä laissa tarkoitetut ansiotyöstä, oppilaitoksesta tai päivähoidosta poissaoloa, henkilön tahdosta riippumatta toteutettavaa hoitoa ja lääkitystä, tapaamisen rajoittamista, eristämistä, karanteenia sekä eristämistä tai karanteenia ulkopuolelta lukittavassa tilassa koskevat muutoksenhakuasiat on käsiteltävä kiireellisinä.

@@ -1,0 +1,404 @@
+SOURCE: owid_iucn_red_list_index.csv (cached for C4.2)
+
+Entity,Code,Year,Red List Index
+China,CHN,1980,0.9
+China,CHN,1981,0.9
+China,CHN,1982,0.9
+China,CHN,1983,0.9
+China,CHN,1984,0.89
+China,CHN,1985,0.89
+China,CHN,1986,0.89
+China,CHN,1987,0.89
+China,CHN,1988,0.89
+China,CHN,1989,0.89
+China,CHN,1990,0.89
+China,CHN,1991,0.89
+China,CHN,1992,0.89
+China,CHN,1993,0.89
+China,CHN,1994,0.89
+China,CHN,1995,0.89
+China,CHN,1996,0.89
+China,CHN,1997,0.89
+China,CHN,1998,0.89
+China,CHN,1999,0.88
+China,CHN,2000,0.88
+China,CHN,2001,0.88
+China,CHN,2002,0.88
+China,CHN,2003,0.88
+China,CHN,2004,0.88
+China,CHN,2005,0.88
+China,CHN,2006,0.87
+China,CHN,2007,0.87
+China,CHN,2008,0.87
+China,CHN,2009,0.87
+China,CHN,2010,0.87
+China,CHN,2011,0.86
+China,CHN,2012,0.86
+China,CHN,2013,0.86
+China,CHN,2014,0.86
+China,CHN,2015,0.85
+China,CHN,2016,0.85
+China,CHN,2017,0.85
+China,CHN,2018,0.85
+China,CHN,2019,0.84
+China,CHN,2020,0.84
+China,CHN,2021,0.84
+China,CHN,2022,0.84
+China,CHN,2023,0.83
+China,CHN,2024,0.83
+China,CHN,2025,0.83
+Denmark,DNK,1980,0.98
+Denmark,DNK,1981,0.98
+Denmark,DNK,1982,0.98
+Denmark,DNK,1983,0.98
+Denmark,DNK,1984,0.98
+Denmark,DNK,1985,0.98
+Denmark,DNK,1986,0.98
+Denmark,DNK,1987,0.98
+Denmark,DNK,1988,0.98
+Denmark,DNK,1989,0.98
+Denmark,DNK,1990,0.98
+Denmark,DNK,1991,0.98
+Denmark,DNK,1992,0.98
+Denmark,DNK,1993,0.98
+Denmark,DNK,1994,0.98
+Denmark,DNK,1995,0.98
+Denmark,DNK,1996,0.98
+Denmark,DNK,1997,0.98
+Denmark,DNK,1998,0.98
+Denmark,DNK,1999,0.98
+Denmark,DNK,2000,0.98
+Denmark,DNK,2001,0.98
+Denmark,DNK,2002,0.98
+Denmark,DNK,2003,0.98
+Denmark,DNK,2004,0.98
+Denmark,DNK,2005,0.98
+Denmark,DNK,2006,0.98
+Denmark,DNK,2007,0.98
+Denmark,DNK,2008,0.97
+Denmark,DNK,2009,0.97
+Denmark,DNK,2010,0.97
+Denmark,DNK,2011,0.97
+Denmark,DNK,2012,0.97
+Denmark,DNK,2013,0.97
+Denmark,DNK,2014,0.97
+Denmark,DNK,2015,0.97
+Denmark,DNK,2016,0.97
+Denmark,DNK,2017,0.97
+Denmark,DNK,2018,0.97
+Denmark,DNK,2019,0.97
+Denmark,DNK,2020,0.97
+Denmark,DNK,2021,0.97
+Denmark,DNK,2022,0.97
+Denmark,DNK,2023,0.97
+Denmark,DNK,2024,0.97
+Denmark,DNK,2025,0.97
+Finland,FIN,1980,0.98
+Finland,FIN,1981,0.98
+Finland,FIN,1982,0.98
+Finland,FIN,1983,0.98
+Finland,FIN,1984,0.98
+Finland,FIN,1985,0.98
+Finland,FIN,1986,0.98
+Finland,FIN,1987,0.98
+Finland,FIN,1988,0.98
+Finland,FIN,1989,0.98
+Finland,FIN,1990,0.98
+Finland,FIN,1991,0.98
+Finland,FIN,1992,0.98
+Finland,FIN,1993,0.98
+Finland,FIN,1994,0.98
+Finland,FIN,1995,0.98
+Finland,FIN,1996,0.98
+Finland,FIN,1997,0.98
+Finland,FIN,1998,0.98
+Finland,FIN,1999,0.98
+Finland,FIN,2000,0.98
+Finland,FIN,2001,0.98
+Finland,FIN,2002,0.98
+Finland,FIN,2003,0.98
+Finland,FIN,2004,0.98
+Finland,FIN,2005,0.98
+Finland,FIN,2006,0.98
+Finland,FIN,2007,0.98
+Finland,FIN,2008,0.98
+Finland,FIN,2009,0.98
+Finland,FIN,2010,0.98
+Finland,FIN,2011,0.98
+Finland,FIN,2012,0.98
+Finland,FIN,2013,0.98
+Finland,FIN,2014,0.98
+Finland,FIN,2015,0.98
+Finland,FIN,2016,0.98
+Finland,FIN,2017,0.98
+Finland,FIN,2018,0.98
+Finland,FIN,2019,0.98
+Finland,FIN,2020,0.98
+Finland,FIN,2021,0.98
+Finland,FIN,2022,0.98
+Finland,FIN,2023,0.98
+Finland,FIN,2024,0.98
+Finland,FIN,2025,0.98
+Norway,NOR,1980,0.96
+Norway,NOR,1981,0.96
+Norway,NOR,1982,0.96
+Norway,NOR,1983,0.96
+Norway,NOR,1984,0.96
+Norway,NOR,1985,0.96
+Norway,NOR,1986,0.96
+Norway,NOR,1987,0.96
+Norway,NOR,1988,0.96
+Norway,NOR,1989,0.96
+Norway,NOR,1990,0.96
+Norway,NOR,1991,0.96
+Norway,NOR,1992,0.96
+Norway,NOR,1993,0.96
+Norway,NOR,1994,0.96
+Norway,NOR,1995,0.96
+Norway,NOR,1996,0.96
+Norway,NOR,1997,0.96
+Norway,NOR,1998,0.96
+Norway,NOR,1999,0.96
+Norway,NOR,2000,0.96
+Norway,NOR,2001,0.96
+Norway,NOR,2002,0.96
+Norway,NOR,2003,0.96
+Norway,NOR,2004,0.96
+Norway,NOR,2005,0.96
+Norway,NOR,2006,0.95
+Norway,NOR,2007,0.95
+Norway,NOR,2008,0.95
+Norway,NOR,2009,0.95
+Norway,NOR,2010,0.95
+Norway,NOR,2011,0.95
+Norway,NOR,2012,0.95
+Norway,NOR,2013,0.95
+Norway,NOR,2014,0.95
+Norway,NOR,2015,0.95
+Norway,NOR,2016,0.95
+Norway,NOR,2017,0.95
+Norway,NOR,2018,0.95
+Norway,NOR,2019,0.95
+Norway,NOR,2020,0.95
+Norway,NOR,2021,0.95
+Norway,NOR,2022,0.95
+Norway,NOR,2023,0.95
+Norway,NOR,2024,0.95
+Norway,NOR,2025,0.95
+Qatar,QAT,1980,0.84
+Qatar,QAT,1981,0.84
+Qatar,QAT,1982,0.84
+Qatar,QAT,1983,0.84
+Qatar,QAT,1984,0.84
+Qatar,QAT,1985,0.84
+Qatar,QAT,1986,0.84
+Qatar,QAT,1987,0.84
+Qatar,QAT,1988,0.84
+Qatar,QAT,1989,0.84
+Qatar,QAT,1990,0.84
+Qatar,QAT,1991,0.84
+Qatar,QAT,1992,0.83
+Qatar,QAT,1993,0.83
+Qatar,QAT,1994,0.83
+Qatar,QAT,1995,0.83
+Qatar,QAT,1996,0.83
+Qatar,QAT,1997,0.83
+Qatar,QAT,1998,0.83
+Qatar,QAT,1999,0.83
+Qatar,QAT,2000,0.83
+Qatar,QAT,2001,0.83
+Qatar,QAT,2002,0.83
+Qatar,QAT,2003,0.83
+Qatar,QAT,2004,0.83
+Qatar,QAT,2005,0.83
+Qatar,QAT,2006,0.83
+Qatar,QAT,2007,0.83
+Qatar,QAT,2008,0.83
+Qatar,QAT,2009,0.83
+Qatar,QAT,2010,0.83
+Qatar,QAT,2011,0.82
+Qatar,QAT,2012,0.82
+Qatar,QAT,2013,0.82
+Qatar,QAT,2014,0.81
+Qatar,QAT,2015,0.81
+Qatar,QAT,2016,0.81
+Qatar,QAT,2017,0.8
+Qatar,QAT,2018,0.8
+Qatar,QAT,2019,0.8
+Qatar,QAT,2020,0.79
+Qatar,QAT,2021,0.79
+Qatar,QAT,2022,0.79
+Qatar,QAT,2023,0.79
+Qatar,QAT,2024,0.78
+Qatar,QAT,2025,0.78
+Singapore,SGP,1980,0.97
+Singapore,SGP,1981,0.97
+Singapore,SGP,1982,0.97
+Singapore,SGP,1983,0.97
+Singapore,SGP,1984,0.97
+Singapore,SGP,1985,0.97
+Singapore,SGP,1986,0.97
+Singapore,SGP,1987,0.97
+Singapore,SGP,1988,0.97
+Singapore,SGP,1989,0.97
+Singapore,SGP,1990,0.97
+Singapore,SGP,1991,0.97
+Singapore,SGP,1992,0.97
+Singapore,SGP,1993,0.96
+Singapore,SGP,1994,0.96
+Singapore,SGP,1995,0.96
+Singapore,SGP,1996,0.96
+Singapore,SGP,1997,0.96
+Singapore,SGP,1998,0.95
+Singapore,SGP,1999,0.95
+Singapore,SGP,2000,0.95
+Singapore,SGP,2001,0.94
+Singapore,SGP,2002,0.94
+Singapore,SGP,2003,0.94
+Singapore,SGP,2004,0.94
+Singapore,SGP,2005,0.94
+Singapore,SGP,2006,0.94
+Singapore,SGP,2007,0.94
+Singapore,SGP,2008,0.94
+Singapore,SGP,2009,0.94
+Singapore,SGP,2010,0.94
+Singapore,SGP,2011,0.93
+Singapore,SGP,2012,0.93
+Singapore,SGP,2013,0.93
+Singapore,SGP,2014,0.92
+Singapore,SGP,2015,0.92
+Singapore,SGP,2016,0.92
+Singapore,SGP,2017,0.91
+Singapore,SGP,2018,0.91
+Singapore,SGP,2019,0.91
+Singapore,SGP,2020,0.9
+Singapore,SGP,2021,0.9
+Singapore,SGP,2022,0.9
+Singapore,SGP,2023,0.89
+Singapore,SGP,2024,0.89
+Singapore,SGP,2025,0.89
+Sweden,SWE,1980,0.99
+Sweden,SWE,1981,0.99
+Sweden,SWE,1982,0.99
+Sweden,SWE,1983,0.99
+Sweden,SWE,1984,0.99
+Sweden,SWE,1985,0.99
+Sweden,SWE,1986,0.99
+Sweden,SWE,1987,0.99
+Sweden,SWE,1988,0.99
+Sweden,SWE,1989,0.99
+Sweden,SWE,1990,0.99
+Sweden,SWE,1991,0.99
+Sweden,SWE,1992,0.99
+Sweden,SWE,1993,0.99
+Sweden,SWE,1994,0.99
+Sweden,SWE,1995,0.99
+Sweden,SWE,1996,0.99
+Sweden,SWE,1997,0.99
+Sweden,SWE,1998,0.99
+Sweden,SWE,1999,0.99
+Sweden,SWE,2000,0.99
+Sweden,SWE,2001,0.99
+Sweden,SWE,2002,0.99
+Sweden,SWE,2003,0.99
+Sweden,SWE,2004,0.99
+Sweden,SWE,2005,0.99
+Sweden,SWE,2006,0.99
+Sweden,SWE,2007,0.99
+Sweden,SWE,2008,0.99
+Sweden,SWE,2009,0.99
+Sweden,SWE,2010,0.99
+Sweden,SWE,2011,0.99
+Sweden,SWE,2012,0.99
+Sweden,SWE,2013,0.99
+Sweden,SWE,2014,0.99
+Sweden,SWE,2015,0.99
+Sweden,SWE,2016,0.99
+Sweden,SWE,2017,0.99
+Sweden,SWE,2018,0.99
+Sweden,SWE,2019,0.99
+Sweden,SWE,2020,0.99
+Sweden,SWE,2021,0.99
+Sweden,SWE,2022,0.99
+Sweden,SWE,2023,0.99
+Sweden,SWE,2024,0.99
+Sweden,SWE,2025,0.99
+United States,USA,1980,0.88
+United States,USA,1981,0.88
+United States,USA,1982,0.88
+United States,USA,1983,0.88
+United States,USA,1984,0.88
+United States,USA,1985,0.88
+United States,USA,1986,0.88
+United States,USA,1987,0.88
+United States,USA,1988,0.88
+United States,USA,1989,0.88
+United States,USA,1990,0.88
+United States,USA,1991,0.88
+United States,USA,1992,0.88
+United States,USA,1993,0.87
+United States,USA,1994,0.87
+United States,USA,1995,0.87
+United States,USA,1996,0.87
+United States,USA,1997,0.87
+United States,USA,1998,0.87
+United States,USA,1999,0.86
+United States,USA,2000,0.86
+United States,USA,2001,0.86
+United States,USA,2002,0.85
+United States,USA,2003,0.85
+United States,USA,2004,0.85
+United States,USA,2005,0.84
+United States,USA,2006,0.84
+United States,USA,2007,0.84
+United States,USA,2008,0.84
+United States,USA,2009,0.83
+United States,USA,2010,0.83
+United States,USA,2011,0.83
+United States,USA,2012,0.83
+United States,USA,2013,0.83
+United States,USA,2014,0.83
+United States,USA,2015,0.83
+United States,USA,2016,0.83
+United States,USA,2017,0.83
+United States,USA,2018,0.83
+United States,USA,2019,0.83
+United States,USA,2020,0.83
+United States,USA,2021,0.82
+United States,USA,2022,0.82
+United States,USA,2023,0.82
+United States,USA,2024,0.82
+United States,USA,2025,0.82
+World,OWID_WRL,1993,0.81
+World,OWID_WRL,1994,0.81
+World,OWID_WRL,1995,0.8
+World,OWID_WRL,1996,0.8
+World,OWID_WRL,1997,0.8
+World,OWID_WRL,1998,0.8
+World,OWID_WRL,1999,0.8
+World,OWID_WRL,2000,0.8
+World,OWID_WRL,2001,0.8
+World,OWID_WRL,2002,0.79
+World,OWID_WRL,2003,0.79
+World,OWID_WRL,2004,0.79
+World,OWID_WRL,2005,0.79
+World,OWID_WRL,2006,0.79
+World,OWID_WRL,2007,0.79
+World,OWID_WRL,2008,0.78
+World,OWID_WRL,2009,0.78
+World,OWID_WRL,2010,0.78
+World,OWID_WRL,2011,0.78
+World,OWID_WRL,2012,0.77
+World,OWID_WRL,2013,0.77
+World,OWID_WRL,2014,0.77
+World,OWID_WRL,2015,0.77
+World,OWID_WRL,2016,0.77
+World,OWID_WRL,2017,0.76
+World,OWID_WRL,2018,0.76
+World,OWID_WRL,2019,0.76
+World,OWID_WRL,2020,0.76
+World,OWID_WRL,2021,0.75
+World,OWID_WRL,2022,0.75
+World,OWID_WRL,2023,0.75
+World,OWID_WRL,2024,0.75
+World,OWID_WRL,2025,0.74

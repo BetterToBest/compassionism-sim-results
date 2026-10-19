@@ -1,0 +1,18 @@
+SOURCE: lp_platform_c46_extract.txt (cached for C4.6)
+
+Source: https://lp.org/platform/ (as served 2026-10-18; md5 30f42780a79a5ba9406df625546f8be2); passages headed by line range.
+
+--- lines 173-175
+2.2 Environment
+
+Competitive free markets and property rights stimulate the technological innovations and behavioral changes required to protect our environment and ecosystems. Private landowners and conservation groups have a vested interest in maintaining natural resources. Governments are unaccountable for damage done to our environment and have a terrible track record when it comes to environmental protection. Protecting the environment requires a clear definition and enforcement of individual rights and responsibilities regarding resources like land, water, air, and wildlife. Where damages can be proven and quantified in a court of law, restitution to the injured parties must be required.
+
+--- lines 201-203
+2.9 Licensing
+
+Libertarians support the right of every person to earn an honest and peaceful living through the free and voluntary exchange of goods and services. Accordingly, we oppose occupational and other licensing laws that infringe on this right or treat it as a state-granted privilege. We encourage certifications by voluntary associations of professionals.
+
+--- lines 217-219
+2.13 Health Care
+
+We favor a free market health care system. Medical facilities, medical providers, and medical products (including drugs) must be freely available in the marketplace without government restrictions or licenses. We recognize the freedom of individuals to determine the level of health insurance they want (if any), the level of health care they want, the care providers they want, the medicines and treatments they will use and all other aspects of their medical care, including end-of-life decisions. People should be free to purchase health insurance across state lines. We oppose governments either mandating, or restricting voluntary access to, medical treatments or procedures including vaccines.

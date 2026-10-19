@@ -1,0 +1,30 @@
+SOURCE: hahnel_wright_2016_c41_extract.txt (cached for C4.1)
+
+Source: https://www.sscc.wisc.edu/soc/faculty/pages/wright/Published%20writing/Alternatives%20to%20Capitalism.pdf (Hahnel and Wright, Alternatives to Capitalism: Proposals for a Democratic Economy, Verso, 2016; PDF md5 1fba42ff7d97f2134ac9e1a9292081c9); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 336-340
+THE PLANNING PROCEDURE
+The annual participatory planning procedure takes place in the context of an
+investment plan that has already decided what investment goods will be
+produced this year and how they will be distributed to increase capacities of
+different industries at year’s end. It also takes place when the stocks of all kinds of
+
+--- lines 812-823
+      councils their requests for all the things they anticipate consuming in the
+      following year given the household budget constraints. In effect, they pre-
+      order their annual household consumption.
+   4. The powers of neighborhood consumption councils with respect to
+      household consumption include: authorizing borrowing and saving of
+      households; approving their consumption requests; discussing and
+      proposing neighborhood public goods. The household proposals are
+      reviewed by neighborhood consumption councils. If they fall within the
+      budget constraint of the household, then they would normally be approved
+      automatically. If there is a request for consumption above this level – in
+      effect a request for a loan – this would normally be reviewed more closely.
+      If the proposals are rejected, households revise them.
+
+--- lines 1955-1958
+   Similarly, consumers, and consumer councils and federations are charged for what they actually
+consume during the year, not what was approved for them in the plan. Any differences are recorded as
+increases or decreases in the debt or savings of individual consumers, neighbourhood councils, and
+consumer federations.

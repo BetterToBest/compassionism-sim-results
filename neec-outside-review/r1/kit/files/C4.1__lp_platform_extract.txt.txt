@@ -1,0 +1,9 @@
+SOURCE: lp_platform_extract.txt (cached for C4.1)
+
+Source: https://lp.org/platform/ (Libertarian Party platform, as served 2026-10-18; page md5 1c4769aa3244e823053a94bc99147632); passages headed by line range.
+
+--- lines 187-187
+Government should not incur debt, which burdens future generations without their consent. We support the passage of a “Balanced Budget Amendment” to the U.S. Constitution, provided that the budget is balanced exclusively by cutting expenditures, and not by raising taxes.
+
+--- lines 191-191
+We favor repealing any requirement that one must join or pay dues to a union as a condition of government employment. We advocate replacing defined-benefit pensions with defined-contribution plans, as are commonly offered in the private sector, so as not to impose debt on future generations without their consent.

@@ -1,0 +1,17 @@
+SOURCE: lp_platform_c11_c31_extract.txt (cached for C3.1)
+
+Source: https://lp.org/platform/ (Libertarian Party platform, as served 2026-10-18; page md5 84e3f989602067f42aced2e72a9b26d9); passages headed by line range.
+
+--- lines 193-199
+2.7 Money and Financial Markets
+
+We favor free-market banking, with unrestricted competition among banks and depository institutions of all types. Markets are not actually free unless fraud is vigorously combated. Those who enjoy the possibility of profits must not impose risks of losses upon others, such as through government guarantees or bailouts. We support ending federal student loan guarantees and special treatment of student loan debt in bankruptcy proceedings. Individuals engaged in voluntary exchange should be free to use as money any mutually agreeable commodity or item. We support a halt to inflationary monetary policies and unconstitutional legal tender laws.
+
+2.8 Marketplace Freedom
+
+Libertarians support free markets. We defend the right of individuals to form commercial enterprises based on voluntary association. We oppose all forms of government subsidies and bailouts to business, labor, or any other special interest. Government should not compete with private enterprise. We reject government charter of corporations. We call for a separation of business and state.
+
+--- lines 221-223
+2.14 Retirement and Income Security
+
+Retirement planning is the responsibility of the individual, not the government. Libertarians would phase out the current government-sponsored Social Security system and transition to a private voluntary system. The proper and most effective source of help for the poor is the voluntary efforts of private groups and individuals. We believe members of society will become even more charitable and civil society will be strengthened as government reduces its activity in this realm.

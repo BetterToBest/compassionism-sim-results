@@ -1,0 +1,21 @@
+SOURCE: easterly_fischer_1995_tables.csv (cached for C3.6)
+
+series,period,growth_pct_a_year
+table1_output_per_worker_total_economy_western,1950-59,5.8
+table1_output_per_worker_total_economy_western,1960-69,3.0
+table1_output_per_worker_total_economy_western,1970-79,2.1
+table1_output_per_worker_total_economy_western,1980-87,1.4
+table1_capital_per_worker_total_economy_western,1960-69,5.4
+table1_capital_per_worker_total_economy_western,1970-79,5.0
+table1_capital_per_worker_total_economy_western,1980-87,4.0
+table4_tfp_western_gnp,1950-60,1.3
+table4_tfp_western_gnp,1960-70,-0.1
+table4_tfp_western_gnp,1970-80,-0.8
+table4_tfp_western_gnp,1980-87,-1.2
+table4_tfp_khanin_material_sectors,1970-80,0.4
+table4_tfp_khanin_material_sectors,1980-87,0.4
+table4_tfp_official_material_sectors,1970-80,1.4
+table4_tfp_official_material_sectors,1980-87,0.7
+table5_ces_tfp_western_gnp_1950_87_sample,1960-69,1.10
+table5_ces_tfp_western_gnp_1950_87_sample,1970-79,1.16
+table5_ces_tfp_western_gnp_1950_87_sample,1980-87,1.09

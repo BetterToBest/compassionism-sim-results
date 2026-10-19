@@ -1,0 +1,72 @@
+SOURCE: integral_wp_v01_c34_extract.txt (cached for C3.4)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025; PDF md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 1200-1207
+introduce new logic—they simply federate, synchronize, and recurse these same micro-operations. The mezzo and macro layers are therefore scaled reflections of what
+is defined here: repeating patterns of coordination, decision, verification, allocation, and feedback.
+
+We begin with the Collaborative Decision System (CDS)—the subsystem that encodes participatory governance for all of Integral. Every normative choice—design
+approvals, project initiation, labor weighting rules, ecological thresholds, access constraints, and the evaluation of feedback signals—ultimately passes through CDS. Its
+micro-architecture is the foundation for the other four systems, providing the decision logic that contextualizes OAD, COS, ITC, and FRS.
+
+7.1 CDS Modules
+
+--- lines 1214-1219
+
+Specifically, CDS:
+
+        gathers and authenticates proposals, objections, and system signals
+        organizes issues into coherent frames, scopes, and decision spaces
+
+
+--- lines 1480-1503
+
+Description
+Module 9 is activated when CDS detects that disagreement is not rooted in data insufficiency, feasibility constraints, or scenario optimization, but in human meaning—
+identity, culture, ethics, aesthetics, or lived experience.
+
+This module initiates structured, high-bandwidth human deliberation processes, such as:
+
+        facilitated deliberation circles
+
+        Syntegrity sessions
+        cultural or symbolic review assemblies
+
+        ethical reflection panels
+
+Module 9 does not override earlier CDS logic; it extends it into domains where algorithmic reasoning is insufficient. Outcomes are not informal or advisory—every
+resolution produced here is formally captured by Module 7 (Transparency & Versioning) and routed into execution through Module 8 (Implementation Dispatch),
+preserving full continuity with the CDS pipeline.
+
+Module 9 ensures that Integral never collapses into technocracy, majoritarianism, or false rationality by acknowledging that some decisions require collective human
+sense-making rather than further calculation.
+
+Example
+A proposal to repaint a shared tool library in bright colors meets strong resistance from long-time members who associate muted tones with shared-space respect and
+cultural continuity. Computational consensus stalls despite high overall support.
+
+--- lines 9545-9552
+         preferential treatment for high ITC-holders
+
+         attempts to corner specialized roles
+         circumventing decay
+
+FRS monitors patterns and flags irregularities for CDS review. This module does not enforce sanctions or modify balances; it detects ethical violations and escalates
+them through FRS to CDS for democratic resolution.
+
+
+--- lines 12648-12655
+  7            member_id=None,     # a quote can be system-wide, not per-member
+  8            related_ids={"item_id": access_val.item_id, "design_version_id": access_val.design_version_id},
+  9            details={
+ 10                 "final_itc_cost": access_val.final_itc_cost,
+ 11                 "base_weighted_labor_hours": access_val.base_weighted_labor_hours,
+ 12                 "eco_burden_adjustment": access_val.eco_burden_adjustment,
+ 13                 "material_scarcity_adjustment": access_val.material_scarcity_adjustment,
+ 14                 "repairability_credit": access_val.repairability_credit,
+
+--- lines 22134-22136
+  33                aggregated_outcomes = {
+  34                     m: (sums[m] / max(counts.get(m, 1), 1))
+  35                     for m in sums.keys()

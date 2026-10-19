@@ -1,0 +1,26 @@
+SOURCE: research_hub_8e8a6ba_c41_extract.txt (cached for C4.1)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba (2026-09-21), pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== research-summary.html (md5 b98e2ee19499657b1657d41e38b93a4e)
+--- lines 112-112
+CCO is a dual-currency system designed for post-scarcity and automation-driven economies. Citizens may opt in to receive Basic Units (BU) — a currency pegged 1:1 to primary currency but restricted to essential expenditures (food, housing, utilities) and set to expire at the end of each monthly distribution cycle. This prevents hoarding while ensuring circulation toward genuine need.
+
+=== cco-ptf-simulation-replication.html (md5 528e343d7e635ae4702d2633bf910a66)
+--- lines 39-39
+The cumulative community equity built by PTH residents through their monthly payments, appreciating at approximately 4% per year. Unlike conventional home equity, Acre Equity is accessible at exit only in part — a liquidity haircut whose accessible share rises with tenure, from ~10–20% in the first six months to ~80–90% at five or more years (v4.5; flat 50% regardless of tenure through v4.4).
+
+--- lines 1350-1354
+Phase 3 — National Deployment (Years 6–10):
+├── Scale: 50M+ participants nationwide
+├── Investment: self-sustaining through conversion tax revenue
+│ (~60–65% participation at 12% conversion tax ≈ self-funding threshold)
+├── Target: 97%+ BLEI Threshold, 84%+ Secure, 0.22 EDC-adjusted Gini, <5% BLEI poverty
+
+=== index.html (md5 14cc931ccde84e69f96ddab34dc8ce33)
+--- lines 120-120
+Community-owned housing that creates pathways for collective-wealth building while providing stable, affordable shelter. Properties are held in public trust and owned collectively by residents.
+
+=== integrated-implementation-roadmap.html (md5 97f61b2811233f134b99bbf2d8746aa2)
+--- lines 77-77
+Adequate funding through progressive taxation and efficiency gains

@@ -1,0 +1,54 @@
+SOURCE: pe_model_c36_extract.txt (cached for C3.6)
+
+Source: https://participatoryeconomics.info/wp-content/uploads/2014/11/Participatory-Economics.pdf (as served 2026-10-18; md5 14874936a97e8e18e38b605b88bf0d3e); text by pdftotext -layout; passages headed by line range.
+
+--- lines 1141-1189
+                                    INNOVATION
+
+
+Do individuals in a participatory economy have an incentive to search for innovations, and
+do workers councils have an incentive to implement productive innovations once they’re
+found?
+
+   A participatory economy does not reward those who discover productive innovations
+with vastly greater consumption rights than others that make comparable personal
+sacrifices or effort in their work. Instead a participatory economy emphases direct social
+recognition of outstanding achievements. This is for a number of reasons. First, successful
+innovation is almost always the result of cumulative human creativity and not a single
+person’s endeavours. Also, an individual’s contribution is often the result of genius and/or
+luck as much as personal sacrifice, all of which implies that recognizing innovation through
+social esteem instead of material reward is more ethical. Second, social incentives will not
+necessarily prove less powerful than material ones. No economy ever has paid innovators
+
+                                www.participatoryeconomics.info                                30
+
+
+
+the full social value of their innovations because if it did, there would be little left for those
+who apply them over long periods of time. This means if material compensation was the only
+reward, innovation would be under stimulated in any case. Material reward is often merely
+an imperfect substitute for something else that is truly desired — social esteem. Actual policy
+in a participatory economy would ultimately be settled democratically in light of results.
+
+   However, there are material incentives to implement socially useful innovations in a
+participatory economy. Any change that increases the social benefits of the outputs that
+workers produce, or reduces the social costs of the inputs they use will increase the workers
+council’s social benefit to social cost ratio. This makes it easier for the council to get its
+proposals accepted in the participatory planning process, can allow workers to reduce their
+effort, can permit them to improve the quality of their work life, or can raise the average
+effort rating (i.e income) the council can award its members. But just as in capitalism,
+adjustments will make any advantage temporary. As the innovation spreads to other
+enterprises, and as indicative prices change, the full social benefits of their innovation will be
+both realized and spread to all workers and consumers.
+
+    The faster the adjustments are made, the more efficient and equitable the outcome. On
+the other hand, the more rapid the adjustments, the less the “material incentive” to innovate
+and the greater the incentive to “ride for free” on the innovations of others. A participatory
+economy is better equipped to manage this tradeoff compared to a capitalistic economy.
+Most importantly, in a participatory economy “service to society” is recognised directly and
+is therefore a stronger incentive to innovation. This means that more innovation will occur
+in a participatory economy than in capitalism for the same speed of adjustments. Secondly,
+research and development (R&D) is largely a public good which usually is undersupplied in
+a market economy, whereas a participatory economy allocates resources to the production
+of public goods just as easily as to the production of private goods. Finally, in capitalism the
+only mechanism for providing incentives for innovation is to slow down their spread, at the

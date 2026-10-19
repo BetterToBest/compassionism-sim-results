@@ -1,0 +1,12 @@
+SOURCE: lp_platform_environment_extract.txt (cached for C4.2)
+
+Source: https://lp.org/platform/ (Libertarian Party platform, as served 2026-10-18; page md5 75656cf025f2258d9bb4113572f56074); passages headed by line range.
+
+--- lines 173-179
+2.2 Environment
+
+Competitive free markets and property rights stimulate the technological innovations and behavioral changes required to protect our environment and ecosystems. Private landowners and conservation groups have a vested interest in maintaining natural resources. Governments are unaccountable for damage done to our environment and have a terrible track record when it comes to environmental protection. Protecting the environment requires a clear definition and enforcement of individual rights and responsibilities regarding resources like land, water, air, and wildlife. Where damages can be proven and quantified in a court of law, restitution to the injured parties must be required.
+
+2.3 Energy and Resources
+
+While energy is needed to fuel a modern society, government should not be subsidizing any particular form of energy. We oppose all government control of energy pricing, allocation, and production.

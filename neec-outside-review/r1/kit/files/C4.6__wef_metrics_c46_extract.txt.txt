@@ -1,0 +1,24 @@
+SOURCE: wef_metrics_c46_extract.txt (cached for C4.6)
+
+Source: https://www3.weforum.org/docs/WEF_IBC_Measuring_Stakeholder_Capitalism_Report_2020.pdf (as served 2026-10-18; md5 ebeb5045646ece97381f784aa24b2708); text by pdftotext -layout; passages headed by line range.
+
+--- lines 1099-1106
+                                           body, senior executives and all other employees
+                   Ethical         Alignment of strategy and policies to lobbying                             GRI 415: Public Policy
+                   behaviour       The significant issues that are the focus of the company’s                 2016
+                                   participation in public policy development and lobbying; the
+                                   company’s strategy relevant to these areas of focus; and any
+                                   differences between its lobbying positions and its purpose,
+                                   stated policies, goals or other public positions.
+                                   Monetary losses from unethical behaviour                                   SASB 510a.1
+
+--- lines 1243-1251
+   infrastructure, this human right is frequently not met.     for inclusion and additional commentary. To access
+                                                               this information, click on the hyperlink within each
+   Air pollution                                               metric title of the digital version of this document, or
+   Localized air pollution, in the form of fine particulate    refer to the Appendix where the full set of core and
+   matter and oxides of sulphur and nitrogen, is a             expanded metrics and disclosures is presented with
+   leading cause of ill‑health and premature death             supporting rationales, commentary and guidance
+   around the world.                                           on reporting.
+
+   Water pollution

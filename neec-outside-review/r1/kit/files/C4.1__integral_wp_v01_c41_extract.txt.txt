@@ -1,0 +1,27 @@
+SOURCE: integral_wp_v01_c41_extract.txt (cached for C4.1)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025; PDF md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 319-323
+Human Well-Being
+
+The system prioritizes access to essential goods, security, autonomy, and meaningful participation. Economic success is measured by indicators of social health rather
+than growth or capital accumulation. Well-being becomes the baseline metric—not profit—meaning progress is defined by improved quality of life, time affluence, and
+psychosocial stability. In Integral, a prosperous society is one where human potential expands, not one where consumption increases.
+
+--- lines 344-348
+Non-Accumulative Reciprocity
+
+The Integral Time Credit system recognizes contributions without enabling wealth hoarding. Credits decay over time, preventing hierarchical stratification and
+reinforcing equity. This maintains incentive for contribution while ensuring no class of permanent winners or idle rentiers can emerge. Economic participation becomes
+circular, not accumulative—rewarding engagement rather than ownership.
+
+--- lines 431-433
+
+Finally, modest post-scarcity can emerge through cooperation. As efficiency rises and waste declines, essential goods and even some valued items become reliably
+obtainable with less effort. Prosperity is defined by sufficiency and reliability, not surplus accumulation.
+
+--- lines 845-847
+The three-signal valuation method—labor, ecology, and fairness—ensures that allocation reflects real conditions rather than price or demand. When a person
+accesses a good, the required ITCs are extinguished. The Feedback & Review System (FRS) continuously monitors ITC flows and production patterns to preserve
+systemic balance without requiring monetary-style equilibrium between total credits and total goods.

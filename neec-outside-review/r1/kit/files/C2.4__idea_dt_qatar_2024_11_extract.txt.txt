@@ -1,0 +1,9 @@
+SOURCE: idea_dt_qatar_2024_11_extract.txt (cached for C2.4)
+
+Source: https://www.idea.int/democracytracker/report/qatar/november-2024 (International IDEA, Democracy Tracker, Qatar, November 2024; page md5 3f74e57e1135f5370b98e40ba8b20c41); passages headed by line range.
+
+--- lines 805-809
+
+Constitutional referendum ends Shura Council elections
+
+On 5 November, Qatar held a rare constitutional referendum. The vote, open to citizens aged 18 and older, saw a high turnout of 84 per cent. Among the valid votes cast, 90.6 per cent supported the proposed changes. These revisions included updates to 14 existing articles, the introduction of two new articles, and the removal of three. The most notable change is the elimination of elections for two-thirds of the members of the Shura Council, Qatar’s advisory legislative body. As a result, the council will return to a fully appointed body, following only one election in 2021. This referendum was Qatar’s second in history, with the first occurring in 2003, when the country voted to approve its Constitution.

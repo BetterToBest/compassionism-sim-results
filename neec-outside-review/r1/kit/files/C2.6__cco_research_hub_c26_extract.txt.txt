@@ -1,0 +1,192 @@
+SOURCE: cco_research_hub_c26_extract.txt (cached for C2.6)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba, pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== democratic-governance-pth.html (md5 d95e68a20736712430ae4bef2f29f7ee)
+--- lines 476-547
+Arbitrary rule enforcement
+
+Excessive fines and penalties
+
+Foreclosure for minor violations
+
+Lack of due process protections
+
+6.2 PTH Safeguards Against HOA Pathologies
+
+PTH governance structures specifically address each failure pattern:
+
+Distributed Authority:
+
+Separation of powers between board, management, and committees
+
+Term limits and mandatory rotation of leadership positions
+
+Professional management with democratic oversight
+
+Transparent contracting with competitive bidding requirements
+
+Enhanced Democracy:
+
+Multiple voting mechanisms for different decision types
+
+Digital platforms enabling broader participation
+
+Quarterly community meetings with substantive agendas
+
+Initiative and referendum processes for major decisions
+
+Financial Accountability:
+
+Professional financial management with CPA oversight
+
+Reserve studies updated every 3 years
+
+Democratic approval required for budgets and assessments
+
+Transparent reporting and regular financial audits
+
+Due Process Protections:
+
+Graduated response system for rule violations
+
+Independent grievance committee with resident representation
+
+Mediation and arbitration alternatives to foreclosure
+
+Constitutional rights protections in community charter
+
+6.3 Constitutional Framework for PTH Communities
+
+PTH charters should incorporate constitutional protections often absent in HOA governing documents:
+
+Bill of Rights for PTH Residents:
+
+Expression: Freedom of speech, assembly, and political activity
+
+Privacy: Protection against unreasonable searches and surveillance
+
+Due Process: Fair hearings before penalties or restrictions
+
+Equal Protection: Non-discrimination in enforcement and services
+
+Democratic Participation: Right to vote, run for office, and petition
+
+Checks and Balances:
+
+Independent judiciary through elected grievance committees
+
+
+--- lines 955-959
+Article VI: Rights and Protections
+
+Section 1. Community governance shall not infringe upon constitutionally protected rights including freedom of expression, association, and privacy.
+
+Section 2. Due process protections including notice, hearing, and appeal rights shall apply to all enforcement actions.
+
+=== risk-mitigation-framework.html (md5 b83ad1d5b420fef609814a9c407d8e03)
+--- lines 225-238
+
+4.2 Quality Assessment Gaming
+
+Multi-layered approach to prevent manipulation of merit assessments:
+
+Blind Assessment: Reviewers don't know whose work they're evaluating
+
+Multiple Reviewers: Minimum of 5 independent assessments
+
+Statistical Analysis: Outlier detection and correction
+
+Expert Panels: Professional review for high-stakes assessments
+
+Appeals Process: Democratic review of disputed assessments
+
+--- lines 485-507
+Anti-Discrimination Laws: Federal civil rights enforcement in all zones
+
+Fair Housing Compliance: Equal access regardless of zone preferences
+
+Service Guarantees: Minimum public service standards in all zones
+
+Mobility Protection: Right to move between zones without penalty
+
+Legal Recourse: Independent courts for discrimination complaints
+
+7.3 Democratic Governance Requirements
+
+Mandatory democratic processes for zone management:
+
+Resident Participation: Minimum participation requirements for major decisions
+
+Transparent Processes: Public meetings and decision documentation
+
+Regular Elections: Democratic selection of zone leadership
+
+Constitutional Protections: Individual rights preserved within zones
+
+Appeals Processes: Independent review of zone decisions
+
+--- lines 735-760
+AI-triggered responses for immediate threat mitigation:
+
+Threat Level
+Automated Response
+Human Review
+Appeal Process
+
+Low (0.3-0.5)
+Enhanced monitoring
+Weekly review
+Standard appeal
+
+Medium (0.5-0.7)
+Transaction limits
+Daily review
+Priority appeal
+
+High (0.7-0.9)
+Account restrictions
+Immediate review
+Emergency appeal
+
+Critical (0.9+)
+System lockdown
+Real-time review
+Judicial review
+
+=== referendum.html (md5 3e9d2cdba58c0d0bad6b87e6d6ea000c)
+--- lines 120-120
+4.3 The Judicial Guard: Concurrent with the establishment of the CIP, a Judicial Guard shall be constituted — a distributed corps of 500 to 2,000 independent field investigators with individual statutory authority to investigate, arrest, and refer for prosecution any attempt to capture, manipulate, or corrupt the CIP infrastructure. The Judicial Guard shall operate with multiple concurrent prosecution pathways — federal, state, local, and special counsel — ensuring that no single compromised official can block accountability.
+
+--- lines 161-161
+Officials are held to enforceable standards of factual honesty, with documented violations subject to Judicial Guard referral and prosecution.
+
+=== integrated-digital-governance.html (md5 6c035a39311637a759ea708ffadccddc)
+--- lines 130-136
+Transparency: Open data and algorithmic accountability
+
+Participation: Multiple channels for citizen engagement
+
+Equity: Equal access regardless of technical expertise or resources
+
+Privacy: Data protection and individual autonomy preservation
+
+=== citizens-internet-portal.html (md5 96e8fbc9afbdf1e1b36b7a80314c60a7)
+--- lines 129-145
+5. The Judicial Guard: Institutional Protection
+
+5.1 Conceptual Foundation
+
+The U.S. Secret Service protects the integrity of currency because without trusted money, economic exchange collapses. Similarly, without trusted democratic processes, self-governance collapses. The Judicial Guard serves an analogous function: protecting the integrity of democratic participation as the Secret Service protects monetary integrity.
+
+5.2 Structure: Distributed, Not Hierarchical
+
+The Judicial Guard employs a distributed architecture rather than centralized leadership — a large corps of 500-2,000+ independent field investigators with individual authority. A leadership council would become a high-value target for capture. Instead, capturing the system requires compromising hundreds of independent professionals rather than a handful of leaders.
+
+Guardian Qualifications: Professional qualifications comparable to federal law enforcement, merit-based competitive hiring, ages 28-60, 7-10 year terms at GS-13 to GS-15 compensation (~$100-150K). No political appointments — purely professional civil service.
+
+Operational Independence: Each guardian has individual statutory authority to monitor CIP infrastructure, investigate suspected manipulation, make arrests, recommend prosecutions through multiple pathways, and publish findings directly to CIP. No person or body can order a guardian to terminate an investigation.
+
+5.3 Multi-Jurisdictional Prosecution Authority
+
+A compromised Attorney General would be a single point of failure. Therefore, guardians have concurrent prosecution pathways: Federal DOJ (default), 50 State AGs, 2,300+ Local DAs, Special Prosecutors, Citizen Grand Juries, Private Prosecution (with court approval), Congressional Referral, and International Prosecution for foreign interference. Only one honest prosecutor anywhere in the country is needed to pursue a case.

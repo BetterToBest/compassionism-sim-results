@@ -1,0 +1,70 @@
+SOURCE: research_hub_8e8a6ba_cco_extract.txt (cached for C4.5)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba (2026-09-21), pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== research-summary.html (md5 b98e2ee19499657b1657d41e38b93a4e)
+--- lines 74-74
+The core thesis: poverty is not a moral failure but a systems failure — one that coordinated economic and civic infrastructure can resolve without requiring authoritarian control, unconditional redistribution, or the dismantling of private markets.
+
+--- lines 112-112
+CCO is a dual-currency system designed for post-scarcity and automation-driven economies. Citizens may opt in to receive Basic Units (BU) — a currency pegged 1:1 to primary currency but restricted to essential expenditures (food, housing, utilities) and set to expire at the end of each monthly distribution cycle. This prevents hoarding while ensuring circulation toward genuine need.
+
+--- lines 606-606
+Does not impose mandatory participation — opt-in only
+
+=== cco-ptf-integrated-framework.html (md5 10ab8364f4d7376e95435b681fbe4f22)
+--- lines 77-79
+Basic unit distributions follow the octave sequence: B(n) = B₀ × 2^n where n represents the octave level (0-7) and B₀ is the base distribution amount. This creates the progression: 1, 2, 4, 8, 16, 32, 64, 128 basic units per distribution cycle.
+
+Octave advancement requires cumulative contribution metrics following: A(n) = Σᵢ₌₀ⁿ Cᵢ where Cᵢ represents verified contributions at level i. The system prevents gaming through randomized verification protocols and community attestation mechanisms.
+
+--- lines 95-111
+3.2.1 Acre Equity Mechanisms
+
+Participants accumulate transferable ownership stakes through: E(t) = Σ P_contributions - Σ P_withdrawals + Σ Appreciation_share where appreciation sharing follows collective ownership principles rather than individual speculation.
+
+3.2.2 Four Pathway Entry System
+
+PTF accessibility is ensured through multiple entry mechanisms:
+
+Pay-in (Renters): Monthly payments with 70-80% converting to equity without down payment requirements
+
+Buy-in (Homeowners): Mortgage conversion enabling collective payoff strategies
+
+Sell-in (Liquidity Seekers): Equity transfer for seniors and those needing liquidity
+
+Earn-in (Service Providers): Contribution-based equity building through community work
+
+3.3 Crisis Resilience and Wealth Accumulation
+
+--- lines 201-201
+CCO systems function effectively with selective participation, requiring only essential service workers (healthcare, education, utilities, food service) for baseline operation. Simulation results demonstrate system viability at 30% population participation rates, with optimal effectiveness achieved at 60-70% participation.
+
+--- lines 245-245
+Real estate sector concerns about PTF market impacts require phased implementation that preserves private ownership options while creating alternatives. Labor organization engagement essential for addressing work incentive concerns and ensuring worker protection during transition periods.
+
+=== cco-ptf-simulation-replication.html (md5 528e343d7e635ae4702d2633bf910a66)
+--- lines 27-27
+A dual-currency economic layer. Citizens opt in to receive Basic Units (BU) — a monthly allocation (~$1,200/adult) redeemable at PTF businesses for essential goods. Businesses that accept BU convert them to primary currency at merit-scaled rates (1×–9×), rewarding quality and community contribution.
+
+--- lines 33-33
+Community-owned, democratically governed businesses that accept Basic Units and operate on a not-for-profit model. By eliminating shareholder profit extraction, PTF establishments achieve 40–60% internal overhead reductions (analogous to Mondragon's cooperative model) — a business-economics figure, distinct from the 12–16% consumer-facing cost reduction ( PTF_savings_rate in CFG ) the simulation itself applies; see Mathematical Framework §2. PTF is modelled as a cost-reduction mechanism for essential goods, not as a wealth-addition channel.
+
+=== us-real-estate-transformation.html (md5 96dffce8a3e8ae8b10ac4e4543bca313)
+--- lines 49-53
+Public Trust Housing emerges as a third path that transcends the market-state dichotomy through community-based ownership and democratic governance. PTH operates on three foundational principles:
+
+1. Collective Asset Building: Individual housing payments contribute to shared asset pools rather than extractive rent relationships
+
+2. Risk Distribution: Geographic and demographic diversification reduces individual exposure to market volatility
+
+--- lines 333-333
+Mathematical modeling demonstrates that PTH networks can achieve 15-20% market penetration within a decade, with individual households accumulating an average of $70,000 in wealth compared to $380,000 in losses under current rental systems. This represents a $450,000 improvement in household wealth outcomes over 20 years.
+
+=== corporate-transformation.html (md5 7f7d14c785bf1d548904e22867ebc27a)
+--- lines 117-121
+Community benefit reductions: Environmental stewardship (-2%), worker wellbeing with reduced hours (-1%), creator collective service (-2%), open source contribution (-1%), local production (-1%).
+
+Extractive behavior penalties: Environmental damage (+5%), speculation (+3%), market concentration (+2%), waste generation (+2%), labor exploitation (+3%).
+
+Effective range: 2% for highly beneficial companies to 25% for extractive ones. A technology company with verified community benefit practices pays ~5% effective rate; a high-frequency trading firm pays ~17%. Revenue allocation: 40% to CCO basic unit distribution, 30% to PTF housing and infrastructure, 15% to CIP platform operation, 10% to SZH coordination, 5% to administration.

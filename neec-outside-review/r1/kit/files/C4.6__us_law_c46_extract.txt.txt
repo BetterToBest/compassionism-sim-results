@@ -1,0 +1,20 @@
+SOURCE: us_law_c46_extract.txt (cached for C4.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== 42 U.S.C. 247d-6d (the PREP Act), Cornell LII: https://www.law.cornell.edu/uscode/text/42/247d-6d (md5 f6f91561543554c02713e32f2225c297)
+--- from line 142 (anchor /a covered person shall be immune from suit and liability under Federal and State law/)
+Subject to the other provisions of this section, a covered person shall be immune from suit and liability under Federal and State law with respect to all claims for loss caused by, arising out of, relating to, or resulting from the administration to or the use by an individual of a covered countermeasure if a declaration under subsection (b) has been issued with respect to such countermeasure.
+
+=== 42 U.S.C. 247d-6e (the Covered Countermeasure Process Fund), Cornell LII: https://www.law.cornell.edu/uscode/text/42/247d-6e (md5 2c8406263f9182b7aed252fc87aaf3fe)
+--- from line 141 (anchor /there is hereby established in the Treasury an emergency fund/)
+Upon the issuance by the Secretary of a declaration under section 247d–6d(b) of this title , there is hereby established in the Treasury an emergency fund designated as the “Covered Countermeasure Process Fund” for purposes of providing timely, uniform, and adequate compensation to eligible individuals for covered injuries directly caused by the administration or use of a covered countermeasure pursuant to such declaration, which Fund shall consist of such amounts designated as emergency appropriations under section 402 of H. Con. Res. 95 of the 109th Congress , this emergency designation shall remain in effect through October 1, 2006 .
+
+--- from line 202 (anchor /shall be exclusive of any other civil action or proceeding/)
+The remedy provided by subsection (a) shall be exclusive of any other civil action or proceeding for any claim or suit this section encompasses, except for a proceeding under section 247d–6d of this title .
+
+=== 42 U.S.C. 9607 (CERCLA liability), Cornell LII: https://www.law.cornell.edu/uscode/text/42/9607 (md5 4204771de83edb675d3e78ec4a07e243)
+--- from line 137 (anchor /Notwithstanding any other provision or rule of law, and subject only to the defenses/)
+(a) Covered persons; scope; recoverable costs and damages; interest rate; “comparable maturity” date Notwithstanding any other provision or rule of law, and subject only to the defenses set forth in subsection (b) of this section—
+(1)
+the owner and operator of a vessel or a facility ,

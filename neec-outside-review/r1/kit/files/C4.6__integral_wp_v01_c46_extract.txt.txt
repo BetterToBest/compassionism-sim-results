@@ -1,0 +1,20 @@
+SOURCE: integral_wp_v01_c46_extract.txt (cached for C4.6)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (as served 2026-10-18; md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout; passages headed by line range.
+
+--- lines 612-627
+4.2 Ecological Balance
+Integral embeds ecological constraints directly into the economic process. Unlike markets, which treat environmental impact as an externality, Integral incorporates
+biophysical information at every stage of production and allocation.
+
+Ecological balance emerges through several mechanisms:
+
+        Continuous environmental feedback, where reporting mechanisms track resource cycles, material flows, and ecological thresholds.
+        Design constraints that prevent high-impact production from scaling unless it meets ecological safety criteria.
+
+        Lifecycle assessment integrated into design repositories, ensuring that material use, repairability, recyclability, and end-of-life impacts are known and
+        accounted for.
+        Collective oversight, where communities can see the ecological implications of their production choices.
+
+Ecology is not an afterthought. It is structurally coupled with economic calculation, ensuring that production stays within planetary boundaries and that ecological
+degradation is detected and corrected before it becomes systemic.

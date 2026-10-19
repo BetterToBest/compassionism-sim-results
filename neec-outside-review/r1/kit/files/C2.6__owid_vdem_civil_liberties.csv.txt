@@ -1,0 +1,597 @@
+SOURCE: owid_vdem_civil_liberties.csv (cached for C2.6)
+
+entity,code,year,civ_libs_vdem__estimate_best,owid_region
+China,CHN,1960,0.069,Asia
+China,CHN,1961,0.07,Asia
+China,CHN,1962,0.07,Asia
+China,CHN,1963,0.07,Asia
+China,CHN,1964,0.07,Asia
+China,CHN,1965,0.07,Asia
+China,CHN,1966,0.04,Asia
+China,CHN,1967,0.04,Asia
+China,CHN,1968,0.04,Asia
+China,CHN,1969,0.036,Asia
+China,CHN,1970,0.04,Asia
+China,CHN,1971,0.04,Asia
+China,CHN,1972,0.045,Asia
+China,CHN,1973,0.047,Asia
+China,CHN,1974,0.047,Asia
+China,CHN,1975,0.047,Asia
+China,CHN,1976,0.047,Asia
+China,CHN,1977,0.064,Asia
+China,CHN,1978,0.119,Asia
+China,CHN,1979,0.228,Asia
+China,CHN,1980,0.252,Asia
+China,CHN,1981,0.256,Asia
+China,CHN,1982,0.256,Asia
+China,CHN,1983,0.256,Asia
+China,CHN,1984,0.256,Asia
+China,CHN,1985,0.256,Asia
+China,CHN,1986,0.26,Asia
+China,CHN,1987,0.267,Asia
+China,CHN,1988,0.267,Asia
+China,CHN,1989,0.232,Asia
+China,CHN,1990,0.223,Asia
+China,CHN,1991,0.223,Asia
+China,CHN,1992,0.241,Asia
+China,CHN,1993,0.246,Asia
+China,CHN,1994,0.248,Asia
+China,CHN,1995,0.256,Asia
+China,CHN,1996,0.262,Asia
+China,CHN,1997,0.262,Asia
+China,CHN,1998,0.262,Asia
+China,CHN,1999,0.263,Asia
+China,CHN,2000,0.272,Asia
+China,CHN,2001,0.274,Asia
+China,CHN,2002,0.278,Asia
+China,CHN,2003,0.294,Asia
+China,CHN,2004,0.293,Asia
+China,CHN,2005,0.289,Asia
+China,CHN,2006,0.289,Asia
+China,CHN,2007,0.289,Asia
+China,CHN,2008,0.289,Asia
+China,CHN,2009,0.285,Asia
+China,CHN,2010,0.283,Asia
+China,CHN,2011,0.275,Asia
+China,CHN,2012,0.282,Asia
+China,CHN,2013,0.258,Asia
+China,CHN,2014,0.241,Asia
+China,CHN,2015,0.255,Asia
+China,CHN,2016,0.248,Asia
+China,CHN,2017,0.241,Asia
+China,CHN,2018,0.217,Asia
+China,CHN,2019,0.209,Asia
+China,CHN,2020,0.191,Asia
+China,CHN,2021,0.188,Asia
+China,CHN,2022,0.172,Asia
+China,CHN,2023,0.169,Asia
+China,CHN,2024,0.175,Asia
+China,CHN,2025,0.179,Asia
+Denmark,DNK,1960,0.964,Europe
+Denmark,DNK,1961,0.964,Europe
+Denmark,DNK,1962,0.966,Europe
+Denmark,DNK,1963,0.969,Europe
+Denmark,DNK,1964,0.969,Europe
+Denmark,DNK,1965,0.969,Europe
+Denmark,DNK,1966,0.969,Europe
+Denmark,DNK,1967,0.97,Europe
+Denmark,DNK,1968,0.97,Europe
+Denmark,DNK,1969,0.97,Europe
+Denmark,DNK,1970,0.97,Europe
+Denmark,DNK,1971,0.97,Europe
+Denmark,DNK,1972,0.97,Europe
+Denmark,DNK,1973,0.97,Europe
+Denmark,DNK,1974,0.97,Europe
+Denmark,DNK,1975,0.97,Europe
+Denmark,DNK,1976,0.97,Europe
+Denmark,DNK,1977,0.97,Europe
+Denmark,DNK,1978,0.97,Europe
+Denmark,DNK,1979,0.97,Europe
+Denmark,DNK,1980,0.97,Europe
+Denmark,DNK,1981,0.97,Europe
+Denmark,DNK,1982,0.97,Europe
+Denmark,DNK,1983,0.97,Europe
+Denmark,DNK,1984,0.97,Europe
+Denmark,DNK,1985,0.97,Europe
+Denmark,DNK,1986,0.97,Europe
+Denmark,DNK,1987,0.97,Europe
+Denmark,DNK,1988,0.97,Europe
+Denmark,DNK,1989,0.97,Europe
+Denmark,DNK,1990,0.97,Europe
+Denmark,DNK,1991,0.97,Europe
+Denmark,DNK,1992,0.97,Europe
+Denmark,DNK,1993,0.97,Europe
+Denmark,DNK,1994,0.97,Europe
+Denmark,DNK,1995,0.97,Europe
+Denmark,DNK,1996,0.97,Europe
+Denmark,DNK,1997,0.97,Europe
+Denmark,DNK,1998,0.97,Europe
+Denmark,DNK,1999,0.97,Europe
+Denmark,DNK,2000,0.97,Europe
+Denmark,DNK,2001,0.97,Europe
+Denmark,DNK,2002,0.97,Europe
+Denmark,DNK,2003,0.97,Europe
+Denmark,DNK,2004,0.97,Europe
+Denmark,DNK,2005,0.97,Europe
+Denmark,DNK,2006,0.97,Europe
+Denmark,DNK,2007,0.97,Europe
+Denmark,DNK,2008,0.97,Europe
+Denmark,DNK,2009,0.97,Europe
+Denmark,DNK,2010,0.97,Europe
+Denmark,DNK,2011,0.97,Europe
+Denmark,DNK,2012,0.97,Europe
+Denmark,DNK,2013,0.964,Europe
+Denmark,DNK,2014,0.964,Europe
+Denmark,DNK,2015,0.968,Europe
+Denmark,DNK,2016,0.968,Europe
+Denmark,DNK,2017,0.968,Europe
+Denmark,DNK,2018,0.961,Europe
+Denmark,DNK,2019,0.954,Europe
+Denmark,DNK,2020,0.939,Europe
+Denmark,DNK,2021,0.95,Europe
+Denmark,DNK,2022,0.96,Europe
+Denmark,DNK,2023,0.96,Europe
+Denmark,DNK,2024,0.96,Europe
+Denmark,DNK,2025,0.959,Europe
+Finland,FIN,1960,0.939,Europe
+Finland,FIN,1961,0.939,Europe
+Finland,FIN,1962,0.934,Europe
+Finland,FIN,1963,0.934,Europe
+Finland,FIN,1964,0.935,Europe
+Finland,FIN,1965,0.939,Europe
+Finland,FIN,1966,0.939,Europe
+Finland,FIN,1967,0.94,Europe
+Finland,FIN,1968,0.94,Europe
+Finland,FIN,1969,0.941,Europe
+Finland,FIN,1970,0.941,Europe
+Finland,FIN,1971,0.941,Europe
+Finland,FIN,1972,0.941,Europe
+Finland,FIN,1973,0.941,Europe
+Finland,FIN,1974,0.941,Europe
+Finland,FIN,1975,0.941,Europe
+Finland,FIN,1976,0.942,Europe
+Finland,FIN,1977,0.942,Europe
+Finland,FIN,1978,0.942,Europe
+Finland,FIN,1979,0.942,Europe
+Finland,FIN,1980,0.943,Europe
+Finland,FIN,1981,0.946,Europe
+Finland,FIN,1982,0.95,Europe
+Finland,FIN,1983,0.953,Europe
+Finland,FIN,1984,0.953,Europe
+Finland,FIN,1985,0.953,Europe
+Finland,FIN,1986,0.953,Europe
+Finland,FIN,1987,0.955,Europe
+Finland,FIN,1988,0.955,Europe
+Finland,FIN,1989,0.955,Europe
+Finland,FIN,1990,0.964,Europe
+Finland,FIN,1991,0.966,Europe
+Finland,FIN,1992,0.966,Europe
+Finland,FIN,1993,0.967,Europe
+Finland,FIN,1994,0.967,Europe
+Finland,FIN,1995,0.967,Europe
+Finland,FIN,1996,0.967,Europe
+Finland,FIN,1997,0.967,Europe
+Finland,FIN,1998,0.967,Europe
+Finland,FIN,1999,0.967,Europe
+Finland,FIN,2000,0.967,Europe
+Finland,FIN,2001,0.967,Europe
+Finland,FIN,2002,0.967,Europe
+Finland,FIN,2003,0.967,Europe
+Finland,FIN,2004,0.967,Europe
+Finland,FIN,2005,0.967,Europe
+Finland,FIN,2006,0.967,Europe
+Finland,FIN,2007,0.967,Europe
+Finland,FIN,2008,0.967,Europe
+Finland,FIN,2009,0.967,Europe
+Finland,FIN,2010,0.967,Europe
+Finland,FIN,2011,0.967,Europe
+Finland,FIN,2012,0.967,Europe
+Finland,FIN,2013,0.967,Europe
+Finland,FIN,2014,0.967,Europe
+Finland,FIN,2015,0.961,Europe
+Finland,FIN,2016,0.961,Europe
+Finland,FIN,2017,0.964,Europe
+Finland,FIN,2018,0.967,Europe
+Finland,FIN,2019,0.963,Europe
+Finland,FIN,2020,0.962,Europe
+Finland,FIN,2021,0.955,Europe
+Finland,FIN,2022,0.955,Europe
+Finland,FIN,2023,0.949,Europe
+Finland,FIN,2024,0.944,Europe
+Finland,FIN,2025,0.947,Europe
+Norway,NOR,1960,0.923,Europe
+Norway,NOR,1961,0.923,Europe
+Norway,NOR,1962,0.923,Europe
+Norway,NOR,1963,0.923,Europe
+Norway,NOR,1964,0.923,Europe
+Norway,NOR,1965,0.923,Europe
+Norway,NOR,1966,0.923,Europe
+Norway,NOR,1967,0.923,Europe
+Norway,NOR,1968,0.923,Europe
+Norway,NOR,1969,0.923,Europe
+Norway,NOR,1970,0.929,Europe
+Norway,NOR,1971,0.929,Europe
+Norway,NOR,1972,0.929,Europe
+Norway,NOR,1973,0.929,Europe
+Norway,NOR,1974,0.929,Europe
+Norway,NOR,1975,0.929,Europe
+Norway,NOR,1976,0.929,Europe
+Norway,NOR,1977,0.929,Europe
+Norway,NOR,1978,0.929,Europe
+Norway,NOR,1979,0.929,Europe
+Norway,NOR,1980,0.956,Europe
+Norway,NOR,1981,0.96,Europe
+Norway,NOR,1982,0.96,Europe
+Norway,NOR,1983,0.96,Europe
+Norway,NOR,1984,0.96,Europe
+Norway,NOR,1985,0.96,Europe
+Norway,NOR,1986,0.96,Europe
+Norway,NOR,1987,0.96,Europe
+Norway,NOR,1988,0.96,Europe
+Norway,NOR,1989,0.96,Europe
+Norway,NOR,1990,0.968,Europe
+Norway,NOR,1991,0.968,Europe
+Norway,NOR,1992,0.968,Europe
+Norway,NOR,1993,0.968,Europe
+Norway,NOR,1994,0.968,Europe
+Norway,NOR,1995,0.968,Europe
+Norway,NOR,1996,0.968,Europe
+Norway,NOR,1997,0.968,Europe
+Norway,NOR,1998,0.968,Europe
+Norway,NOR,1999,0.968,Europe
+Norway,NOR,2000,0.971,Europe
+Norway,NOR,2001,0.971,Europe
+Norway,NOR,2002,0.971,Europe
+Norway,NOR,2003,0.971,Europe
+Norway,NOR,2004,0.971,Europe
+Norway,NOR,2005,0.971,Europe
+Norway,NOR,2006,0.971,Europe
+Norway,NOR,2007,0.971,Europe
+Norway,NOR,2008,0.971,Europe
+Norway,NOR,2009,0.971,Europe
+Norway,NOR,2010,0.971,Europe
+Norway,NOR,2011,0.971,Europe
+Norway,NOR,2012,0.971,Europe
+Norway,NOR,2013,0.971,Europe
+Norway,NOR,2014,0.971,Europe
+Norway,NOR,2015,0.971,Europe
+Norway,NOR,2016,0.968,Europe
+Norway,NOR,2017,0.967,Europe
+Norway,NOR,2018,0.968,Europe
+Norway,NOR,2019,0.96,Europe
+Norway,NOR,2020,0.929,Europe
+Norway,NOR,2021,0.93,Europe
+Norway,NOR,2022,0.944,Europe
+Norway,NOR,2023,0.947,Europe
+Norway,NOR,2024,0.947,Europe
+Norway,NOR,2025,0.947,Europe
+Qatar,QAT,1960,0.296,Asia
+Qatar,QAT,1961,0.296,Asia
+Qatar,QAT,1962,0.299,Asia
+Qatar,QAT,1963,0.299,Asia
+Qatar,QAT,1964,0.299,Asia
+Qatar,QAT,1965,0.299,Asia
+Qatar,QAT,1966,0.299,Asia
+Qatar,QAT,1967,0.299,Asia
+Qatar,QAT,1968,0.307,Asia
+Qatar,QAT,1969,0.307,Asia
+Qatar,QAT,1970,0.326,Asia
+Qatar,QAT,1971,0.331,Asia
+Qatar,QAT,1972,0.335,Asia
+Qatar,QAT,1973,0.335,Asia
+Qatar,QAT,1974,0.335,Asia
+Qatar,QAT,1975,0.335,Asia
+Qatar,QAT,1976,0.335,Asia
+Qatar,QAT,1977,0.335,Asia
+Qatar,QAT,1978,0.335,Asia
+Qatar,QAT,1979,0.335,Asia
+Qatar,QAT,1980,0.34,Asia
+Qatar,QAT,1981,0.34,Asia
+Qatar,QAT,1982,0.34,Asia
+Qatar,QAT,1983,0.34,Asia
+Qatar,QAT,1984,0.34,Asia
+Qatar,QAT,1985,0.34,Asia
+Qatar,QAT,1986,0.34,Asia
+Qatar,QAT,1987,0.34,Asia
+Qatar,QAT,1988,0.34,Asia
+Qatar,QAT,1989,0.34,Asia
+Qatar,QAT,1990,0.37,Asia
+Qatar,QAT,1991,0.37,Asia
+Qatar,QAT,1992,0.37,Asia
+Qatar,QAT,1993,0.37,Asia
+Qatar,QAT,1994,0.373,Asia
+Qatar,QAT,1995,0.389,Asia
+Qatar,QAT,1996,0.396,Asia
+Qatar,QAT,1997,0.397,Asia
+Qatar,QAT,1998,0.401,Asia
+Qatar,QAT,1999,0.401,Asia
+Qatar,QAT,2000,0.438,Asia
+Qatar,QAT,2001,0.438,Asia
+Qatar,QAT,2002,0.436,Asia
+Qatar,QAT,2003,0.436,Asia
+Qatar,QAT,2004,0.436,Asia
+Qatar,QAT,2005,0.435,Asia
+Qatar,QAT,2006,0.435,Asia
+Qatar,QAT,2007,0.444,Asia
+Qatar,QAT,2008,0.447,Asia
+Qatar,QAT,2009,0.447,Asia
+Qatar,QAT,2010,0.446,Asia
+Qatar,QAT,2011,0.451,Asia
+Qatar,QAT,2012,0.452,Asia
+Qatar,QAT,2013,0.433,Asia
+Qatar,QAT,2014,0.431,Asia
+Qatar,QAT,2015,0.433,Asia
+Qatar,QAT,2016,0.428,Asia
+Qatar,QAT,2017,0.424,Asia
+Qatar,QAT,2018,0.433,Asia
+Qatar,QAT,2019,0.432,Asia
+Qatar,QAT,2020,0.423,Asia
+Qatar,QAT,2021,0.376,Asia
+Qatar,QAT,2022,0.368,Asia
+Qatar,QAT,2023,0.355,Asia
+Qatar,QAT,2024,0.356,Asia
+Qatar,QAT,2025,0.357,Asia
+Russia,RUS,1960,0.147,Europe
+Russia,RUS,1961,0.146,Europe
+Russia,RUS,1962,0.148,Europe
+Russia,RUS,1963,0.146,Europe
+Russia,RUS,1964,0.146,Europe
+Russia,RUS,1965,0.148,Europe
+Russia,RUS,1966,0.148,Europe
+Russia,RUS,1967,0.147,Europe
+Russia,RUS,1968,0.147,Europe
+Russia,RUS,1969,0.145,Europe
+Russia,RUS,1970,0.149,Europe
+Russia,RUS,1971,0.149,Europe
+Russia,RUS,1972,0.146,Europe
+Russia,RUS,1973,0.146,Europe
+Russia,RUS,1974,0.149,Europe
+Russia,RUS,1975,0.15,Europe
+Russia,RUS,1976,0.148,Europe
+Russia,RUS,1977,0.148,Europe
+Russia,RUS,1978,0.148,Europe
+Russia,RUS,1979,0.147,Europe
+Russia,RUS,1980,0.149,Europe
+Russia,RUS,1981,0.148,Europe
+Russia,RUS,1982,0.149,Europe
+Russia,RUS,1983,0.147,Europe
+Russia,RUS,1984,0.147,Europe
+Russia,RUS,1985,0.172,Europe
+Russia,RUS,1986,0.246,Europe
+Russia,RUS,1987,0.284,Europe
+Russia,RUS,1988,0.289,Europe
+Russia,RUS,1989,0.314,Europe
+Russia,RUS,1990,0.41,Europe
+Russia,RUS,1991,0.44,Europe
+Russia,RUS,1992,0.71,Europe
+Russia,RUS,1993,0.723,Europe
+Russia,RUS,1994,0.715,Europe
+Russia,RUS,1995,0.717,Europe
+Russia,RUS,1996,0.717,Europe
+Russia,RUS,1997,0.719,Europe
+Russia,RUS,1998,0.719,Europe
+Russia,RUS,1999,0.709,Europe
+Russia,RUS,2000,0.631,Europe
+Russia,RUS,2001,0.605,Europe
+Russia,RUS,2002,0.582,Europe
+Russia,RUS,2003,0.564,Europe
+Russia,RUS,2004,0.561,Europe
+Russia,RUS,2005,0.552,Europe
+Russia,RUS,2006,0.541,Europe
+Russia,RUS,2007,0.54,Europe
+Russia,RUS,2008,0.543,Europe
+Russia,RUS,2009,0.549,Europe
+Russia,RUS,2010,0.547,Europe
+Russia,RUS,2011,0.545,Europe
+Russia,RUS,2012,0.525,Europe
+Russia,RUS,2013,0.519,Europe
+Russia,RUS,2014,0.49,Europe
+Russia,RUS,2015,0.476,Europe
+Russia,RUS,2016,0.466,Europe
+Russia,RUS,2017,0.464,Europe
+Russia,RUS,2018,0.466,Europe
+Russia,RUS,2019,0.459,Europe
+Russia,RUS,2020,0.423,Europe
+Russia,RUS,2021,0.424,Europe
+Russia,RUS,2022,0.309,Europe
+Russia,RUS,2023,0.299,Europe
+Russia,RUS,2024,0.26,Europe
+Russia,RUS,2025,0.265,Europe
+Singapore,SGP,1960,0.547,Asia
+Singapore,SGP,1961,0.547,Asia
+Singapore,SGP,1962,0.547,Asia
+Singapore,SGP,1963,0.581,Asia
+Singapore,SGP,1964,0.559,Asia
+Singapore,SGP,1965,0.596,Asia
+Singapore,SGP,1966,0.608,Asia
+Singapore,SGP,1967,0.63,Asia
+Singapore,SGP,1968,0.63,Asia
+Singapore,SGP,1969,0.63,Asia
+Singapore,SGP,1970,0.68,Asia
+Singapore,SGP,1971,0.68,Asia
+Singapore,SGP,1972,0.68,Asia
+Singapore,SGP,1973,0.68,Asia
+Singapore,SGP,1974,0.68,Asia
+Singapore,SGP,1975,0.684,Asia
+Singapore,SGP,1976,0.681,Asia
+Singapore,SGP,1977,0.681,Asia
+Singapore,SGP,1978,0.681,Asia
+Singapore,SGP,1979,0.681,Asia
+Singapore,SGP,1980,0.685,Asia
+Singapore,SGP,1981,0.685,Asia
+Singapore,SGP,1982,0.685,Asia
+Singapore,SGP,1983,0.685,Asia
+Singapore,SGP,1984,0.685,Asia
+Singapore,SGP,1985,0.685,Asia
+Singapore,SGP,1986,0.685,Asia
+Singapore,SGP,1987,0.686,Asia
+Singapore,SGP,1988,0.686,Asia
+Singapore,SGP,1989,0.686,Asia
+Singapore,SGP,1990,0.712,Asia
+Singapore,SGP,1991,0.712,Asia
+Singapore,SGP,1992,0.712,Asia
+Singapore,SGP,1993,0.712,Asia
+Singapore,SGP,1994,0.712,Asia
+Singapore,SGP,1995,0.712,Asia
+Singapore,SGP,1996,0.715,Asia
+Singapore,SGP,1997,0.715,Asia
+Singapore,SGP,1998,0.715,Asia
+Singapore,SGP,1999,0.715,Asia
+Singapore,SGP,2000,0.72,Asia
+Singapore,SGP,2001,0.72,Asia
+Singapore,SGP,2002,0.72,Asia
+Singapore,SGP,2003,0.72,Asia
+Singapore,SGP,2004,0.72,Asia
+Singapore,SGP,2005,0.718,Asia
+Singapore,SGP,2006,0.713,Asia
+Singapore,SGP,2007,0.711,Asia
+Singapore,SGP,2008,0.712,Asia
+Singapore,SGP,2009,0.713,Asia
+Singapore,SGP,2010,0.714,Asia
+Singapore,SGP,2011,0.713,Asia
+Singapore,SGP,2012,0.719,Asia
+Singapore,SGP,2013,0.714,Asia
+Singapore,SGP,2014,0.714,Asia
+Singapore,SGP,2015,0.711,Asia
+Singapore,SGP,2016,0.715,Asia
+Singapore,SGP,2017,0.715,Asia
+Singapore,SGP,2018,0.718,Asia
+Singapore,SGP,2019,0.704,Asia
+Singapore,SGP,2020,0.712,Asia
+Singapore,SGP,2021,0.698,Asia
+Singapore,SGP,2022,0.697,Asia
+Singapore,SGP,2023,0.713,Asia
+Singapore,SGP,2024,0.714,Asia
+Singapore,SGP,2025,0.717,Asia
+Sweden,SWE,1960,0.951,Europe
+Sweden,SWE,1961,0.956,Europe
+Sweden,SWE,1962,0.957,Europe
+Sweden,SWE,1963,0.957,Europe
+Sweden,SWE,1964,0.957,Europe
+Sweden,SWE,1965,0.957,Europe
+Sweden,SWE,1966,0.957,Europe
+Sweden,SWE,1967,0.957,Europe
+Sweden,SWE,1968,0.957,Europe
+Sweden,SWE,1969,0.957,Europe
+Sweden,SWE,1970,0.957,Europe
+Sweden,SWE,1971,0.957,Europe
+Sweden,SWE,1972,0.958,Europe
+Sweden,SWE,1973,0.963,Europe
+Sweden,SWE,1974,0.964,Europe
+Sweden,SWE,1975,0.967,Europe
+Sweden,SWE,1976,0.967,Europe
+Sweden,SWE,1977,0.967,Europe
+Sweden,SWE,1978,0.967,Europe
+Sweden,SWE,1979,0.967,Europe
+Sweden,SWE,1980,0.971,Europe
+Sweden,SWE,1981,0.971,Europe
+Sweden,SWE,1982,0.972,Europe
+Sweden,SWE,1983,0.972,Europe
+Sweden,SWE,1984,0.972,Europe
+Sweden,SWE,1985,0.972,Europe
+Sweden,SWE,1986,0.972,Europe
+Sweden,SWE,1987,0.972,Europe
+Sweden,SWE,1988,0.972,Europe
+Sweden,SWE,1989,0.972,Europe
+Sweden,SWE,1990,0.973,Europe
+Sweden,SWE,1991,0.973,Europe
+Sweden,SWE,1992,0.973,Europe
+Sweden,SWE,1993,0.973,Europe
+Sweden,SWE,1994,0.973,Europe
+Sweden,SWE,1995,0.973,Europe
+Sweden,SWE,1996,0.973,Europe
+Sweden,SWE,1997,0.973,Europe
+Sweden,SWE,1998,0.973,Europe
+Sweden,SWE,1999,0.973,Europe
+Sweden,SWE,2000,0.973,Europe
+Sweden,SWE,2001,0.973,Europe
+Sweden,SWE,2002,0.973,Europe
+Sweden,SWE,2003,0.973,Europe
+Sweden,SWE,2004,0.973,Europe
+Sweden,SWE,2005,0.973,Europe
+Sweden,SWE,2006,0.974,Europe
+Sweden,SWE,2007,0.974,Europe
+Sweden,SWE,2008,0.974,Europe
+Sweden,SWE,2009,0.974,Europe
+Sweden,SWE,2010,0.974,Europe
+Sweden,SWE,2011,0.974,Europe
+Sweden,SWE,2012,0.975,Europe
+Sweden,SWE,2013,0.975,Europe
+Sweden,SWE,2014,0.975,Europe
+Sweden,SWE,2015,0.968,Europe
+Sweden,SWE,2016,0.967,Europe
+Sweden,SWE,2017,0.965,Europe
+Sweden,SWE,2018,0.963,Europe
+Sweden,SWE,2019,0.963,Europe
+Sweden,SWE,2020,0.964,Europe
+Sweden,SWE,2021,0.964,Europe
+Sweden,SWE,2022,0.964,Europe
+Sweden,SWE,2023,0.962,Europe
+Sweden,SWE,2024,0.961,Europe
+Sweden,SWE,2025,0.96,Europe
+United States,USA,1960,0.794,North America
+United States,USA,1961,0.795,North America
+United States,USA,1962,0.796,North America
+United States,USA,1963,0.797,North America
+United States,USA,1964,0.802,North America
+United States,USA,1965,0.812,North America
+United States,USA,1966,0.823,North America
+United States,USA,1967,0.821,North America
+United States,USA,1968,0.839,North America
+United States,USA,1969,0.862,North America
+United States,USA,1970,0.884,North America
+United States,USA,1971,0.881,North America
+United States,USA,1972,0.89,North America
+United States,USA,1973,0.896,North America
+United States,USA,1974,0.9,North America
+United States,USA,1975,0.907,North America
+United States,USA,1976,0.914,North America
+United States,USA,1977,0.917,North America
+United States,USA,1978,0.92,North America
+United States,USA,1979,0.921,North America
+United States,USA,1980,0.926,North America
+United States,USA,1981,0.937,North America
+United States,USA,1982,0.937,North America
+United States,USA,1983,0.936,North America
+United States,USA,1984,0.936,North America
+United States,USA,1985,0.936,North America
+United States,USA,1986,0.942,North America
+United States,USA,1987,0.943,North America
+United States,USA,1988,0.943,North America
+United States,USA,1989,0.943,North America
+United States,USA,1990,0.948,North America
+United States,USA,1991,0.946,North America
+United States,USA,1992,0.947,North America
+United States,USA,1993,0.947,North America
+United States,USA,1994,0.947,North America
+United States,USA,1995,0.947,North America
+United States,USA,1996,0.947,North America
+United States,USA,1997,0.947,North America
+United States,USA,1998,0.947,North America
+United States,USA,1999,0.947,North America
+United States,USA,2000,0.948,North America
+United States,USA,2001,0.946,North America
+United States,USA,2002,0.934,North America
+United States,USA,2003,0.906,North America
+United States,USA,2004,0.906,North America
+United States,USA,2005,0.921,North America
+United States,USA,2006,0.914,North America
+United States,USA,2007,0.922,North America
+United States,USA,2008,0.94,North America
+United States,USA,2009,0.952,North America
+United States,USA,2010,0.951,North America
+United States,USA,2011,0.95,North America
+United States,USA,2012,0.949,North America
+United States,USA,2013,0.953,North America
+United States,USA,2014,0.953,North America
+United States,USA,2015,0.953,North America
+United States,USA,2016,0.951,North America
+United States,USA,2017,0.943,North America
+United States,USA,2018,0.935,North America
+United States,USA,2019,0.931,North America
+United States,USA,2020,0.917,North America
+United States,USA,2021,0.938,North America
+United States,USA,2022,0.944,North America
+United States,USA,2023,0.931,North America
+United States,USA,2024,0.927,North America
+United States,USA,2025,0.826,North America

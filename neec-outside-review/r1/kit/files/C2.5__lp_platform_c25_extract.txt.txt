@@ -1,0 +1,13 @@
+SOURCE: lp_platform_c25_extract.txt (cached for C2.5)
+
+Source: https://lp.org/platform/ (Libertarian Party platform, as served 2026-10-18; page md5 eb7f304b9713e1e295b47bb5478c9149); passages headed by line range.
+
+--- lines 241-243
+3.4 Free Trade and Migration
+
+We support the removal of governmental impediments to free trade. Political freedom and escape from tyranny demand that individuals not be unreasonably constrained by government in the crossing of political boundaries. Economic freedom demands the unrestricted movement of human as well as financial capital across national borders.
+
+--- lines 253-255
+3.7 Self-Determination
+
+Whenever any form of government becomes destructive of individual liberty, it is the right of the people to alter, abolish, or withdraw from it, and to agree to such new governance, or none, as to them shall seem most likely to protect their liberty. We recognize the right to political self-determination, including secession. Exercise of this right does not require permission from others.

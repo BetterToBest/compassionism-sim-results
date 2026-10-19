@@ -1,0 +1,18 @@
+SOURCE: sg_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Infectious Diseases Act 1976, section 15 (sso.agc.gov.sg): https://sso.agc.gov.sg/Act/IDA1976?ProvIds=pr15- (md5 47a02fabf95e3e58058462e94f464072)
+--- from line 1563 (anchor /^15\. —\(1\)/)
+15. —(1)  The Director-General of Health may order the following persons to be detained and isolated in a hospital or other place for such period of time and subject to such conditions as the Director-General of Health may determine: ( a ) any person who is a case or an at-risk individual of an infectious disease;
+
+--- from line 1567 (anchor /^\(2\)\s+The Director-General of Health may order the following persons to remain/)
+(2)  The Director-General of Health may order the following persons to remain and to be isolated and (if necessary) be treated, in the person’s own residence for such period of time as may be necessary for the protection of the public and subject to such conditions as the Director-General of Health may consider necessary for this purpose: ( a ) any person who is a case or an at-risk individual of an infectious disease;
+
+=== Infectious Diseases Act 1976, section 21K: https://sso.agc.gov.sg/Act/IDA1976?ProvIds=pr21K- (md5 a104393282806ece4ae81089be9e6bee)
+--- from line 1489 (anchor /^21K\./)
+21K.   During the period that a PHT Order or PHE Order is in force, there is no appeal to the appropriate Minister from — ( a ) any order, requirement or direction of the Director-General of Health under section 18(1), 19(1), 20(1) or 21(1) made during the period the PHT Order or PHE Order (as the case may be) is in force; or
+
+=== Infectious Diseases Act 1976, section 47: https://sso.agc.gov.sg/Act/IDA1976?ProvIds=pr47- (md5 cfd963113c3ea36a247b8ce17a3d916f)
+--- from line 1563 (anchor /^47\. —\(1\)/)
+47. —(1)  In an outbreak or a suspected outbreak of any infectious disease in any area in Singapore, the Director-General of Health may by order direct any person or class of persons not protected or vaccinated against the disease to undergo vaccination or other prophylaxis within the period specified in the order. [10/2008; 5/2019]

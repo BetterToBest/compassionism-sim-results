@@ -1,0 +1,75 @@
+SOURCE: integral_wp_v01_c25_extract.txt (cached for C2.5)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025; PDF md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 296-300
+A new architecture must therefore be democratic, voluntary, cooperative, and cybernetic:
+
+        Democratic, because legitimate coordination cannot operate above or against the people who sustain it.
+
+        Voluntary, because coercive systems—whether market-based or state-based—ultimately reproduce hierarchy and domination.
+
+--- lines 648-662
+4.4 A Method of Transition
+Integral is designed to grow through voluntary adoption, not by replacing existing systems through force or political capture. Its transition pathway mirrors the
+cooperative logic of the system itself.
+
+Early-stage implementation begins with small mutual-aid groups that operate within the legal and cultural framework of existing societies. These groups create
+practical value—shared tools, community food infrastructure, open design libraries—without threatening existing institutions.
+
+Mid-stage growth occurs as multiple nodes adopt shared standards and begin coordinating labor, design improvements, and resource exchanges. Network effects
+increase the efficiency and reliability of cooperative production, attracting further participation.
+
+Late-stage federation emerges as nodes integrate through open protocols. This produces regional and eventually global coordination without centralization, allowing
+Integral to coexist with, and gradually displace, market-based production as the more efficient and equitable system.
+
+Throughout this process, participation remains voluntary, local autonomy is preserved, and the system expands only where it demonstrably improves quality of life.
+Transition is built into the design, not imposed from outside.
+
+--- lines 1140-1146
+Once operational, the greenhouse becomes part of the community’s food infrastructure. ITC determines access values for produce based on three integrated signals:
+
+    1. real labor embedded in production and maintenance
+
+    2. material and ecological costs
+    3. fairness and community need, ensuring that essentials remain accessible regardless of age or ability
+
+
+--- lines 9386-9396
+Module 3: Time-Decay Mechanism
+Purpose
+Prevent accumulation, maintain circulation, and keep access tied to ongoing participation.
+
+Description
+ITCs gently decay when not exercised through access or renewed participation. This avoids proto-wealth effects and ensures that access remains proportional and
+current rather than anchored to past contribution.
+
+Decay is not a punishment for inactivity, but a normalization mechanism that keeps access aligned with present participation. Decay rates are slow, predictable,
+bounded by CDS, and continuously monitored by FRS for systemic distortion or imbalance.
+
+
+--- lines 11959-11982
+3. Migrating an Account Between Nodes
+
+
+  1   def migrate_itc_account_to_node(
+  2       account: ITCAccount,
+  3       new_node_id: str,
+  4       policy: Dict,
+  5   ) -> None:
+  6       """
+  7       Adjust account balance when a member permanently relocates.
+  8       """
+
+   9
+  10         old_node_id = account.node_id
+  11         if old_node_id == new_node_id:
+  12               return
+  13
+  14         from_profile = get_node_equivalence_profile(old_node_id)
+  15         to_profile = get_node_equivalence_profile(new_node_id)
+  16         rule = compute_node_equivalence_rule(from_profile, to_profile, policy)
+  17
+  18         account.balance *= rule.factor
+  19         account.node_id = new_node_id
+  20

@@ -1,0 +1,39 @@
+SOURCE: levy_jg_wp902_c26_extract.txt (cached for C2.6)
+
+Source: https://www.levyinstitute.org/pubs/wp_902.pdf (as served 2026-10-18; md5 5b2af95a1d0464e15f8732fcd2ca0a2e); text by pdftotext -layout; passages headed by line range.
+
+--- lines 164-197
+           support them.
+
+
+
+
+III.       KEY PROGRAM FEATURES
+
+
+          Permanent but voluntary: The program is permanent. It offers employment
+           opportunities in the community to perform socially useful work.
+          A living wage: It offers a wage-benefit package, establishing a floor to living incomes.
+           The wage in this proposal is $15 per hour plus benefits.
+                                                      4
+
+   Local: The program takes the contract to the worker, creating jobs where the
+    unemployed live.
+   Targeted: By design, the program creates the greatest number of jobs in communities
+    with the greatest number of unemployed people, who are facing multiple other social
+    deprivations.
+   Federally funded, locally administered: Since it is an employment safety net, and for
+    financial sustainability reasons, the program is funded by the federal government, but
+    primarily administered by local and municipal governments, nonprofits and/or social
+    enterprises, and cooperatives.
+   An “add on” program: This is a new program that serves as an option to (but does not
+    displace) existing programs. For example, people would have a choice between
+    continuing to receive unemployment insurance (UI) or enrolling in the program. If they
+    choose the former but still have trouble finding conventional private or public sector
+    work once UI benefits have been exhausted, they will still have the option of enrolling in
+    the JG program.
+   Not a workfare program: The program does not require people to work for their
+    existing benefits (e.g., Medicare, the Supplemental Nutrition Assistance Program
+    [SNAP], Head Start, etc.).
+   Community Jobs Banks: The program serves as a repository of various employment
+    opportunities. It does not displace existing public sector work. It is authorized as a

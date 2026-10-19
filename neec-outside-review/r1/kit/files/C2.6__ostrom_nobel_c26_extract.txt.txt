@@ -1,0 +1,34 @@
+SOURCE: ostrom_nobel_c26_extract.txt (cached for C2.6)
+
+Source: https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf (as served 2026-10-18; md5 58a9eba5cf44d5b60e98f79963eaaf7f); text by pdftotext -layout; passages headed by line range.
+
+--- lines 681-710
+   Since the design principles are described extensively in E. Ostrom (1990,
+2005), I will list only a brief updated list as developed by Cox, Arnold, and
+Villamayor-Tomás (2009):
+
+  1A. User Boundaries: Clear and locally understood boundaries between
+		    legitimate users and nonusers are present.
+  1B.	Resource Boundaries: Clear boundaries that separate a specific common-
+		     pool resource from a larger social-ecological system are present.
+  2A. 	Congruence with Local Conditions: Appropriation and provision rules
+		     are congruent with local social and environmental conditions.
+  2B. 	Appropriation and Provision: Appropriation rules are congruent with
+		     provision rules; the distribution of costs is proportional to the
+		    distribution of benefits.
+  3.	Collective-Choice Arrangements: Most individuals affected by a resource
+		     regime are authorized to participate in making and modifying its
+		     rules.
+  4A. Monitoring Users: Individuals who are accountable to or are the
+		     users monitor the appropriation and provision levels of the users.
+  4B. Monitoring the Resource: Individuals who are accountable to or are
+		     the users monitor the condition of the resource.
+  5. Graduated Sanctions: Sanctions for rule violations start very low but
+		     become stronger if a user repeatedly violates a rule.
+  6. 	Conflict-Resolution Mechanisms: Rapid, low-cost, local arenas exist for
+		     resolving conflicts among users or with officials.
+  7. Minimal Recognition of Rights: The rights of local users to make their
+		     own rules are recognized by the government.
+  8.	Nested Enterprises: When a common-pool resource is closely connected
+		     to a larger social-ecological system, governance activities are organized
+		     in multiple nested layers.

@@ -1,0 +1,14 @@
+SOURCE: george_progress_poverty_c26_extract.txt (cached for C2.6)
+
+Source: https://www.gutenberg.org/ebooks/55308.txt.utf-8 (as served 2026-10-18; md5 602984bbfd232bfe0d0bf69e7811a526); text by the plain text as served; passages headed by line range.
+
+--- lines 12600-12608
+
+I do not propose either to purchase or to confiscate private property
+in land. The first would be unjust; the second, needless. Let the
+individuals who now hold it still retain, if they want to, possession
+of what they are pleased to call _their_ land. Let them continue to
+call it _their_ land. Let them buy and sell, and bequeath and devise
+it. We may safely leave them the shell, if we take the kernel. _It is
+not necessary to confiscate land; it is only necessary to confiscate
+rent._

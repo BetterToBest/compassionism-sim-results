@@ -1,0 +1,46 @@
+SOURCE: pe_model_c26_extract.txt (cached for C2.6)
+
+Source: https://participatoryeconomics.info/wp-content/uploads/2014/11/Participatory-Economics.pdf (as served 2026-10-18; md5 14874936a97e8e18e38b605b88bf0d3e); text by pdftotext -layout; passages headed by line range.
+
+--- lines 605-615
+
+
+The worker council is the highest decision making body in the workplace and is similar to
+a shareholders’ meeting in our current economy, except that in a participatory economy
+every worker in a worker council has one vote. The idea is that decisions within workers’
+councils follow the norm of self-management, where every worker has decision making say
+proportional to the degree that they are affected by the outcome of a decision. To further self-
+management, differing voting procedures could be implemented, for example, by majority,
+consensus, etc. Also, larger workplaces may choose to create various sub-units that have
+autonomous decision-making power on issues that are only of concern for them.
+
+
+--- lines 785-812
+the possibility of workers over-estimating each others effort ratings in return for the same
+favour, or what could lead to “effort rating inflation”.
+
+   It is likely that workplaces will come up with different approaches to measuring effort.
+This will be democratically decided by the workers of an individual workplace. For example,
+workplaces might want to set up an effort rating committee, but the rules for number of
+members, length of service, rules for rotation, grievance procedures and their methods of
+collecting information may vary from one worker council to another. Other workplaces may
+wish to simply base each individual’s ratings on those submitted by their co-workers, or rely
+solely on self-ratings, or just on the number of hours they have worked.
+
+   There will also be differences between worker councils in the level of accuracy they choose
+for grading effort. As mentioned, many worker councils may choose to use only the number
+of hours worked as a basis. However, other workplaces may wish to take into account
+intensity, using approximate grading e.g. below average, average, above average; while
+others may want much more precise grading e.g. a scale from 1-100. The procedures chosen
+will depend entirely on the preferences of each individual worker council, in accordance with
+self-management.
+
+   In a participatory economy consumption rights can also be awarded based on need.
+Requests for consumption based on special needs are made and assessed within consumer
+councils, not within worker councils. In addition, consumption rights would presumably be
+provided on compassionate grounds to those who:
+
+    1. are physically unable to work e.g. people with certain debilitating medical conditions.
+
+    2. have been affected by events beyond their control, such as natural disasters, flooding,
+       fires, etc.
