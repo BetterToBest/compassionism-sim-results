@@ -1,0 +1,27 @@
+name: test-keys
+on: workflow_dispatch
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: TypeSafe secret present?
+        env:
+          TS: ${{ secrets.TYPESAFE_API_KEY }}
+        run: |
+          if [ -z "$TS" ]; then echo "TYPESAFE_API_KEY is MISSING"; exit 1; fi
+          echo "TYPESAFE_API_KEY is set (length ${#TS})"
+
+      - name: GitHub Models call
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -i https://models.github.ai/inference/chat/completions \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"model":"openai/gpt-4.1-mini","messages":[{"role":"user","content":"Reply with the single word: ok"}],"max_tokens":5}' \
+            | grep -iE "^HTTP|ratelimit|\"content\""
