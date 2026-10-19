@@ -1,0 +1,11 @@
+SOURCE: cco_research_hub_c46_extract.txt (cached for C4.6)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba, pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== citizens-internet-portal.html (md5 96e8fbc9afbdf1e1b36b7a80314c60a7)
+--- lines 67-71
+Deterrence theory assumes corruption occurs when expected benefits exceed expected costs. Yet Klitgaard (1988) observes that prosecution-based approaches face systematic barriers: prosecutorial discretion subject to political pressure, resource asymmetry where wealthy defendants outlast prosecutors, and revolving door relationships compromising independence.
+
+2.2 The Regulatory Capture Problem
+
+George Stigler's (1971) theory of regulatory capture suggests that industries inevitably dominate their regulators through information asymmetry, resource advantage, career incentives, and concentrated versus diffuse interests. The 2008 financial crisis, FDA pharmaceutical regulation, and EPA environmental protection all provide empirical validation of systematic capture despite public support for stronger oversight.

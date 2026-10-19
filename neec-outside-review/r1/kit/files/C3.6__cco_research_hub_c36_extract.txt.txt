@@ -1,0 +1,51 @@
+SOURCE: cco_research_hub_c36_extract.txt (cached for C3.6)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba, pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== corporate-transformation.html (md5 7f7d14c785bf1d548904e22867ebc27a)
+--- lines 85-95
+With Fed policy supporting basic security and rewarding creative contribution, corporations can implement optimal work configurations. The Maintained Take-Home Model illustrates how this works in practice:
+
+Traditional: $25/hour × 40 hours = $1,000/week
+
+CCO-PTF: $40/hour × 25 hours = $1,000/week base wage
+
+Plus CCO basic units: $1,000/month (~$250/week)
+
+Plus PTH savings: $900/month (~$225/week)
+
+Total equivalent income: $1,475/week vs. $1,000/week traditional — a 47% improvement with 38% fewer work hours
+
+--- lines 129-133
+7. Quantum Computing Impact and Timeline
+
+Quantum computing will achieve 90-99% workload reduction for optimization and simulation tasks within 10-15 years, fundamentally transforming analytical work and making the CCO-PTF framework not just desirable but essential for economic stability during the transition.
+
+Phased timeline: Phase 1 (2025-2030) — A.I. handles routine tasks, work hours move 40→35; Phase 2 (2030-2035) — quantum advantage expanding, hours move 35→25, CCO basic income enables workers to maintain living standards; Phase 3 (2035-2045) — quantum becomes standard infrastructure, 20-15 hour workweeks viable; Phase 4 (2045+) — 15-hour weeks standard or optional, work as voluntary contribution, flourishing creative and cultural economy.
+
+=== index.html (md5 14cc931ccde84e69f96ddab34dc8ce33)
+--- lines 645-650
+
+Poverty target: <2% extreme poverty within 15 years of full implementation
+
+Workweek target: 25-hour standard workweek viable with CCO Basic Unit (BU) supplementation
+
+PTF overhead reduction: 40–60% vs. comparable private operations (framework design target derived from the 35–55% empirical overhead reduction documented in Mondragon/Eroski food-cooperative analogues; the wider range reflects variation across PTF operational scales and sector types)
+
+=== economic-modeling-simulation.html (md5 86dda39b584c7db826a968305ba0dd4e)
+--- lines 252-256
+System fiscal balance positive by Year 7: 73% probability
+
+Work incentive preservation: 92% of scenarios show increased total work hours
+
+Integrated CCO-PTF System Results:
+
+--- lines 972-976
+Key Computational Findings:
+
+The integrated CCO-PTF system achieves 98% poverty reduction while maintaining strong work incentives, with total productive work increasing by 42% through the combination of reduced traditional employment hours and expanded creative and community work. System stability remains robust at 94% across crisis scenarios, while fiscal break-even occurs by Year 5 with long-term annual surpluses of $127 billion.
+
+Critical threshold analysis reveals minimum viable participation at 55%, optimal participation ranges of 60-80%, and sweet spot collective sizes of 35-75 members. These parameters provide concrete guidance for implementation design and policy calibration. The framework demonstrates superior performance compared to alternative poverty reduction approaches while maintaining political feasibility through gradual implementation pathways.
+
+--- lines 986-986
+Productivity enhancement modeling shows CCO-PTF implementation would position nations competitively with 10-15% export improvements and $200-300 billion annual trade balance enhancement for U.S.-scale deployment. Early adopter advantages create 5-7 year competitive leads, while cultural and economic similarity predict international diffusion patterns with high reliability (r>0.65).

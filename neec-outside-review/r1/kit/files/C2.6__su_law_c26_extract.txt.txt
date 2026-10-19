@@ -1,0 +1,29 @@
+SOURCE: su_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Основы законодательства Союза ССР и союзных республик о здравоохранении (1969), ru.wikisource.org: https://ru.wikisource.org/wiki/Основы_законодательства_Союза_ССР_и_союзных_республик_о_здравоохранении (md5 3e80dbb3eebf43e429dc5d14041012a7)
+--- from line 739 (anchor /^В интересах излечения больного и с его согласия/)
+В интересах излечения больного и с его согласия, а в отношении больных, не достигших шестнадцатилетнего возраста, и психически больных — с согласия их родителей, опекунов или попечителей врач может применять новые, научно обоснованные, но ещё не допущенные к всеобщему применению методы диагностики, профилактики, лечения и лекарственные средства. Порядок применения указанных методов диагностики, профилактики, лечения и лекарственных средств устанавливается Министерством здравоохранения СССР .
+
+--- from line 744 (anchor /^Хирургические операции производятся и/)
+Хирургические операции производятся и сложные методы диагностики применяются с согласия больных, а больным, не достигшим шестнадцатилетнего возраста, и психически больным — с согласия их родителей, опекунов или попечителей.
+Неотложные хирургические операции производятся и сложные методы диагностики применяются врачами без согласия самих больных либо их родителей, опекунов или попечителей только в тех исключительных случаях, когда промедление в установлении диагноза или проведении операции угрожает жизни больного, а получить согласие указанных лиц не представляется возможным.
+Статья 36. Специальные меры профилактики и лечения
+
+--- from line 751 (anchor /^В целях охраны здоровья населения органы здравоохранения обязаны/)
+В целях охраны здоровья населения органы здравоохранения обязаны осуществлять специальные меры профилактики и лечения заболеваний, представляющих опасность для окружающих (туберкулёз, психические, венерические заболевания, лепра, хронический алкоголизм, наркомания), а также карантинных заболеваний. Специальные меры профилактики и лечения могут применяться и к другим заболеваниям в случаях, устанавливаемых Министерством здравоохранения СССР .
+Больные туберкулёзом бесплатно обеспечиваются противотуберкулёзными препаратами; лечение их в санаториях и профилакториях осуществляется также бесплатно.
+Законодательством Союза ССР и союзных республик могут устанавливаться случаи и порядок принудительного лечения и принудительной госпитализации лиц, страдающих указанными заболеваниями.
+Статья 37. Содействие медицинским работникам в оказании гражданам лечебно-профилактической помощи
+[ править ]
+
+=== Punitive psychiatry in the Soviet Union, en.wikipedia.org: https://en.wikipedia.org/wiki/Punitive_psychiatry_in_the_Soviet_Union (md5 b841f6270c299c5b0a2a70633938477e)
+--- from line 650 (anchor /^The USSR did not have legislative acts regulating psychiatry until 1988/)
+The USSR did not have legislative acts regulating psychiatry until 1988 [ 5 ] as the patient was seen as a burden to society. [ 39 ]
+
+--- from line 691 (anchor /^On 15 May 1969, a Soviet Government decree/)
+On 15 May 1969, a Soviet Government decree (No. 345–209) was issued, confirming the practice of psychiatrists confining undesirables [ clarification needed ] in detention. [ 62 ] Soviet psychiatrists given individuals to examine, and could either have the police detain them or entrap them into coming to the hospital. [ 62 ] Court decisions were not required to confine an individual indefinitely in a psychiatric institution. [ 62 ]
+
+--- from line 760 (anchor /extrajudicial procedure of admission to psychiatric hospitals/)
+The Commission has also considered such a complex, socially relevant issue, as the use of psychiatry for political purposes. The collected documents and materials allow us to say that the extrajudicial procedure of admission to psychiatric hospitals was used for compulsory hospitalization of persons whose behavior was viewed by the authorities as "suspicious" from the political point of view. According to the incomplete data, hundreds of thousands of people have been illegally placed to psychiatric institutions of the country over the years of Soviet power. The rehabilitation of these people was limited, at best, to their removal from the registry of psychiatric patients and usually remains so today, due to gaps in the legislation. [ 95 ]

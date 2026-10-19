@@ -1,0 +1,11 @@
+SOURCE: no_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Pasient- og brukerrettighetsloven 4-1, from Helsedirektoratet's annotated text: https://www.helsedirektoratet.no/rundskriv/pasient-og-brukerrettighetsloven-med-kommentarer/samtykke-til-helsehjelp (md5 ab21e424fc40912ed1e0fb034d72836d)
+--- from line 17 (anchor /^§ 4-1 \. Hovedregel om samtykke/)
+§ 4-1 . Hovedregel om samtykke
+Helsehjelp kan bare gis med pasientens samtykke, med mindre det foreligger lovhjemmel eller annet gyldig rettsgrunnlag for å gi helsehjelp uten samtykke. For at samtykket skal være gyldig, må pasienten ha fått nødvendig informasjon om sin helsetilstand og innholdet i helsehjelpen. Pasienten kan trekke sitt samtykke tilbake. Trekker pasienten samtykket tilbake, skal den som yter helsehjelp gi nødvendig informasjon om betydningen av at helsehjelpen ikke gis.
+
+--- from line 27 (anchor /^I enkelte tilfeller er det gitt unntak/)
+I enkelte tilfeller er det gitt unntak i særlovgivningen fra kravet om samtykke for å yte helsehjelp (dette gjelder for eksempel i smittevernloven kapittel 5, psykisk helsevernloven kapittel 3 og 5 og helse- og omsorgstjenesteloven kapittel 10).

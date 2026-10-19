@@ -1,0 +1,11 @@
+SOURCE: oneill_2018_biophysical.csv (cached for C4.2)
+
+country,iso3c,CO2 Emissions,Phosphorus,Nitrogen,Blue Water,eHANPP,Ecological Footprint,Material Footprint,source_md5
+China,CHN,3.99,2.99,2.89,0.54,0.38,1.45,1.72,61ef20db9024e4dfef2dc472a30cffb0
+Denmark,DNK,7.29,4.87,8.23,0.44,1.19,2.49,3.77,61ef20db9024e4dfef2dc472a30cffb0
+Finland,FIN,9.1,7.36,10.82,0.37,1.69,2.81,4.31,61ef20db9024e4dfef2dc472a30cffb0
+Norway,NOR,10.66,8.48,12.13,0.53,2.1,2.77,5.44,61ef20db9024e4dfef2dc472a30cffb0
+Qatar,QAT,20.75,2.69,3.16,,0.64,4.05,6.7,61ef20db9024e4dfef2dc472a30cffb0
+Singapore,SGP,19.19,7.33,6.84,,1.33,3.45,9.75,61ef20db9024e4dfef2dc472a30cffb0
+Sweden,SWE,6.35,6.35,10.68,0.36,1.79,3.78,3.46,61ef20db9024e4dfef2dc472a30cffb0
+United States,USA,13.14,7.82,6.63,1.06,1.42,3.93,3.78,61ef20db9024e4dfef2dc472a30cffb0

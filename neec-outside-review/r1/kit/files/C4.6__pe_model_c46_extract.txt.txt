@@ -1,0 +1,54 @@
+SOURCE: pe_model_c46_extract.txt (cached for C4.6)
+
+Source: https://participatoryeconomics.info/wp-content/uploads/2014/11/Participatory-Economics.pdf (as served 2026-10-18; md5 14874936a97e8e18e38b605b88bf0d3e); text by pdftotext -layout; passages headed by line range.
+
+--- lines 1197-1245
+                     PROTECTING THE ECOLOGY
+Do the basic institutions of a participatory economy – democratic worker and consumer
+councils and federations, remuneration according to effort and need, jobs balanced for
+empowerment and desirability, and participatory planning – create an institutional setting
+and incentives that promote judicious relations with our natural environment? As long as
+producers and consumers are not forced to bear the costs of the pollution that results from
+their decisions, they will continue to pollute too much. How does a participatory economy
+solve this?
+
+   In each iteration in the annual planning procedure the Iteration facilitation Board (IFB)
+
+                                www.participatoryeconomics.info                             31
+
+
+
+quotes the current estimate of the damage caused by releasing a unit of each pollutant.
+Enterprises proposing to emit the pollutant and the community of parties affected by the
+release of this pollutant respond to this signal. Since consumers affected by a pollutant will
+not always correspond to consumers living within the boundaries of a geographical consumer
+council or federation, a participatory economy will presumably create “communities
+of affected parties” for specific pollutants regardless of which geographical consumer
+council people belong to (CAP= Community of affected parties regardless of geographical
+boundaries). Enterprises propose how much of the pollutant they want to emit, knowing they
+will be charged for those emissions an amount equal to the current estimate of the damages
+per unit times the number of units they propose to emit. The damage from emissions thereby
+becomes part of production costs. The community of affected parties (CAP) proposes how
+many units of the pollutant it is willing to allow to be released, taking into account that the
+CAP will be compensated by an amount equal to the current estimate of the damages per
+unit times the total number of units the CAP allows to be released. The CAP can, of course,
+decide they do not wish to permit any emissions at all, but if the CAP decides to allow X
+units of a pollutant to be emitted, members of the CAP will receive “credit” for damages
+suffered for the level of emissions they authorize. This “sacrifice” from exposure to pollution
+is added to whatever “sacrifices” CAP members made as workers when calculating how much
+consumption it is fair for them to enjoy. The IFB will change the estimated damage caused by
+the pollutant in response to the difference between the proposals from the CAPs to allow the
+pollutant, and the workers councils’ proposals to emit the pollutant. What is a pollutant and
+what is not is decided by the CAP, who is advised by scientists employed in R&D operations
+run by the CAP. There are good reasons to believe that unlike market economies which
+predictably lead to over pollution, this procedure will settle on efficient levels of emissions,
+i.e. emissions will only be permitted if the social benefits from the increased production the
+emissions allow exceed the damages the emissions cause.
+
+   In a participatory economy there is a strong incentive to apply for membership in a CAP
+since victims receive compensation. This means that there is a perverse incentive to falsely
+claim damage, and therefore membership. There is no easy solution to this problem and it
+becomes clear that procedures for establishing membership are crucial, and this is where
+time and resources should be spent.
+
+   On the production side, however, it is no longer possible to externalise costs of pollution,

@@ -1,0 +1,75 @@
+# NEEC outside blind review, run r1 (NormativeEvaluation Session 80; decisions 79.6, 79.8, 80.4 to 80.6).
+# Reads every unit of neec-outside-review/r1/kit/ blind with a free-tier model from outside the Claude family, and has
+# Jev check each clause, then commits results/ and heartbeat.json to the branch it runs on. Resumable: each run picks
+# up where the last stopped (the free tier's daily cap, or the run's time limit), so the schedule carries the review
+# over several days; when every call is answered the runner writes DONE and the job disables its own schedule.
+#
+# Reader: NVIDIA's own free API (build.nvidia.com, OpenAI-compatible), not OpenRouter (see r1/PROVIDER_NOTE.md).
+# Secrets (Settings > Secrets and variables > Actions): NVIDIA_API_KEY (the reader), TYPESAFE_API_KEY (Jev).
+# Variables (optional, same page, Variables tab): READER_MODEL and READER_BASE_URL, to change the
+# model or the host below.
+# A push to a claude/ branch that changes neec-outside-review/r1/DRYRUN runs only the units listed in that file,
+# writing to neec-outside-review/r1/dryrun/ (the dry run; never mixed with the run's results).
+name: neec-outside-review
+
+on:
+  schedule:
+    - cron: "23 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "reader, jev, stageb, or all"
+        default: "all"
+      units:
+        description: "comma-separated unit ids to run alone (written to dryrun/); empty for the full run"
+        default: ""
+  push:
+    branches: ["claude/**"]
+    paths: ["neec-outside-review/r1/DRYRUN"]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: neec-outside-review
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    defaults:
+      run:
+        working-directory: neec-outside-review/r1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Identity for the results commits
+        run: |
+          git config user.name "neec-outside-review"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Run
+        env:
+          READER_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          READER_BASE_URL: ${{ vars.READER_BASE_URL || 'https://integrate.api.nvidia.com/v1' }}
+          READER_MODEL: ${{ vars.READER_MODEL || 'nvidia/nemotron-3-ultra-550b-a55b' }}
+          READER_RPM: "30"
+          READER_CONCURRENCY: "4"
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          ONLY: ${{ inputs.only }}
+          UNITS: ${{ inputs.units }}
+          RUN_MINUTES: "330"
+        run: |
+          if [ "$EVENT" = "push" ]; then UNITS="$(tr -d ' \n' < DRYRUN)"; fi
+          if [ -z "$UNITS" ] && [ -f DONE ]; then
+            echo "Every call is answered; disabling the schedule."
+            gh workflow disable neec-outside-review.yml || true
+            exit 0
+          fi
+          OUT=.
+          ARGS="--push"
+          if [ -n "$UNITS" ]; then OUT=dryrun; mkdir -p dryrun; ARGS="$ARGS --units $UNITS"; fi
+          if [ -n "$ONLY" ] && [ "$ONLY" != "all" ]; then ARGS="$ARGS --only $ONLY"; fi
+          python3 outside_review_runner.py --kit kit --out "$OUT" $ARGS

@@ -1,0 +1,64 @@
+SOURCE: integral_wp_v01_c26_extract.txt (cached for C2.6)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (as served 2026-10-18; md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout; passages headed by line range.
+
+--- lines 23894-23920
+
+
+
+Data Overexposure
+
+Failure mode:
+Excessive data sharing undermines autonomy, privacy, or security, creating pathways for interference or surveillance.
+
+Safeguards:
+
+       State compression by design: Only NSS vectors—effects, not internals—are exposed across nodes.
+       Typed, bounded indicators: Shared data is constrained to predefined schemas and ranges.
+
+       Local data sovereignty: Internal CDS deliberations, COS schedules, ITC ledgers, and OAD workflows remain private.
+       Structural validation, not inspection: Federation processes verify format and integrity, not content rationale.
+
+
+
+Authority Accumulation
+
+Failure mode:
+Repeated coordination events concentrate influence, expertise, or decision leverage in particular nodes or actors.
+
+Safeguards:
+
+       Node-based participation: Individuals cannot bypass local CDS by appealing upward.
+
+
+--- lines 25192-25223
+
+
+4. Bad Faith Does Not Cascade into Punishment
+
+Integral explicitly avoids punitive escalation.
+
+If someone acts in bad faith:
+
+        they receive no receipt, or a low-quality one,
+
+        recognition elsewhere is minimal or zero,
+        opportunities naturally diminish.
+
+There is no global exclusion, no credit confiscation, no reputation tribunal.
+
+Bad actors are constrained by loss of reciprocity, not punishment.
+
+
+
+5. Dispute Resolution Is Local and Scoped
+
+If a contributor disputes a host node’s assessment:
+
+        the issue remains between the contributor and the host node,
+
+        resolved through the host’s CDS or mediation process,
+
+        optionally documented as a learning artifact.
+
+Disputes do not propagate across the network unless they materially affect others (at which point Section 9’s scope logic applies).

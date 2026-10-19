@@ -1,0 +1,18 @@
+SOURCE: bien_definition_c26_extract.txt (cached for C2.6)
+
+Source: https://basicincome.org/about-basic-income/ (as served 2026-10-18; md5 030f70e2fc03b292f0de20fe63b1b51f); passages headed by line range.
+
+--- lines 43-55
+A  Basic Income  is a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement.
+
+That is, Basic Income has the following  five characteristics :
+
+Periodic : it is paid at regular intervals (for example every month), not as a one-off grant.
+
+Cash payment : it is paid in an appropriate medium of exchange, allowing those who receive it to decide what they spend it on. It is not, therefore, paid either in kind (such as food or services) or in vouchers dedicated to a specific use.
+
+Individual : it is paid on an individual basis—and not, for instance, to households.
+
+Universal : it is paid to all.
+
+Unconditional : it is paid without means test and without a requirement to work or to demonstrate willingness-to-work.

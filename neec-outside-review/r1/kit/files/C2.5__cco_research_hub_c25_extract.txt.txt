@@ -1,0 +1,60 @@
+SOURCE: cco_research_hub_c25_extract.txt (cached for C2.5)
+
+Source: github.com/BetterToBest/research-hub at 8e8a6ba, pages as served by raw.githubusercontent.com; passages headed by page and line range.
+
+=== research-summary.html (md5 b98e2ee19499657b1657d41e38b93a4e)
+--- lines 112-112
+CCO is a dual-currency system designed for post-scarcity and automation-driven economies. Citizens may opt in to receive Basic Units (BU) — a currency pegged 1:1 to primary currency but restricted to essential expenditures (food, housing, utilities) and set to expire at the end of each monthly distribution cycle. This prevents hoarding while ensuring circulation toward genuine need.
+
+--- lines 606-606
+Does not impose mandatory participation — opt-in only
+
+=== cco-ptf-integrated-framework.html (md5 10ab8364f4d7376e95435b681fbe4f22)
+--- lines 201-201
+CCO systems function effectively with selective participation, requiring only essential service workers (healthcare, education, utilities, food service) for baseline operation. Simulation results demonstrate system viability at 30% population participation rates, with optimal effectiveness achieved at 60-70% participation.
+
+=== cco-ptf-simulation-replication.html (md5 528e343d7e635ae4702d2633bf910a66)
+--- lines 27-27
+A dual-currency economic layer. Citizens opt in to receive Basic Units (BU) — a monthly allocation (~$1,200/adult) redeemable at PTF businesses for essential goods. Businesses that accept BU convert them to primary currency at merit-scaled rates (1×–9×), rewarding quality and community contribution.
+
+--- lines 39-39
+The cumulative community equity built by PTH residents through their monthly payments, appreciating at approximately 4% per year. Unlike conventional home equity, Acre Equity is accessible at exit only in part — a liquidity haircut whose accessible share rises with tenure, from ~10–20% in the first six months to ~80–90% at five or more years (v4.5; flat 50% regardless of tenure through v4.4).
+
+--- lines 111-111
+† As of v4.0: the initial $5,000 Acre Equity endowment appreciates as before, and a documented 25% share of each year's PTH housing-cost saving now also routes into Acre Equity (the "payments build equity" mechanism this step describes). v4.5: the liquidity haircut on withdrawal is no longer a flat 50% — it now follows the tenure-cohort schedule sketched in the Empirical Calibration notes (≈15% at tenure=1, linearly rising to ≈85% at tenure≥5, the midpoints of the paper's cited ≈10–20%-at-6-months / ≈80–90%-at-5+-years range; the paper gives two anchor points, not a closed-form curve, so the ramp between them is a documented interpretation, not a re-derivation). Flat 50% was used through v4.4.
+
+=== us-real-estate-transformation.html (md5 96dffce8a3e8ae8b10ac4e4543bca313)
+--- lines 93-97
+Long-term Stability Rewards:
+
+5+ year residence: +50% annual bonus
+
+10+ year residence: +100% annual bonus
+
+--- lines 105-109
+Network Portability: Move between PTH properties while maintaining equity status
+
+Upgrade Purchasing Power: Exchange equity for improved housing within network
+
+Partial Liquidity Options: Convert up to 25% annually to cash for emergencies
+
+--- lines 119-137
+Entry Requirements:
+
+No down payment required
+
+No credit check requirements
+
+Monthly payment capacity: $800-1,400
+
+Commitment to community participation
+
+Financial Model:
+
+70-80% of monthly payment → Acre Equity
+
+20-30% → Operating costs and reserves
+
+Average 20-year accumulation: $168,000-336,000 Acre Equity
+
+Cash equivalent: $67,000-134,000 upon exit

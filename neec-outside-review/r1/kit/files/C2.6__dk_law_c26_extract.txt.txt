@@ -1,0 +1,121 @@
+SOURCE: dk_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Sundhedsloven, LBK nr 275 af 12/03/2025: https://www.retsinformation.dk/eli/lta/2025/275/xml (md5 f05e997ab325f7a6331f5a8eb25ac923)
+--- from line 361 (anchor /^§ 15\.$/)
+§ 15.
+Ingen behandling må indledes eller fortsættes uden patientens informerede samtykke, medmindre andet følger af lov eller bestemmelser fastsat i henhold til lov eller af §§ 17-19.
+Stk. 2.
+Patienten kan på ethvert tidspunkt tilbagekalde sit samtykke efter stk. 1.
+Stk. 3.
+Ved informeret samtykke forstås i denne lov et samtykke, der er givet på grundlag af fyldestgørende information fra sundhedspersonens side, jf. § 16.
+Stk. 4.
+Et informeret samtykke efter afsnit III kan være skriftligt, mundtligt eller efter omstændighederne stiltiende.
+Stk. 5.
+Indenrigs- og sundhedsministeren fastsætter nærmere regler om samtykkets form og indhold.
+§ 16.
+
+=== Epidemiloven, LOV nr 285 af 27/02/2021: https://www.retsinformation.dk/eli/lta/2021/285/xml (md5 e9444c697b49b0e2a72111b3728a0504)
+--- from line 211 (anchor /^§ 12\.$/)
+§ 12.
+Foranstaltninger efter § 13, § 14, stk. 1, § 15, stk. 1, og § 18, stk. 1, kan iværksættes over for enkeltpersoner for at forebygge, inddæmme eller udrydde alment farlige eller samfundskritiske sygdomme.
+Foranstaltninger efter § 19, stk. 1, og § 20 kan iværksættes over for personer og løsøre m.v., der formodes forurenet med smitstof eller biologisk kampstof.
+Stk. 2.
+Styrelsen for Patientsikkerhed skal, forinden der træffes afgørelse efter § 13, § 14, stk. 1, § 15, stk. 1, § 18, stk. 1, § 19, stk. 1, og § 20, opfordre den person, som foranstaltningen påtænkes rettet imod, til frivilligt at medvirke til at gennemføre foranstaltningen
+.
+Hvis den person, som en foranstaltning påtænkes rettet imod, bor eller har midlertidigt ophold på en offentlig eller privat institution eller et behandlingssted el.lign., skal den pågældende institution m.v. efter anmodning fra Styrelsen for Patientsikkerhed sikre, at opfordringen til frivilligt at medvirke gennemføres.
+Stk. 3.
+Enhver foranstaltning efter dette kapitel skal være nødvendig og så kortvarig som muligt og stå i rimeligt forhold til formålet med foranstaltningen.
+Den mindst indgribende og mest skånsomme foranstaltning skal anvendes, hvis denne er tilstrækkelig til at opnå formålet.
+Foranstaltninger skal ophæves, når det ikke længere er nødvendigt at opretholde foranstaltningen.
+Stk. 4.
+Foranstaltninger efter dette kapitel skal efterprøves af Styrelsen for Patientsikkerhed, henholdsvis 3, 10, 20 og 30 dage efter at foranstaltningen er iværksat, for at påse, om betingelserne for foranstaltningen fortsat er opfyldt.
+Undersøgelse
+§ 13.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig undersøge af en sundhedsperson.
+Indlæggelse
+§ 14.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig indlægge på et sygehus eller anden egnet facilitet, herunder hvis det er nødvendigt i forbindelse med undersøgelse efter § 13, behandling efter § 18, stk. 1, eller rensning efter § 19, stk. 1.
+Stk. 2.
+Afgørelser om indlæggelse kan træffes med en varighed af maksimalt 4 uger.
+Afgørelser kan forlænges med op til 4 uger ad gangen.
+Isolation
+§ 15.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig isolere.
+
+--- from line 244 (anchor /^§ 14\.$/)
+§ 14.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig indlægge på et sygehus eller anden egnet facilitet, herunder hvis det er nødvendigt i forbindelse med undersøgelse efter § 13, behandling efter § 18, stk. 1, eller rensning efter § 19, stk. 1.
+Stk. 2.
+Afgørelser om indlæggelse kan træffes med en varighed af maksimalt 4 uger.
+Afgørelser kan forlænges med op til 4 uger ad gangen.
+Isolation
+§ 15.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig isolere.
+Stk. 2.
+
+--- from line 256 (anchor /^§ 15\.$/)
+§ 15.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig isolere.
+Stk. 2.
+Afgørelser om isolation kan træffes med en varighed af maksimalt 4 uger.
+Afgørelser kan forlænges med op til 4 uger ad gangen.
+§ 16.
+Regionsrådet skal sikre, at isolation efter § 15, stk. 1, kan ske i en egnet facilitet, hvis isolation i eget hjem ikke er mulig.
+§ 17.
+Kommunalbestyrelsen og regionsrådet stiller efter regler fastsat i medfør af stk. 2 faciliteter til rådighed til isolation af personer, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, og som på baggrund af kommunalbestyrelsens eller regionsrådets visitation af hensyn til andres sundhed frivilligt vil lade sig isolere på en sådan facilitet.
+
+--- from line 282 (anchor /^§ 18\.$/)
+§ 18.
+Styrelsen for Patientsikkerhed kan påbyde enhver, der lider af en alment farlig eller samfundskritisk sygdom, eller som formodes at kunne være smittet med en sådan, at lade sig behandle af en sundhedsperson.
+Stk. 2.
+Afgørelser om behandling kan træffes med en varighed af maksimalt 4 uger.
+Afgørelser kan forlænges med op til 4 uger ad gangen.
+Rensning og andre foranstaltninger over for personer, løsøre m.v., der formodes forurenet med smitstof eller biologisk kampstof
+§ 19.
+Styrelsen for Patientsikkerhed kan påbyde, at der skal iværksættes rensning af personer, der formodes forurenet med smitstof eller biologisk kampstof.
+Styrelsen for Patientsikkerhed kan også påbyde desinfektion af løsøre, fast ejendom, befordringsmidler el.lign.
+
+--- from line 350 (anchor /^§ 23\.$/)
+§ 23.
+Foranstaltninger efter dette kapitel kan iværksættes for at forebygge eller inddæmme udbredelse af en samfundskritisk sygdom, jf. dog stk. 2.
+Stk. 2.
+Foranstaltninger efter §§ 26, 28, 29, 31 og 33 kan endvidere iværksættes for at forebygge eller inddæmme udbredelse af en alment farlig sygdom.
+Stk. 3.
+Enhver foranstaltning efter dette kapitel skal være nødvendig og så kortvarig som muligt og stå i rimeligt forhold til formålet med foranstaltningen.
+Den mindst indgribende og mest skånsomme foranstaltning skal anvendes, hvis denne er tilstrækkelig til at opnå formålet.
+Foranstaltninger skal ophæves, når det ikke længere er nødvendigt at opretholde foranstaltningen.
+Stk. 4.
+Regler i medfør af § 24, stk. 1, og §§ 28, 30, 32 og 34-37 kan fastsættes med en gyldighedsperiode på højst 4 uger ad gangen, medmindre særlige grunde undtagelsesvis tilsiger en længere gyldighedsperiode.
+Stk. 5.
+Restriktioner eller forbud, der fastsættes i medfør af §§ 29, 31 og 33, kan fastsættes med en gyldighedsperiode på højst 4 uger ad gangen.
+Stk. 6.
+Påbud efter § 29, stk. 1, 2 og 4, skal efterprøves af Styrelsen for Patientsikkerhed, henholdsvis 3, 10, 20 og 30 dage efter at påbuddet er meddelt, for at påse, om betingelserne for påbuddet fortsat er opfyldt.
+Forbud mod, at flere personer befinder sig på samme sted
+§ 24.
+Justitsministeren kan efter forhandling med sundhedsministeren fastsætte regler for hele eller dele af landet om forbud mod, at flere personer befinder sig på samme sted, jf. dog stk. 2.
+Regler fastsat i medfør af 1. pkt. kan omfatte indendørs, udendørs, offentlige og private steder, hvor flere personer befinder sig på samme sted.
+Regler fastsat i medfør af 1. pkt. kan fravige anden lovgivning.
+Stk. 2.
+Stk. 1 gælder ikke for domstolene og Folketinget og for forsamlinger med et politisk eller andet meningsbefordrende øjemed.
+Stk. 3.
+Justitsministeren kan fastsætte regler om, at der uden retskendelse er adgang til lokaler og lokaliteter med henblik på kontrol af overholdelsen af regler fastsat i medfør af stk. 1, og om politiets bistand i den forbindelse.
+1. pkt. omfatter ikke private boliger.
+Forbud mod ophold på bestemte steder
+§ 25.
+Er der i medfør af § 24, stk. 1, fastsat regler om forbud mod, at flere personer befinder sig på samme sted, kan politiet nedlægge forbud mod ophold på et bestemt sted, som er omfattet af disse regler, og hvortil der er almindelig adgang, hvis det efter politiets skøn er nødvendigt for at forhindre fare for smitte med den samfundskritiske sygdom det pågældende sted, jf. dog stk. 2.
+
+--- from line 1008 (anchor /inden 5 søgnedage efter at der er truffet en afgørelse/)
+Styrelsen for Patientsikkerhed skal, inden 5 søgnedage efter at der er truffet en afgørelse eller meddelt et påbud efter §§ 13-15, 18, 21 eller 26, indbringe sagen for retten til prøvelse efter reglerne i retsplejelovens kapitel 43 a om prøvelse af administrativt bestemt frihedsberøvelse.
+Stk. 2.
+Sundhedsministeren eller den, ministeren bemyndiger hertil, skal efter anmodning fra den person, foranstaltningen vedrører, eller dennes repræsentant indbringe foranstaltninger efter §§ 28 og 40, som har karakter af frihedsberøvelse, for retten til prøvelse efter reglerne i retsplejelovens kapitel 43 a om prøvelse af administrativt bestemt frihedsberøvelse.
+Kapitel 13
+Straffebestemmelser m.v.
+
+=== Psykiatriloven, LBK nr 1045 af 18/09/2024: https://www.retsinformation.dk/eli/lta/2024/1045/xml (md5 a077870fbc1fae916fda8fe1b086c55b)
+--- from line 869 (anchor /henholdsvis 3, 10, 20 og 30 dage, efter at frihedsberøvelsen/)
+Som led i efterprøvelse af frihedsberøvelse skal overlægen henholdsvis 3, 10, 20 og 30 dage, efter at frihedsberøvelsen blev iværksat, og herefter mindst hver 4. uge, så længe frihedsberøvelsen opretholdes, påse, om betingelserne for at frihedsberøve patienten fortsat er opfyldt.
+
+--- from line 1079 (anchor /skal efter anmodning fra patienten eller patientrådgiveren indbringe/)
+Sygehusmyndigheden skal efter anmodning fra patienten eller patientrådgiveren indbringe klager over tvangsindlæggelse, tvangstilbageholdelse, tilbageførsel, tvangsbehandling, tvangsfiksering, anvendelse af fysisk magt, beskyttelsesfiksering, anvendelse af personlige alarm- og pejlesystemer og særlige dørlåse, personlig skærmning, der uafbrudt varer mere end 24 timer, aflåsning af døre i afdelingen samt oppegående tvangsfiksering og aflåsning af patientstue på Sikringsafdelingen under Retspsykiatrisk afdeling, Region Sjælland, for Det Psykiatriske Patientklagenævn ved Styrelsen for Patientklager.

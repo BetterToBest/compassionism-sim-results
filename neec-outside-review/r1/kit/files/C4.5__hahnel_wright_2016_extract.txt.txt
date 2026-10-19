@@ -1,0 +1,33 @@
+SOURCE: hahnel_wright_2016_extract.txt (cached for C4.5)
+
+Source: https://www.sscc.wisc.edu/soc/faculty/pages/wright/Published%20writing/Alternatives%20to%20Capitalism.pdf (Hahnel and Wright, Alternatives to Capitalism: Proposals for a Democratic Economy, Verso, 2016; PDF md5 1fba42ff7d97f2134ac9e1a9292081c9); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 526-536
+
+7
+ Readers interested in these technical issues should see chapter 5 in Albert and Hahnel, The Political
+Economy of Participatory Economics (Princeton University Press, 1991), “Socialism As It Was Always
+Meant to Be,” Review of Radical Political Economics (24, 3&4), Fall and Winter 1992: 46-66,
+“Participatory Planning,” Science & Society (56, 1), Spring 1992: 39-59, and Hahnel, “Wanted: A
+Pollution Damage Revealing Mechanism,” available from me upon request and under review at the
+Review of Radical Political Economics.
+
+
+
+
+--- lines 776-784
+Let me begin by reviewing the basic elements, as I understand them, of the way
+consumption planning for individual households takes place in Robin’s model. This
+process is covered to some extent in Robin's opening contribution but there it is
+
+13
+   I don’t think my lack of intuition here is because I have not read the technical economic papers that
+Robin refers to in his essay, papers which he describes as proving that his planning mechanism
+generates optimal outcomes. I am not skeptical that the mathematical models that are elaborated in
+those papers show these things. What I am skeptical about is that the mathematical models can
+
+--- lines 2019-2022
+form their neighbourhood council can simply use their actual consumption last
+year as their new consumption request for this year. If their effort rating for this
+year warrants this level of consumption, their request will be approved and
+included in the neighbourhood proposal. If not, and if a person continues to fail to

@@ -1,0 +1,70 @@
+SOURCE: integral_wp_v01_c43_extract.txt (cached for C4.3)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025)
+Retrieved 2026-10-15; PDF md5 a6defc9a0ec7c4ace56509dffd680307; text by pdftotext -layout; extract: five passages, each headed by its line range in that text.
+
+--- lines 619-636
+4.3 Trust, Transparency, and Equity
+Market systems generate opacity because competitive advantage depends on withholding information. Centralized systems generate opacity because authority is
+concentrated. Integral eliminates both dynamics by structuring economic coordination around transparency.
+
+Trust emerges not from interpersonal goodwill, but from institutional design:
+
+        Open records ensure that contributions, resource use, and access allocation are visible and auditable.
+
+        Non-transferable time credits prevent accumulation and eliminate the possibility of converting contribution into long-term power.
+
+        Shared design repositories allow anyone to inspect how products are made, what materials they require, and how they affect community resources.
+        Fair-access protocols ensure that essential goods are available regardless of individual capacity, disability, or temporary hardship. It is built into overall
+        economic calculation.
+Equity is not enforced through redistribution; it is maintained organically, structurally by preventing hierarchy and accumulation from emerging in the first place and by
+ensuring that capacity differences are accounted for in the contribution system. Importantly, the nature of the system also provides no viable incentive for manipulative
+or dishonest behavior since it is foundationally a collaborative design, not a competitive one. This means violating collaborative integrity ultimately hurts everyone and
+fosters no long-term advantage for anyone.
+
+
+--- lines 838-845
+
+
+
+Above Diagram: Labor → ITC (Contribution Recognition Loop)
+This chart illustrates how Integral recognizes and contextualizes human contribution without treating labor as a commodity. Work activity flows into COS, where tasks
+are logged and characterized according to difficulty, urgency, and individual capacity. These labor metrics are then evaluated by FRS, which ensures workloads remain
+balanced and that no person or demographic group is structurally disadvantaged. CDS provides the normative rules—multipliers, protected-category adjustments, and
+thresholds—that guide how contributions are valued. Together, these systems determine how many ITCs are recorded in a person’s ledger. The process is non-
+
+--- lines 1898-1905
+80   class Participant:
+81       """
+82       CDS participant with an identity and a decision weight.
+83
+84       weight is normally 1.0, but may be adjusted by CDS constitutional rules
+85       (e.g., bounded equalization, protected-category considerations, etc.).
+86       """
+87       id: str
+
+--- lines 2706-2714
+What Module 3 Actually Computes
+
+       Ecological layer: emissions proxies, material footprints, water use, waste streams, risk exposure
+       Resource layer: tooling/material availability, fabrication limits, external procurement dependency
+
+       Labor layer: skill requirements, availability windows, likely bottlenecks
+       Social/fairness layer: accessibility impacts, protected-category considerations, distributional effects
+
+       Historical layer: outcomes of similar past decisions, failure patterns, precedent constraints
+
+--- lines 4208-4220
+      33                 amendments=frs_data.get("recommended_adjustments", {}),
+      34                 rationale="Observed outcomes diverged from modeled projections.",
+      35             )
+      36
+      37         # 3) Equity or access drift
+      38         if detects_access_inequity(itc_data):
+      39             return ReviewOutcome(
+      40                 issue_id=decision.issue_id,
+      41                 decision_id=decision.id,
+      42                 status="amended",
+      43                 amendments={"equity_adjustments": True},
+      44                 rationale="Post-decision access inequity detected.",
+      45             )

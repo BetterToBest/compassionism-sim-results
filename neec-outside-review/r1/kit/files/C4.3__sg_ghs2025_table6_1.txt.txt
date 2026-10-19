@@ -1,0 +1,64 @@
+SOURCE: sg_ghs2025_table6_1.txt (cached for C4.3)
+
+Source: https://www.singstat.gov.sg/files/1559c94a-efc1-4262-84fd-042c9bd96e68.pdf (Department of Statistics Singapore, General Household Survey 2025, published June 2026), chapter 6
+Retrieved 2026-10-15; PDF md5 051185eeaf5e6fcc3247abb5418a8b45; text by pdftotext -layout; extract: lines 2621-2680 of that text (Household Income by Ethnic Group, and Table 6.1).
+
+        Household Income by Ethnic Group
+
+               All three major ethnic groups experienced growth in household market income.
+        Between 2020 and 2025, median household market income grew by 6.5% per annum
+        (or 3.1% per annum in real terms) for Chinese households, 5.7% per annum (or 2.3%
+        per annum in real terms) for Malay households, and 6.9% per annum (or 3.5% per
+        annum in real terms) for Indian households (Table 6.1).
+
+              After accounting for household size 4, median household market income per
+        household member grew by 7.4% per annum (or 4.0% per annum in real terms) among
+        Chinese households between 2020 and 2025, and by 6.7% per annum (or 3.3% per
+        annum in real terms) for both Malay and Indian households.
+
+
+        4
+            Detailed trends on household size by ethnic group can be found in Chapter 5 on Households and Housing.
+
+
+                                                                                                                          44
+               Table 6.1 Monthly Household Market Income by Ethnic Group of
+                  Household Reference Person Among Resident Households
+                                                                                         Annualised Change
+                                                       2020              2025
+                                                                                             (Per Cent)
+                                                        ($)               ($)
+                                                                                        Nominal       Real
+Average Household Market Income
+  Total                                                12,396            16,159           5.4           2.1
+  Chinese                                              12,787            16,731           5.5           2.2
+  Malays                                                7,800            10,026           5.1           1.8
+  Indians                                              13,019            16,714           5.1           1.8
+
+
+Median Household Market Income
+  Total                                                 9,099            12,446           6.5           3.2
+  Chinese                                               9,469            12,969           6.5           3.1
+  Malays                                                6,514             8,581           5.7           2.3
+  Indians                                               9,597            13,382           6.9           3.5
+
+Average Household Market Income
+Per Household Member
+  Total                                                 4,111             5,579           6.3           2.9
+  Chinese                                               4,311             5,905           6.5           3.1
+  Malays                                                2,303             3,060           5.8           2.5
+  Indians                                               4,028             5,158           5.1           1.7
+
+Median Household Market Income
+Per Household Member
+  Total                                                 2,952             4,160           7.1           3.8
+  Chinese                                               3,164             4,523           7.4           4.0
+  Malays                                                1,846             2,552           6.7           3.3
+  Indians                                               2,867             3,968           6.7           3.3
+
+
+Note:
+a) The dollar values in the table above are in nominal terms.
+b) The Consumer Price Index (CPI) for All Items for the relevant household income group was used as the deflator
+to compute real income changes.
+c) Data for 2025 are preliminary.

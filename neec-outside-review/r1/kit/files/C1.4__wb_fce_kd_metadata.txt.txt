@@ -1,0 +1,11 @@
+SOURCE: wb_fce_kd_metadata.txt (cached for C1.4)
+
+Source: https://api.worldbank.org/v2/indicator/NE.CON.TOTL.KD?format=json
+Retrieved 2026-10-15; raw md5 6215e642aa1cc3f0848c2c240aa0454a; extract: the indicator's name, source and source note.
+
+Final consumption expenditure (constant 2015 US$)
+Country official statistics, National Statistical Organizations and/or Central Banks;
+National Accounts data files, Organisation for Economic Co-operation and Development (OECD);
+Staff estimates, World Bank (WB)
+
+Final consumption expenditure is expenditure on goods and services by resident institutional units for the direct satisfaction of human needs or wants, whether individual or collective. Final consumption expenditure can be measured for households, general government, the central bank and non-profit institutions serving households. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.

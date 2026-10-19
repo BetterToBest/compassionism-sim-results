@@ -1,0 +1,50 @@
+SOURCE: nordic_law_c46_extract.txt (cached for C4.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Lov om erstatning for miljøskader, LBK nr 994 af 09/09/2014: https://www.retsinformation.dk/eli/lta/2014/994/xml (md5 999b9b27cbde691582265b3cceef2647)
+--- from line 39 (anchor /^Loven gælder for skade, der forvoldes ved forurening/)
+Loven gælder for skade, der forvoldes ved forurening af luft, vand, jord eller undergrund som led i erhvervsmæssig eller offentlig aktivitet, der er anført i bilaget til loven.
+
+--- from line 71 (anchor /^Den, der som led i erhvervsmæssig eller offentlig aktivitet/)
+Den, der som led i erhvervsmæssig eller offentlig aktivitet, der er anført i bilaget til loven, forårsager en forurening, skal erstatte den skade, som forureningen medfører.
+
+--- from line 75 (anchor /^Ansvar efter stk\. 1 indtræder ikke/)
+Ansvar efter stk. 1 indtræder ikke, hvis skaden skyldes, at aktiviteten er udøvet i overensstemmelse med ufravigelige forskrifter, der er fastsat af en offentlig myndighed.
+
+=== Miljöbalk (1998:808), 32 kap.: https://data.riksdagen.se/dokument/sfs-1998-808.text (md5 5cfcc4bf84dcc2694fc44f3aa6b1a91a)
+--- from line 10885 (anchor /^1 § Skadestånd enligt detta kapitel ska betalas för/)
+1 § Skadestånd enligt detta kapitel ska betalas för
+personskada och sakskada samt ren förmögenhetsskada som
+verksamhet på en fastighet har orsakat i sin omgivning.
+En ren förmögenhetsskada som inte har orsakats genom brott
+ersätts dock endast om skadan är av någon betydelse.
+En skada, som inte har orsakats med uppsåt eller genom
+vårdslöshet, ersätts bara om den störning som har orsakat
+skadan inte skäligen bör tålas med hänsyn till förhållandena
+på orten eller till dess allmänna förekomst under jämförliga
+förhållanden. Lag (2010:815).
+2 § Kapitlet tillämpas inte på skador som har orsakats av
+joniserande strålning eller inverkan av elektrisk ström från
+elektrisk anläggning i fall då särskilda bestämmelser gäller.
+Förutsättningar för skadestånd
+
+--- from line 10904 (anchor /^3 § Skadestånd enligt detta kapitel betalas/)
+3 § Skadestånd enligt detta kapitel betalas för skador genom
+1. förorening av vattenområden,
+2. förorening av grundvatten,
+3. ändring av grundvattennivån,
+4. luftförorening,
+5. markförorening,
+6. buller,
+7. skakning, eller
+8. annan liknande störning.
+Första stycket 1-3 gäller inte skador som har orsakats av
+verksamhet som bedrivs i enlighet med tillstånd till
+
+=== Laki ympäristövahinkojen korvaamisesta 737/1994: https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/1994/737 (md5 e0e0533b2e1fb0a92e5a64114c0c13d4)
+--- from line 33 (anchor /^Tässä laissa tarkoitettuna ympäristövahinkona korvataan/)
+Tässä laissa tarkoitettuna ympäristövahinkona korvataan tietyllä alueella harjoitetusta toiminnasta johtuva vahinko, joka on ympäristössä aiheutunut:
+
+--- from line 120 (anchor /^Tämän lain mukainen korvausvelvollisuus on, silloinkin kun/)
+Tämän lain mukainen korvausvelvollisuus on, silloinkin kun vahinkoa ei ole aiheutettu tahallisesti tai huolimattomuudesta, sillä:

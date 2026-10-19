@@ -1,0 +1,1637 @@
+SOURCE: owid_vdem_regimes_of_the_world.csv (cached for C4.4)
+
+Entity,Code,Year,Political regime
+China,CHN,1789,0
+China,CHN,1790,0
+China,CHN,1791,0
+China,CHN,1792,0
+China,CHN,1793,0
+China,CHN,1794,0
+China,CHN,1795,0
+China,CHN,1796,0
+China,CHN,1797,0
+China,CHN,1798,0
+China,CHN,1799,0
+China,CHN,1800,0
+China,CHN,1801,0
+China,CHN,1802,0
+China,CHN,1803,0
+China,CHN,1804,0
+China,CHN,1805,0
+China,CHN,1806,0
+China,CHN,1807,0
+China,CHN,1808,0
+China,CHN,1809,0
+China,CHN,1810,0
+China,CHN,1811,0
+China,CHN,1812,0
+China,CHN,1813,0
+China,CHN,1814,0
+China,CHN,1815,0
+China,CHN,1816,0
+China,CHN,1817,0
+China,CHN,1818,0
+China,CHN,1819,0
+China,CHN,1820,0
+China,CHN,1821,0
+China,CHN,1822,0
+China,CHN,1823,0
+China,CHN,1824,0
+China,CHN,1825,0
+China,CHN,1826,0
+China,CHN,1827,0
+China,CHN,1828,0
+China,CHN,1829,0
+China,CHN,1830,0
+China,CHN,1831,0
+China,CHN,1832,0
+China,CHN,1833,0
+China,CHN,1834,0
+China,CHN,1835,0
+China,CHN,1836,0
+China,CHN,1837,0
+China,CHN,1838,0
+China,CHN,1839,0
+China,CHN,1840,0
+China,CHN,1841,0
+China,CHN,1842,0
+China,CHN,1843,0
+China,CHN,1844,0
+China,CHN,1845,0
+China,CHN,1846,0
+China,CHN,1847,0
+China,CHN,1848,0
+China,CHN,1849,0
+China,CHN,1850,0
+China,CHN,1851,0
+China,CHN,1852,0
+China,CHN,1853,0
+China,CHN,1854,0
+China,CHN,1855,0
+China,CHN,1856,0
+China,CHN,1857,0
+China,CHN,1858,0
+China,CHN,1859,0
+China,CHN,1860,0
+China,CHN,1861,0
+China,CHN,1862,0
+China,CHN,1863,0
+China,CHN,1864,0
+China,CHN,1865,0
+China,CHN,1866,0
+China,CHN,1867,0
+China,CHN,1868,0
+China,CHN,1869,0
+China,CHN,1870,0
+China,CHN,1871,0
+China,CHN,1872,0
+China,CHN,1873,0
+China,CHN,1874,0
+China,CHN,1875,0
+China,CHN,1876,0
+China,CHN,1877,0
+China,CHN,1878,0
+China,CHN,1879,0
+China,CHN,1880,0
+China,CHN,1881,0
+China,CHN,1882,0
+China,CHN,1883,0
+China,CHN,1884,0
+China,CHN,1885,0
+China,CHN,1886,0
+China,CHN,1887,0
+China,CHN,1888,0
+China,CHN,1889,0
+China,CHN,1890,0
+China,CHN,1891,0
+China,CHN,1892,0
+China,CHN,1893,0
+China,CHN,1894,0
+China,CHN,1895,0
+China,CHN,1896,0
+China,CHN,1897,0
+China,CHN,1898,0
+China,CHN,1899,0
+China,CHN,1900,0
+China,CHN,1901,0
+China,CHN,1902,0
+China,CHN,1903,0
+China,CHN,1904,0
+China,CHN,1905,0
+China,CHN,1906,0
+China,CHN,1907,0
+China,CHN,1908,0
+China,CHN,1909,0
+China,CHN,1910,0
+China,CHN,1911,0
+China,CHN,1912,0
+China,CHN,1913,0
+China,CHN,1914,0
+China,CHN,1915,0
+China,CHN,1916,0
+China,CHN,1917,0
+China,CHN,1918,1
+China,CHN,1919,1
+China,CHN,1920,1
+China,CHN,1921,0
+China,CHN,1922,0
+China,CHN,1923,0
+China,CHN,1924,0
+China,CHN,1925,0
+China,CHN,1926,0
+China,CHN,1927,0
+China,CHN,1928,0
+China,CHN,1929,0
+China,CHN,1930,0
+China,CHN,1931,0
+China,CHN,1932,0
+China,CHN,1933,0
+China,CHN,1934,0
+China,CHN,1935,0
+China,CHN,1936,0
+China,CHN,1937,0
+China,CHN,1938,0
+China,CHN,1939,0
+China,CHN,1940,0
+China,CHN,1941,0
+China,CHN,1942,0
+China,CHN,1943,0
+China,CHN,1944,0
+China,CHN,1945,0
+China,CHN,1946,0
+China,CHN,1947,0
+China,CHN,1948,0
+China,CHN,1949,0
+China,CHN,1950,0
+China,CHN,1951,0
+China,CHN,1952,0
+China,CHN,1953,0
+China,CHN,1954,0
+China,CHN,1955,0
+China,CHN,1956,0
+China,CHN,1957,0
+China,CHN,1958,0
+China,CHN,1959,0
+China,CHN,1960,0
+China,CHN,1961,0
+China,CHN,1962,0
+China,CHN,1963,0
+China,CHN,1964,0
+China,CHN,1965,0
+China,CHN,1966,0
+China,CHN,1967,0
+China,CHN,1968,0
+China,CHN,1969,0
+China,CHN,1970,0
+China,CHN,1971,0
+China,CHN,1972,0
+China,CHN,1973,0
+China,CHN,1974,0
+China,CHN,1975,0
+China,CHN,1976,0
+China,CHN,1977,0
+China,CHN,1978,0
+China,CHN,1979,0
+China,CHN,1980,0
+China,CHN,1981,0
+China,CHN,1982,0
+China,CHN,1983,0
+China,CHN,1984,0
+China,CHN,1985,0
+China,CHN,1986,0
+China,CHN,1987,0
+China,CHN,1988,0
+China,CHN,1989,0
+China,CHN,1990,0
+China,CHN,1991,0
+China,CHN,1992,0
+China,CHN,1993,0
+China,CHN,1994,0
+China,CHN,1995,0
+China,CHN,1996,0
+China,CHN,1997,0
+China,CHN,1998,0
+China,CHN,1999,0
+China,CHN,2000,0
+China,CHN,2001,0
+China,CHN,2002,0
+China,CHN,2003,0
+China,CHN,2004,0
+China,CHN,2005,0
+China,CHN,2006,0
+China,CHN,2007,0
+China,CHN,2008,0
+China,CHN,2009,0
+China,CHN,2010,0
+China,CHN,2011,0
+China,CHN,2012,0
+China,CHN,2013,0
+China,CHN,2014,0
+China,CHN,2015,0
+China,CHN,2016,0
+China,CHN,2017,0
+China,CHN,2018,0
+China,CHN,2019,0
+China,CHN,2020,0
+China,CHN,2021,0
+China,CHN,2022,0
+China,CHN,2023,0
+China,CHN,2024,0
+China,CHN,2025,0
+Denmark,DNK,1789,0
+Denmark,DNK,1790,0
+Denmark,DNK,1791,0
+Denmark,DNK,1792,0
+Denmark,DNK,1793,0
+Denmark,DNK,1794,0
+Denmark,DNK,1795,0
+Denmark,DNK,1796,0
+Denmark,DNK,1797,0
+Denmark,DNK,1798,0
+Denmark,DNK,1799,0
+Denmark,DNK,1800,0
+Denmark,DNK,1801,0
+Denmark,DNK,1802,0
+Denmark,DNK,1803,0
+Denmark,DNK,1804,0
+Denmark,DNK,1805,0
+Denmark,DNK,1806,0
+Denmark,DNK,1807,0
+Denmark,DNK,1808,0
+Denmark,DNK,1809,0
+Denmark,DNK,1810,0
+Denmark,DNK,1811,0
+Denmark,DNK,1812,0
+Denmark,DNK,1813,0
+Denmark,DNK,1814,0
+Denmark,DNK,1815,0
+Denmark,DNK,1816,0
+Denmark,DNK,1817,0
+Denmark,DNK,1818,0
+Denmark,DNK,1819,0
+Denmark,DNK,1820,0
+Denmark,DNK,1821,0
+Denmark,DNK,1822,0
+Denmark,DNK,1823,0
+Denmark,DNK,1824,0
+Denmark,DNK,1825,0
+Denmark,DNK,1826,0
+Denmark,DNK,1827,0
+Denmark,DNK,1828,0
+Denmark,DNK,1829,0
+Denmark,DNK,1830,0
+Denmark,DNK,1831,0
+Denmark,DNK,1832,0
+Denmark,DNK,1833,0
+Denmark,DNK,1834,0
+Denmark,DNK,1835,0
+Denmark,DNK,1836,0
+Denmark,DNK,1837,0
+Denmark,DNK,1838,0
+Denmark,DNK,1839,0
+Denmark,DNK,1840,0
+Denmark,DNK,1841,0
+Denmark,DNK,1842,0
+Denmark,DNK,1843,0
+Denmark,DNK,1844,0
+Denmark,DNK,1845,0
+Denmark,DNK,1846,0
+Denmark,DNK,1847,0
+Denmark,DNK,1848,0
+Denmark,DNK,1849,0
+Denmark,DNK,1850,0
+Denmark,DNK,1851,0
+Denmark,DNK,1852,0
+Denmark,DNK,1853,0
+Denmark,DNK,1854,0
+Denmark,DNK,1855,0
+Denmark,DNK,1856,0
+Denmark,DNK,1857,0
+Denmark,DNK,1858,0
+Denmark,DNK,1859,0
+Denmark,DNK,1860,0
+Denmark,DNK,1861,0
+Denmark,DNK,1862,0
+Denmark,DNK,1863,0
+Denmark,DNK,1864,0
+Denmark,DNK,1865,0
+Denmark,DNK,1866,0
+Denmark,DNK,1867,0
+Denmark,DNK,1868,0
+Denmark,DNK,1869,0
+Denmark,DNK,1870,0
+Denmark,DNK,1871,0
+Denmark,DNK,1872,0
+Denmark,DNK,1873,0
+Denmark,DNK,1874,0
+Denmark,DNK,1875,0
+Denmark,DNK,1876,0
+Denmark,DNK,1877,0
+Denmark,DNK,1878,0
+Denmark,DNK,1879,0
+Denmark,DNK,1880,0
+Denmark,DNK,1881,0
+Denmark,DNK,1882,0
+Denmark,DNK,1883,0
+Denmark,DNK,1884,0
+Denmark,DNK,1885,0
+Denmark,DNK,1886,0
+Denmark,DNK,1887,0
+Denmark,DNK,1888,0
+Denmark,DNK,1889,0
+Denmark,DNK,1890,0
+Denmark,DNK,1891,0
+Denmark,DNK,1892,0
+Denmark,DNK,1893,0
+Denmark,DNK,1894,0
+Denmark,DNK,1895,0
+Denmark,DNK,1896,0
+Denmark,DNK,1897,0
+Denmark,DNK,1898,0
+Denmark,DNK,1899,0
+Denmark,DNK,1900,0
+Denmark,DNK,1901,1
+Denmark,DNK,1902,3
+Denmark,DNK,1903,3
+Denmark,DNK,1904,3
+Denmark,DNK,1905,3
+Denmark,DNK,1906,3
+Denmark,DNK,1907,3
+Denmark,DNK,1908,3
+Denmark,DNK,1909,3
+Denmark,DNK,1910,3
+Denmark,DNK,1911,3
+Denmark,DNK,1912,3
+Denmark,DNK,1913,3
+Denmark,DNK,1914,3
+Denmark,DNK,1915,3
+Denmark,DNK,1916,3
+Denmark,DNK,1917,3
+Denmark,DNK,1918,3
+Denmark,DNK,1919,3
+Denmark,DNK,1920,3
+Denmark,DNK,1921,3
+Denmark,DNK,1922,3
+Denmark,DNK,1923,3
+Denmark,DNK,1924,3
+Denmark,DNK,1925,3
+Denmark,DNK,1926,3
+Denmark,DNK,1927,3
+Denmark,DNK,1928,3
+Denmark,DNK,1929,3
+Denmark,DNK,1930,3
+Denmark,DNK,1931,3
+Denmark,DNK,1932,3
+Denmark,DNK,1933,3
+Denmark,DNK,1934,3
+Denmark,DNK,1935,3
+Denmark,DNK,1936,3
+Denmark,DNK,1937,3
+Denmark,DNK,1938,3
+Denmark,DNK,1939,3
+Denmark,DNK,1940,2
+Denmark,DNK,1941,2
+Denmark,DNK,1942,2
+Denmark,DNK,1943,0
+Denmark,DNK,1944,0
+Denmark,DNK,1945,1
+Denmark,DNK,1946,3
+Denmark,DNK,1947,3
+Denmark,DNK,1948,3
+Denmark,DNK,1949,3
+Denmark,DNK,1950,3
+Denmark,DNK,1951,3
+Denmark,DNK,1952,3
+Denmark,DNK,1953,3
+Denmark,DNK,1954,3
+Denmark,DNK,1955,3
+Denmark,DNK,1956,3
+Denmark,DNK,1957,3
+Denmark,DNK,1958,3
+Denmark,DNK,1959,3
+Denmark,DNK,1960,3
+Denmark,DNK,1961,3
+Denmark,DNK,1962,3
+Denmark,DNK,1963,3
+Denmark,DNK,1964,3
+Denmark,DNK,1965,3
+Denmark,DNK,1966,3
+Denmark,DNK,1967,3
+Denmark,DNK,1968,3
+Denmark,DNK,1969,3
+Denmark,DNK,1970,3
+Denmark,DNK,1971,3
+Denmark,DNK,1972,3
+Denmark,DNK,1973,3
+Denmark,DNK,1974,3
+Denmark,DNK,1975,3
+Denmark,DNK,1976,3
+Denmark,DNK,1977,3
+Denmark,DNK,1978,3
+Denmark,DNK,1979,3
+Denmark,DNK,1980,3
+Denmark,DNK,1981,3
+Denmark,DNK,1982,3
+Denmark,DNK,1983,3
+Denmark,DNK,1984,3
+Denmark,DNK,1985,3
+Denmark,DNK,1986,3
+Denmark,DNK,1987,3
+Denmark,DNK,1988,3
+Denmark,DNK,1989,3
+Denmark,DNK,1990,3
+Denmark,DNK,1991,3
+Denmark,DNK,1992,3
+Denmark,DNK,1993,3
+Denmark,DNK,1994,3
+Denmark,DNK,1995,3
+Denmark,DNK,1996,3
+Denmark,DNK,1997,3
+Denmark,DNK,1998,3
+Denmark,DNK,1999,3
+Denmark,DNK,2000,3
+Denmark,DNK,2001,3
+Denmark,DNK,2002,3
+Denmark,DNK,2003,3
+Denmark,DNK,2004,3
+Denmark,DNK,2005,3
+Denmark,DNK,2006,3
+Denmark,DNK,2007,3
+Denmark,DNK,2008,3
+Denmark,DNK,2009,3
+Denmark,DNK,2010,3
+Denmark,DNK,2011,3
+Denmark,DNK,2012,3
+Denmark,DNK,2013,3
+Denmark,DNK,2014,3
+Denmark,DNK,2015,3
+Denmark,DNK,2016,3
+Denmark,DNK,2017,3
+Denmark,DNK,2018,3
+Denmark,DNK,2019,3
+Denmark,DNK,2020,3
+Denmark,DNK,2021,3
+Denmark,DNK,2022,3
+Denmark,DNK,2023,3
+Denmark,DNK,2024,3
+Denmark,DNK,2025,3
+Finland,FIN,1789,0
+Finland,FIN,1790,0
+Finland,FIN,1791,0
+Finland,FIN,1792,0
+Finland,FIN,1793,0
+Finland,FIN,1794,0
+Finland,FIN,1795,0
+Finland,FIN,1796,0
+Finland,FIN,1797,0
+Finland,FIN,1798,0
+Finland,FIN,1799,0
+Finland,FIN,1800,0
+Finland,FIN,1801,0
+Finland,FIN,1802,0
+Finland,FIN,1803,0
+Finland,FIN,1804,0
+Finland,FIN,1805,0
+Finland,FIN,1806,0
+Finland,FIN,1807,0
+Finland,FIN,1808,0
+Finland,FIN,1863,0
+Finland,FIN,1864,0
+Finland,FIN,1865,0
+Finland,FIN,1866,0
+Finland,FIN,1867,0
+Finland,FIN,1868,0
+Finland,FIN,1869,0
+Finland,FIN,1870,0
+Finland,FIN,1871,0
+Finland,FIN,1872,0
+Finland,FIN,1873,0
+Finland,FIN,1874,0
+Finland,FIN,1875,0
+Finland,FIN,1876,0
+Finland,FIN,1877,0
+Finland,FIN,1878,0
+Finland,FIN,1879,0
+Finland,FIN,1880,0
+Finland,FIN,1881,0
+Finland,FIN,1882,0
+Finland,FIN,1883,0
+Finland,FIN,1884,0
+Finland,FIN,1885,0
+Finland,FIN,1886,0
+Finland,FIN,1887,0
+Finland,FIN,1888,0
+Finland,FIN,1889,0
+Finland,FIN,1890,0
+Finland,FIN,1891,0
+Finland,FIN,1892,0
+Finland,FIN,1893,0
+Finland,FIN,1894,0
+Finland,FIN,1895,0
+Finland,FIN,1896,0
+Finland,FIN,1897,0
+Finland,FIN,1898,0
+Finland,FIN,1899,0
+Finland,FIN,1900,0
+Finland,FIN,1901,0
+Finland,FIN,1902,0
+Finland,FIN,1903,0
+Finland,FIN,1904,0
+Finland,FIN,1905,0
+Finland,FIN,1906,0
+Finland,FIN,1907,0
+Finland,FIN,1908,0
+Finland,FIN,1909,0
+Finland,FIN,1910,0
+Finland,FIN,1911,0
+Finland,FIN,1912,0
+Finland,FIN,1913,0
+Finland,FIN,1914,0
+Finland,FIN,1915,0
+Finland,FIN,1916,0
+Finland,FIN,1917,1
+Finland,FIN,1918,2
+Finland,FIN,1919,2
+Finland,FIN,1920,2
+Finland,FIN,1921,2
+Finland,FIN,1922,2
+Finland,FIN,1923,2
+Finland,FIN,1924,2
+Finland,FIN,1925,2
+Finland,FIN,1926,2
+Finland,FIN,1927,2
+Finland,FIN,1928,2
+Finland,FIN,1929,2
+Finland,FIN,1930,2
+Finland,FIN,1931,2
+Finland,FIN,1932,2
+Finland,FIN,1933,2
+Finland,FIN,1934,2
+Finland,FIN,1935,2
+Finland,FIN,1936,2
+Finland,FIN,1937,2
+Finland,FIN,1938,2
+Finland,FIN,1939,2
+Finland,FIN,1940,2
+Finland,FIN,1941,2
+Finland,FIN,1942,1
+Finland,FIN,1943,1
+Finland,FIN,1944,1
+Finland,FIN,1945,2
+Finland,FIN,1946,2
+Finland,FIN,1947,2
+Finland,FIN,1948,2
+Finland,FIN,1949,3
+Finland,FIN,1950,3
+Finland,FIN,1951,3
+Finland,FIN,1952,3
+Finland,FIN,1953,3
+Finland,FIN,1954,3
+Finland,FIN,1955,3
+Finland,FIN,1956,3
+Finland,FIN,1957,3
+Finland,FIN,1958,3
+Finland,FIN,1959,3
+Finland,FIN,1960,3
+Finland,FIN,1961,3
+Finland,FIN,1962,3
+Finland,FIN,1963,3
+Finland,FIN,1964,3
+Finland,FIN,1965,3
+Finland,FIN,1966,3
+Finland,FIN,1967,3
+Finland,FIN,1968,3
+Finland,FIN,1969,3
+Finland,FIN,1970,3
+Finland,FIN,1971,3
+Finland,FIN,1972,3
+Finland,FIN,1973,3
+Finland,FIN,1974,3
+Finland,FIN,1975,3
+Finland,FIN,1976,3
+Finland,FIN,1977,3
+Finland,FIN,1978,3
+Finland,FIN,1979,3
+Finland,FIN,1980,3
+Finland,FIN,1981,3
+Finland,FIN,1982,3
+Finland,FIN,1983,3
+Finland,FIN,1984,3
+Finland,FIN,1985,3
+Finland,FIN,1986,3
+Finland,FIN,1987,3
+Finland,FIN,1988,3
+Finland,FIN,1989,3
+Finland,FIN,1990,3
+Finland,FIN,1991,3
+Finland,FIN,1992,3
+Finland,FIN,1993,3
+Finland,FIN,1994,3
+Finland,FIN,1995,3
+Finland,FIN,1996,3
+Finland,FIN,1997,3
+Finland,FIN,1998,3
+Finland,FIN,1999,3
+Finland,FIN,2000,3
+Finland,FIN,2001,3
+Finland,FIN,2002,3
+Finland,FIN,2003,3
+Finland,FIN,2004,3
+Finland,FIN,2005,3
+Finland,FIN,2006,3
+Finland,FIN,2007,3
+Finland,FIN,2008,3
+Finland,FIN,2009,3
+Finland,FIN,2010,3
+Finland,FIN,2011,3
+Finland,FIN,2012,3
+Finland,FIN,2013,3
+Finland,FIN,2014,3
+Finland,FIN,2015,3
+Finland,FIN,2016,3
+Finland,FIN,2017,3
+Finland,FIN,2018,3
+Finland,FIN,2019,3
+Finland,FIN,2020,3
+Finland,FIN,2021,3
+Finland,FIN,2022,3
+Finland,FIN,2023,3
+Finland,FIN,2024,3
+Finland,FIN,2025,3
+Norway,NOR,1807,0
+Norway,NOR,1808,0
+Norway,NOR,1809,0
+Norway,NOR,1810,0
+Norway,NOR,1811,0
+Norway,NOR,1812,0
+Norway,NOR,1813,0
+Norway,NOR,1814,0
+Norway,NOR,1815,0
+Norway,NOR,1816,0
+Norway,NOR,1817,0
+Norway,NOR,1818,0
+Norway,NOR,1819,0
+Norway,NOR,1820,0
+Norway,NOR,1821,0
+Norway,NOR,1822,0
+Norway,NOR,1823,0
+Norway,NOR,1824,0
+Norway,NOR,1825,0
+Norway,NOR,1826,0
+Norway,NOR,1827,0
+Norway,NOR,1828,0
+Norway,NOR,1829,0
+Norway,NOR,1830,0
+Norway,NOR,1831,0
+Norway,NOR,1832,0
+Norway,NOR,1833,0
+Norway,NOR,1834,0
+Norway,NOR,1835,0
+Norway,NOR,1836,0
+Norway,NOR,1837,0
+Norway,NOR,1838,0
+Norway,NOR,1839,0
+Norway,NOR,1840,0
+Norway,NOR,1841,0
+Norway,NOR,1842,0
+Norway,NOR,1843,0
+Norway,NOR,1844,0
+Norway,NOR,1845,0
+Norway,NOR,1846,0
+Norway,NOR,1847,0
+Norway,NOR,1848,0
+Norway,NOR,1849,0
+Norway,NOR,1850,0
+Norway,NOR,1851,0
+Norway,NOR,1852,0
+Norway,NOR,1853,0
+Norway,NOR,1854,0
+Norway,NOR,1855,0
+Norway,NOR,1856,0
+Norway,NOR,1857,0
+Norway,NOR,1858,0
+Norway,NOR,1859,0
+Norway,NOR,1860,0
+Norway,NOR,1861,0
+Norway,NOR,1862,0
+Norway,NOR,1863,0
+Norway,NOR,1864,0
+Norway,NOR,1865,0
+Norway,NOR,1866,0
+Norway,NOR,1867,0
+Norway,NOR,1868,0
+Norway,NOR,1869,0
+Norway,NOR,1870,0
+Norway,NOR,1871,0
+Norway,NOR,1872,0
+Norway,NOR,1873,0
+Norway,NOR,1874,0
+Norway,NOR,1875,0
+Norway,NOR,1876,0
+Norway,NOR,1877,0
+Norway,NOR,1878,0
+Norway,NOR,1879,0
+Norway,NOR,1880,0
+Norway,NOR,1881,0
+Norway,NOR,1882,1
+Norway,NOR,1883,1
+Norway,NOR,1884,1
+Norway,NOR,1885,1
+Norway,NOR,1886,1
+Norway,NOR,1887,1
+Norway,NOR,1888,1
+Norway,NOR,1889,1
+Norway,NOR,1890,1
+Norway,NOR,1891,1
+Norway,NOR,1892,1
+Norway,NOR,1893,1
+Norway,NOR,1894,1
+Norway,NOR,1895,1
+Norway,NOR,1896,1
+Norway,NOR,1897,1
+Norway,NOR,1898,1
+Norway,NOR,1899,1
+Norway,NOR,1900,1
+Norway,NOR,1901,1
+Norway,NOR,1902,1
+Norway,NOR,1903,1
+Norway,NOR,1904,1
+Norway,NOR,1905,1
+Norway,NOR,1906,2
+Norway,NOR,1907,2
+Norway,NOR,1908,2
+Norway,NOR,1909,2
+Norway,NOR,1910,2
+Norway,NOR,1911,2
+Norway,NOR,1912,2
+Norway,NOR,1913,2
+Norway,NOR,1914,2
+Norway,NOR,1915,2
+Norway,NOR,1916,2
+Norway,NOR,1917,2
+Norway,NOR,1918,2
+Norway,NOR,1919,2
+Norway,NOR,1920,2
+Norway,NOR,1921,2
+Norway,NOR,1922,2
+Norway,NOR,1923,2
+Norway,NOR,1924,2
+Norway,NOR,1925,2
+Norway,NOR,1926,2
+Norway,NOR,1927,2
+Norway,NOR,1928,2
+Norway,NOR,1929,2
+Norway,NOR,1930,2
+Norway,NOR,1931,2
+Norway,NOR,1932,2
+Norway,NOR,1933,2
+Norway,NOR,1934,2
+Norway,NOR,1935,2
+Norway,NOR,1936,2
+Norway,NOR,1937,2
+Norway,NOR,1938,2
+Norway,NOR,1939,2
+Norway,NOR,1940,1
+Norway,NOR,1941,1
+Norway,NOR,1942,0
+Norway,NOR,1943,0
+Norway,NOR,1944,0
+Norway,NOR,1945,1
+Norway,NOR,1946,3
+Norway,NOR,1947,3
+Norway,NOR,1948,3
+Norway,NOR,1949,3
+Norway,NOR,1950,3
+Norway,NOR,1951,3
+Norway,NOR,1952,3
+Norway,NOR,1953,3
+Norway,NOR,1954,3
+Norway,NOR,1955,3
+Norway,NOR,1956,3
+Norway,NOR,1957,3
+Norway,NOR,1958,3
+Norway,NOR,1959,3
+Norway,NOR,1960,3
+Norway,NOR,1961,3
+Norway,NOR,1962,3
+Norway,NOR,1963,3
+Norway,NOR,1964,3
+Norway,NOR,1965,3
+Norway,NOR,1966,3
+Norway,NOR,1967,3
+Norway,NOR,1968,3
+Norway,NOR,1969,3
+Norway,NOR,1970,3
+Norway,NOR,1971,3
+Norway,NOR,1972,3
+Norway,NOR,1973,3
+Norway,NOR,1974,3
+Norway,NOR,1975,3
+Norway,NOR,1976,3
+Norway,NOR,1977,3
+Norway,NOR,1978,3
+Norway,NOR,1979,3
+Norway,NOR,1980,3
+Norway,NOR,1981,3
+Norway,NOR,1982,3
+Norway,NOR,1983,3
+Norway,NOR,1984,3
+Norway,NOR,1985,3
+Norway,NOR,1986,3
+Norway,NOR,1987,3
+Norway,NOR,1988,3
+Norway,NOR,1989,3
+Norway,NOR,1990,3
+Norway,NOR,1991,3
+Norway,NOR,1992,3
+Norway,NOR,1993,3
+Norway,NOR,1994,3
+Norway,NOR,1995,3
+Norway,NOR,1996,3
+Norway,NOR,1997,3
+Norway,NOR,1998,3
+Norway,NOR,1999,3
+Norway,NOR,2000,3
+Norway,NOR,2001,3
+Norway,NOR,2002,3
+Norway,NOR,2003,3
+Norway,NOR,2004,3
+Norway,NOR,2005,3
+Norway,NOR,2006,3
+Norway,NOR,2007,3
+Norway,NOR,2008,3
+Norway,NOR,2009,3
+Norway,NOR,2010,3
+Norway,NOR,2011,3
+Norway,NOR,2012,3
+Norway,NOR,2013,3
+Norway,NOR,2014,3
+Norway,NOR,2015,3
+Norway,NOR,2016,3
+Norway,NOR,2017,3
+Norway,NOR,2018,3
+Norway,NOR,2019,3
+Norway,NOR,2020,3
+Norway,NOR,2021,3
+Norway,NOR,2022,3
+Norway,NOR,2023,3
+Norway,NOR,2024,3
+Norway,NOR,2025,3
+Qatar,QAT,1900,0
+Qatar,QAT,1901,0
+Qatar,QAT,1902,0
+Qatar,QAT,1903,0
+Qatar,QAT,1904,0
+Qatar,QAT,1905,0
+Qatar,QAT,1906,0
+Qatar,QAT,1907,0
+Qatar,QAT,1908,0
+Qatar,QAT,1909,0
+Qatar,QAT,1910,0
+Qatar,QAT,1911,0
+Qatar,QAT,1912,0
+Qatar,QAT,1913,0
+Qatar,QAT,1914,0
+Qatar,QAT,1915,0
+Qatar,QAT,1916,0
+Qatar,QAT,1917,0
+Qatar,QAT,1918,0
+Qatar,QAT,1919,0
+Qatar,QAT,1920,0
+Qatar,QAT,1921,0
+Qatar,QAT,1922,0
+Qatar,QAT,1923,0
+Qatar,QAT,1924,0
+Qatar,QAT,1925,0
+Qatar,QAT,1926,0
+Qatar,QAT,1927,0
+Qatar,QAT,1928,0
+Qatar,QAT,1929,0
+Qatar,QAT,1930,0
+Qatar,QAT,1931,0
+Qatar,QAT,1932,0
+Qatar,QAT,1933,0
+Qatar,QAT,1934,0
+Qatar,QAT,1935,0
+Qatar,QAT,1936,0
+Qatar,QAT,1937,0
+Qatar,QAT,1938,0
+Qatar,QAT,1939,0
+Qatar,QAT,1940,0
+Qatar,QAT,1941,0
+Qatar,QAT,1942,0
+Qatar,QAT,1943,0
+Qatar,QAT,1944,0
+Qatar,QAT,1945,0
+Qatar,QAT,1946,0
+Qatar,QAT,1947,0
+Qatar,QAT,1948,0
+Qatar,QAT,1949,0
+Qatar,QAT,1950,0
+Qatar,QAT,1951,0
+Qatar,QAT,1952,0
+Qatar,QAT,1953,0
+Qatar,QAT,1954,0
+Qatar,QAT,1955,0
+Qatar,QAT,1956,0
+Qatar,QAT,1957,0
+Qatar,QAT,1958,0
+Qatar,QAT,1959,0
+Qatar,QAT,1960,0
+Qatar,QAT,1961,0
+Qatar,QAT,1962,0
+Qatar,QAT,1963,0
+Qatar,QAT,1964,0
+Qatar,QAT,1965,0
+Qatar,QAT,1966,0
+Qatar,QAT,1967,0
+Qatar,QAT,1968,0
+Qatar,QAT,1969,0
+Qatar,QAT,1970,0
+Qatar,QAT,1971,0
+Qatar,QAT,1972,0
+Qatar,QAT,1973,0
+Qatar,QAT,1974,0
+Qatar,QAT,1975,0
+Qatar,QAT,1976,0
+Qatar,QAT,1977,0
+Qatar,QAT,1978,0
+Qatar,QAT,1979,0
+Qatar,QAT,1980,0
+Qatar,QAT,1981,0
+Qatar,QAT,1982,0
+Qatar,QAT,1983,0
+Qatar,QAT,1984,0
+Qatar,QAT,1985,0
+Qatar,QAT,1986,0
+Qatar,QAT,1987,0
+Qatar,QAT,1988,0
+Qatar,QAT,1989,0
+Qatar,QAT,1990,0
+Qatar,QAT,1991,0
+Qatar,QAT,1992,0
+Qatar,QAT,1993,0
+Qatar,QAT,1994,0
+Qatar,QAT,1995,0
+Qatar,QAT,1996,0
+Qatar,QAT,1997,0
+Qatar,QAT,1998,0
+Qatar,QAT,1999,0
+Qatar,QAT,2000,0
+Qatar,QAT,2001,0
+Qatar,QAT,2002,0
+Qatar,QAT,2003,0
+Qatar,QAT,2004,0
+Qatar,QAT,2005,0
+Qatar,QAT,2006,0
+Qatar,QAT,2007,0
+Qatar,QAT,2008,0
+Qatar,QAT,2009,0
+Qatar,QAT,2010,0
+Qatar,QAT,2011,0
+Qatar,QAT,2012,0
+Qatar,QAT,2013,0
+Qatar,QAT,2014,0
+Qatar,QAT,2015,0
+Qatar,QAT,2016,0
+Qatar,QAT,2017,0
+Qatar,QAT,2018,0
+Qatar,QAT,2019,0
+Qatar,QAT,2020,0
+Qatar,QAT,2021,0
+Qatar,QAT,2022,0
+Qatar,QAT,2023,0
+Qatar,QAT,2024,0
+Qatar,QAT,2025,0
+Singapore,SGP,1868,0
+Singapore,SGP,1869,0
+Singapore,SGP,1870,0
+Singapore,SGP,1871,0
+Singapore,SGP,1872,0
+Singapore,SGP,1873,0
+Singapore,SGP,1874,0
+Singapore,SGP,1875,0
+Singapore,SGP,1876,0
+Singapore,SGP,1877,0
+Singapore,SGP,1878,0
+Singapore,SGP,1879,0
+Singapore,SGP,1880,0
+Singapore,SGP,1881,0
+Singapore,SGP,1882,0
+Singapore,SGP,1883,0
+Singapore,SGP,1884,0
+Singapore,SGP,1885,0
+Singapore,SGP,1886,0
+Singapore,SGP,1887,0
+Singapore,SGP,1888,0
+Singapore,SGP,1889,0
+Singapore,SGP,1890,0
+Singapore,SGP,1891,0
+Singapore,SGP,1892,0
+Singapore,SGP,1893,0
+Singapore,SGP,1894,0
+Singapore,SGP,1895,0
+Singapore,SGP,1896,0
+Singapore,SGP,1897,0
+Singapore,SGP,1898,0
+Singapore,SGP,1899,0
+Singapore,SGP,1900,0
+Singapore,SGP,1901,0
+Singapore,SGP,1902,0
+Singapore,SGP,1903,0
+Singapore,SGP,1904,0
+Singapore,SGP,1905,0
+Singapore,SGP,1906,0
+Singapore,SGP,1907,0
+Singapore,SGP,1908,0
+Singapore,SGP,1909,0
+Singapore,SGP,1910,0
+Singapore,SGP,1911,0
+Singapore,SGP,1912,0
+Singapore,SGP,1913,0
+Singapore,SGP,1914,0
+Singapore,SGP,1915,0
+Singapore,SGP,1916,0
+Singapore,SGP,1917,0
+Singapore,SGP,1918,0
+Singapore,SGP,1919,0
+Singapore,SGP,1920,0
+Singapore,SGP,1921,0
+Singapore,SGP,1922,0
+Singapore,SGP,1923,0
+Singapore,SGP,1924,0
+Singapore,SGP,1925,0
+Singapore,SGP,1926,0
+Singapore,SGP,1927,0
+Singapore,SGP,1928,0
+Singapore,SGP,1929,0
+Singapore,SGP,1930,0
+Singapore,SGP,1931,0
+Singapore,SGP,1932,0
+Singapore,SGP,1933,0
+Singapore,SGP,1934,0
+Singapore,SGP,1935,0
+Singapore,SGP,1936,0
+Singapore,SGP,1937,0
+Singapore,SGP,1938,0
+Singapore,SGP,1939,0
+Singapore,SGP,1940,0
+Singapore,SGP,1941,0
+Singapore,SGP,1942,0
+Singapore,SGP,1943,0
+Singapore,SGP,1944,0
+Singapore,SGP,1945,0
+Singapore,SGP,1946,0
+Singapore,SGP,1947,0
+Singapore,SGP,1948,0
+Singapore,SGP,1949,0
+Singapore,SGP,1950,0
+Singapore,SGP,1951,0
+Singapore,SGP,1952,0
+Singapore,SGP,1953,0
+Singapore,SGP,1954,0
+Singapore,SGP,1955,1
+Singapore,SGP,1956,1
+Singapore,SGP,1957,1
+Singapore,SGP,1958,1
+Singapore,SGP,1959,1
+Singapore,SGP,1960,1
+Singapore,SGP,1961,1
+Singapore,SGP,1962,1
+Singapore,SGP,1963,1
+Singapore,SGP,1964,1
+Singapore,SGP,1965,1
+Singapore,SGP,1966,1
+Singapore,SGP,1967,1
+Singapore,SGP,1968,1
+Singapore,SGP,1969,1
+Singapore,SGP,1970,1
+Singapore,SGP,1971,1
+Singapore,SGP,1972,1
+Singapore,SGP,1973,1
+Singapore,SGP,1974,1
+Singapore,SGP,1975,1
+Singapore,SGP,1976,1
+Singapore,SGP,1977,1
+Singapore,SGP,1978,1
+Singapore,SGP,1979,1
+Singapore,SGP,1980,1
+Singapore,SGP,1981,1
+Singapore,SGP,1982,1
+Singapore,SGP,1983,1
+Singapore,SGP,1984,1
+Singapore,SGP,1985,1
+Singapore,SGP,1986,1
+Singapore,SGP,1987,1
+Singapore,SGP,1988,1
+Singapore,SGP,1989,1
+Singapore,SGP,1990,1
+Singapore,SGP,1991,1
+Singapore,SGP,1992,1
+Singapore,SGP,1993,1
+Singapore,SGP,1994,1
+Singapore,SGP,1995,1
+Singapore,SGP,1996,1
+Singapore,SGP,1997,1
+Singapore,SGP,1998,1
+Singapore,SGP,1999,1
+Singapore,SGP,2000,1
+Singapore,SGP,2001,1
+Singapore,SGP,2002,1
+Singapore,SGP,2003,1
+Singapore,SGP,2004,1
+Singapore,SGP,2005,1
+Singapore,SGP,2006,1
+Singapore,SGP,2007,1
+Singapore,SGP,2008,1
+Singapore,SGP,2009,1
+Singapore,SGP,2010,1
+Singapore,SGP,2011,1
+Singapore,SGP,2012,1
+Singapore,SGP,2013,1
+Singapore,SGP,2014,1
+Singapore,SGP,2015,1
+Singapore,SGP,2016,1
+Singapore,SGP,2017,1
+Singapore,SGP,2018,1
+Singapore,SGP,2019,1
+Singapore,SGP,2020,1
+Singapore,SGP,2021,1
+Singapore,SGP,2022,1
+Singapore,SGP,2023,1
+Singapore,SGP,2024,1
+Singapore,SGP,2025,1
+Sweden,SWE,1789,0
+Sweden,SWE,1790,0
+Sweden,SWE,1791,0
+Sweden,SWE,1792,0
+Sweden,SWE,1793,0
+Sweden,SWE,1794,0
+Sweden,SWE,1795,0
+Sweden,SWE,1796,0
+Sweden,SWE,1797,0
+Sweden,SWE,1798,0
+Sweden,SWE,1799,0
+Sweden,SWE,1800,0
+Sweden,SWE,1801,0
+Sweden,SWE,1802,0
+Sweden,SWE,1803,0
+Sweden,SWE,1804,0
+Sweden,SWE,1805,0
+Sweden,SWE,1806,0
+Sweden,SWE,1807,0
+Sweden,SWE,1808,0
+Sweden,SWE,1809,0
+Sweden,SWE,1810,0
+Sweden,SWE,1811,0
+Sweden,SWE,1812,0
+Sweden,SWE,1813,0
+Sweden,SWE,1814,0
+Sweden,SWE,1815,0
+Sweden,SWE,1816,0
+Sweden,SWE,1817,0
+Sweden,SWE,1818,0
+Sweden,SWE,1819,0
+Sweden,SWE,1820,0
+Sweden,SWE,1821,0
+Sweden,SWE,1822,0
+Sweden,SWE,1823,0
+Sweden,SWE,1824,0
+Sweden,SWE,1825,0
+Sweden,SWE,1826,0
+Sweden,SWE,1827,0
+Sweden,SWE,1828,0
+Sweden,SWE,1829,0
+Sweden,SWE,1830,0
+Sweden,SWE,1831,0
+Sweden,SWE,1832,0
+Sweden,SWE,1833,0
+Sweden,SWE,1834,0
+Sweden,SWE,1835,0
+Sweden,SWE,1836,0
+Sweden,SWE,1837,0
+Sweden,SWE,1838,0
+Sweden,SWE,1839,0
+Sweden,SWE,1840,0
+Sweden,SWE,1841,0
+Sweden,SWE,1842,0
+Sweden,SWE,1843,0
+Sweden,SWE,1844,0
+Sweden,SWE,1845,0
+Sweden,SWE,1846,0
+Sweden,SWE,1847,0
+Sweden,SWE,1848,0
+Sweden,SWE,1849,0
+Sweden,SWE,1850,0
+Sweden,SWE,1851,0
+Sweden,SWE,1852,0
+Sweden,SWE,1853,0
+Sweden,SWE,1854,0
+Sweden,SWE,1855,0
+Sweden,SWE,1856,0
+Sweden,SWE,1857,0
+Sweden,SWE,1858,0
+Sweden,SWE,1859,0
+Sweden,SWE,1860,0
+Sweden,SWE,1861,0
+Sweden,SWE,1862,0
+Sweden,SWE,1863,0
+Sweden,SWE,1864,0
+Sweden,SWE,1865,0
+Sweden,SWE,1866,0
+Sweden,SWE,1867,0
+Sweden,SWE,1868,0
+Sweden,SWE,1869,0
+Sweden,SWE,1870,0
+Sweden,SWE,1871,0
+Sweden,SWE,1872,0
+Sweden,SWE,1873,0
+Sweden,SWE,1874,0
+Sweden,SWE,1875,0
+Sweden,SWE,1876,0
+Sweden,SWE,1877,0
+Sweden,SWE,1878,0
+Sweden,SWE,1879,0
+Sweden,SWE,1880,0
+Sweden,SWE,1881,0
+Sweden,SWE,1882,0
+Sweden,SWE,1883,0
+Sweden,SWE,1884,0
+Sweden,SWE,1885,0
+Sweden,SWE,1886,0
+Sweden,SWE,1887,0
+Sweden,SWE,1888,0
+Sweden,SWE,1889,0
+Sweden,SWE,1890,0
+Sweden,SWE,1891,0
+Sweden,SWE,1892,0
+Sweden,SWE,1893,0
+Sweden,SWE,1894,0
+Sweden,SWE,1895,0
+Sweden,SWE,1896,0
+Sweden,SWE,1897,0
+Sweden,SWE,1898,0
+Sweden,SWE,1899,0
+Sweden,SWE,1900,0
+Sweden,SWE,1901,0
+Sweden,SWE,1902,0
+Sweden,SWE,1903,0
+Sweden,SWE,1904,0
+Sweden,SWE,1905,0
+Sweden,SWE,1906,0
+Sweden,SWE,1907,0
+Sweden,SWE,1908,0
+Sweden,SWE,1909,0
+Sweden,SWE,1910,0
+Sweden,SWE,1911,0
+Sweden,SWE,1912,0
+Sweden,SWE,1913,0
+Sweden,SWE,1914,0
+Sweden,SWE,1915,0
+Sweden,SWE,1916,0
+Sweden,SWE,1917,1
+Sweden,SWE,1918,1
+Sweden,SWE,1919,1
+Sweden,SWE,1920,1
+Sweden,SWE,1921,1
+Sweden,SWE,1922,3
+Sweden,SWE,1923,3
+Sweden,SWE,1924,3
+Sweden,SWE,1925,3
+Sweden,SWE,1926,3
+Sweden,SWE,1927,3
+Sweden,SWE,1928,3
+Sweden,SWE,1929,3
+Sweden,SWE,1930,3
+Sweden,SWE,1931,3
+Sweden,SWE,1932,3
+Sweden,SWE,1933,3
+Sweden,SWE,1934,3
+Sweden,SWE,1935,3
+Sweden,SWE,1936,3
+Sweden,SWE,1937,3
+Sweden,SWE,1938,3
+Sweden,SWE,1939,3
+Sweden,SWE,1940,3
+Sweden,SWE,1941,3
+Sweden,SWE,1942,3
+Sweden,SWE,1943,3
+Sweden,SWE,1944,3
+Sweden,SWE,1945,3
+Sweden,SWE,1946,3
+Sweden,SWE,1947,3
+Sweden,SWE,1948,3
+Sweden,SWE,1949,3
+Sweden,SWE,1950,3
+Sweden,SWE,1951,3
+Sweden,SWE,1952,3
+Sweden,SWE,1953,3
+Sweden,SWE,1954,3
+Sweden,SWE,1955,3
+Sweden,SWE,1956,3
+Sweden,SWE,1957,3
+Sweden,SWE,1958,3
+Sweden,SWE,1959,3
+Sweden,SWE,1960,3
+Sweden,SWE,1961,3
+Sweden,SWE,1962,3
+Sweden,SWE,1963,3
+Sweden,SWE,1964,3
+Sweden,SWE,1965,3
+Sweden,SWE,1966,3
+Sweden,SWE,1967,3
+Sweden,SWE,1968,3
+Sweden,SWE,1969,3
+Sweden,SWE,1970,3
+Sweden,SWE,1971,3
+Sweden,SWE,1972,3
+Sweden,SWE,1973,3
+Sweden,SWE,1974,3
+Sweden,SWE,1975,3
+Sweden,SWE,1976,3
+Sweden,SWE,1977,3
+Sweden,SWE,1978,3
+Sweden,SWE,1979,3
+Sweden,SWE,1980,3
+Sweden,SWE,1981,3
+Sweden,SWE,1982,3
+Sweden,SWE,1983,3
+Sweden,SWE,1984,3
+Sweden,SWE,1985,3
+Sweden,SWE,1986,3
+Sweden,SWE,1987,3
+Sweden,SWE,1988,3
+Sweden,SWE,1989,3
+Sweden,SWE,1990,3
+Sweden,SWE,1991,3
+Sweden,SWE,1992,3
+Sweden,SWE,1993,3
+Sweden,SWE,1994,3
+Sweden,SWE,1995,3
+Sweden,SWE,1996,3
+Sweden,SWE,1997,3
+Sweden,SWE,1998,3
+Sweden,SWE,1999,3
+Sweden,SWE,2000,3
+Sweden,SWE,2001,3
+Sweden,SWE,2002,3
+Sweden,SWE,2003,3
+Sweden,SWE,2004,3
+Sweden,SWE,2005,3
+Sweden,SWE,2006,3
+Sweden,SWE,2007,3
+Sweden,SWE,2008,3
+Sweden,SWE,2009,3
+Sweden,SWE,2010,3
+Sweden,SWE,2011,3
+Sweden,SWE,2012,3
+Sweden,SWE,2013,3
+Sweden,SWE,2014,3
+Sweden,SWE,2015,3
+Sweden,SWE,2016,3
+Sweden,SWE,2017,3
+Sweden,SWE,2018,3
+Sweden,SWE,2019,3
+Sweden,SWE,2020,3
+Sweden,SWE,2021,3
+Sweden,SWE,2022,3
+Sweden,SWE,2023,3
+Sweden,SWE,2024,3
+Sweden,SWE,2025,3
+United States,USA,1789,0
+United States,USA,1790,0
+United States,USA,1791,0
+United States,USA,1792,0
+United States,USA,1793,0
+United States,USA,1794,0
+United States,USA,1795,0
+United States,USA,1796,1
+United States,USA,1797,1
+United States,USA,1798,1
+United States,USA,1799,1
+United States,USA,1800,1
+United States,USA,1801,1
+United States,USA,1802,1
+United States,USA,1803,1
+United States,USA,1804,1
+United States,USA,1805,1
+United States,USA,1806,1
+United States,USA,1807,1
+United States,USA,1808,1
+United States,USA,1809,1
+United States,USA,1810,1
+United States,USA,1811,1
+United States,USA,1812,1
+United States,USA,1813,1
+United States,USA,1814,1
+United States,USA,1815,1
+United States,USA,1816,1
+United States,USA,1817,1
+United States,USA,1818,1
+United States,USA,1819,1
+United States,USA,1820,1
+United States,USA,1821,1
+United States,USA,1822,1
+United States,USA,1823,1
+United States,USA,1824,1
+United States,USA,1825,1
+United States,USA,1826,1
+United States,USA,1827,1
+United States,USA,1828,1
+United States,USA,1829,1
+United States,USA,1830,1
+United States,USA,1831,1
+United States,USA,1832,1
+United States,USA,1833,1
+United States,USA,1834,1
+United States,USA,1835,1
+United States,USA,1836,1
+United States,USA,1837,1
+United States,USA,1838,1
+United States,USA,1839,1
+United States,USA,1840,1
+United States,USA,1841,1
+United States,USA,1842,1
+United States,USA,1843,1
+United States,USA,1844,1
+United States,USA,1845,1
+United States,USA,1846,1
+United States,USA,1847,1
+United States,USA,1848,1
+United States,USA,1849,1
+United States,USA,1850,1
+United States,USA,1851,1
+United States,USA,1852,1
+United States,USA,1853,1
+United States,USA,1854,1
+United States,USA,1855,1
+United States,USA,1856,1
+United States,USA,1857,1
+United States,USA,1858,1
+United States,USA,1859,1
+United States,USA,1860,1
+United States,USA,1861,1
+United States,USA,1862,1
+United States,USA,1863,1
+United States,USA,1864,1
+United States,USA,1865,1
+United States,USA,1866,1
+United States,USA,1867,1
+United States,USA,1868,1
+United States,USA,1869,1
+United States,USA,1870,1
+United States,USA,1871,1
+United States,USA,1872,1
+United States,USA,1873,1
+United States,USA,1874,1
+United States,USA,1875,1
+United States,USA,1876,1
+United States,USA,1877,1
+United States,USA,1878,1
+United States,USA,1879,1
+United States,USA,1880,1
+United States,USA,1881,1
+United States,USA,1882,1
+United States,USA,1883,1
+United States,USA,1884,1
+United States,USA,1885,1
+United States,USA,1886,1
+United States,USA,1887,1
+United States,USA,1888,1
+United States,USA,1889,1
+United States,USA,1890,1
+United States,USA,1891,1
+United States,USA,1892,1
+United States,USA,1893,1
+United States,USA,1894,1
+United States,USA,1895,1
+United States,USA,1896,1
+United States,USA,1897,1
+United States,USA,1898,1
+United States,USA,1899,1
+United States,USA,1900,1
+United States,USA,1901,1
+United States,USA,1902,1
+United States,USA,1903,1
+United States,USA,1904,1
+United States,USA,1905,1
+United States,USA,1906,1
+United States,USA,1907,1
+United States,USA,1908,1
+United States,USA,1909,1
+United States,USA,1910,1
+United States,USA,1911,1
+United States,USA,1912,1
+United States,USA,1913,1
+United States,USA,1914,1
+United States,USA,1915,1
+United States,USA,1916,1
+United States,USA,1917,1
+United States,USA,1918,1
+United States,USA,1919,1
+United States,USA,1920,2
+United States,USA,1921,2
+United States,USA,1922,2
+United States,USA,1923,2
+United States,USA,1924,2
+United States,USA,1925,2
+United States,USA,1926,2
+United States,USA,1927,2
+United States,USA,1928,2
+United States,USA,1929,2
+United States,USA,1930,2
+United States,USA,1931,2
+United States,USA,1932,2
+United States,USA,1933,2
+United States,USA,1934,2
+United States,USA,1935,2
+United States,USA,1936,2
+United States,USA,1937,2
+United States,USA,1938,2
+United States,USA,1939,2
+United States,USA,1940,2
+United States,USA,1941,2
+United States,USA,1942,2
+United States,USA,1943,2
+United States,USA,1944,2
+United States,USA,1945,2
+United States,USA,1946,2
+United States,USA,1947,2
+United States,USA,1948,2
+United States,USA,1949,2
+United States,USA,1950,2
+United States,USA,1951,2
+United States,USA,1952,2
+United States,USA,1953,2
+United States,USA,1954,2
+United States,USA,1955,2
+United States,USA,1956,2
+United States,USA,1957,2
+United States,USA,1958,2
+United States,USA,1959,2
+United States,USA,1960,2
+United States,USA,1961,2
+United States,USA,1962,2
+United States,USA,1963,2
+United States,USA,1964,2
+United States,USA,1965,2
+United States,USA,1966,2
+United States,USA,1967,2
+United States,USA,1968,2
+United States,USA,1969,3
+United States,USA,1970,3
+United States,USA,1971,3
+United States,USA,1972,3
+United States,USA,1973,3
+United States,USA,1974,3
+United States,USA,1975,3
+United States,USA,1976,3
+United States,USA,1977,3
+United States,USA,1978,3
+United States,USA,1979,3
+United States,USA,1980,3
+United States,USA,1981,3
+United States,USA,1982,3
+United States,USA,1983,3
+United States,USA,1984,3
+United States,USA,1985,3
+United States,USA,1986,3
+United States,USA,1987,3
+United States,USA,1988,3
+United States,USA,1989,3
+United States,USA,1990,3
+United States,USA,1991,3
+United States,USA,1992,3
+United States,USA,1993,3
+United States,USA,1994,3
+United States,USA,1995,3
+United States,USA,1996,3
+United States,USA,1997,3
+United States,USA,1998,3
+United States,USA,1999,3
+United States,USA,2000,3
+United States,USA,2001,3
+United States,USA,2002,3
+United States,USA,2003,3
+United States,USA,2004,3
+United States,USA,2005,3
+United States,USA,2006,3
+United States,USA,2007,3
+United States,USA,2008,3
+United States,USA,2009,3
+United States,USA,2010,3
+United States,USA,2011,3
+United States,USA,2012,3
+United States,USA,2013,3
+United States,USA,2014,3
+United States,USA,2015,3
+United States,USA,2016,3
+United States,USA,2017,3
+United States,USA,2018,3
+United States,USA,2019,3
+United States,USA,2020,3
+United States,USA,2021,3
+United States,USA,2022,3
+United States,USA,2023,3
+United States,USA,2024,3
+United States,USA,2025,2

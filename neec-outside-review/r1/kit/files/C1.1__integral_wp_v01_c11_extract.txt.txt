@@ -1,0 +1,35 @@
+SOURCE: integral_wp_v01_c11_extract.txt (cached for C1.1)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025; PDF md5 a6defc9a0ec7c4ace56509dffd680307); text by pdftotext -layout 24.02; passages headed by line range.
+
+--- lines 362-367
+Toward Post-Scarcity
+
+Integral aims to reduce scarcity through open design, shared production capacity, and continuously improving resource efficiency. Rather than relying on artificial
+scarcity and competitive access, it builds abundance by cutting waste, automating routine labor, and designing goods for longevity and repair. As cooperative
+production grows and knowledge becomes openly accessible, the labor and resource cost of essentials declines, making provisioning easier and more stable. Post-
+scarcity here means essential needs can be reliably met for all—without deprivation or competition—because access is structurally guaranteed, not rationed.
+
+--- lines 636-641
+
+        Non-transferable time credits prevent accumulation and eliminate the possibility of converting contribution into long-term power.
+
+        Shared design repositories allow anyone to inspect how products are made, what materials they require, and how they affect community resources.
+        Fair-access protocols ensure that essential goods are available regardless of individual capacity, disability, or temporary hardship. It is built into overall
+        economic calculation.
+
+--- lines 1135-1148
+4. Fair Contribution and Access (ITC)
+
+All verified contributions to the greenhouse earn ITCs. The system accounts for differences in skill, difficulty, urgency, and personal capacity, ensuring fairness and
+preventing hidden labor inequalities.
+
+Once operational, the greenhouse becomes part of the community’s food infrastructure. ITC determines access values for produce based on three integrated signals:
+
+    1. real labor embedded in production and maintenance
+
+    2. material and ecological costs
+    3. fairness and community need, ensuring that essentials remain accessible regardless of age or ability
+
+When someone collects produce, the required ITCs are simply extinguished. They are not saved, traded, or converted into influence. Over time, if OAD and COS improve
+production efficiency, the ITC access value of produce naturally declines, moving toward "zero marginal cost."

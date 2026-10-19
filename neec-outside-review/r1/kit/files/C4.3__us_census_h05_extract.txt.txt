@@ -1,0 +1,221 @@
+SOURCE: us_census_h05_extract.txt (cached for C4.3)
+
+Source: U.S. Census Bureau, Current Population Survey, Annual Social and Economic Supplements, Table H-5, 'Median and Mean Household Income by Race and Hispanic Origin of Householder: 1967 to 2025'
+URL: https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h05.xlsx
+Retrieved 2026-10-15; xlsx md5 9086455a39eab2b36c90ed7c407f9819; extract: median household income in current dollars, by the series below, every year the table gives (a year listed twice carries the table's footnote marker; the first listed is the table's later estimate; N: not available).
+Columns: series<TAB>year as printed<TAB>median income (current dollars)
+
+White Alone, Not Hispanic (31)	2025	96710
+White Alone, Not Hispanic (31)	2024 (42)	91750
+White Alone, Not Hispanic (31)	2023	89050
+White Alone, Not Hispanic (31)	2022	81060
+White Alone, Not Hispanic (31)	2021	78000
+White Alone, Not Hispanic (31)	2020 (41)	75390
+White Alone, Not Hispanic (31)	2019	76060
+White Alone, Not Hispanic (31)	2018	70640
+White Alone, Not Hispanic (31)	2017 (40)	68190
+White Alone, Not Hispanic (31)	2017	68150
+White Alone, Not Hispanic (31)	2016	65040
+White Alone, Not Hispanic (31)	2015	62950
+White Alone, Not Hispanic (31)	2014	60260
+White Alone, Not Hispanic (31)	2013 (39)	60330
+White Alone, Not Hispanic (31)	2013 (38)	58270
+White Alone, Not Hispanic (31)	2012	57010
+White Alone, Not Hispanic (31)	2011	55410
+White Alone, Not Hispanic (31)	2010 (37)	54460
+White Alone, Not Hispanic (31)	2009 (36)	54460
+White Alone, Not Hispanic (31)	2008	55530
+White Alone, Not Hispanic (31)	2007	54920
+White Alone, Not Hispanic (31)	2006	52420
+White Alone, Not Hispanic (31)	2005	50780
+White Alone, Not Hispanic (31)	2004 (35)	48910
+White Alone, Not Hispanic (31)	2003	47780
+White Alone, Not Hispanic (31)	2002	46900
+White, Not Hispanic (32)	2001	46310
+White, Not Hispanic (32)	2000 (30)	45620
+White, Not Hispanic (32)	1999 (29)	44160
+White, Not Hispanic (32)	1998	42440
+White, Not Hispanic (32)	1997	40580
+White, Not Hispanic (32)	1996	38790
+White, Not Hispanic (32)	1995 (25)	37180
+White, Not Hispanic (32)	1994 (24)	35130
+White, Not Hispanic (32)	1993 (23)	34170
+White, Not Hispanic (32)	1992 (22)	33290
+White, Not Hispanic (32)	1991	32320
+White, Not Hispanic (32)	1990	31950
+White, Not Hispanic (32)	1989	31060
+White, Not Hispanic (32)	1988	29570
+White, Not Hispanic (32)	1987 (21)	28210
+White, Not Hispanic (32)	1986	26770
+White, Not Hispanic (32)	1985 (20)	25470
+White, Not Hispanic (32)	1984 (19)	24140
+White, Not Hispanic (32)	1983	N
+White, Not Hispanic (32)	1982	21470
+White, Not Hispanic (32)	1981	20440
+White, Not Hispanic (32)	1980	19020
+White, Not Hispanic (32)	1979 (18)	17500
+White, Not Hispanic (32)	1978	15960
+White, Not Hispanic (32)	1977	14560
+White, Not Hispanic (32)	1976 (17)	13560
+White, Not Hispanic (32)	1975 (16)	12430
+White, Not Hispanic (32)	1974 (16)(15)	11810
+White, Not Hispanic (32)	1973	11110
+White, Not Hispanic (32)	1972 (14)	10320
+Black Alone (33)	2025	59980
+Black Alone (33)	2024 (42)	55830
+Black Alone (33)	2023	56490
+Black Alone (33)	2022	52860
+Black Alone (33)	2021	48300
+Black Alone (33)	2020 (41)	46030
+Black Alone (33)	2019	45440
+Black Alone (33)	2018	41360
+Black Alone (33)	2017 (40)	39370
+Black Alone (33)	2017	40260
+Black Alone (33)	2016	39490
+Black Alone (33)	2015	36900
+Black Alone (33)	2014	35400
+Black Alone (33)	2013 (39)	35320
+Black Alone (33)	2013 (38)	34600
+Black Alone (33)	2012	33320
+Black Alone (33)	2011	32230
+Black Alone (33)	2010 (37)	32120
+Black Alone (33)	2009 (36)	32580
+Black Alone (33)	2008	34220
+Black Alone (33)	2007	33920
+Black Alone (33)	2006	31970
+Black Alone (33)	2005	30860
+Black Alone (33)	2004 (35)	30100
+Black Alone (33)	2003	29650
+Black Alone (33)	2002	29030
+Black (32)	2001	29470
+Black (32)	2000 (30)	29670
+Black (32)	1999 (29)	27910
+Black (32)	1998	25350
+Black (32)	1997	25050
+Black (32)	1996	23480
+Black (32)	1995 (25)	22390
+Black (32)	1994 (24)	21030
+Black (32)	1993 (23)	19530
+Black (32)	1992 (22)	18760
+Black (32)	1991	18810
+Black (32)	1990	18680
+Black (32)	1989	18080
+Black (32)	1988	16410
+Black (32)	1987 (21)	15670
+Black (32)	1986	15080
+Black (32)	1985 (20)	14820
+Black (32)	1984 (19)	13470
+Black (32)	1983	12430
+Black (32)	1982	11970
+Black (32)	1981	11310
+Black (32)	1980	10760
+Black (32)	1979 (18)	10130
+Black (32)	1978	9411
+Black (32)	1977	8422
+Black (32)	1976 (17)	7902
+Black (32)	1975 (16)	7408
+Black (32)	1974 (16)(15)	6964
+Black (32)	1973	6485
+Black (32)	1972 (14)	5938
+Black (32)	1971 (13)	5578
+Black (32)	1970	5537
+Black (32)	1969	5292
+Black (32)	1968	4754
+Black (32)	1967 (12)	4325
+Asian Alone (34)	2025	126300
+Asian Alone (34)	2024 (42)	121400
+Asian Alone (34)	2023	112800
+Asian Alone (34)	2022	108700
+Asian Alone (34)	2021	101400
+Asian Alone (34)	2020 (41)	95180
+Asian Alone (34)	2019	98170
+Asian Alone (34)	2018	87190
+Asian Alone (34)	2017 (40)	81390
+Asian Alone (34)	2017	81330
+Asian Alone (34)	2016	81430
+Asian Alone (34)	2015	77170
+Asian Alone (34)	2014	74300
+Asian Alone (34)	2013 (39)	72380
+Asian Alone (34)	2013 (38)	67070
+Asian Alone (34)	2012	68640
+Asian Alone (34)	2011	65130
+Asian Alone (34)	2010 (37)	64260
+Asian Alone (34)	2009 (36)	65470
+Asian Alone (34)	2008	65640
+Asian Alone (34)	2007	66100
+Asian Alone (34)	2006	64240
+Asian Alone (34)	2005	61090
+Asian Alone (34)	2004 (35)	57500
+Asian Alone (34)	2003	55700
+Asian Alone (34)	2002	52630
+Asian and Pacific Islander (32)	2001	53640
+Asian and Pacific Islander (32)	2000 (30)	55760
+Asian and Pacific Islander (32)	1999 (29)	50960
+Asian and Pacific Islander (32)	1998	46640
+Asian and Pacific Islander (32)	1997	45250
+Asian and Pacific Islander (32)	1996	43280
+Asian and Pacific Islander (32)	1995 (25)	40610
+Asian and Pacific Islander (32)	1994 (24)	40480
+Asian and Pacific Islander (32)	1993 (23)	38350
+Asian and Pacific Islander (32)	1992 (22)	37800
+Asian and Pacific Islander (32)	1991	36450
+Asian and Pacific Islander (32)	1990	38450
+Asian and Pacific Islander (32)	1989	36100
+Asian and Pacific Islander (32)	1988	32270
+Asian and Pacific Islander (32)	1987 (21)	32230
+Hispanic (any race) (4)	2025	73260
+Hispanic (any race) (4)	2024 (42)	70690
+Hispanic (any race) (4)	2023	65540
+Hispanic (any race) (4)	2022	62800
+Hispanic (any race) (4)	2021	57980
+Hispanic (any race) (4)	2020 (41)	55430
+Hispanic (any race) (4)	2019	56110
+Hispanic (any race) (4)	2018	51450
+Hispanic (any race) (4)	2017 (40)	50170
+Hispanic (any race) (4)	2017	50490
+Hispanic (any race) (4)	2016	47680
+Hispanic (any race) (4)	2015	45150
+Hispanic (any race) (4)	2014	42490
+Hispanic (any race) (4)	2013 (39)	39690
+Hispanic (any race) (4)	2013 (38)	40960
+Hispanic (any race) (4)	2012	39010
+Hispanic (any race) (4)	2011	38620
+Hispanic (any race) (4)	2010 (37)	37630
+Hispanic (any race) (4)	2009 (36)	38040
+Hispanic (any race) (4)	2008	37910
+Hispanic (any race) (4)	2007	38680
+Hispanic (any race) (4)	2006	37780
+Hispanic (any race) (4)	2005	35970
+Hispanic (any race) (4)	2004 (35)	34270
+Hispanic (any race) (4)	2003	33000
+Hispanic (any race) (4)	2002	33100
+Hispanic (any race) (4)	2001	33570
+Hispanic (any race) (4)	2000 (30)	33170
+Hispanic (any race) (4)	1999 (29)	30750
+Hispanic (any race) (4)	1998	28330
+Hispanic (any race) (4)	1997	26630
+Hispanic (any race) (4)	1996	24910
+Hispanic (any race) (4)	1995 (25)	22860
+Hispanic (any race) (4)	1994 (24)	23420
+Hispanic (any race) (4)	1993 (23)	22890
+Hispanic (any race) (4)	1992 (22)	22600
+Hispanic (any race) (4)	1991	22690
+Hispanic (any race) (4)	1990	22330
+Hispanic (any race) (4)	1989	21920
+Hispanic (any race) (4)	1988	20360
+Hispanic (any race) (4)	1987 (21)	19340
+Hispanic (any race) (4)	1986	18350
+Hispanic (any race) (4)	1985 (20)	17470
+Hispanic (any race) (4)	1984 (19)	16990
+Hispanic (any race) (4)	1983	15910
+Hispanic (any race) (4)	1982	15180
+Hispanic (any race) (4)	1981	15300
+Hispanic (any race) (4)	1980	13650
+Hispanic (any race) (4)	1979 (18)	13040
+Hispanic (any race) (4)	1978	11800
+Hispanic (any race) (4)	1977	10650
+Hispanic (any race) (4)	1976 (17)	9569
+Hispanic (any race) (4)	1975 (16)	8865
+Hispanic (any race) (4)	1974 (16)(15)	8906
+Hispanic (any race) (4)	1973	8144
+Hispanic (any race) (4)	1972 (14)	7677

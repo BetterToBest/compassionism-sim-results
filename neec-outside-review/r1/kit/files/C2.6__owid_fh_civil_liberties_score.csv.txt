@@ -1,0 +1,91 @@
+SOURCE: owid_fh_civil_liberties_score.csv (cached for C2.6)
+
+entity,code,year,civlibs_score,owid_region
+China,CHN,2015,15,Asia
+China,CHN,2016,14,Asia
+China,CHN,2017,14,Asia
+China,CHN,2018,12,Asia
+China,CHN,2019,11,Asia
+China,CHN,2020,11,Asia
+China,CHN,2021,11,Asia
+China,CHN,2022,11,Asia
+China,CHN,2023,11,Asia
+China,CHN,2024,11,Asia
+China,CHN,2025,11,Asia
+Denmark,DNK,2015,58,Europe
+Denmark,DNK,2016,57,Europe
+Denmark,DNK,2017,57,Europe
+Denmark,DNK,2018,57,Europe
+Denmark,DNK,2019,57,Europe
+Denmark,DNK,2020,57,Europe
+Denmark,DNK,2021,57,Europe
+Denmark,DNK,2022,57,Europe
+Denmark,DNK,2023,57,Europe
+Denmark,DNK,2024,57,Europe
+Denmark,DNK,2025,57,Europe
+Finland,FIN,2015,60,Europe
+Finland,FIN,2016,60,Europe
+Finland,FIN,2017,60,Europe
+Finland,FIN,2018,60,Europe
+Finland,FIN,2019,60,Europe
+Finland,FIN,2020,60,Europe
+Finland,FIN,2021,60,Europe
+Finland,FIN,2022,60,Europe
+Finland,FIN,2023,60,Europe
+Finland,FIN,2024,60,Europe
+Finland,FIN,2025,60,Europe
+Norway,NOR,2015,60,Europe
+Norway,NOR,2016,60,Europe
+Norway,NOR,2017,60,Europe
+Norway,NOR,2018,60,Europe
+Norway,NOR,2019,60,Europe
+Norway,NOR,2020,60,Europe
+Norway,NOR,2021,60,Europe
+Norway,NOR,2022,60,Europe
+Norway,NOR,2023,59,Europe
+Norway,NOR,2024,60,Europe
+Norway,NOR,2025,60,Europe
+Qatar,QAT,2015,18,Asia
+Qatar,QAT,2016,17,Asia
+Qatar,QAT,2017,17,Asia
+Qatar,QAT,2018,18,Asia
+Qatar,QAT,2019,18,Asia
+Qatar,QAT,2020,18,Asia
+Qatar,QAT,2021,18,Asia
+Qatar,QAT,2022,18,Asia
+Qatar,QAT,2023,18,Asia
+Qatar,QAT,2024,18,Asia
+Qatar,QAT,2025,18,Asia
+Singapore,SGP,2015,32,Asia
+Singapore,SGP,2016,32,Asia
+Singapore,SGP,2017,33,Asia
+Singapore,SGP,2018,32,Asia
+Singapore,SGP,2019,31,Asia
+Singapore,SGP,2020,29,Asia
+Singapore,SGP,2021,28,Asia
+Singapore,SGP,2022,28,Asia
+Singapore,SGP,2023,29,Asia
+Singapore,SGP,2024,29,Asia
+Singapore,SGP,2025,29,Asia
+Sweden,SWE,2015,60,Europe
+Sweden,SWE,2016,60,Europe
+Sweden,SWE,2017,60,Europe
+Sweden,SWE,2018,60,Europe
+Sweden,SWE,2019,60,Europe
+Sweden,SWE,2020,60,Europe
+Sweden,SWE,2021,60,Europe
+Sweden,SWE,2022,60,Europe
+Sweden,SWE,2023,59,Europe
+Sweden,SWE,2024,59,Europe
+Sweden,SWE,2025,59,Europe
+United States,USA,2015,54,North America
+United States,USA,2016,53,North America
+United States,USA,2017,53,North America
+United States,USA,2018,53,North America
+United States,USA,2019,53,North America
+United States,USA,2020,51,North America
+United States,USA,2021,51,North America
+United States,USA,2022,50,North America
+United States,USA,2023,50,North America
+United States,USA,2024,50,North America
+United States,USA,2025,49,North America

@@ -1,0 +1,420 @@
+SOURCE: idea_voter_turnout_codebook.pdf (cached for C2.4)
+
+Voter Turnout Database
+Codebook
+Voter Turnout Database
+Codebook
+
+
+International Institute for Democracy and Electoral Assistance
+© 2018 International Institute for Democracy and Electoral Assistance
+
+
+International IDEA publications are independent of specific national or political interests. Views
+expressed in this publication do not necessarily represent the views of International IDEA, its Board or its
+Council members.
+
+
+
+
+The electronic version of this publication is available under a Creative Commons Attribute-
+NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0) licence. You are free to copy, distribute and transmit
+the publication as well as to remix and adapt it, provided it is only for non-commercial purposes, that you
+appropriately attribute the publication, and that you distribute it under an identical licence. For more
+information visit the Creative Commons website: <http://creativecommons.org/licenses/by-nc-sa/3.0/>.
+
+
+International IDEA
+Strömsborg
+SE–103 34 Stockholm
+Sweden
+Telephone: +46 8 698 37 00
+Email: info@idea.int
+Website: <http://www.idea.int>
+
+
+Design and layout: International IDEA
+Cover illustration: © Enterline/123rf.com, <http://www.123rf.com>
+DOI: <https://doi.org/10.31752/idea.2018.69>
+
+
+Created with Booktype: <https://www.booktype.pro>
+
+
+International IDEA
+Contents
+
+Introduction ................................................................................................................ 5
+
+     About the Voter Turnout Database ......................................................................... 5
+     Updates to the Database .......................................................................................... 6
+     Criteria for including an election in the Database .................................................... 6
+     A note on voting-age population and registered voters ............................................ 7
+
+Variables used in the Voter Turnout Database ....................................................... 9
+
+References and further reading .............................................................................. 12
+
+About International IDEA ......................................................................................... 13
+Introduction
+
+
+
+
+Introduction
+
+Voter turnout is one of the crucial indicators of how citizens participate in the
+governance of their country. Higher voter turnout is in most cases a sign of the
+vitality of democracy, while lower turnout is usually associated with voter apathy
+and mistrust of the political process (Solijonov 2016).
+   Because of its importance, media and civil society actors, as well as the
+democracy support community and many other stakeholders are concerned when
+citizens do not turn out to vote. They are also keen to understand the reasons
+behind low turnouts. Collecting comprehensive data on voter turnout from across
+the globe and trying to understand what affects people’s decisions to vote or not
+to vote is therefore also important (Solijonov 2016).
+   This Codebook provides detailed explanations of the variables and answer
+options in International IDEA’s Voter Turnout Database (VT Database), which
+has become the most authoritative global data set providing data on elections
+conducted since 1945.
+
+About the Voter Turnout Database
+Since its establishment in 1995, International IDEA has keenly engaged in
+research on voter participation. One outcome of this effort is the VT Database,
+which was established in 1999 and has been continually updated ever since. The
+Database is a widely acknowledged and well-respected resource for researchers,
+media organizations, practitioners and other stakeholders. International IDEA has
+also published several publications on the topic of voter participation, which have
+inspired further research and debates in the elections field.
+   The information in the VT Database is based on data gathered from desk
+research by International IDEA staff; surveys of electoral management bodies
+(EMBs); and the publications Voter Turnout since 1945 (López Pintor and
+
+
+
+                                                                  International IDEA 5
+Voter Turnout Database Codebook
+
+
+Gratschew 2002) and Voter Turnout in Western Europe since 1945 (International
+IDEA 2004).
+
+Updates to the Database
+Since the launch of the VT Database, International IDEA’s Electoral Processes
+Programme has ensured that the data is regularly updated. The primary sources
+for the data on voter registration, total vote and corresponding voter turnout are
+the national EMBs and national statistical bureaus of countries listed in the
+Database. Data from EMBs are obtained from either their official reports or
+information provided in their official web portals. In a small number of cases,
+when data are not available from the EMB, the information on voter turnout is
+obtained from secondary sources. Population data are obtained from secondary
+sources.
+    In addition, inputs and suggestions from the users of the database are also
+regularly taken into account. Like all International IDEA Databases, the VT
+Database has a feature which allows users to provide voter turnout or other
+related information for a specific country and/or election. When a user suggests
+an update for the data available in the Database or provides information for the
+missing data, this information is sent automatically to the respective staff in the
+Electoral Processes Programme who can verify this information and make updates
+if the data provided are correct.
+
+Criteria for including an election in the Database
+Not every election is included in the VT Database. The following criteria are
+applied.
+    1. The election must have been held after 1945.
+    2. The election must have been for national political office in an independent
+       nation state, with the exception of nations which held elections on the eve
+       of their independence from colonial rule (e.g. Nigeria in 1959); small
+       island nations whose sovereignty is limited by ‘free association’ with a
+       larger power (e.g. Aruba); and elections to the European Parliament.
+    3. There must have been a degree of competitiveness (i.e. more than one
+       party contesting the elections, or one party and independents contesting
+       the elections, or an election contested only by independent candidates).
+       This criterion excludes one-party states such as the Democratic People’s
+       Republic of Korea (DPRK, North Korea), China, and the former Soviet
+       Union, but has led to the inclusion of electoral events such as the 1995
+       elections in Uganda (in which parties were banned) and the 1976 elections
+
+
+
+6 International IDEA
+Introduction
+
+
+        in Egypt (in which a number of independent candidates ran against the
+        ruling party). Within the grey area of competitiveness, International IDEA
+        has erred on the side of inclusion and, at least where the data is available,
+        included the turnout figures and explanatory variables in the tables for
+        each country.
+    4. The franchise must be universal. However, for the purposes of
+       comparison, elections in Argentina (1947), Bahrain (1973), Belgium
+       (1948), Greece (pre-1956), Kuwait (1992–96), Liechtenstein (pre-1986)
+       and Switzerland (pre-1971), which excluded women from voting, have
+       been included. In these cases, the voting-age population figures only
+       include men. Elections where the franchise was limited to a very small
+       (and ethnically defined) segment of the population—as in South Africa
+       prior to 1994 and Western Samoa before 1991—have not been included.
+
+
+A note on voting-age population and registered voters
+The VT Database includes two variables—voting-age population (VAP) and the
+number of registered voters (NRV)—as denominators to calculate voter turnout.
+The VAP refers to the total number of potential voters of voting age in a given
+country, while the NRV comprises the actual number of people on the electoral
+roll.
+   The figure for the VAP is a rough estimate and does not take account of the
+fact that people of voting age may still not be enfranchised due to legal or
+systemic barriers. The estimate provides an approximate figure of the number of
+eligible voters but does not reflect the exact number. The VAP might differ
+greatly from the NRV since registration in many countries is voluntary or often
+inaccurate. In countries where registration is compulsory and automatic, or based
+on the civil register (e.g. the Scandinavian countries), the VAP figure and the
+NRV are quite similar.
+   In some countries the NRV is higher than the estimate of the VAP, which
+might seem odd. In some cases, this is the result of an administrative error or
+inaccurate information provided by the EMB, but there may be other reasons
+related to either the registration process or the method of estimating the VAP.
+   It is important to remember that the VAP is always an estimate. As with all
+estimates, the number might be significantly different from the true value. Also
+worthy of note is the fact that the age-disaggregated population data collected for
+the purposes of estimating the VAP and the data on registered voters are acquired
+from different sources: the age-disaggregated population statistics from the
+United States Census Bureau’s International Database, and the registered voter
+data from national EMBs. These sources might, in turn, use different estimates,
+resulting in discrepancies between the two measures.
+
+
+
+                                                                    International IDEA 7
+Voter Turnout Database Codebook
+
+
+   Finally, the NRV will be inaccurate if the electoral roll is flawed. There could
+be inaccuracies or discrepancies in the registration process. Some voters might be
+registered twice or the authorities might have failed to remove people who are no
+longer eligible to vote, such as deceased voters or voters who have left the country.
+This could be because of shortcomings in the way that the registration of voters is
+organized, such as unclear delegation of responsibilities between institutions,
+problems of communication and so on. In addition, other factors might over- or
+underestimate the number of voters to be registered.
+   It is important to emphasize that the NRV figures are, in most cases, more
+recently updated than population figures. The VAP is based on the most recent
+population census figure available. Although not an exact number, it is a
+reflection of demographic trends and estimated population growth in a given
+country.
+
+
+
+
+8 International IDEA
+Variables used in the Voter Turnout Database
+
+
+
+
+Variables used in the Voter Turnout
+Database
+
+ Variable name                 Country
+
+ Explanation                   The name of the country for which the voter turnout and other relevant
+                               statistics are provided.
+
+ Answer options                Text
+
+
+ Variable name                 Election type
+
+ Explanation                   The type of election, at the national level, for which the voter turnout and
+                               other relevant statistics are provided. If a country has bicameral parliament,
+                               the VT Database provides data only for the lower house.
+
+ Answer options                Parliamentary
+                               Presidential
+                               EU Parliament
+
+
+ Variable name                 Year
+
+ Explanation                   The year in which the election took place.
+
+ Answer options                Year (YYYY)
+
+
+ Variable name                 Voter turnout
+
+ Explanation                   The total vote (see ‘Total vote’ variable) divided by the number of registered
+                               voters (see ‘Registration’ variable) and presented in percentage terms.
+
+ Answer options                Percentage (%)
+
+
+
+
+                                                                                         International IDEA 9
+Voter Turnout Database Codebook
+
+
+
+ Variable name               Total vote
+
+ Explanation                 The actual number of people who voted in an election as reported by the
+                             national EMB, including invalid and blank votes (see ‘Invalid votes’ variable).
+
+ Answer options              Number
+
+
+ Variable name               Registration
+
+ Explanation                 The number of people who were registered for to vote in an election as
+                             reported by the national EMB.
+
+ Answer options              Number
+
+
+ Variable name               VAP turnout
+
+ Explanation                 The total vote (see ‘Total vote’ variable) divided by the estimated voting-age
+                             population (see ‘Voting-age population’ variable) and presented in percentage
+                             terms.
+
+ Answer options              Percentage (%)
+
+
+ Variable name               Voting-age population
+
+ Explanation                 The total number of potential voters of voting age in a given country
+                             (see ‘A note on voting-age population and registered voters’).
+
+ Answer options              Number
+
+
+ Variable name               Population
+
+ Explanation                 The number of people living in a given country in the year in which the election
+                             took place.
+
+ Answer options              Number
+
+
+ Variable name               Invalid votes
+
+ Explanation                 The number of invalid votes (including blank votes) divided by the number of
+                             total votes (see ‘Total vote’ variable) and presented in percentage terms.
+
+ Answer options              Percentage (%)
+
+
+
+
+10 International IDEA
+Variables used in the Voter Turnout Database
+
+
+
+ Variable name                 Compulsory voting
+
+ Explanation                   Indicates whether voting is compulsory in the country for which the voter
+                               turnout and other relevant statistics are provided. More information on
+                               compulsory voting can be found on the Voter Turnout Database website:
+                               https://www.idea.int/data-tools/data/voter-turnout/compulsory-voting.
+
+ Answer options                Yes: Voting is compulsory
+                               No: Voting is not compulsory
+
+
+
+
+                                                                                       International IDEA 11
+Voter Turnout Database Codebook
+
+
+
+
+References and further reading
+
+Ellis, A. et al., Engaging the Electorate: Initiatives to Promote Voter Turnout from
+      Around the World (Stockholm: International IDEA, 2006), <https://
+      www.idea.int/publications/catalogue/engaging-electorate-initiatives-
+      promote-voter-turnout-around-world?lang=en>
+
+International IDEA, Voter Turnout Database, <https://www.idea.int/data-tools/
+     data/voter-turnout>
+
+—, Voter Turnout in Western Europe since 1945: A Regional Report (Stockholm:
+    International IDEA, 2004), <https://www.idea.int/publications/catalogue/
+    voter-turnout-western-europe-1945-regional-report?lang=en>
+
+López Pintor, R. and Gratschew, M., Voter Turnout since 1945: A Global Report
+    (Stockholm: International IDEA, 2002), <https://www.idea.int/
+    publications/catalogue/voter-turnout-1945-global-report?lang=en>
+
+Solijonov., A., Voter Turnout Trends around the World (Stockholm: International
+      IDEA, 2016), <https://www.idea.int/publications/catalogue/voter-turnout-
+      trends-around-world?lang=en>
+
+
+
+
+12 International IDEA
+About International IDEA
+
+
+
+
+About International IDEA
+
+The International Institute for Democracy and Electoral Assistance (International
+IDEA) is an intergovernmental organization with the mission to advance
+democracy worldwide, as a universal human aspiration and enabler of sustainable
+development. We do this by supporting the building, strengthening and
+safeguarding of democratic political institutions and processes at all levels. Our
+vision is a world in which democratic processes, actors and institutions are
+inclusive and accountable and deliver sustainable development to all.
+
+What do we do?
+In our work we focus on three main impact areas: electoral processes;
+constitution-building processes; and political participation and representation.
+The themes of gender and inclusion, conflict sensitivity and sustainable
+development are mainstreamed across all our areas of work. We provide analyses
+of global and regional democratic trends; produce comparative knowledge on
+good international democratic practices; offer technical assistance and capacity-
+building on democratic reform to actors engaged in democratic processes; and
+convene dialogues on issues relevant to the public debate on democracy and
+democracy building.
+
+Where do we work?
+Our headquarters is located in Stockholm, and we have regional and country
+offices in Africa, the Asia-Pacific, Europe, and Latin America and the Caribbean.
+International IDEA is a Permanent Observer to the United Nations and is
+accredited to European Union institutions.
+
+<http://www.idea.int>
+
+
+
+
+                                                                International IDEA 13
+Voter turnout is an important indicator of how citizens participate in the
+governance of their country.
+
+Higher voter turnout can be a sign of the vitality of democracy, while
+lower turnout is often associated with voter apathy and mistrust of the
+political process.
+
+International IDEA’s Voter Turnout Database contains the most
+comprehensive global collection of voter turnout statistics from
+presidential and parliamentary elections since 1945. This Codebook
+provides an explanation of how the Database is designed and updated.
+
+
+
+
+International IDEA
+Strömsborg
+SE–103 34 Stockholm
+Sweden
+Telephone: +46 8 698 37 00
+Email: info@idea.int
+Website: <http://www.idea.int>
+

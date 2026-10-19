@@ -1,0 +1,69 @@
+SOURCE: integral_wp_v01_extract.txt (cached for C1.4)
+
+Source: https://integralcollective.io/documents/INTEGRAL-Paper-V0.1.pdf (Joseph, INTEGRAL: Technical White Paper v0.1, December 2025)
+Retrieved 2026-10-15; PDF md5 a6defc9a0ec7c4ace56509dffd680307; text by pdftotext -layout; extract: five passages, each headed by its line range in that text.
+
+--- lines 578-586
+        4. A fundamental incentive shift distinguishes Integral from market economics. In market systems, firms must generate demand, turnover, and continuous
+           consumption to remain profitable—creating structural incentives for planned obsolescence, resource-intensive marketing, and product redundancy. Integral
+           has no such pressures. Because there is no profit motive, no competitive struggle for market share, and no advantage gained by increased throughput, the
+           system is inherently oriented toward durability, repairability, material conservation, and long-term sufficiency. The absence of growth imperatives removes the
+           economic driver of waste itself.
+
+As these dynamics compound, fewer labor hours are needed to maintain stable access to essentials, and resource intensity declines across the system. This is the
+structural basis for Integral’s post-scarcity trajectory: efficiency and sufficiency emerge from cooperation, open design, cybernetic feedback and true
+economizing—not from growth, competition, or manufactured demand.
+
+--- lines 1112-1124
+
+4. Fair Contribution and Access (ITC)
+
+All verified contributions to the greenhouse earn ITCs. The system accounts for differences in skill, difficulty, urgency, and personal capacity, ensuring fairness and
+preventing hidden labor inequalities.
+
+Once operational, the greenhouse becomes part of the community’s food infrastructure. ITC determines access values for produce based on three integrated signals:
+
+    1. real labor embedded in production and maintenance
+
+    2. material and ecological costs
+    3. fairness and community need, ensuring that essentials remain accessible regardless of age or ability
+
+
+--- lines 11535-11548
+   8          Apply the access outcome to the member account and return a RedemptionRecord.
+   9          - permanent_acquisition: ITCs extinguished (deducted).
+ 10           - shared_use_lock: ITCs temporarily locked (deduct now; restore on return).
+ 11           - service_use: may be zero or small; system-defined.
+ 12           """
+ 13
+ 14           cost = float(valuation.final_itc_cost)
+ 15
+ 16           # Shared-use is often free; enforce policy elsewhere by passing cost=0.
+ 17           if cost > 0 and account.balance < cost:
+ 18                 raise ValueError("insufficient ITC balance")
+ 19
+ 20           if mode == "permanent_acquisition":
+ 21                 account.balance -= cost
+
+--- lines 25931-25947
+11.8 Immediate Value for the Unemployed and Marginalized
+Any system proposing large-scale social and economic transition must confront a basic ethical and political test: does it materially improve the lives of those most
+excluded by the existing order? Integral treats this not as a secondary concern, but as a foundational design requirement. The system is structured to deliver
+immediate, tangible value to those who are unemployed, underemployed, homeless, disabled, or otherwise trapped in precarious conditions—without waiting for
+full-scale adoption or institutional endorsement.
+
+Integral explicitly prioritizes inclusion of those marginalized by market participation. Unlike wage labor systems, which gate access through employability, credentials,
+and profitability, Integral provides contribution pathways without gatekeeping. Individuals participate by contributing what they can—time, care, skill, maintenance,
+learning, coordination—within their capacity and context. Contribution is recognized without requiring prior capital, formal employment, or competitive positioning.
+
+Crucially, this recognition does not take the form of wages or charity. Integral restores dignity without wages by decoupling contribution from market valuation.
+People are not “helped” or subsidized as dependents; they are included as participants whose contributions—however modest—are socially meaningful and materially
+recognized. Access to food, shelter, tools, care, and shared resources emerges from participation rather than from conditional aid or moral judgment.
+
+In this way, Integral creates access without charity. There is no donor–recipient hierarchy, no means testing, and no behavioral surveillance. Support is not contingent
+on compliance, productivity metrics, or bureaucratic eligibility criteria. This stands in sharp contrast to punitive welfare systems, which often impose stigma, instability,
+and administrative harm. By providing alternative pathways to security and contribution, Integral reduces dependence on coercive welfare regimes without
+
+--- lines 26316-26318
+We seek critical readers willing to stress-test the logic, expose contradictions, question unstated premises, and identify where this paper is vague, overconfident, or
+wrong. Rigorous critique is more valuable than agreement.

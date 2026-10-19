@@ -1,0 +1,124 @@
+SOURCE: se_law_c26_extract.txt (cached for C2.6)
+
+Sources as served 2026-10-18 (an Akoma Ntoso response: its first act; a riksdagen.se .text file: as served); passages headed by line number and anchor.
+
+=== Patientlag (2014:821): https://data.riksdagen.se/dokument/sfs-2014-821.text (md5 b5a0c79a2a8351ff241488a8e772905e)
+--- from line 222 (anchor /^2 § Hälso- och sjukvård får inte ges/)
+2 § Hälso- och sjukvård får inte ges utan patientens samtycke
+om inte annat följer av denna eller någon annan lag. Innan
+samtycke inhämtas ska patienten få information enligt 3
+kap.
+Patienten kan, om inte annat särskilt följer av lag,
+lämna sitt samtycke skriftligen, muntligen eller genom att på
+annat sätt visa att han eller hon samtycker till den aktuella
+åtgärden.
+Patienten får när som helst ta tillbaka sitt samtycke. Om en
+patient avstår från viss vård eller behandling, ska han eller
+hon få information om vilka konsekvenser detta kan medföra.
+3 § När patienten är ett barn ska barnets inställning till
+den aktuella vården eller behandlingen så långt som möjligt
+
+=== Smittskyddslag (2004:168): https://data.riksdagen.se/dokument/sfs-2004-168.text (md5 4d18360bb7b0fdc3771205eca289d23a)
+--- from line 397 (anchor /^9 § Om det finns risk för spridning/)
+9 § Om det finns risk för spridning av en samhällsfarlig
+sjukdom får smittskyddsläkaren besluta att den som har eller
+kan antas ha varit utsatt för smitta av sjukdomen skall hållas
+i karantän i en viss byggnad, i en avgränsad del av en byggnad
+eller inom ett visst område. Ett sådant beslut innebär förbud
+att lämna byggnaden, del av byggnaden eller området samt förbud
+att ta emot besök där.
+Om det kan ske utan risk för spridning av sjukdomen får
+smittskyddsläkaren i det enskilda fallet medge undantag från
+förbudet att ta emot besök. Lag (2004:877).
+10 § Om en samhällsfarlig sjukdom har eller misstänks ha fått
+spridning inom ett avgränsat område utan att smittkällan
+eller smittspridningen är fullständigt klarlagd, får
+Folkhälsomyndigheten besluta att ett visst område ska vara
+avspärrat. Ett beslut om avspärrning innebär förbud för den
+som vistas i området att lämna det och förbud för den som
+befinner sig utanför området att besöka det.
+Om det kan ske utan risk för spridning av sjukdomen får
+Folkhälsomyndigheten i det enskilda fallet medge undantag
+från beslutet om avspärrning. Lag (2014:1549).
+11 § Begär den som på grund av beslut enligt 9 § första stycket
+skall hållas i karantän att beslutet inte längre skall gälla är
+beslutsmyndigheten skyldig att utan dröjsmål pröva frågan.
+Detsamma gäller om någon ansöker om undantag enligt 9 § andra
+stycket från förbud att besöka den som hålls i karantän eller
+enligt 10 § andra stycket från beslut om avspärrning.
+Finns inte längre skäl för beslut enligt 9 § första stycket
+eller 10 § första stycket skall beslutsmyndigheten omedelbart
+häva beslutet. Lag (2004:877).
+12 § Den som på grund av en samhällsfarlig sjukdom
+1. har isolerats enligt 5 kap. 1 §,
+2. har isolerats tillfälligt enligt 5 kap. 3 §,
+3. skall hållas i karantän enligt 9 §, eller
+4. har förbjudits att lämna avspärrat område enligt beslut om
+avspärrning enligt 10 §
+
+--- from line 602 (anchor /^3 § Om någon bär på eller misstänks bära/)
+3 § Om någon bär på eller misstänks bära på en allmänfarlig
+sjukdom och genom sitt beteende utsätter någon annan för
+omedelbar risk att smittas får smittskyddsläkaren besluta om
+tillfällig isolering. Ett sådant beslut förfaller om det inte
+senast inom fyra dagar underställs förvaltningsrätten.
+Tillfällig isolering som fastställts av förvaltningsrätten får
+bestå i högst två veckor, räknat från den dag beslutet
+verkställdes. Lag (2009:840).
+4 § Isolering enligt 1 eller 3 § ska ske på en vårdinrättning
+som drivs av en region. Lag (2019:915).
+5 § Isolering enligt 1 § får bestå i högst tre månader, räknat
+från den dag beslutet verkställdes. I denna tid inräknas inte
+tillfällig isolering.
+Efter ansökan av smittskyddsläkaren får förvaltningsrätten, om
+det finns särskilda skäl, besluta om fortsatt isolering. Sådant
+beslut får avse högst sex månader åt gången, räknat från
+prövningstillfället.
+Sådan ansökan skall ha kommit in till rätten innan tiden för
+gällande beslut om isolering har löpt ut. Isoleringen skall
+fortsätta i avvaktan på att rättten beslutar med anledning av
+ansökan. Lag (2009:840).
+6 § Har beslut fattats om isolering enligt 1 § ska
+smittskyddsläkaren genast underrätta den region eller den
+kommun som svarar för sådana insatser som den isolerade
+behöver. Smittskyddsläkaren ska lämna de uppgifter om den
+
+--- from line 1056 (anchor /^8 kap\. Överklagande/)
+8 kap. Överklagande m.m.
+Överklagande hos domstol
+1 § Smittskyddsläkarens beslut enligt denna lag får
+överklagas till allmän förvaltningsdomstol om beslutet gäller
+1. förhållningsregler enligt 4 kap. 3 §,
+2. tillfällig isolering enligt 5 kap. 3 §,
+3. avslag på begäran om upphörande av isolering enligt 5 kap.
+7 §,
+4. avslag på begäran om tillstånd att vistas utanför
+vårdinrättningens område eller meddelande av villkor i
+samband med sådan vistelse enligt 5 kap. 18 §,
+5. återkallelse av tillstånd att vistas utanför
+vårdinrättningens område enligt 5 kap. 18 §,
+6. karantän enligt 3 kap. 9 §,
+7. avslag på ansökan om att karantän ska upphöra enligt 3
+kap. 11 §, eller
+8. avslag på ansökan om undantag från förbud att besöka den
+som hålls i karantän enligt 3 kap. 11 §.
+Chefsöverläkares beslut enligt 5 kap. 16 § får överklagas
+till allmän förvaltningsdomstol. Detsamma gäller beslut
+enligt 5 kap. 11 § i fråga om den som isolerats enligt 5 kap.
+1 §.
+Folkhälsomyndighetens beslut att avslå en ansökan om undantag
+från beslut enligt 3 kap. 10 § om avspärrning får överklagas
+till allmän förvaltningsdomstol.
+Andra beslut av smittskyddsläkare, chefsöverläkare eller
+Folkhälsomyndigheten enligt denna lag får inte överklagas.
+Lag (2014:1549).
+2 § Prövningstillstånd krävs vid överklagande till kammarrätten
+i andra mål än sådana som avser
+1. tvångsundersökning enligt 3 kap. 2 §,
+2. isolering enligt 5 kap. 1 §,
+3. tillfällig isolering enligt 5 kap. 3 §,
+4. fortsatt isolering enligt 5 kap. 5 §,
+5. upphörande av isolering enligt 5 kap. 7 §,
+6. karantän enligt 3 kap. 9 § första stycket,
+7. undantag från avspärrning enligt 3 kap. 10 §, eller
+8. upphörande av karantän enligt 3 kap. 11 §.
