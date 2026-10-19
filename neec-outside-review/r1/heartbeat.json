@@ -3,7 +3,7 @@
   "cost_usd": 0.2001,
   "done": 378
  },
- "last_error": "reader NSD|C3.3: None",
+ "last_error": "reader NSD|C4.5: None",
  "reader": {
   "by_group": {
    "1": {
@@ -13,7 +13,7 @@
     "units": 29
    },
    "2": {
-    "error": 1,
+    "error": 9,
     "invalid": 0,
     "ok": 14,
     "units": 116
@@ -45,5 +45,5 @@
   "done": 0
  },
  "stopped": {},
- "updated": "2026-10-19T23:17:14Z"
+ "updated": "2026-10-19T23:38:21Z"
 }
