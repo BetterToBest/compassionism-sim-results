@@ -25,3 +25,13 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{"model":"openai/gpt-4.1-mini","messages":[{"role":"user","content":"Reply with the single word: ok"}],"max_tokens":5}' \
             | grep -iE "^HTTP|ratelimit|\"content\""
+
+      - name: Jev (TypeSafe) call
+        env:
+          TS: ${{ secrets.TYPESAFE_API_KEY }}
+        run: |
+          curl -sS -i https://api.typesafe.ai/v1/systemone \
+            -H "Authorization: Bearer $TS" \
+            -H "Content-Type: application/json" \
+            -d '{"state":"Help! My payouts have been failing for 3 days.","model":"jev-latest","questions":{"is_urgent":{"type":"noul","instructions":"Does this convey urgency?"}}}' \
+            | grep -iE "^HTTP|noul|error|detail"
