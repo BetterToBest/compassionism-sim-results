@@ -3,7 +3,7 @@
   "cost_usd": 0.2001,
   "done": 378
  },
- "last_error": "reader DG|C1.2a: None",
+ "last_error": "reader DG|C1.4: None",
  "reader": {
   "by_group": {
    "1": {
@@ -13,15 +13,15 @@
     "units": 29
    },
    "2": {
-    "error": 16,
+    "error": 19,
     "invalid": 0,
-    "ok": 15,
+    "ok": 97,
     "units": 116
    },
    "2.5": {
     "error": 0,
     "invalid": 0,
-    "ok": 0,
+    "ok": 10,
     "units": 29
    },
    "3": {
@@ -37,7 +37,7 @@
     "units": 387
    }
   },
-  "done": 44,
+  "done": 136,
   "of": 696
  },
  "run": "39336393655",
@@ -45,5 +45,5 @@
   "done": 0
  },
  "stopped": {},
- "updated": "2026-10-19T23:59:27Z"
+ "updated": "2026-10-20T00:19:30Z"
 }
