@@ -1,0 +1,19 @@
+PASS  build_messages: the instructions, then rules, criterion, system and pack in one user message
+PASS  a valid FINAL object parses and validates
+PASS  a FINAL object inside a code fence parses
+PASS  1.0 with a clause short is refused (2.3)
+PASS  0.5 with every clause cleared is refused (2.3)
+PASS  0.0 without zero_basis is refused
+PASS  a wrong clause count is refused
+PASS  an answer without FINAL: is refused
+PASS  an error is retried on the next run
+PASS  resume: a stored reading is skipped, and counts as pushed for stage B in the next run
+PASS  the heartbeat counts by unit
+PASS  the run is not done while calls remain
+PASS  stage B covers the eight owner-decided units
+PASS  stage B is labelled not blind
+PASS  Jev: one choice question per clause
+PASS  Jev windows (D63): each within the window, and together the whole pack, in order
+PASS  D63 rule: a clause shown in any window takes the most probable showing; else not_shown
+PASS  Jev's too-long refusal is recognised, and nothing else is
+SUMMARY: 0 failed

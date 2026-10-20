@@ -11,7 +11,10 @@ manifest.json is checked on start), and for each unit in the kit's order:
            OpenAI-compatible chat API, takes the object after the last "FINAL:", validates it (validate), and on an
            invalid answer asks twice more with the errors named; appends one line to results/reader.jsonl.
   jev      for every unit with a source pack, one Jev call with one choice question per clause (cleared, short,
-           not_shown), the pack held fixed as the state; two passes; appends to results/jev.jsonl.
+           not_shown), the pack held fixed as the state; two passes; appends to results/jev.jsonl. A pack Jev
+           refuses as too long (HTTP 400 max_tokens_exceeded: Jev judges at most about 32,000 of its tokens of
+           state plus the longest question) is read in windows instead, and the windows' answers combined by one
+           rule fixed before any windowed call (decision D63, a reported deviation; run_jev_windowed).
   stage B  (not blind, labelled so) for the eight owner-decided units, once their blind reading was already in the
            results when this run started (so it was pushed by an earlier run): the same conversation, then the
            argument made for a different reading; appends to results/stage_b.jsonl.
@@ -28,6 +31,7 @@ Environment (secrets are set in the repository's settings, never committed):
   TYPESAFE_API_KEY    Jev                                                     required for Jev
   JEV_MODEL jev-1.13.0   JEV_PASSES 2   JEV_BUDGET_USD 5   JEV_PRICE_IN 0.042   JEV_PRICE_OUT 0.20 ($ per M tokens)
   JEV_MAX_CHARS 200000 (a longer pack is cut at that length, and the cut recorded)
+  JEV_WINDOW_CHARS 40000   JEV_MIN_WINDOW 4000   (decision D63: see run_jev_windowed)
   RUN_MINUTES 330   PUSH_EVERY 1200
 
 Usage:
@@ -388,6 +392,97 @@ def jev_request(kit, u, crit_text, model, max_chars):
     return {"model": model, "state": state, "questions": qs}, cut, len(clauses)
 
 
+SEP = "\n\n-----\n\n"
+
+
+def is_too_long(code, data):
+    return code == 400 and isinstance(data, dict) and "max_tokens_exceeded" in json.dumps(data)
+
+
+def split_lines(s, limit):
+    """s in pieces of at most limit characters, cut at line ends where a line allows it; nothing is dropped."""
+    out, cur = [], ""
+    for line in s.splitlines(True):
+        while len(line) > limit:
+            if cur:
+                out.append(cur); cur = ""
+            out.append(line[:limit]); line = line[limit:]
+        if len(cur) + len(line) > limit and cur:
+            out.append(cur); cur = ""
+        cur += line
+    if cur:
+        out.append(cur)
+    return out
+
+
+def jev_windows(kit, u, room):
+    """The pack, in order, in windows of at most room characters each. Files are kept whole where they fit; a
+    file longer than a window is cut at line ends and each part headed with the file and the part's number."""
+    pieces = []
+    for fid in u["files"]:
+        t = text(kit, "files/%s.txt" % fid).strip()
+        if len(t) <= room:
+            pieces.append(t)
+            continue
+        parts = split_lines(t, room - 200)
+        for i, p in enumerate(parts, 1):
+            pieces.append("[%s, part %d of %d]\n%s" % (fid, i, len(parts), p))
+    wins, cur = [], ""
+    for p in pieces:
+        if cur and len(cur) + len(SEP) + len(p) > room:
+            wins.append(cur); cur = ""
+        cur = p if not cur else cur + SEP + p
+    if cur:
+        wins.append(cur)
+    return wins
+
+
+def combine_windows(window_answers, k):
+    """Decision D63's rule, fixed before any windowed call. For each clause: if any window shows the clause
+    (cleared or short), the clause takes that window's choice, and where windows show it differently, the choice
+    held with the highest probability (conflict recorded); if every window answers not_shown, it is not_shown,
+    with the highest not_shown probability among the windows."""
+    out = {}
+    for n in range(1, k + 1):
+        votes = [(i, a["clause%d" % n]) for i, a in enumerate(window_answers)]
+        shown = [(i, v) for i, v in votes if v["choice"] != "not_shown"]
+        if shown:
+            i, best = max(shown, key=lambda iv: iv[1]["probabilities"].get(iv[1]["choice"], 0))
+        else:
+            i, best = max(votes, key=lambda iv: iv[1]["probabilities"].get("not_shown", 0))
+        out["clause%d" % n] = dict(best, window=i + 1, windows=len(window_answers),
+                                   conflict=len({v["choice"] for _, v in shown}) > 1)
+    return out
+
+
+def run_jev_windowed(kit, u, crit_text, model, env, key, pin, pout):
+    """One unit read in windows (D63). A window Jev still refuses as too long is halved and asked again, down to
+    JEV_MIN_WINDOW characters. Returns (status, answers, windows, cost, http, model_served, error)."""
+    room0 = int(env.get("JEV_WINDOW_CHARS", 40000))
+    floor = int(env.get("JEV_MIN_WINDOW", 4000))
+    body0, _, k = jev_request(kit, u, crit_text, model, 10 ** 9)
+    queue = [(w, room0) for w in jev_windows(kit, u, room0)]
+    done, cost, served = [], 0.0, None
+    while queue:
+        w, room = queue.pop(0)
+        body = dict(body0, state=dict(body0["state"], source_pack=w))
+        code, hdr, data = post("https://api.typesafe.ai/v1/systemone", {"Authorization": "Bearer " + key}, body,
+                               timeout=300)
+        usage = (data.get("usage") or {}) if isinstance(data, dict) else {}
+        cost += (usage.get("input_tokens", 0) * pin + usage.get("output_tokens", 0) * pout) / 1e6
+        if is_too_long(code, data) and room // 2 >= floor:
+            half = room // 2
+            queue = [(x, half) for x in split_lines(w, half)] + queue
+            continue
+        ok = code == 200 and isinstance(data.get("answers"), dict) and len(data["answers"]) == k
+        if not ok:
+            return "error", None, done, cost, code, served, json.dumps(data)[:500]
+        served = data.get("model")
+        done.append({"chars": len(w), "answers": data["answers"], "usage": usage,
+                     "md5": hashlib.md5(json.dumps(body, sort_keys=True).encode()).hexdigest()})
+    return "ok", combine_windows([d["answers"] for d in done], k), done, cost, 200, served, None
+
+
 def run_jev(kit, units, res, env, deadline):
     key = env.get("TYPESAFE_API_KEY")
     if not key:
@@ -408,9 +503,26 @@ def run_jev(kit, units, res, env, deadline):
             if time.time() > deadline:
                 res.notes["stopped"]["jev"] = "time"
                 return
-            body, cut, k = jev_request(kit, u, text(kit, "criteria/%s.md" % u["cid"]), model, max_chars)
-            code, hdr, data = post("https://api.typesafe.ai/v1/systemone", {"Authorization": "Bearer " + key}, body,
-                                   timeout=300)
+            crit = text(kit, "criteria/%s.md" % u["cid"])
+            refused = any(r["unit"] == u["unit"] and r.get("http") == 400 and "max_tokens_exceeded" in
+                          (r.get("error") or "") for r in res.rows["jev"])
+            if not refused:
+                body, cut, k = jev_request(kit, u, crit, model, max_chars)
+                code, hdr, data = post("https://api.typesafe.ai/v1/systemone", {"Authorization": "Bearer " + key},
+                                       body, timeout=300)
+                refused = is_too_long(code, data)
+            if refused:
+                st, ans, wins, cost, code, served, err = run_jev_windowed(kit, u, crit, model, env, key, pin, pout)
+                res.add("jev", {"unit": u["unit"], "pass": p, "status": st, "http": code, "model_served": served,
+                                "answers": ans, "windows": wins, "deviation": "D63 windowed",
+                                "usage": {"input_tokens": sum(w["usage"].get("input_tokens", 0) for w in wins),
+                                          "output_tokens": sum(w["usage"].get("output_tokens", 0) for w in wins)},
+                                "cost_usd": round(cost, 6), "pack_cut": False, "error": err,
+                                "t": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
+                if code in (401, 402, 403):
+                    res.notes["stopped"]["jev"] = "key refused (%d)" % code
+                    return
+                continue
             usage = data.get("usage") or {} if isinstance(data, dict) else {}
             cost = (usage.get("input_tokens", 0) * pin + usage.get("output_tokens", 0) * pout) / 1e6
             ok = code == 200 and isinstance(data.get("answers"), dict) and len(data["answers"]) == k
@@ -580,6 +692,24 @@ def selftest(kit):
     body, cut, k = jev_request(kit, next(x for x in units if x["mode"] == "sources"),
                                text(kit, "criteria/C1.1.md"), "jev-1.13.0", 200000)
     check(k == 2 and set(body["questions"]) == {"clause1", "clause2"}, "Jev: one choice question per clause")
+    room = 40000
+    wu = [x for x in units if x["mode"] == "sources" and len(pack_text(kit, x)) > 3 * room]
+    wok = True
+    for x in wu:
+        ws = jev_windows(kit, x, room)
+        whole = "".join(re.sub(r"^\[[^\]\n]+, part \d+ of \d+\]\n", "", p) for w in ws for p in w.split(SEP))
+        wok = wok and all(len(w) <= room for w in ws) and re.sub(r"\s", "", whole) == re.sub(
+            r"\s", "", pack_text(kit, x).replace(SEP, ""))
+    check(bool(wu) and wok, "Jev windows (D63): each within the window, and together the whole pack, in order")
+    a = lambda c, **pr: {"choice": c, "probabilities": pr}
+    cw = combine_windows([{"clause1": a("not_shown", not_shown=0.9), "clause2": a("not_shown", not_shown=0.6)},
+                          {"clause1": a("short", short=0.7), "clause2": a("not_shown", not_shown=0.8)},
+                          {"clause1": a("cleared", cleared=0.6), "clause2": a("not_shown", not_shown=0.7)}], 2)
+    check(cw["clause1"]["choice"] == "short" and cw["clause1"]["conflict"] and cw["clause1"]["window"] == 2
+          and cw["clause2"]["choice"] == "not_shown" and cw["clause2"]["window"] == 2,
+          "D63 rule: a clause shown in any window takes the most probable showing; else not_shown")
+    check(is_too_long(400, {"detail": {"error_type": "max_tokens_exceeded"}}) and not is_too_long(429, {}),
+          "Jev's too-long refusal is recognised, and nothing else is")
     print("SUMMARY: %d failed" % len(fails))
     return 1 if fails else 0
 
