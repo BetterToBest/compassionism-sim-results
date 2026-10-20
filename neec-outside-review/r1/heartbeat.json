@@ -1,9 +1,9 @@
 {
  "jev": {
-  "cost_usd": 0.2001,
-  "done": 378
+  "cost_usd": 0.8948,
+  "done": 588
  },
- "last_error": "jev OS|C4.6: {\"detail\": {\"error_type\": \"max_tokens_exceeded\"}}",
+ "last_error": null,
  "reader": {
   "by_group": {
    "1": {
@@ -40,10 +40,10 @@
   "done": 696,
   "of": 696
  },
- "run": "39372446024",
+ "run": "39432050835",
  "stage_b": {
   "done": 8
  },
  "stopped": {},
- "updated": "2026-10-20T05:09:25Z"
+ "updated": "2026-10-20T13:41:18Z"
 }
