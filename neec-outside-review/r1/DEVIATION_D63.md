@@ -55,3 +55,7 @@ from the record.
 A dry run on one refused unit per criterion (CCO|C2.1, CCO|C2.4, CCO|C2.6, CCO|C3.6, CCO|C4.2, CCO|C4.4,
 CCO|C4.6), through the workflow's dry-run path, with the repository's key. Its results go to `dryrun/`, never mixed
 with the run's.
+
+**Result (dry run 39384503965, 2026-10-20):** all seven units answered in both passes, 14 of 14, HTTP 200, no window
+refused, `jev-1.13.0` served. 4 to 11 windows per unit; the largest window Jev accepted used 32,187 of its tokens.
+The two passes agree on every clause. Cost $0.05. Results in `dryrun/results/jev.jsonl`.
