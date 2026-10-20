@@ -3,7 +3,7 @@
   "cost_usd": 0.2001,
   "done": 378
  },
- "last_error": "reader DG|C1.4: None",
+ "last_error": "jev OS|C4.6: {\"detail\": {\"error_type\": \"max_tokens_exceeded\"}}",
  "reader": {
   "by_group": {
    "1": {
@@ -13,9 +13,9 @@
     "units": 29
    },
    "2": {
-    "error": 19,
+    "error": 0,
     "invalid": 0,
-    "ok": 97,
+    "ok": 116,
     "units": 116
    },
    "2.5": {
@@ -37,13 +37,13 @@
     "units": 387
    }
   },
-  "done": 677,
+  "done": 696,
   "of": 696
  },
- "run": "39336393655",
+ "run": "39372446024",
  "stage_b": {
-  "done": 0
+  "done": 8
  },
  "stopped": {},
- "updated": "2026-10-20T03:22:11Z"
+ "updated": "2026-10-20T05:09:25Z"
 }
