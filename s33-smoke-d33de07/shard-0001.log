@@ -1,0 +1,3 @@
+shard 1 seeds 3-4; 4 vCPU; 15 GB; node v22.22.0; 2026-10-30T04:06:55Z
+ref seeds 3-4 adults 500 years 20: 1.4 s (0.70 s a seed), peak memory 173 MB
+ended 2026-10-30T04:06:57Z
