@@ -1,0 +1,7 @@
+shard 0 seeds 1-4; 4 vCPU; 15 GB; node v22.22.0; 2026-10-30T04:14:33Z
+ref seeds 3-3 adults 500 years 20: 1.8 s (1.84 s a seed), peak memory 161 MB
+ref seeds 1-1 adults 500 years 20: 1.9 s (1.85 s a seed), peak memory 160 MB
+ref seeds 2-2 adults 500 years 20: 1.9 s (1.88 s a seed), peak memory 157 MB
+ref seeds 4-4 adults 500 years 20: 1.9 s (1.90 s a seed), peak memory 153 MB
+ref seeds 1-4 adults 500 years 20: 2.0 s in 4 processes (0.50 s a seed), largest process 161 MB
+ended 2026-10-30T04:14:35Z
