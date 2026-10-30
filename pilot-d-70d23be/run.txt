@@ -1,0 +1,4 @@
+study pilot-d; engine 70d23beff2065b554b687a2a4843c1433b19498b; runner commit 49d1c036b5fd12dd78ac97ae36e8f76552458ec2 of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 10 shard(s); 2026-10-30T06:28:09Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/41011010235
+command per shard (in a clean checkout of the engine commit): node runner/jobs/program.js --study=D --env=all --procs=4 --seeds=A-B --out=shard-NNNN.json   (seeds 1-50 cut into 10 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-50 once
