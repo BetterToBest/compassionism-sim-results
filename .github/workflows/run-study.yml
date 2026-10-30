@@ -1,0 +1,164 @@
+# The study runner (research-update plan step S33; instructions in research-update prereg/RUNNING.md).
+# Dispatch by hand (Actions tab, or the API) with: a study id, the engine commit (40 hex characters, a commit of BetterToBest/compassionism-simulation),
+# a job script (a file in runner/jobs/ of THIS repository), its arguments, the seed range and a shard count. The seed range is cut into that many
+# contiguous pieces; each piece runs as its own job on its own runner (ubuntu-latest: 4 vCPU, 16 GB, 6 hours at most), in a clean checkout of the engine
+# commit. Seeds are paired and independent, so the cut changes no number. A last job checks every piece (the seeds it covers, the engine commit, a clean
+# engine), writes run.txt and SHA256SUMS, writes DONE, and commits the folder <study>-<engine, 7 characters>/ to main with GITHUB_TOKEN (contents: write).
+# Nothing here uses a secret or costs money (public repository, standard runners).
+name: run-study
+
+on:
+  workflow_dispatch:
+    inputs:
+      study:
+        description: "study id, lower case letters, digits and hyphens (the folder is <study>-<engine, 7 characters>)"
+        required: true
+      engine:
+        description: "engine commit (40 hex characters) of BetterToBest/compassionism-simulation"
+        required: true
+      job:
+        description: "job script in runner/jobs/ (default release-pair.js)"
+        default: "release-pair.js"
+      job_args:
+        description: "arguments for the job script besides --seeds and --out (for example: --env=ref --adults=500 --years=20)"
+        default: "--env=ref"
+      seeds:
+        description: "seed range, A-B (for example 1-500)"
+        default: "1-500"
+      shards:
+        description: "number of shards (at most 256)"
+        default: "1"
+
+permissions:
+  contents: write
+
+env:
+  NODE_VERSION: "22.22.0"   # the Node version of the earlier local runs and the Runpod batches
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.p.outputs.matrix }}
+      dir: ${{ steps.p.outputs.dir }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the inputs and cut the seed range
+        id: p
+        env:
+          STUDY: ${{ inputs.study }}
+          ENGINE: ${{ inputs.engine }}
+          JOB: ${{ inputs.job }}
+          JOB_ARGS: ${{ inputs.job_args }}
+          SEEDS: ${{ inputs.seeds }}
+          SHARDS: ${{ inputs.shards }}
+        run: |
+          node -e '
+            const e = process.env, fs = require("fs"), bad = m => { console.error("::error::" + m); process.exit(1); };
+            if (!/^[a-z0-9][a-z0-9-]*$/.test(e.STUDY)) bad("study id: lower case letters, digits and hyphens");
+            if (!/^[0-9a-f]{40}$/.test(e.ENGINE)) bad("engine: a full 40-character commit hash");
+            if (!/^[a-z0-9][a-z0-9-]*\.js$/.test(e.JOB) || !fs.existsSync("runner/jobs/" + e.JOB)) bad("job: no such script in runner/jobs/");
+            if (!/^[A-Za-z0-9=,._ -]*$/.test(e.JOB_ARGS) || /(^| )--(seeds|out)=/.test(e.JOB_ARGS)) bad("job_args: plain characters only, and not --seeds or --out");
+            const m = /^(\d+)-(\d+)$/.exec(e.SEEDS); if (!m || +m[1] < 1 || +m[2] < +m[1]) bad("seeds: A-B with 1 <= A <= B");
+            const lo = +m[1], hi = +m[2], n = hi - lo + 1, k = +e.SHARDS;
+            if (!Number.isInteger(k) || k < 1 || k > 256 || k > n) bad("shards: a whole number from 1 to 256, at most the number of seeds");
+            const dir = e.STUDY + "-" + e.ENGINE.slice(0, 7);
+            if (fs.existsSync(dir + "/DONE")) bad(dir + " is already DONE in this repository; use a new study id");
+            const inc = [], base = Math.floor(n / k), extra = n % k; let s = lo;
+            for (let i = 0; i < k; i++) { const c = base + (i < extra ? 1 : 0); inc.push({shard: i, from: s, to: s + c - 1}); s += c; }
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, "matrix=" + JSON.stringify({include: inc}) + "\ndir=" + dir + "\n");
+          '
+
+  shard:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: results
+      - uses: actions/checkout@v4
+        with:
+          repository: BetterToBest/compassionism-simulation
+          ref: ${{ inputs.engine }}
+          path: engine
+          lfs: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Run the shard
+        env:
+          JOB: ${{ inputs.job }}
+          JOB_ARGS: ${{ inputs.job_args }}
+          FROM: ${{ matrix.from }}
+          TO: ${{ matrix.to }}
+          SHARD: ${{ matrix.shard }}
+          ENGINE: ${{ inputs.engine }}
+        run: |
+          set -o pipefail
+          [ "$(git -C engine rev-parse HEAD)" = "$ENGINE" ] || { echo "::error::engine checkout is not $ENGINE"; exit 1; }
+          [ -z "$(git -C engine status --porcelain)" ] || { echo "::error::engine checkout is not clean"; exit 1; }
+          mkdir -p out; N=$(printf '%04d' "$SHARD")
+          cd engine
+          echo "shard $SHARD seeds $FROM-$TO; $(nproc) vCPU; $(free -g | awk '/Mem:/{print $2}') GB; node $(node -v); $(date -u +%FT%TZ)" > ../out/shard-$N.log
+          node ../results/runner/jobs/$JOB $JOB_ARGS --seeds=$FROM-$TO --out=../out/shard-$N.json 2>&1 | tee -a ../out/shard-$N.log
+          echo "ended $(date -u +%FT%TZ)" >> ../out/shard-$N.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: out/
+          retention-days: 3
+          if-no-files-found: error
+
+  finish:
+    needs: [plan, shard]
+    runs-on: ubuntu-latest
+    concurrency:
+      group: run-study-commit
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: collected
+          merge-multiple: true
+      - name: Check every shard, write run.txt, SHA256SUMS and DONE
+        env:
+          STUDY: ${{ inputs.study }}
+          ENGINE: ${{ inputs.engine }}
+          JOB: ${{ inputs.job }}
+          JOB_ARGS: ${{ inputs.job_args }}
+          SEEDS: ${{ inputs.seeds }}
+          SHARDS: ${{ inputs.shards }}
+          DIR: ${{ needs.plan.outputs.dir }}
+          MATRIX: ${{ needs.plan.outputs.matrix }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          mkdir -p "$DIR"; cp collected/* "$DIR"/
+          node runner/check-shards.js "$DIR" "$MATRIX" "$ENGINE" || exit 1
+          {
+            echo "study $STUDY; engine $ENGINE; runner commit $GITHUB_SHA of $GITHUB_REPOSITORY; node $NODE_VERSION; GitHub-hosted ubuntu-latest, $SHARDS shard(s); $(date -u +%FT%TZ)"
+            echo "workflow run: $RUN_URL"
+            echo "command per shard (in a clean checkout of the engine commit): node runner/jobs/$JOB $JOB_ARGS --seeds=A-B --out=shard-NNNN.json   (seeds $SEEDS cut into $SHARDS contiguous ranges)"
+            echo "checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover $SEEDS once"
+          } > "$DIR/run.txt"
+          ( cd "$DIR" && sha256sum shard-*.json shard-*.timing.json shard-*.log > SHA256SUMS )
+          date -u +%FT%TZ > "$DIR/DONE"
+          { echo "### $DIR"; echo; echo "| shard | seconds | s per seed | peak MB |"; echo "|---|---|---|---|"
+            for f in "$DIR"/shard-*.timing.json; do node -e 'const t=require(process.argv[1]);console.log("| "+process.argv[1].replace(/.*shard-(\d+).*/,"$1")+" | "+t.seconds+" | "+t.secondsPerSeed+" | "+t.peakRssMB+" |")' "$PWD/$f"; done; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit the folder to main
+        env:
+          DIR: ${{ needs.plan.outputs.dir }}
+          STUDY: ${{ inputs.study }}
+        run: |
+          git config user.name "run-study"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DIR"; git commit -qm "$STUDY: results of the run-study workflow ($DIR)"
+          for t in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; sleep $((t * 10)); git pull -q --rebase origin main; done
+          exit 1
