@@ -116,9 +116,6 @@ jobs:
   finish:
     needs: [plan, shard]
     runs-on: ubuntu-latest
-    concurrency:
-      group: run-study-commit
-      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -160,5 +157,6 @@ jobs:
         run: |
           git config user.name "run-study"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$DIR"; git commit -qm "$STUDY: results of the run-study workflow ($DIR)"
-          for t in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; sleep $((t * 10)); git pull -q --rebase origin main; done
+          # Several studies may finish at once (a concurrency group would cancel all but one waiting job): retry with a rebase.
+          for t in 1 2 3 4 5 6 7 8; do git push -q origin HEAD:main && exit 0; sleep $((t * 5)); git pull -q --rebase origin main; done
           exit 1
