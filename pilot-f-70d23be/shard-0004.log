@@ -1,0 +1,31 @@
+shard 4 seeds 41-50; 4 vCPU; 15 GB; node v22.22.0; 2026-10-30T06:22:33Z
+ref 500 adults 20 years: 10.44 s
+ref 500 adults 20 years: 11.99 s
+ref 500 adults 20 years: 14.44 s
+ref 500 adults 20 years: 15.53 s
+ref 500 adults 40 years: 13.84 s
+ref 500 adults 40 years: 15.02 s
+adv 500 adults 20 years: 8.69 s
+adv 500 adults 20 years: 8.42 s
+ref 500 adults 40 years: 21.56 s
+ref 500 adults 40 years: 21.62 s
+adv 500 adults 20 years: 11.67 s
+adv 500 adults 40 years: 15.56 s
+adv 500 adults 20 years: 11.59 s
+adv 500 adults 40 years: 15.11 s
+st 500 adults 20 years: 6.15 s
+st 500 adults 20 years: 6.53 s
+st 500 adults 40 years: 12.42 s
+study F all seeds 47-48: 67.2 s, peak memory 227 MB
+st 500 adults 40 years: 11.36 s
+study F all seeds 49-50: 68.5 s, peak memory 213 MB
+adv 500 adults 40 years: 20.98 s
+adv 500 adults 40 years: 21.03 s
+st 500 adults 20 years: 4.95 s
+st 500 adults 20 years: 5.04 s
+st 500 adults 40 years: 9.48 s
+study F all seeds 41-43: 83.3 s, peak memory 227 MB
+st 500 adults 40 years: 9.22 s
+study F all seeds 44-46: 84.2 s, peak memory 257 MB
+study F all seeds 41-50: 84.2 s in 4 processes
+ended 2026-10-30T06:23:57Z
