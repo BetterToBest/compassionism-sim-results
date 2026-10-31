@@ -1,0 +1,17 @@
+shard 22 seeds 89-92; 4 vCPU; 15 GB; node v22.22.0; 2026-10-31T02:48:56Z
+ref 20 years: 12.13 s
+ref 20 years: 13.09 s
+ref 40 years: 21.15 s
+ref 40 years: 21.69 s
+adv 20 years: 11.18 s
+adv 20 years: 11.36 s
+adv 40 years: 20.76 s
+adv 40 years: 20.93 s
+st 20 years: 9.19 s
+st 20 years: 9.5 s
+st 40 years: 17.71 s
+c22 all seeds 89-90: 92.2 s, peak memory 315 MB
+st 40 years: 17.93 s
+c22 all seeds 91-92: 94.6 s, peak memory 259 MB
+c22 all seeds 89-92: 94.6 s in 2 processes
+ended 2026-10-31T02:50:31Z
