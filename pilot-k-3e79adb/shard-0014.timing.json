@@ -1,0 +1,1 @@
+{"study":"c22","env":"all","seeds":4,"procs":2,"seconds":122,"secondsPerSeed":30.5,"peakRssMB":295,"blocks":{"ref.n500.y20":16.28,"ref.n500.y40":27.64,"adv.n500.y20":14.72,"adv.n500.y40":28.07,"st.n500.y20":12.14,"st.n500.y40":23.36},"node":"v22.22.0"}
