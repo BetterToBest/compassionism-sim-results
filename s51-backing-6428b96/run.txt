@@ -1,0 +1,4 @@
+study s51-backing; engine 6428b96f95e28bbbda5b0717e8915a09206310a0; runner commit bf52f82228336c310576c7b99b90033e965ebe90 of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 25 shard(s); 2026-11-02T01:46:27Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/41373143374
+command per shard (in a clean checkout of the engine commit): node runner/jobs/backing.js --env=all --procs=4 --seeds=A-B --out=shard-NNNN.json   (seeds 1-50 cut into 25 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-50 once
