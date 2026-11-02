@@ -1,0 +1,7 @@
+shard 8 seeds 41-45; 4 vCPU; 15 GB; node v22.22.0; 2026-11-02T03:48:20Z
+all seeds 43-43: 136.4 s (136.44 s a seed), peak memory 240 MB
+all seeds 45-45: 137.1 s (137.07 s a seed), peak memory 241 MB
+all seeds 44-44: 139.8 s (139.84 s a seed), peak memory 236 MB
+all seeds 41-42: 200.9 s (100.46 s a seed), peak memory 266 MB
+all seeds 41-45: 201.0 s in 4 processes
+ended 2026-11-02T03:51:41Z
