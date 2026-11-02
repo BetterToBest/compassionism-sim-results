@@ -1,0 +1,4 @@
+study s53-security; engine f15eaf65b31ca15430590af764ee0b629a0229a0; runner commit d1cbaddf961abba25ff76b38f6001b75910a33db of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 5 shard(s); 2026-11-02T09:48:04Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/41423271435
+command per shard (in a clean checkout of the engine commit): node runner/jobs/security.js --env=all --procs=4 --seeds=A-B --out=shard-NNNN.json   (seeds 1-50 cut into 5 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-50 once
