@@ -155,9 +155,10 @@ if (procs > 1 && (ENVS.length > 1 || hi > lo)) {
     c.on('exit', code => code === 0 ? ok() : no(new Error('piece ' + q.env + ' ' + q.from + '-' + q.to + ' exited ' + code))); }));
   Promise.all(kids).then(() => {
     const D = parts.map(q => JSON.parse(fs.readFileSync(q.file, 'utf8'))), o = D[0];
-    o._meta.env = env; o._meta.seeds = [lo, hi]; o._meta.command = 'node runner/jobs/levers.js --stage=' + stage + ' --env=' + env + ' --seeds=' + lo + '-' + hi; o.rows = {};
+    o._meta.env = env; o._meta.seeds = [lo, hi]; o._meta.command = 'node runner/jobs/levers.js --stage=' + stage + ' --env=' + env + ' --seeds=' + lo + '-' + hi; const J = {};
     ENVS.forEach(e => { const P = parts.map((q, i) => [q, D[i]]).filter(x => x[0].env === e);
-      Object.keys(P[0][1].rows).forEach(r => { o.rows[r] = {}; Object.keys(P[0][1].rows[r]).forEach(key => { o.rows[r][key] = [].concat(...P.map(x => x[1].rows[r][key])); }); }); });
+      Object.keys(P[0][1].rows).forEach(r => { J[r] = {}; Object.keys(P[0][1].rows[r]).forEach(key => { J[r][key] = [].concat(...P.map(x => x[1].rows[r][key])); }); }); });
+    o.rows = J;
     fs.writeFileSync(out, JSON.stringify(o));
     const T = parts.map(q => JSON.parse(fs.readFileSync(q.file.replace(/\.json$/, '') + '.timing.json', 'utf8'))), secs = (Date.now() - t0)/1000, n = hi - lo + 1;
     fs.writeFileSync(out.replace(/\.json$/, '') + '.timing.json', JSON.stringify({stage, env, seeds: n, procs: parts.length, seconds: +secs.toFixed(2), secondsPerSeed: +(secs/n).toFixed(3), peakRssMB: Math.max(...T.map(t => t.peakRssMB)), node: process.version}));
