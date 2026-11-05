@@ -1,0 +1,4 @@
+study s54-levers3; engine e6da0506188d67fc542f1bd2c430e733a44bd921; runner commit 6dd66273ed3af76234e253e4ddda050f867774b4 of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 25 shard(s); 2026-11-05T21:38:11Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/42112585864
+command per shard (in a clean checkout of the engine commit): node runner/jobs/levers.js --stage=3 --env=all --procs=4 --seeds=A-B --out=shard-NNNN.json   (seeds 51-100 cut into 25 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 51-100 once

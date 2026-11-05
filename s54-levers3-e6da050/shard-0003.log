@@ -1,0 +1,6 @@
+shard 3 seeds 57-58; 4 vCPU; 15 GB; node v22.22.0; 2026-11-05T21:27:07Z
+stage 3 st seeds 57-58: 218.5 s (109.27 s a seed), peak memory 543 MB
+stage 3 adv seeds 57-58: 240.7 s (120.35 s a seed), peak memory 552 MB
+stage 3 ref seeds 57-58: 260.9 s (130.45 s a seed), peak memory 537 MB
+stage 3 all seeds 57-58: 261.0 s in 3 processes
+ended 2026-11-05T21:31:28Z
