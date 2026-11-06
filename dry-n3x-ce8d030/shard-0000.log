@@ -1,0 +1,6 @@
+shard 0 seeds 501-502; 4 vCPU; 15 GB; node v22.22.0; 2026-11-06T02:09:17Z
+stage 3 st seeds 501-502: 323.4 s (161.70 s a seed), peak memory 717 MB
+stage 3 adv seeds 501-502: 347.5 s (173.73 s a seed), peak memory 718 MB
+stage 3 ref seeds 501-502: 350.8 s (175.38 s a seed), peak memory 723 MB
+stage 3 all seeds 501-502: 350.9 s in 3 processes
+ended 2026-11-06T02:15:08Z
