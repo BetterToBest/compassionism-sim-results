@@ -1,0 +1,11 @@
+shard 0 seeds 1-2; 4 vCPU; 15 GB; node v22.22.0; 2026-11-06T02:07:21Z
+ref 10000 adults 20 years: 269.04 s
+ref 10000 adults 20 years: 272.66 s
+adv 10000 adults 20 years: 273.08 s
+adv 10000 adults 20 years: 276.94 s
+st 10000 adults 20 years: 232.2 s
+study B10 all seeds 1-1: 774.4 s, peak memory 469 MB
+st 10000 adults 20 years: 235.6 s
+study B10 all seeds 2-2: 785.3 s, peak memory 468 MB
+study B10 all seeds 1-2: 785.4 s in 2 processes
+ended 2026-11-06T02:20:27Z
