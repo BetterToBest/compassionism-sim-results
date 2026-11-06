@@ -6,7 +6,7 @@
  * plus REL_V52_STUDY and {sec: true}. Each row then changes only what its name says.
  *   DESIGN   rel (the release row as released) or c22 (the C2.2 design, CPS yardstick; its none row is the plain none row with that yardstick)
  *   PATH     off (no outside shock) | main (S52's main supply shock, the preset key p.sx with its defaults; the environment's, so the no-programme run faces it)
- *   ROW      none (the no-programme run) | prog (the design) | none.sv, prog.sv (savings that keep up with prices, row option sv; release row, no shock only)
+ *   ROW      none (the no-programme run) | prog (the design) | none.sv, prog.sv (savings that keep up with prices, row option sv; no shock only; both designs since S47)
  * Rows are named ENV.DESIGN.PATH.ROW. Each row holds one value per seed for every measure in KEYS. Seeds are paired and independent, so any split of 1..N
  * joins to the same numbers. --procs=K cuts the seeds into K pieces run as K processes and joins them (the same bytes as one process).
  *
@@ -17,10 +17,12 @@
 const fs = require('fs'), path = require('path');
 const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', st: 'STRESS_TEST'};
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
+const FRZ = process.argv.includes('--frozen');  /* S47 (run manifest section 6 item 7): the S48 batch's version: every row, the no-programme rows included, on the frozen engine (harness.js frozenRow: au, fx, the share 0.877) */
 
 const PATHS = {off: null, main: {}};
-/* per environment: 2 designs x 2 paths x (none, prog) = 8, plus rel.off.none.sv and rel.off.prog.sv = 10 */
-const PREREG_ROWS = 10;
+/* per environment: 2 designs x 2 paths x (none, prog) = 8, plus rel.off.none.sv and rel.off.prog.sv = 10; S47 (addendum Amendment 1): plus c22.off.none.sv and
+ * c22.off.prog.sv, the C2.2 design with savings that keep up with prices = 12 */
+const PREREG_ROWS = 12;
 const KEYS = ['fgt0PY', 'fgt1PY', 'pov', 'bNAPy', 'gPartF0', 'gNonF0', 'gPartW', 'gNonW', 'endoAnn', 'pLev20', 'cost', 'jnP19', 'giniD', 'medWealthReal'];
 
 function rows(H, P, pathName) {
@@ -29,7 +31,7 @@ function rows(H, P, pathName) {
     if (d === 'c22'){ c.lt = {s: 'all', m: 'all'}; if (i === 1){ c.c22 = {auto: true, idx: 'needs'}; c.p = Object.assign({}, c.p, {bu: H.c22NeedsBU()}); } }
     if (sx) c.p = Object.assign({}, c.p, {sx: sx}); if (sv) c.sv = true; return c; });
   ['rel', 'c22'].forEach(d => { const q = pair(d, false); out.push([d + '.' + pathName + '.none', q[0]], [d + '.' + pathName + '.prog', q[1]]); });
-  if (pathName === 'off') { const q = pair('rel', true); out.push(['rel.off.none.sv', q[0]], ['rel.off.prog.sv', q[1]]); }
+  if (pathName === 'off') ['rel', 'c22'].forEach(d => { const q = pair(d, true); out.push([d + '.off.none.sv', q[0]], [d + '.off.prog.sv', q[1]]); });
   return out;
 }
 function envFor(H, e, pathName) { const P = Object.assign({}, H[ENVN[e]], {years: 20, nAgents: 500}); if (PATHS[pathName]) P.sx = PATHS[pathName]; return P; }
@@ -43,12 +45,12 @@ if (process.argv.includes('--check')) {
 
 const env = arg('env', 'ref'), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
 const ENVS = env === 'all' ? ['ref', 'adv', 'st'] : [env];
-if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: security.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
+if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: security.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--frozen]'); process.exit(1); }
 const lo = +m[1], hi = +m[2], t0 = Date.now();
 if (procs > 1 && hi > lo) {
   const cp = require('child_process'), k = Math.min(procs, hi - lo + 1), n0 = hi - lo + 1, parts = []; let s0 = lo;
   for (let i = 0; i < k; i++) { const c = Math.floor(n0/k) + (i < n0 % k ? 1 : 0); parts.push({from: s0, to: s0 + c - 1, file: out.replace(/\.json$/, '') + '.part' + i + '.json'}); s0 += c; }
-  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--env=' + env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file], {stdio: 'inherit'});
+  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--env=' + env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file].concat(FRZ ? ['--frozen'] : []), {stdio: 'inherit'});
     c.on('exit', code => code === 0 ? ok() : no(new Error('piece ' + q.from + '-' + q.to + ' exited ' + code))); }));
   Promise.all(kids).then(() => {
     const D = parts.map(q => JSON.parse(fs.readFileSync(q.file, 'utf8'))), o = D[0];
@@ -63,12 +65,12 @@ if (procs > 1 && hi > lo) {
 } else {
   const H = require(path.join(process.cwd(), 'harness.js'));
   const svN = H.applyNR6(), svG = H.tbSetG(H.TB_PROFILE_G), ALLK = KEYS.concat(H.SEC_KEYS, H.S19_KEYS.filter(k => +k.split('_')[1] < 20));
-  const o = {_meta: {what: 'S53 security-outcomes study (prereg/2026-11-security-addendum.md): per-seed values', env, seeds: [lo, hi], adults: 500, years: 20, keys: ALLK, manifest: H.runManifest(),
-    command: 'node runner/jobs/security.js --env=' + env + ' --seeds=' + lo + '-' + hi}, rows: {}};
+  const o = {_meta: {what: 'S53 security-outcomes study (prereg/2026-11-security-addendum.md): per-seed values', env, seeds: [lo, hi], adults: 500, years: 20, keys: ALLK, manifest: H.runManifest(), frozen: FRZ ? H.FROZEN : null,
+    command: 'node runner/jobs/security.js --env=' + env + ' --seeds=' + lo + '-' + hi + (FRZ ? ' --frozen' : '')}, rows: {}};
   try {
     ENVS.forEach(e => Object.keys(PATHS).forEach(q => {
       const P = envFor(H, e, q), so = Object.assign({fin: 'tax', aT: 0, a: 0, X: 0, sc: H.SPEND_SOURCED}, H.REL_V52_STUDY, {sec: true});
-      const R0 = rows(H, P, q), R = H.tbStudy(R0.map(r => r[1]), hi, P, so, lo);
+      const R0 = rows(H, P, q), R = H.tbStudy(R0.map(r => FRZ ? H.frozenRow(r[1]) : r[1]), hi, P, so, lo);
       R0.forEach((r, i) => { const v = {}; ALLK.forEach(k => { if (R[i]._s[k]) v[k] = Array.from(R[i]._s[k]); }); o.rows[e + '.' + r[0]] = v; });
     }));
   } finally { H.resetNR6(svN); H.tbSetG(svG); }

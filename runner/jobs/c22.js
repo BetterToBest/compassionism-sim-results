@@ -12,6 +12,7 @@
 const fs = require('fs'), path = require('path');
 const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', st: 'STRESS_TEST'};
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
+const FRZ = process.argv.includes('--frozen');  /* S47 (run manifest section 6 item 7): the S48 batch's version: every row, the no-programme rows included, on the frozen engine (harness.js frozenRow: au, fx, the share 0.877) */
 const U = 0.041, U_HI = 0.056, BU_MID = 1500, YEARS = [20, 40], YARD = ['cps', 'rel'], ADULTS = 500;
 /* The rows (preregistration, Rows table): [name, c22 option or null, BU level ('needs' = c22NeedsBU()) or null, child allowance or null]. */
 const ROWS = [
@@ -43,7 +44,7 @@ function blockRows(H, P0) {
 function runBlock(H, env, years, lo, hi) {
   const P = Object.assign({}, H[ENVN[env]], {years, nAgents: ADULTS}), B = blockRows(H, P), SC = H.SPEND_SOURCED;
   const so = Object.assign({fin: 'tax', aT: 0, a: 0, X: 0, sc: SC}, H.REL_V52_STUDY);
-  const R = H.tbStudy(B.rows.map(r => r[1]), hi, P, so, lo), out = {}, pre = env + '.n' + ADULTS + '.y' + years + '.';
+  const R = H.tbStudy(B.rows.map(r => FRZ ? H.frozenRow(r[1]) : r[1]), hi, P, so, lo), out = {}, pre = env + '.n' + ADULTS + '.y' + years + '.';
   B.rows.forEach((r, i) => { const o = {}; B.keys.forEach(k => { if (!R[i]._s[k]) throw new Error('measure ' + k + ' not produced in ' + r[0]); o[k] = Array.from(R[i]._s[k]); }); out[pre + r[0]] = o; });
   return out;
 }
@@ -76,8 +77,8 @@ function checks() {
 if (process.argv.includes('--check')) { checks(); return; }
 const envA = arg('env', ''), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
 const envs = envA === 'all' ? Object.keys(ENVN) : [envA], years = arg('years') ? arg('years').split(',').map(Number) : YEARS;
-if (!envs.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1 || !years.every(y => YEARS.includes(y))) { console.error('usage: c22.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--years=20,40]'); process.exit(1); }
-const lo = +m[1], hi = +m[2], t0 = Date.now(), pass = ['--env=' + envA].concat(arg('years') ? ['--years=' + arg('years')] : []);
+if (!envs.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1 || !years.every(y => YEARS.includes(y))) { console.error('usage: c22.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--years=20,40] [--frozen]'); process.exit(1); }
+const lo = +m[1], hi = +m[2], t0 = Date.now(), pass = ['--env=' + envA].concat(arg('years') ? ['--years=' + arg('years')] : [], FRZ ? ['--frozen'] : []);
 const command = 'node runner/jobs/c22.js ' + pass.join(' ') + ' --seeds=' + lo + '-' + hi;
 if (procs > 1 && hi > lo) {  /* parent: run the pieces as child processes, then join their per-seed arrays in seed order (as program.js) */
   const cp = require('child_process'), k = Math.min(procs, hi - lo + 1), n0 = hi - lo + 1, parts = []; let s0 = lo;
@@ -99,7 +100,7 @@ if (procs > 1 && hi > lo) {  /* parent: run the pieces as child processes, then 
   const H = require(path.join(process.cwd(), 'harness.js')), svN = H.applyNR6(), svG = H.tbSetG(H.TB_PROFILE_G);
   const o = {_meta: {what: 'C2.2 coverage and adequacy (research-update prereg/2026-11-c22-coverage-adequacy.md): per-seed values of the kept measures', study: 'c22', env: envA,
     seeds: [lo, hi], adults: ADULTS, years, keys: KEYS.concat(H.C22_KEYS), rows: ROWS.map(r => ({row: r[0], c22: r[1], bu: r[2], childBU: r[3]})), u: [U, U_HI], needsBU: H.c22NeedsBU(),
-    sn: Object.assign({}, H.SNET_DEFAULTS, {abawd: true, slope: true}), manifest: H.runManifest(), command}, rows: {}}, blocks = {};
+    sn: Object.assign({}, H.SNET_DEFAULTS, {abawd: true, slope: true}), manifest: H.runManifest(), frozen: FRZ ? H.FROZEN : null, command}, rows: {}}, blocks = {};
   try {
     envs.forEach(env => years.forEach(y => { const t1 = Date.now(); Object.assign(o.rows, runBlock(H, env, y, lo, hi));
       blocks[env + '.n' + ADULTS + '.y' + y] = +((Date.now() - t1)/1000).toFixed(2); console.error(env + ' ' + y + ' years: ' + blocks[env + '.n' + ADULTS + '.y' + y] + ' s'); }));

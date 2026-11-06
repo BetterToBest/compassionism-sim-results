@@ -42,6 +42,14 @@
 const fs = require('fs'), path = require('path');
 const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', st: 'STRESS_TEST'};
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
+/* S47 (run manifest sections 4 and 6 item 7; the S48 batch's version):
+ *   --frozen  every row, the no-programme rows included, on the frozen engine (harness.js frozenRow: au, fx, the share 0.877); the money-income falls by cause
+ *             (security addendum Amendment 1 item 3a: secF25, secF25w, secF25c, secF25o for all adults, participants and those not taking part) on every row
+ *   --sx=main every row on S52's main outside supply-shock path (study N3x; the supply-shock addendum's main path and PTF reading, harness SX_DEFAULTS)
+ *   --gzip    recorded in the command; the run-study workflow compresses the shard files (gzip -n) after checking them. The kept keys are already the
+ *             addendum's outcomes and what dev/tools/s54_levers.py reads (KEYS1, KEYS2). */
+const FRZ = process.argv.includes('--frozen'), SXM = arg('sx', '') === 'main', GZ = process.argv.includes('--gzip');
+const SEC_F = ['secF25', 'secF25w', 'secF25c', 'secF25o'];
 
 const DES = ['rel', 'c22'], W1 = [100, 90];
 const TAX = [0, 4, 8, 12, 16, 20, 25, 30, 40];
@@ -173,19 +181,20 @@ if (process.argv.includes('--check')) {
 
 const stage = +arg('stage', 0), env = arg('env', 'ref'), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
 const ENVS = env === 'all' ? ['ref', 'adv', 'st'] : [env];
-if (!(stage === 1 || stage === 2 || stage === 3) || !ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) {
-  console.error('usage: levers.js --stage=1|2|3 --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--list=FILE]'); process.exit(1); }
-const lo = +m[1], hi = +m[2], t0 = Date.now(), KEYS = stage === 2 ? KEYS2 : KEYS1;
+if (!(stage === 1 || stage === 2 || stage === 3) || !ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1 || (arg('sx', '') && !SXM)) {
+  console.error('usage: levers.js --stage=1|2|3 --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--list=FILE] [--frozen] [--sx=main] [--gzip]'); process.exit(1); }
+const lo = +m[1], hi = +m[2], t0 = Date.now(), KEYS = (stage === 2 ? KEYS2 : KEYS1).concat(FRZ ? [].concat(...SEC_F.map(k => (stage === 2 ? ['X'] : ['A', 'P', 'X']).map(g => k + g))) : []);
+const FLAGS = [].concat(FRZ ? ['--frozen'] : [], SXM ? ['--sx=main'] : [], GZ ? ['--gzip'] : []), CMD = (e, a, b) => 'node runner/jobs/levers.js --stage=' + stage + ' --env=' + e + ' --seeds=' + a + '-' + b + (FLAGS.length ? ' ' + FLAGS.join(' ') : '');
 if (procs > 1 && (ENVS.length > 1 || hi > lo)) {
   /* pieces: each environment on its own, its seeds cut into floor(procs / environments) contiguous chunks (at least one) */
   const cp = require('child_process'), parts = [], per = Math.max(1, Math.floor(procs/ENVS.length));
   ENVS.forEach(e => { const n0 = hi - lo + 1, k = Math.min(per, n0); let s0 = lo;
     for (let i = 0; i < k; i++) { const c = Math.floor(n0/k) + (i < n0 % k ? 1 : 0); parts.push({env: e, from: s0, to: s0 + c - 1, file: out.replace(/\.json$/, '') + '.part' + parts.length + '.json'}); s0 += c; } });
-  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--stage=' + stage, '--env=' + q.env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file].concat(arg('list') ? ['--list=' + arg('list')] : []), {stdio: 'inherit'});
+  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--stage=' + stage, '--env=' + q.env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file].concat(arg('list') ? ['--list=' + arg('list')] : [], FLAGS), {stdio: 'inherit'});
     c.on('exit', code => code === 0 ? ok() : no(new Error('piece ' + q.env + ' ' + q.from + '-' + q.to + ' exited ' + code))); }));
   Promise.all(kids).then(() => {
     const D = parts.map(q => JSON.parse(fs.readFileSync(q.file, 'utf8'))), o = D[0];
-    o._meta.env = env; o._meta.seeds = [lo, hi]; o._meta.command = 'node runner/jobs/levers.js --stage=' + stage + ' --env=' + env + ' --seeds=' + lo + '-' + hi; const J = {};
+    o._meta.env = env; o._meta.seeds = [lo, hi]; o._meta.command = CMD(env, lo, hi); const J = {};
     ENVS.forEach(e => { const P = parts.map((q, i) => [q, D[i]]).filter(x => x[0].env === e);
       Object.keys(P[0][1].rows).forEach(r => { J[r] = {}; Object.keys(P[0][1].rows[r]).forEach(key => { J[r][key] = [].concat(...P.map(x => x[1].rows[r][key])); }); }); });
     o.rows = J;
@@ -199,13 +208,14 @@ if (procs > 1 && (ENVS.length > 1 || hi > lo)) {
   const H = require(path.join(process.cwd(), 'harness.js'));
   const svN = H.applyNR6(), svG = H.tbSetG(H.TB_PROFILE_G);
   const o = {_meta: {what: 'S54 policy-levers study, stage ' + stage + ' (prereg/2026-11-levers-addendum.md, study N): per-seed values', stage, env, seeds: [lo, hi], adults: 500, years: 20, keys: KEYS,
-    manifest: H.runManifest(), command: 'node runner/jobs/levers.js --stage=' + stage + ' --env=' + env + ' --seeds=' + lo + '-' + hi}, rows: {}};
+    manifest: H.runManifest(), command: CMD(env, lo, hi), frozen: FRZ ? H.FROZEN : null, sx: SXM ? 'main' : null}, rows: {}};
   if (stage === 2) o._meta.design = design();
   if (stage === 3) o._meta.list = list3();
   try {
     ENVS.forEach(e => {
       const P = Object.assign({}, H[ENVN[e]], {years: 20, nAgents: 500}), so = Object.assign({fin: 'tax', aT: 0, a: 0, X: 0, sc: H.SPEND_SOURCED, sec: true}, H.REL_V52_STUDY);
-      const R0 = rows(H, P, stage), R = H.tbStudy(R0.map(r => r[1]), hi, P, so, lo);
+      if (SXM) P.sx = {};  /* as shock.js's main path: the environment's and every row's p.sx */
+      const R0 = rows(H, P, stage), R = H.tbStudy(R0.map(r => { let c = r[1]; if (SXM) c.p = Object.assign({}, c.p, {sx: {}}); if (FRZ) c = H.frozenRow(c); return c; }), hi, P, so, lo);
       R0.forEach((r, i) => { const v = {}; KEYS.forEach(k => { if (R[i]._s[k]) v[k] = Array.from(R[i]._s[k]); }); o.rows[e + '.' + r[0]] = v; });
     });
   } finally { H.resetNR6(svN); H.tbSetG(svG); }
