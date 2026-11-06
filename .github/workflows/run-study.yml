@@ -140,13 +140,15 @@ jobs:
         run: |
           mkdir -p "$DIR"; cp collected/* "$DIR"/
           node runner/check-shards.js "$DIR" "$MATRIX" "$ENGINE" || exit 1
+          # S47 (run manifest section 6 item 7): a job run with --gzip has its checked shard files compressed (gzip -n: no name or time stamp, so the bytes repeat).
+          case " $JOB_ARGS " in *" --gzip "*) for f in "$DIR"/shard-*.json; do case "$f" in *.timing.json) ;; *) gzip -n -9 "$f" ;; esac; done ;; esac
           {
             echo "study $STUDY; engine $ENGINE; runner commit $GITHUB_SHA of $GITHUB_REPOSITORY; node $NODE_VERSION; GitHub-hosted ubuntu-latest, $SHARDS shard(s); $(date -u +%FT%TZ)"
             echo "workflow run: $RUN_URL"
             echo "command per shard (in a clean checkout of the engine commit): node runner/jobs/$JOB $JOB_ARGS --seeds=A-B --out=shard-NNNN.json   (seeds $SEEDS cut into $SHARDS contiguous ranges)"
             echo "checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover $SEEDS once"
           } > "$DIR/run.txt"
-          ( cd "$DIR" && sha256sum shard-*.json shard-*.timing.json shard-*.log > SHA256SUMS )
+          ( cd "$DIR" && sha256sum shard-* > SHA256SUMS )
           date -u +%FT%TZ > "$DIR/DONE"
           { echo "### $DIR"; echo; echo "| shard | seconds | s per seed | peak MB |"; echo "|---|---|---|---|"
             for f in "$DIR"/shard-*.timing.json; do node -e 'const t=require(process.argv[1]);console.log("| "+process.argv[1].replace(/.*shard-(\d+).*/,"$1")+" | "+t.seconds+" | "+t.secondsPerSeed+" | "+t.peakRssMB+" |")' "$PWD/$f"; done; } >> "$GITHUB_STEP_SUMMARY"

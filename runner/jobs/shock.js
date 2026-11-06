@@ -18,6 +18,7 @@
 const fs = require('fs'), path = require('path');
 const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', st: 'STRESS_TEST'};
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
+const FRZ = process.argv.includes('--frozen');  /* S47 (run manifest section 6 item 7): the S48 batch's version: every row, the no-programme rows included, on the frozen engine (harness.js frozenRow: au, fx, the share 0.877); study option sec with the security outputs and the S19 series (manifest section 4, O); the per-year keys only to the run's 20 years */
 
 const PATHS = {off: {E: 0}, main: {}, e246: {E: 0.246}, e373: {E: 0.373}, e655: {E: 0.655}, k51: {keep: 0.51}, k100: {keep: 1}};
 /* PTF readings under the main path: m x s at kap 50, pool 1 (12); kap 0 at s 25, 50, 100 (3); pool 3 at s 0, 50 (2). Other shocked paths: the main reading and s 50. */
@@ -54,12 +55,12 @@ if (process.argv.includes('--check')) {
 
 const env = arg('env', 'ref'), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
 const ENVS = env === 'all' ? ['ref', 'adv', 'st'] : [env];
-if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: shock.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
+if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: shock.js --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--frozen]'); process.exit(1); }
 const lo = +m[1], hi = +m[2], t0 = Date.now();
 if (procs > 1 && hi > lo) {
   const cp = require('child_process'), k = Math.min(procs, hi - lo + 1), n0 = hi - lo + 1, parts = []; let s0 = lo;
   for (let i = 0; i < k; i++) { const c = Math.floor(n0/k) + (i < n0 % k ? 1 : 0); parts.push({from: s0, to: s0 + c - 1, file: out.replace(/\.json$/, '') + '.part' + i + '.json'}); s0 += c; }
-  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--env=' + env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file], {stdio: 'inherit'});
+  const kids = parts.map(q => new Promise((ok, no) => { const c = cp.spawn(process.execPath, [__filename, '--env=' + env, '--seeds=' + q.from + '-' + q.to, '--out=' + q.file].concat(FRZ ? ['--frozen'] : []), {stdio: 'inherit'});
     c.on('exit', code => code === 0 ? ok() : no(new Error('piece ' + q.from + '-' + q.to + ' exited ' + code))); }));
   Promise.all(kids).then(() => {
     const D = parts.map(q => JSON.parse(fs.readFileSync(q.file, 'utf8'))), o = D[0];
@@ -73,13 +74,14 @@ if (procs > 1 && hi > lo) {
   }).catch(e => { console.error(e.message); process.exit(1); });
 } else {
   const H = require(path.join(process.cwd(), 'harness.js'));
-  const svN = H.applyNR6(), svG = H.tbSetG(H.TB_PROFILE_G), ALLK = KEYS.concat(H.SX_KEYS, H.TB_PLV_KEYS.slice(0, 20));
-  const o = {_meta: {what: 'S52 outside supply-shock study (prereg/2026-11-supply-shock-addendum.md): per-seed values', env, seeds: [lo, hi], adults: 500, years: 20, keys: ALLK, manifest: H.runManifest(),
-    command: 'node runner/jobs/shock.js --env=' + env + ' --seeds=' + lo + '-' + hi}, rows: {}};
+  const svN = H.applyNR6(), svG = H.tbSetG(H.TB_PROFILE_G), y20 = k => !/_\d+$/.test(k) || +k.split('_').pop() < 20;
+  const ALLK = FRZ ? KEYS.concat(H.SX_KEYS.filter(y20), H.TB_PLV_KEYS.slice(0, 20), H.SEC_KEYS, H.S19_KEYS.filter(y20)) : KEYS.concat(H.SX_KEYS, H.TB_PLV_KEYS.slice(0, 20));
+  const o = {_meta: {what: 'S52 outside supply-shock study (prereg/2026-11-supply-shock-addendum.md): per-seed values', env, seeds: [lo, hi], adults: 500, years: 20, keys: ALLK, manifest: H.runManifest(), frozen: FRZ ? H.FROZEN : null,
+    command: 'node runner/jobs/shock.js --env=' + env + ' --seeds=' + lo + '-' + hi + (FRZ ? ' --frozen' : '')}, rows: {}};
   try {
     ENVS.forEach(e => Object.keys(PATHS).forEach(q => {
-      const P = envFor(H, e, q), so = Object.assign({fin: 'tax', aT: 0, a: 0, X: 0, sc: H.SPEND_SOURCED}, H.REL_V52_STUDY);
-      const R0 = rows(H, P, q), R = H.tbStudy(R0.map(r => r[1]), hi, P, so, lo);
+      const P = envFor(H, e, q), so = Object.assign({fin: 'tax', aT: 0, a: 0, X: 0, sc: H.SPEND_SOURCED}, H.REL_V52_STUDY, FRZ ? {sec: true} : {});
+      const R0 = rows(H, P, q), R = H.tbStudy(R0.map(r => FRZ ? H.frozenRow(r[1]) : r[1]), hi, P, so, lo);
       R0.forEach((r, i) => { const v = {}; ALLK.forEach(k => { if (R[i]._s[k]) v[k] = Array.from(R[i]._s[k]); }); o.rows[e + '.' + r[0]] = v; });
     }));
   } finally { H.resetNR6(svN); H.tbSetG(svG); }
