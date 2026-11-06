@@ -1,0 +1,6 @@
+shard 82 seeds 411-415; 4 vCPU; 15 GB; node v22.22.0; 2026-11-06T10:13:13Z
+stage 2 st seeds 411-415: 3217.6 s (643.52 s a seed), peak memory 1881 MB
+stage 2 ref seeds 411-415: 3637.2 s (727.44 s a seed), peak memory 1880 MB
+stage 2 adv seeds 411-415: 3682.5 s (736.50 s a seed), peak memory 1883 MB
+stage 2 all seeds 411-415: 3682.9 s in 3 processes
+ended 2026-11-06T11:14:36Z

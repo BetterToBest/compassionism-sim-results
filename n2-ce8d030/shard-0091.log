@@ -1,0 +1,6 @@
+shard 91 seeds 456-460; 4 vCPU; 15 GB; node v22.22.0; 2026-11-06T10:45:09Z
+stage 2 st seeds 456-460: 3228.8 s (645.76 s a seed), peak memory 1888 MB
+stage 2 ref seeds 456-460: 3514.3 s (702.85 s a seed), peak memory 1882 MB
+stage 2 adv seeds 456-460: 3589.2 s (717.85 s a seed), peak memory 1893 MB
+stage 2 all seeds 456-460: 3589.6 s in 3 processes
+ended 2026-11-06T11:44:59Z
