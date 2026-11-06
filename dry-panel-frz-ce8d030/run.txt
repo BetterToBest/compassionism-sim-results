@@ -1,0 +1,4 @@
+study dry-panel-frz; engine ce8d030b8d16a752706c4ea2db71196e11e73831; runner commit 031861af380f4cfe2640703c601b754e42af29c1 of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 6 shard(s); 2026-11-06T02:14:00Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/42148276198
+command per shard (in a clean checkout of the engine commit): node runner/jobs/panel.js --n=2 --parts=1 --frozen --seeds=A-B --out=shard-NNNN.json   (seeds 1-6 cut into 6 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-6 once
