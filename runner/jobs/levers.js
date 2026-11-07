@@ -122,7 +122,7 @@ function levers1(H, d){
 /* Stage 3 (addendum amendment of Nov 5, 2026): the settings list written by compassionism-simulation dev/tools/s54_levers.py --select (default
  * runner/jobs/levers-stage3.json beside this script). Per design and wage: the no-programme row; every setting listed (a stage-1 lever name, or a stage-2
  * point hI or mT.S, rebuilt from the same seed-54 design); the chosen setting, if any, also with its .sv twin (and none.sv) and under today's joining rule (.asis). */
-function list3(){ return JSON.parse(fs.readFileSync(arg('list', path.join(__dirname, 'levers-stage3.json')), 'utf8')); }
+function list3(){ return JSON.parse(fs.readFileSync(path.resolve(__dirname, arg('list', 'levers-stage3.json')), 'utf8')); }  /* a bare name is read beside this script (the workflow allows no '/' in job_args); an absolute path is read as given */
 
 function rows(H, P, stage){
   const SC = H.SPEND_SOURCED, SN = {abawd: true, slope: true}, out = [];
