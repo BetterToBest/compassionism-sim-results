@@ -1,0 +1,6 @@
+shard 16 seeds 901-925; 4 vCPU; 15 GB; node v22.22.0; 2026-11-07T19:13:35Z
+stage 3 st seeds 901-925: 3923.6 s (156.94 s a seed), peak memory 865 MB
+stage 3 ref seeds 901-925: 4399.6 s (175.98 s a seed), peak memory 821 MB
+stage 3 adv seeds 901-925: 4446.8 s (177.87 s a seed), peak memory 834 MB
+stage 3 all seeds 901-925: 4447.4 s in 3 processes
+ended 2026-11-07T20:27:43Z

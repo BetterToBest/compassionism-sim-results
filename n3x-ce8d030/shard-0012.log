@@ -1,0 +1,6 @@
+shard 12 seeds 801-825; 4 vCPU; 15 GB; node v22.22.0; 2026-11-07T20:19:14Z
+stage 3 st seeds 801-825: 3614.4 s (144.58 s a seed), peak memory 822 MB
+stage 3 ref seeds 801-825: 4144.0 s (165.76 s a seed), peak memory 825 MB
+stage 3 adv seeds 801-825: 4215.3 s (168.61 s a seed), peak memory 815 MB
+stage 3 all seeds 801-825: 4215.8 s in 3 processes
+ended 2026-11-07T21:29:30Z

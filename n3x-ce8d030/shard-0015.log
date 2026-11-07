@@ -1,0 +1,6 @@
+shard 15 seeds 876-900; 4 vCPU; 15 GB; node v22.22.0; 2026-11-07T20:28:41Z
+stage 3 st seeds 876-900: 3702.9 s (148.12 s a seed), peak memory 838 MB
+stage 3 ref seeds 876-900: 4430.8 s (177.23 s a seed), peak memory 812 MB
+stage 3 adv seeds 876-900: 4524.3 s (180.97 s a seed), peak memory 819 MB
+stage 3 all seeds 876-900: 4524.8 s in 3 processes
+ended 2026-11-07T21:44:06Z
