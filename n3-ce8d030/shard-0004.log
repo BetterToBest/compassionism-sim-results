@@ -1,0 +1,6 @@
+shard 4 seeds 701-750; 4 vCPU; 15 GB; node v22.22.0; 2026-11-07T19:13:47Z
+stage 3 st seeds 701-750: 5144.1 s (102.88 s a seed), peak memory 681 MB
+stage 3 ref seeds 701-750: 5859.0 s (117.18 s a seed), peak memory 701 MB
+stage 3 adv seeds 701-750: 6036.9 s (120.74 s a seed), peak memory 723 MB
+stage 3 all seeds 701-750: 6037.5 s in 3 processes
+ended 2026-11-07T20:54:25Z
