@@ -1,0 +1,6 @@
+derived from panel-ce8d030 (published engine) and panel-frz-ce8d030 (frozen engine, with the C2.2 design as row c22); engine ce8d030b8d16a752706c4ea2db71196e11e73831; merged Nov 8, 2026 (S48 part 3) with compassionism-simulation tools at main 4997b17, in a scratch copy (never on main)
+each folder's 30 shards are (environment ref, adv, st) x (20, 40 years) x (piece 0-4), in that order (runner/jobs/panel.js); for each environment and horizon:
+  python3 dev/tools/merge_parts.py IN ENV YEARS 5 dev/runs/release-panel[-40]-ENV.json   (IN holds that horizon's pieces as release-panel[-40]-ENV.partI.json)
+then: python3 dev/tools/merge_panel.py ; python3 dev/tools/merge_panel.py 40   (writes dev/runs/release-panel.json and release-panel-40.json, copied here as release-panel[-40]-published.json and -frozen.json)
+checks: merge_parts found one build, every row and no-programme run, and rows in more than one piece identical; 51 rows per environment (published), 52 (frozen); 21 no-programme pairs
+X check: the 2,160 yearly means in x-ce8d030 (6 environment-horizons x base, c22, release x f0, pov, bO, medW) equal the frozen panel's paths exactly: explore_export.js self-check (1), applied to the means the X shards stored (compassionism-simulation dev/tools/x_panel_check.js)
