@@ -1,0 +1,55 @@
+shard 2 seeds 101-150; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:49:21Z
+ref 500 adults 20 years: 15.5 s
+ref 500 adults 20 years: 16.16 s
+ref 500 adults 20 years: 16.28 s
+ref 500 adults 20 years: 16.67 s
+ref 500 adults 40 years: 22.23 s
+ref 500 adults 40 years: 22.88 s
+ref 500 adults 40 years: 24.96 s
+ref 500 adults 40 years: 26.03 s
+ref 10000 adults 20 years: 275.1 s
+ref 10000 adults 20 years: 277.33 s
+ref 10000 adults 20 years: 296.46 s
+ref 10000 adults 20 years: 296.13 s
+ref 10000 adults 40 years: 526.73 s
+ref 10000 adults 40 years: 530.22 s
+adv 500 adults 20 years: 13.22 s
+adv 500 adults 20 years: 12.5 s
+adv 500 adults 40 years: 23.31 s
+adv 500 adults 40 years: 24.46 s
+ref 10000 adults 40 years: 571.05 s
+ref 10000 adults 40 years: 575.5 s
+adv 500 adults 20 years: 13.21 s
+adv 500 adults 20 years: 13.9 s
+adv 500 adults 40 years: 26.52 s
+adv 500 adults 40 years: 25.69 s
+adv 10000 adults 20 years: 290.29 s
+adv 10000 adults 20 years: 291.51 s
+adv 10000 adults 20 years: 308.24 s
+adv 10000 adults 20 years: 315.32 s
+adv 10000 adults 40 years: 536.95 s
+adv 10000 adults 40 years: 536.27 s
+st 500 adults 20 years: 8.77 s
+st 500 adults 20 years: 8.41 s
+st 500 adults 40 years: 17.93 s
+st 500 adults 40 years: 19.01 s
+adv 10000 adults 40 years: 580.84 s
+st 500 adults 20 years: 10.53 s
+adv 10000 adults 40 years: 595.15 s
+st 500 adults 40 years: 19.4 s
+st 500 adults 20 years: 10.03 s
+st 500 adults 40 years: 18.85 s
+st 10000 adults 20 years: 221.63 s
+st 10000 adults 20 years: 226.19 s
+st 10000 adults 20 years: 243.24 s
+st 10000 adults 20 years: 246.9 s
+st 10000 adults 40 years: 422.3 s
+study T all seeds 127-138: 2374.1 s, peak memory 438 MB
+st 10000 adults 40 years: 429.63 s
+study T all seeds 139-150: 2394.8 s, peak memory 433 MB
+st 10000 adults 40 years: 385.88 s
+study T all seeds 114-126: 2496.6 s, peak memory 428 MB
+st 10000 adults 40 years: 385.66 s
+study T all seeds 101-113: 2525.9 s, peak memory 469 MB
+study T all seeds 101-150: 2526.0 s in 4 processes
+ended 2026-11-08T13:31:27Z

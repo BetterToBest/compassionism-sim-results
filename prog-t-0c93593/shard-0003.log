@@ -1,0 +1,55 @@
+shard 3 seeds 151-200; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:54:22Z
+ref 500 adults 20 years: 16.82 s
+ref 500 adults 20 years: 16.87 s
+ref 500 adults 20 years: 16.91 s
+ref 500 adults 20 years: 17.99 s
+ref 500 adults 40 years: 23.35 s
+ref 500 adults 40 years: 25.44 s
+ref 500 adults 40 years: 26.43 s
+ref 500 adults 40 years: 25.59 s
+ref 10000 adults 20 years: 293.01 s
+ref 10000 adults 20 years: 292.68 s
+ref 10000 adults 20 years: 313.98 s
+ref 10000 adults 20 years: 314.68 s
+ref 10000 adults 40 years: 539.04 s
+ref 10000 adults 40 years: 539.32 s
+adv 500 adults 20 years: 12.45 s
+adv 500 adults 20 years: 11.72 s
+adv 500 adults 40 years: 22.35 s
+adv 500 adults 40 years: 23.38 s
+ref 10000 adults 40 years: 583.92 s
+ref 10000 adults 40 years: 585.67 s
+adv 500 adults 20 years: 13.59 s
+adv 500 adults 20 years: 12.65 s
+adv 500 adults 40 years: 25.7 s
+adv 500 adults 40 years: 25.02 s
+adv 10000 adults 20 years: 292.09 s
+adv 10000 adults 20 years: 296.12 s
+adv 10000 adults 20 years: 315.63 s
+adv 10000 adults 20 years: 316.53 s
+adv 10000 adults 40 years: 547.85 s
+st 500 adults 20 years: 9.58 s
+adv 10000 adults 40 years: 558.75 s
+st 500 adults 20 years: 10.4 s
+st 500 adults 40 years: 19.19 s
+st 500 adults 40 years: 18.76 s
+adv 10000 adults 40 years: 597.27 s
+adv 10000 adults 40 years: 600.82 s
+st 500 adults 20 years: 10.39 s
+st 500 adults 20 years: 11.01 s
+st 500 adults 40 years: 20.09 s
+st 500 adults 40 years: 19.87 s
+st 10000 adults 20 years: 231.36 s
+st 10000 adults 20 years: 230.07 s
+st 10000 adults 20 years: 245.78 s
+st 10000 adults 20 years: 245.13 s
+st 10000 adults 40 years: 420.82 s
+study T all seeds 189-200: 2430.4 s, peak memory 433 MB
+st 10000 adults 40 years: 423.33 s
+study T all seeds 177-188: 2444.6 s, peak memory 447 MB
+st 10000 adults 40 years: 383.27 s
+study T all seeds 164-176: 2555.0 s, peak memory 427 MB
+st 10000 adults 40 years: 383.55 s
+study T all seeds 151-163: 2556.7 s, peak memory 439 MB
+study T all seeds 151-200: 2556.8 s in 4 processes
+ended 2026-11-08T13:36:59Z

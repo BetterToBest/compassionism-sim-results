@@ -1,0 +1,55 @@
+shard 4 seeds 201-250; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:45:02Z
+ref 500 adults 20 years: 20.73 s
+ref 500 adults 20 years: 21.39 s
+ref 500 adults 20 years: 22.52 s
+ref 500 adults 20 years: 22.57 s
+ref 500 adults 40 years: 31.4 s
+ref 500 adults 40 years: 31.49 s
+ref 500 adults 40 years: 34.18 s
+ref 500 adults 40 years: 36.1 s
+ref 10000 adults 20 years: 341.14 s
+ref 10000 adults 20 years: 341.68 s
+ref 10000 adults 20 years: 367.43 s
+ref 10000 adults 20 years: 369.69 s
+ref 10000 adults 40 years: 633.66 s
+ref 10000 adults 40 years: 639.58 s
+adv 500 adults 20 years: 17.33 s
+adv 500 adults 20 years: 17.32 s
+adv 500 adults 40 years: 30.62 s
+adv 500 adults 40 years: 32.6 s
+ref 10000 adults 40 years: 688.92 s
+ref 10000 adults 40 years: 693.74 s
+adv 500 adults 20 years: 18.87 s
+adv 500 adults 20 years: 18.52 s
+adv 500 adults 40 years: 35.03 s
+adv 500 adults 40 years: 35.74 s
+adv 10000 adults 20 years: 345.38 s
+adv 10000 adults 20 years: 349.46 s
+adv 10000 adults 20 years: 374.66 s
+adv 10000 adults 20 years: 372.44 s
+adv 10000 adults 40 years: 646.08 s
+adv 10000 adults 40 years: 647.47 s
+st 500 adults 20 years: 12.81 s
+st 500 adults 20 years: 13.67 s
+st 500 adults 40 years: 24.15 s
+st 500 adults 40 years: 24.52 s
+adv 10000 adults 40 years: 698.61 s
+adv 10000 adults 40 years: 703.45 s
+st 500 adults 20 years: 14.3 s
+st 500 adults 20 years: 13.65 s
+st 500 adults 40 years: 27.41 s
+st 500 adults 40 years: 26.05 s
+st 10000 adults 20 years: 266.55 s
+st 10000 adults 20 years: 268 s
+st 10000 adults 20 years: 289.48 s
+st 10000 adults 20 years: 293.3 s
+st 10000 adults 40 years: 503.38 s
+study T all seeds 227-238: 2874.7 s, peak memory 445 MB
+st 10000 adults 40 years: 511.77 s
+study T all seeds 239-250: 2897.8 s, peak memory 453 MB
+st 10000 adults 40 years: 449.08 s
+study T all seeds 214-226: 3025.5 s, peak memory 431 MB
+st 10000 adults 40 years: 451.43 s
+study T all seeds 201-213: 3032.0 s, peak memory 424 MB
+study T all seeds 201-250: 3032.1 s in 4 processes
+ended 2026-11-08T13:35:34Z

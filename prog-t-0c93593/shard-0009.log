@@ -1,0 +1,55 @@
+shard 9 seeds 451-500; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:58:10Z
+ref 500 adults 20 years: 21.34 s
+ref 500 adults 20 years: 21.49 s
+ref 500 adults 20 years: 21.94 s
+ref 500 adults 20 years: 23.4 s
+ref 500 adults 40 years: 31.35 s
+ref 500 adults 40 years: 31.97 s
+ref 500 adults 40 years: 34.28 s
+ref 500 adults 40 years: 34.52 s
+ref 10000 adults 20 years: 339.14 s
+ref 10000 adults 20 years: 343.93 s
+ref 10000 adults 20 years: 365.41 s
+ref 10000 adults 20 years: 367.85 s
+ref 10000 adults 40 years: 628.1 s
+ref 10000 adults 40 years: 631.31 s
+adv 500 adults 20 years: 17.61 s
+adv 500 adults 20 years: 16.67 s
+adv 500 adults 40 years: 31.1 s
+adv 500 adults 40 years: 31.5 s
+ref 10000 adults 40 years: 685.5 s
+ref 10000 adults 40 years: 685.36 s
+adv 500 adults 20 years: 19.14 s
+adv 500 adults 20 years: 18.89 s
+adv 500 adults 40 years: 32.83 s
+adv 500 adults 40 years: 33.99 s
+adv 10000 adults 20 years: 349.99 s
+adv 10000 adults 20 years: 357.21 s
+adv 10000 adults 20 years: 375.95 s
+adv 10000 adults 20 years: 377.17 s
+adv 10000 adults 40 years: 646.57 s
+st 500 adults 20 years: 12.73 s
+adv 10000 adults 40 years: 660.42 s
+st 500 adults 40 years: 24.43 s
+st 500 adults 20 years: 12.79 s
+st 500 adults 40 years: 25.08 s
+adv 10000 adults 40 years: 702.44 s
+adv 10000 adults 40 years: 702.66 s
+st 500 adults 20 years: 14.45 s
+st 500 adults 20 years: 14.81 s
+st 500 adults 40 years: 26.63 s
+st 500 adults 40 years: 27.4 s
+st 10000 adults 20 years: 268.06 s
+st 10000 adults 20 years: 272.55 s
+st 10000 adults 20 years: 291.54 s
+st 10000 adults 20 years: 294.65 s
+st 10000 adults 40 years: 514.28 s
+study T all seeds 489-500: 2885.0 s, peak memory 429 MB
+st 10000 adults 40 years: 512.51 s
+study T all seeds 477-488: 2917.4 s, peak memory 432 MB
+st 10000 adults 40 years: 454.43 s
+study T all seeds 464-476: 3027.6 s, peak memory 428 MB
+st 10000 adults 40 years: 453.74 s
+study T all seeds 451-463: 3031.7 s, peak memory 440 MB
+study T all seeds 451-500: 3031.8 s in 4 processes
+ended 2026-11-08T13:48:42Z

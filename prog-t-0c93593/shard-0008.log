@@ -1,0 +1,55 @@
+shard 8 seeds 401-450; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:48:25Z
+ref 500 adults 20 years: 13.8 s
+ref 500 adults 20 years: 13.82 s
+ref 500 adults 20 years: 13.93 s
+ref 500 adults 20 years: 14.31 s
+ref 500 adults 40 years: 18.15 s
+ref 500 adults 40 years: 18.19 s
+ref 500 adults 40 years: 19.27 s
+ref 500 adults 40 years: 19.96 s
+ref 10000 adults 20 years: 245.6 s
+ref 10000 adults 20 years: 247.95 s
+ref 10000 adults 20 years: 264.85 s
+ref 10000 adults 20 years: 264.06 s
+ref 10000 adults 40 years: 470.7 s
+ref 10000 adults 40 years: 474.36 s
+adv 500 adults 20 years: 10.44 s
+adv 500 adults 20 years: 10.51 s
+adv 500 adults 40 years: 17.78 s
+adv 500 adults 40 years: 18.5 s
+ref 10000 adults 40 years: 510.29 s
+ref 10000 adults 40 years: 515.64 s
+adv 500 adults 20 years: 11.35 s
+adv 500 adults 20 years: 11.88 s
+adv 500 adults 40 years: 20.78 s
+adv 500 adults 40 years: 19.95 s
+adv 10000 adults 20 years: 252.49 s
+adv 10000 adults 20 years: 256.7 s
+adv 10000 adults 20 years: 270.83 s
+adv 10000 adults 20 years: 271.63 s
+adv 10000 adults 40 years: 464.5 s
+st 500 adults 20 years: 7.98 s
+adv 10000 adults 40 years: 474.6 s
+st 500 adults 40 years: 14.53 s
+st 500 adults 20 years: 7.63 s
+st 500 adults 40 years: 15.9 s
+adv 10000 adults 40 years: 510.83 s
+adv 10000 adults 40 years: 513.35 s
+st 500 adults 20 years: 9 s
+st 500 adults 20 years: 8.5 s
+st 500 adults 40 years: 15.64 s
+st 500 adults 40 years: 15.75 s
+st 10000 adults 20 years: 199.91 s
+st 10000 adults 20 years: 200.96 s
+st 10000 adults 20 years: 207.66 s
+st 10000 adults 20 years: 206.65 s
+st 10000 adults 40 years: 358.82 s
+study T all seeds 439-450: 2075.0 s, peak memory 430 MB
+st 10000 adults 40 years: 352.54 s
+study T all seeds 427-438: 2091.7 s, peak memory 427 MB
+st 10000 adults 40 years: 320.52 s
+study T all seeds 414-426: 2175.3 s, peak memory 431 MB
+st 10000 adults 40 years: 318.66 s
+study T all seeds 401-413: 2180.0 s, peak memory 430 MB
+study T all seeds 401-450: 2180.1 s in 4 processes
+ended 2026-11-08T13:24:45Z

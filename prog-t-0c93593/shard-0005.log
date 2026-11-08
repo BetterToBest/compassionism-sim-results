@@ -1,0 +1,55 @@
+shard 5 seeds 251-300; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:37:14Z
+ref 500 adults 20 years: 15.48 s
+ref 500 adults 20 years: 15.95 s
+ref 500 adults 20 years: 16.66 s
+ref 500 adults 20 years: 17.42 s
+ref 500 adults 40 years: 23.52 s
+ref 500 adults 40 years: 25.59 s
+ref 500 adults 40 years: 24.97 s
+ref 500 adults 40 years: 26.63 s
+ref 10000 adults 20 years: 285.27 s
+ref 10000 adults 20 years: 288.49 s
+ref 10000 adults 20 years: 306.56 s
+ref 10000 adults 20 years: 310.06 s
+ref 10000 adults 40 years: 521.51 s
+adv 500 adults 20 years: 11.49 s
+ref 10000 adults 40 years: 531.24 s
+adv 500 adults 20 years: 12.99 s
+adv 500 adults 40 years: 23.06 s
+adv 500 adults 40 years: 25.11 s
+ref 10000 adults 40 years: 562.61 s
+ref 10000 adults 40 years: 569.74 s
+adv 500 adults 20 years: 12.42 s
+adv 500 adults 20 years: 13.51 s
+adv 500 adults 40 years: 26.26 s
+adv 500 adults 40 years: 25.02 s
+adv 10000 adults 20 years: 285.25 s
+adv 10000 adults 20 years: 287.59 s
+adv 10000 adults 20 years: 311.95 s
+adv 10000 adults 20 years: 308.38 s
+adv 10000 adults 40 years: 522.96 s
+st 500 adults 20 years: 9.65 s
+st 500 adults 40 years: 17.15 s
+adv 10000 adults 40 years: 532.7 s
+st 500 adults 20 years: 9.34 s
+st 500 adults 40 years: 18.26 s
+adv 10000 adults 40 years: 575.19 s
+adv 10000 adults 40 years: 585.15 s
+st 500 adults 20 years: 11.05 s
+st 500 adults 20 years: 10.28 s
+st 500 adults 40 years: 20.07 s
+st 500 adults 40 years: 19.18 s
+st 10000 adults 20 years: 223.31 s
+st 10000 adults 20 years: 226.23 s
+st 10000 adults 20 years: 237.53 s
+st 10000 adults 20 years: 243.82 s
+st 10000 adults 40 years: 418.7 s
+study T all seeds 277-288: 2357.9 s, peak memory 453 MB
+st 10000 adults 40 years: 424.6 s
+study T all seeds 289-300: 2397.7 s, peak memory 429 MB
+st 10000 adults 40 years: 388.96 s
+study T all seeds 264-276: 2501.2 s, peak memory 450 MB
+st 10000 adults 40 years: 387.58 s
+study T all seeds 251-263: 2510.0 s, peak memory 426 MB
+study T all seeds 251-300: 2510.1 s in 4 processes
+ended 2026-11-08T13:19:04Z

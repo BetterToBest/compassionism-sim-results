@@ -1,0 +1,55 @@
+shard 0 seeds 1-50; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T12:45:19Z
+ref 500 adults 20 years: 15.59 s
+ref 500 adults 20 years: 17.04 s
+ref 500 adults 20 years: 17.31 s
+ref 500 adults 20 years: 17.68 s
+ref 500 adults 40 years: 23.86 s
+ref 500 adults 40 years: 23.68 s
+ref 500 adults 40 years: 25.8 s
+ref 500 adults 40 years: 26.36 s
+ref 10000 adults 20 years: 252.43 s
+ref 10000 adults 20 years: 253.73 s
+ref 10000 adults 20 years: 271.59 s
+ref 10000 adults 20 years: 272.69 s
+ref 10000 adults 40 years: 465 s
+ref 10000 adults 40 years: 467 s
+adv 500 adults 20 years: 12.42 s
+adv 500 adults 20 years: 11.81 s
+adv 500 adults 40 years: 23.56 s
+adv 500 adults 40 years: 23.29 s
+ref 10000 adults 40 years: 506.1 s
+ref 10000 adults 40 years: 509.57 s
+adv 500 adults 20 years: 13.96 s
+adv 500 adults 20 years: 13.12 s
+adv 500 adults 40 years: 25.66 s
+adv 500 adults 40 years: 25.42 s
+adv 10000 adults 20 years: 249.76 s
+adv 10000 adults 20 years: 252.49 s
+adv 10000 adults 20 years: 269.99 s
+adv 10000 adults 20 years: 270.1 s
+adv 10000 adults 40 years: 470.98 s
+st 500 adults 20 years: 9.46 s
+adv 10000 adults 40 years: 478.76 s
+st 500 adults 20 years: 9.3 s
+st 500 adults 40 years: 18.12 s
+st 500 adults 40 years: 17.97 s
+adv 10000 adults 40 years: 513.67 s
+adv 10000 adults 40 years: 520.76 s
+st 500 adults 20 years: 9.9 s
+st 500 adults 20 years: 10.61 s
+st 500 adults 40 years: 20.13 s
+st 500 adults 40 years: 19.67 s
+st 10000 adults 20 years: 201.75 s
+st 10000 adults 20 years: 200.91 s
+st 10000 adults 20 years: 219.96 s
+st 10000 adults 20 years: 221.02 s
+st 10000 adults 40 years: 387.27 s
+study T all seeds 39-50: 2131.6 s, peak memory 430 MB
+st 10000 adults 40 years: 383.17 s
+study T all seeds 27-38: 2138.0 s, peak memory 428 MB
+st 10000 adults 40 years: 346.68 s
+study T all seeds 1-13: 2242.9 s, peak memory 431 MB
+st 10000 adults 40 years: 344.94 s
+study T all seeds 14-26: 2250.1 s, peak memory 449 MB
+study T all seeds 1-50: 2250.2 s in 4 processes
+ended 2026-11-08T13:22:49Z
