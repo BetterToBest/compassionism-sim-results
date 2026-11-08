@@ -1,0 +1,55 @@
+shard 1 seeds 51-100; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T10:44:14Z
+ref 2000 adults 20 years: 81.81 s
+ref 2000 adults 20 years: 81.99 s
+ref 2000 adults 20 years: 89.54 s
+ref 2000 adults 20 years: 89.82 s
+ref 2000 adults 40 years: 138.78 s
+ref 2000 adults 40 years: 139.19 s
+ref 2000 adults 40 years: 151.38 s
+ref 2000 adults 40 years: 152.4 s
+ref 10000 adults 20 years: 361.67 s
+ref 10000 adults 20 years: 363.05 s
+ref 10000 adults 20 years: 387.33 s
+ref 10000 adults 20 years: 393.52 s
+ref 10000 adults 40 years: 675.93 s
+ref 10000 adults 40 years: 677.97 s
+adv 2000 adults 20 years: 71.75 s
+adv 2000 adults 20 years: 72.33 s
+ref 10000 adults 40 years: 728.32 s
+ref 10000 adults 40 years: 730.86 s
+adv 2000 adults 20 years: 81.51 s
+adv 2000 adults 20 years: 84.13 s
+adv 2000 adults 40 years: 137.7 s
+adv 2000 adults 40 years: 138.11 s
+adv 2000 adults 40 years: 152.63 s
+adv 2000 adults 40 years: 152.47 s
+adv 10000 adults 20 years: 357.65 s
+adv 10000 adults 20 years: 363.52 s
+adv 10000 adults 20 years: 391.03 s
+adv 10000 adults 20 years: 391.22 s
+adv 10000 adults 40 years: 675.15 s
+adv 10000 adults 40 years: 686.93 s
+st 2000 adults 20 years: 54.91 s
+st 2000 adults 20 years: 55 s
+st 2000 adults 40 years: 104.24 s
+st 2000 adults 40 years: 105.3 s
+adv 10000 adults 40 years: 751.62 s
+adv 10000 adults 40 years: 742.88 s
+st 2000 adults 20 years: 60.58 s
+st 2000 adults 20 years: 63.2 s
+st 2000 adults 40 years: 115.43 s
+st 2000 adults 40 years: 116.52 s
+st 10000 adults 20 years: 279.15 s
+st 10000 adults 20 years: 284.25 s
+st 10000 adults 20 years: 308.75 s
+st 10000 adults 20 years: 310.77 s
+st 10000 adults 40 years: 524.01 s
+study VJ all seeds 77-88: 3465.2 s, peak memory 425 MB
+st 10000 adults 40 years: 530.15 s
+study VJ all seeds 89-100: 3495.8 s, peak memory 428 MB
+st 10000 adults 40 years: 450.63 s
+study VJ all seeds 51-63: 3668.9 s, peak memory 430 MB
+st 10000 adults 40 years: 445.51 s
+study VJ all seeds 64-76: 3673.5 s, peak memory 431 MB
+study VJ all seeds 51-100: 3673.6 s in 4 processes
+ended 2026-11-08T11:45:28Z

@@ -1,0 +1,55 @@
+shard 4 seeds 201-250; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T10:44:08Z
+ref 2000 adults 20 years: 72.6 s
+ref 2000 adults 20 years: 73.24 s
+ref 2000 adults 20 years: 78.48 s
+ref 2000 adults 20 years: 80.1 s
+ref 2000 adults 40 years: 125.74 s
+ref 2000 adults 40 years: 127.55 s
+ref 2000 adults 40 years: 139.25 s
+ref 2000 adults 40 years: 139.5 s
+ref 10000 adults 20 years: 333.16 s
+ref 10000 adults 20 years: 342.48 s
+ref 10000 adults 20 years: 366.14 s
+ref 10000 adults 20 years: 365.19 s
+ref 10000 adults 40 years: 656.24 s
+ref 10000 adults 40 years: 660.18 s
+adv 2000 adults 20 years: 73.52 s
+adv 2000 adults 20 years: 73.99 s
+ref 10000 adults 40 years: 717.1 s
+ref 10000 adults 40 years: 717.89 s
+adv 2000 adults 20 years: 79.18 s
+adv 2000 adults 20 years: 80.6 s
+adv 2000 adults 40 years: 133.8 s
+adv 2000 adults 40 years: 135.66 s
+adv 2000 adults 40 years: 141.38 s
+adv 2000 adults 40 years: 142.29 s
+adv 10000 adults 20 years: 345.87 s
+adv 10000 adults 20 years: 351.92 s
+adv 10000 adults 20 years: 384.69 s
+adv 10000 adults 20 years: 387.45 s
+adv 10000 adults 40 years: 680.59 s
+adv 10000 adults 40 years: 691.83 s
+st 2000 adults 20 years: 55.16 s
+st 2000 adults 20 years: 53.02 s
+st 2000 adults 40 years: 104.23 s
+st 2000 adults 40 years: 107.37 s
+adv 10000 adults 40 years: 744.91 s
+adv 10000 adults 40 years: 742.42 s
+st 2000 adults 20 years: 61.58 s
+st 2000 adults 20 years: 61.42 s
+st 2000 adults 40 years: 119.3 s
+st 2000 adults 40 years: 123.33 s
+st 10000 adults 20 years: 287.82 s
+st 10000 adults 20 years: 294.92 s
+st 10000 adults 20 years: 311.94 s
+st 10000 adults 20 years: 313.03 s
+st 10000 adults 40 years: 519.39 s
+study VJ all seeds 227-238: 3388.3 s, peak memory 446 MB
+st 10000 adults 40 years: 517.56 s
+study VJ all seeds 239-250: 3429.9 s, peak memory 436 MB
+st 10000 adults 40 years: 434.37 s
+study VJ all seeds 201-213: 3578.5 s, peak memory 437 MB
+st 10000 adults 40 years: 431.84 s
+study VJ all seeds 214-226: 3585.2 s, peak memory 458 MB
+study VJ all seeds 201-250: 3585.3 s in 4 processes
+ended 2026-11-08T11:43:54Z

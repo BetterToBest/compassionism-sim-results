@@ -1,0 +1,55 @@
+shard 8 seeds 401-450; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T10:45:02Z
+ref 2000 adults 20 years: 57.56 s
+ref 2000 adults 20 years: 59.6 s
+ref 2000 adults 20 years: 62.14 s
+ref 2000 adults 20 years: 62.18 s
+ref 2000 adults 40 years: 100.9 s
+ref 2000 adults 40 years: 102.63 s
+ref 2000 adults 40 years: 109.56 s
+ref 2000 adults 40 years: 112.26 s
+ref 10000 adults 20 years: 276.89 s
+ref 10000 adults 20 years: 277.53 s
+ref 10000 adults 20 years: 300.79 s
+ref 10000 adults 20 years: 303.65 s
+ref 10000 adults 40 years: 504.64 s
+ref 10000 adults 40 years: 507.85 s
+adv 2000 adults 20 years: 54.25 s
+adv 2000 adults 20 years: 56.38 s
+ref 10000 adults 40 years: 552.23 s
+ref 10000 adults 40 years: 555.08 s
+adv 2000 adults 20 years: 61.29 s
+adv 2000 adults 40 years: 99.76 s
+adv 2000 adults 20 years: 61.58 s
+adv 2000 adults 40 years: 103.5 s
+adv 2000 adults 40 years: 109.26 s
+adv 2000 adults 40 years: 113.61 s
+adv 10000 adults 20 years: 283.34 s
+adv 10000 adults 20 years: 283.82 s
+adv 10000 adults 20 years: 304.98 s
+adv 10000 adults 20 years: 308.52 s
+adv 10000 adults 40 years: 514.59 s
+adv 10000 adults 40 years: 518.48 s
+st 2000 adults 20 years: 38.42 s
+st 2000 adults 20 years: 40.53 s
+st 2000 adults 40 years: 75.39 s
+st 2000 adults 40 years: 75.28 s
+adv 10000 adults 40 years: 562.84 s
+adv 10000 adults 40 years: 567.91 s
+st 2000 adults 20 years: 43.92 s
+st 2000 adults 20 years: 44.78 s
+st 2000 adults 40 years: 83.88 s
+st 2000 adults 40 years: 81.82 s
+st 10000 adults 20 years: 221.42 s
+st 10000 adults 20 years: 220.88 s
+st 10000 adults 20 years: 241.66 s
+st 10000 adults 20 years: 245.11 s
+st 10000 adults 40 years: 417.92 s
+study VJ all seeds 427-438: 2645.2 s, peak memory 426 MB
+st 10000 adults 40 years: 421.52 s
+study VJ all seeds 439-450: 2668.1 s, peak memory 432 MB
+st 10000 adults 40 years: 377.03 s
+study VJ all seeds 401-413: 2809.7 s, peak memory 429 MB
+st 10000 adults 40 years: 373.6 s
+study VJ all seeds 414-426: 2830.2 s, peak memory 433 MB
+study VJ all seeds 401-450: 2830.3 s in 4 processes
+ended 2026-11-08T11:32:12Z

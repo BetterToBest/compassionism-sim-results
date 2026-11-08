@@ -1,0 +1,55 @@
+shard 6 seeds 301-350; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T10:43:00Z
+ref 2000 adults 20 years: 58.04 s
+ref 2000 adults 20 years: 59.03 s
+ref 2000 adults 20 years: 62.47 s
+ref 2000 adults 20 years: 62.92 s
+ref 2000 adults 40 years: 100.33 s
+ref 2000 adults 40 years: 101.66 s
+ref 2000 adults 40 years: 110.49 s
+ref 2000 adults 40 years: 110.45 s
+ref 10000 adults 20 years: 288.2 s
+ref 10000 adults 20 years: 291.4 s
+ref 10000 adults 20 years: 309 s
+ref 10000 adults 20 years: 314.6 s
+ref 10000 adults 40 years: 538.62 s
+ref 10000 adults 40 years: 540.67 s
+adv 2000 adults 20 years: 53.11 s
+adv 2000 adults 20 years: 53.38 s
+ref 10000 adults 40 years: 581.2 s
+ref 10000 adults 40 years: 590.07 s
+adv 2000 adults 20 years: 57.34 s
+adv 2000 adults 20 years: 59.35 s
+adv 2000 adults 40 years: 98.4 s
+adv 2000 adults 40 years: 98.29 s
+adv 2000 adults 40 years: 107.53 s
+adv 2000 adults 40 years: 107.9 s
+adv 10000 adults 20 years: 289.56 s
+adv 10000 adults 20 years: 292.34 s
+adv 10000 adults 20 years: 310.96 s
+adv 10000 adults 20 years: 313.08 s
+adv 10000 adults 40 years: 551.5 s
+adv 10000 adults 40 years: 551.14 s
+st 2000 adults 20 years: 42.43 s
+st 2000 adults 20 years: 44.33 s
+st 2000 adults 40 years: 78.95 s
+st 2000 adults 40 years: 80.18 s
+adv 10000 adults 40 years: 594.78 s
+adv 10000 adults 40 years: 591.24 s
+st 2000 adults 20 years: 46.92 s
+st 2000 adults 20 years: 47.35 s
+st 2000 adults 40 years: 86.41 s
+st 2000 adults 40 years: 85.26 s
+st 10000 adults 20 years: 228.28 s
+st 10000 adults 20 years: 233.73 s
+st 10000 adults 20 years: 242.13 s
+st 10000 adults 20 years: 248 s
+st 10000 adults 40 years: 417.5 s
+study VJ all seeds 327-338: 2752.7 s, peak memory 426 MB
+st 10000 adults 40 years: 420.17 s
+study VJ all seeds 339-350: 2758.8 s, peak memory 429 MB
+st 10000 adults 40 years: 372.54 s
+study VJ all seeds 301-313: 2881.9 s, peak memory 429 MB
+st 10000 adults 40 years: 361.38 s
+study VJ all seeds 314-326: 2891.7 s, peak memory 475 MB
+study VJ all seeds 301-350: 2891.8 s in 4 processes
+ended 2026-11-08T11:31:12Z

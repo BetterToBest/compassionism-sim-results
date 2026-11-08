@@ -1,0 +1,55 @@
+shard 0 seeds 1-50; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T10:42:55Z
+ref 2000 adults 20 years: 76.49 s
+ref 2000 adults 20 years: 76.81 s
+ref 2000 adults 20 years: 83.54 s
+ref 2000 adults 20 years: 85.5 s
+ref 2000 adults 40 years: 132.27 s
+ref 2000 adults 40 years: 132.37 s
+ref 2000 adults 40 years: 143.58 s
+ref 2000 adults 40 years: 145.29 s
+ref 10000 adults 20 years: 356.6 s
+ref 10000 adults 20 years: 360.08 s
+ref 10000 adults 20 years: 387.37 s
+ref 10000 adults 20 years: 393.42 s
+ref 10000 adults 40 years: 671.85 s
+ref 10000 adults 40 years: 676.15 s
+adv 2000 adults 20 years: 70.14 s
+adv 2000 adults 20 years: 73.16 s
+ref 10000 adults 40 years: 730.25 s
+ref 10000 adults 40 years: 746.46 s
+adv 2000 adults 20 years: 76.2 s
+adv 2000 adults 40 years: 133.22 s
+adv 2000 adults 40 years: 132.81 s
+adv 2000 adults 20 years: 77.79 s
+adv 2000 adults 40 years: 144.25 s
+adv 2000 adults 40 years: 145.2 s
+adv 10000 adults 20 years: 364.69 s
+adv 10000 adults 20 years: 363.67 s
+adv 10000 adults 20 years: 392.71 s
+adv 10000 adults 20 years: 406.76 s
+adv 10000 adults 40 years: 680.58 s
+adv 10000 adults 40 years: 680.64 s
+st 2000 adults 20 years: 54.02 s
+st 2000 adults 20 years: 54.36 s
+st 2000 adults 40 years: 102.93 s
+st 2000 adults 40 years: 104.67 s
+adv 10000 adults 40 years: 740.56 s
+st 2000 adults 20 years: 59.67 s
+adv 10000 adults 40 years: 761.19 s
+st 2000 adults 20 years: 60.23 s
+st 2000 adults 40 years: 112.95 s
+st 10000 adults 20 years: 282.32 s
+st 10000 adults 20 years: 283.8 s
+st 2000 adults 40 years: 114.85 s
+st 10000 adults 20 years: 304.58 s
+st 10000 adults 20 years: 320.86 s
+st 10000 adults 40 years: 526.83 s
+study VJ all seeds 27-38: 3461.2 s, peak memory 426 MB
+st 10000 adults 40 years: 533.32 s
+study VJ all seeds 39-50: 3462.9 s, peak memory 448 MB
+st 10000 adults 40 years: 447.82 s
+study VJ all seeds 1-13: 3623.6 s, peak memory 428 MB
+st 10000 adults 40 years: 418.53 s
+study VJ all seeds 14-26: 3676.2 s, peak memory 455 MB
+study VJ all seeds 1-50: 3676.4 s in 4 processes
+ended 2026-11-08T11:44:11Z
