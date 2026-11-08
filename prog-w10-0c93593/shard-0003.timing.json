@@ -1,0 +1,1 @@
+{"study":"W10","env":"all","seeds":25,"procs":4,"seconds":4711.52,"secondsPerSeed":188.461,"peakRssMB":449,"blocks":{"ref.n10000.y20":1738.73,"adv.n10000.y20":1771.68,"st.n10000.y20":1316.57},"node":"v22.22.0"}
