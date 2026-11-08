@@ -1,0 +1,5 @@
+study prog-r; engine ce8d030b8d16a752706c4ea2db71196e11e73831; runner commit fd6694192c8756520dc7fae8a283c053e64dda3e of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 5 shard(s); 2026-11-08T00:08:09Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/42160150701
+command per shard (in a clean checkout of the engine commit): node runner/jobs/program.js --study=R --env=all --procs=2 --seeds=A-B --out=shard-NNNN.json   (seeds 1-500 cut into 5 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-500 once
+finished by hand (S48 part 3, Nov 8, 2026): the workflow's last job could not push, because each shard file is over GitHub's 100 MB file limit. The shard artifacts of this run were downloaded (each zip's SHA-256 equal to the digest GitHub recorded), checked with runner/check-shards.js exactly as the last job does (passed), then compressed with gzip -n -9 as the workflow does for --gzip jobs (lossless; gunzip gives the run's bytes). No number was recomputed.
