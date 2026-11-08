@@ -6,7 +6,8 @@
  * below changes only what it names (the preregistration's Rows table).
  *
  * Run in an engine checkout (a clean worktree of the pinned commit):
- *   node RESULTS/runner/jobs/program.js --study=R|A|B|B10|C|D|D10|F|G|G10|H|I|J --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1]
+ *   node RESULTS/runner/jobs/program.js --study=R|A|B|B10|C|D|D10|F|G|G10|H|I|J|T|U|U10|V|V10|VJ|W|W10|Y --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1]
+ *     [--members]    (study T's pilot only: also the members-only release rows, to check the pairing with study A)
  *     [--sizes=500,2000] [--years=20,40]    (pilots only: a subset of the study's population sizes or horizons; the full batch uses the table's)
  *   node RESULTS/runner/jobs/program.js --check    (the row-count and equality checks; no output file)
  * A block is one environment, population and horizon (one tbStudy call). Rows are named ENV.nADULTS.yYEARS.ROW, where ROW is
@@ -28,6 +29,11 @@
  * PTF's starting share and .off the layer off. Their none rows come from studies B, B10 and A (same engine, same seeds).
  * Missing values are written as null, never 0 (manifest section 5): year-40 keys in 20-year rows; participation keys (jnP*) on none rows; ageing keys
  * without ageing (and the mean octave, octMean, on rows without CCO, where the C2.2 design's automatic receipt would count adults with no BU); S19 series past the run's end; the layer's keys without the layer; C2.2 keys without the C2.2 rules. */
+/* S55 part 2 (Nov 8, 2026; research-update prereg/2026-11-ptf-access-addendum.md): studies T, U, U10, V, V10, VJ, W, W10, Y run rows under open PTF access
+ * (row option pa). Their rows are the frozen batch's rows with pa added (--check confirms it): T the release row (A's main), U and U10 the 16 cells with PTF
+ * (B's, B10's), V the layer rows of G (16 cells), H and I, V10 G10's cells, VJ J's row, W the release row with every zone's share fixed (pa {fix}, growth off;
+ * rows .fixNN), Y the release row under the growth rule's swept settings (.open.d25, .d75, .d100, .capnone, .outside, .held). Every open row ends .open (before
+ * Y's setting); its none rows come from the frozen batch (the switch acts only where PTF is on). The access keys (PA_KEYS) are kept, with pfMem and pfCut. */
 const fs = require('fs'), path = require('path');
 const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', st: 'STRESS_TEST'};
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
@@ -46,13 +52,24 @@ const STUDY = {
   G10: {sizes: [10000], years: [20], yard: ['cps'], cells: 'G10', cl: true},
   H: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'H', cl: true},
   I: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'I', cl: true},
-  J: {sizes: [2000, 10000], years: [20, 40], yard: ['cps'], cells: 'J', cl: true}
+  J: {sizes: [2000, 10000], years: [20, 40], yard: ['cps'], cells: 'J', cl: true},
+  /* S55 part 2: open PTF access (research-update prereg/2026-11-ptf-access-addendum.md); src: the frozen-batch study whose rows each open row adds pa to */
+  T: {sizes: [500, 10000], years: [20, 40], yard: ['cps'], cells: 'T', pa: true, src: 'A'},
+  U: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'U', pa: true, src: 'B'},
+  U10: {sizes: [10000], years: [20], yard: ['cps'], cells: 'U', pa: true, src: 'B10'},
+  V: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'V', cl: true, pa: true, src: 'G,H,I'},
+  V10: {sizes: [10000], years: [20], yard: ['cps'], cells: 'V10', cl: true, pa: true, src: 'G10'},
+  VJ: {sizes: [2000, 10000], years: [20, 40], yard: ['cps'], cells: 'VJ', cl: true, pa: true, src: 'J'},
+  W: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'W', pa: true, src: 'A'},
+  W10: {sizes: [10000], years: [20], yard: ['cps'], cells: 'W', pa: true, src: 'A'},
+  Y: {sizes: [500], years: [20, 40], yard: ['cps'], cells: 'Y', pa: true, src: 'A'}
 };
 /* Designs per study (run manifest section 4). */
 const DESIGNS = s => s === 'D' || s === 'D10' ? ['rls'] : ['c22', 'rls'];
 /* Rows per environment, population and horizon (run manifest section 4: the preregistration's rows, built on both designs; D and D10 with the 2% and 5%
  * levels; A at 50,000 adults the C2.2 design only; R 21 rows per yardstick). */
-const MANIFEST_ROWS = {A: 12, A50: 6, B: 192, B10: 64, C: 12, D: 46, D10: 12, F: 12, R: 42, G: 36, G10: 32, H: 18, I: 12, J: 2};
+const MANIFEST_ROWS = {A: 12, A50: 6, B: 192, B10: 64, C: 12, D: 46, D10: 12, F: 12, R: 42, G: 36, G10: 32, H: 18, I: 12, J: 2,
+  T: 2, U: 32, U10: 32, V: 62, V10: 32, VJ: 2, W: 20, W10: 20, Y: 12};  /* S55: the access addendum's Studies table */
 const PARTS = ['C', 'F', 'H', 'Z', 'I'], PKEY = ['ccoOn', 'ptf', 'pth', 'szh', 'cip'];
 const cellName = b => PARTS.map((ch, i) => b[i] ? ch : ch.toLowerCase()).join('');
 const PGRID = [2, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90];  /* S47: 2% and 5% added (Amendment 9) */
@@ -65,13 +82,13 @@ const KEYS = ['bNAPy', 'bOAPy', 'bNA20', 'bOA20', 'pbO_19', 'pbO_39', 'fgt0PY', 
   'gPartF0', 'gNonF0', 'gPartW', 'gNonW', 'gPartRes', 'gNonRes', 'bNPPy', 'bNNPy', 'bOPPy', 'bONPy',
   'jnP5', 'jnP10', 'jnP19', 'emp', 'medWealthReal', 'octMean', 'agRet', 'agAge',
   'bNAy20', 'bOAy20'];  /* S47: the year-20 basic-living shares (in a 40-year run, the year-20 reading) */
-const Y40 = ['pbO_39', 'pf0_39', 'ppov_39', 'plv_39', 'hhDebt40'], PART_K = ['jnP5', 'jnP10', 'jnP19', 'octMean'], AGE_K = ['agRet', 'agAge'];
+const Y40 = ['pbO_39', 'pf0_39', 'ppov_39', 'plv_39', 'hhDebt40', 'paS39', 'paC39'], PART_K = ['jnP5', 'jnP10', 'jnP19', 'octMean'], AGE_K = ['agRet', 'agAge'];
 /* Keys a study adds (manifest section 5): the layer's under cl; R the security outputs (SEC_KEYS), the S19 series to the run's horizon and C2.2's keys. */
-const keysFor = (H, S, years) => KEYS.concat(S.cl ? H.CL_KEYS.concat(['pfMem', 'pfCut']) : [],
-  S.sec ? H.SEC_KEYS.concat(H.S19_KEYS.filter(k => +k.split('_').pop() < years), H.C22_KEYS) : [], S.sec ? [] : H.C22_KEYS);
+const keysFor = (H, S, years) => [...new Set(KEYS.concat(S.cl ? H.CL_KEYS.concat(['pfMem', 'pfCut']) : [], S.pa ? H.PA_KEYS.concat(['pfMem', 'pfCut']) : [],
+  S.sec ? H.SEC_KEYS.concat(H.S19_KEYS.filter(k => +k.split('_').pop() < years), H.C22_KEYS) : [], S.sec ? [] : H.C22_KEYS))];
 /* null, not 0, where a key has no meaning for the row (S35 report section 9 item 2) or is not produced by it (a key the row's switches do not report). */
 const nullKey = (k, name, years, S, H) => (years < 40 && Y40.includes(k)) || ((/(^|\.)none($|\.)/.test(name) || /\.c[FfHhZzIi]{4}(\.|$)/.test(name)) && PART_K.includes(k)) || (!S.age && AGE_K.includes(k));
-const OPTIONAL = H => new Set([].concat(H.CL_KEYS, ['pfMem', 'pfCut'], H.C22_KEYS, H.SEC_KEYS, H.S19_KEYS));
+const OPTIONAL = H => new Set([].concat(H.CL_KEYS, ['pfMem', 'pfCut'], H.C22_KEYS, H.SEC_KEYS, H.S19_KEYS, H.PA_KEYS || []));
 /* Study C: outcomes by age at joining (computed here from the engine's reporting hook; see ageJoin below). */
 const AJ_G = ['j25', 'j35', 'j50', 'j67', 'never'], AJ_M = ['N', 'Y', 'BN', 'F0', 'Pov'];
 const AJ_KEYS = ['ajMatch'].concat(...AJ_G.map(g => AJ_M.map(m => 'aj' + m + '_' + g)), ...AJ_G.map(g => ['BN', 'F0', 'Pov'].map(m => 'aj' + m + '0_' + g)));
@@ -111,6 +128,25 @@ function blockRows(H, S, P0, study) {
   const n50 = P0.nAgents >= 50000, designs = DESIGNS(study).filter(d => !(n50 && d === 'rls'));
   designs.forEach(d => {
     const D = d + '.';
+    if (S.pa) {  /* S55: open PTF access (the access addendum, Rows and Studies); CPS yardstick, raise off */
+      const op = (c, o) => { c.pa = o === undefined ? 'open' : o; return c; }, lay = c => { c.cl = {}; return c; };
+      const pc = (lyr, f) => { for (let m = 31; m >= 1; m--) { const b = bits(m); if (!b[1]) continue; const c = des(d, cellOf(P0, b)); add(D + 'cps.' + (m === 31 ? 'main' : cellName(b)) + (lyr ? '.lay' : '') + '.open', op(lyr ? lay(c) : c), 'cps'); } };
+      if (S.cells === 'T') { add(D + 'cps.main.open', op(des(d, pair(P0)[1])), 'cps'); if (S.members) add(D + 'cps.main', des(d, pair(P0)[1]), 'cps'); }
+      if (S.cells === 'U') pc(false);
+      if (S.cells === 'V' || S.cells === 'V10') pc(true);
+      if (S.cells === 'V') {
+        [['f67', {f: 2/3}], ['f100', {f: 1}], ['k50', {k: 50}], ['k250', {k: 250}], ['pop', {bass: 'pop'}]].forEach(([n, o]) => { const c = des(d, pair(P0)[1]); c.cl = Object.assign({}, o); add(D + 'cps.main.' + n + '.open', op(c), 'cps'); });
+        [[true, true], [true, false], [false, true], [false, false]].forEach(([cc, hh]) => { const b = [cc, true, hh, true, false], c = des(d, cellOf(P0, b)); c.cl = {zc: true};
+          add(D + 'cps.' + cellName(b) + '.zc.open', op(c), 'cps'); });
+        [10, 30, 50].forEach(q => { const Pq = Object.assign({}, P0, {ptfShare: q/100});
+          add(D + 'cps.main.s' + q + '.off.open', op(des(d, pair(Pq)[1])), 'cps'); add(D + 'cps.main.s' + q + '.lay.open', op(lay(des(d, pair(Pq)[1]))), 'cps'); });
+      }
+      if (S.cells === 'VJ') add(D + 'cps.main.lay.open', op(lay(des(d, pair(P0)[1]))), 'cps');
+      if (S.cells === 'W') for (let q = 10; q <= 100; q += 10) add(D + 'cps.main.fix' + q, op(des(d, pair(P0)[1]), {fix: q/100}), 'cps');
+      if (S.cells === 'Y') [['d25', {dem: 0.25}], ['d75', {dem: 0.75}], ['d100', {dem: 1}], ['capnone', {cap: 'none'}], ['outside', {ops: 'outside'}], ['held', {grow: false}]]
+        .forEach(([n, o]) => add(D + 'cps.main.open.' + n, op(des(d, pair(P0)[1]), o), 'cps'));
+      return;
+    }
     if (S.cl) {  /* the community layer (addendum, Rows and Studies); CPS yardstick, raise off unless a row says so */
       const lay = (c, o) => { c.cl = Object.assign({}, o || {}); return c; };
       if (S.cells === 'G' || S.cells === 'G10') {
@@ -203,6 +239,13 @@ function checks() {
   Object.keys(STUDY).forEach(s => { const S = STUDY[s]; S.sizes.forEach(n => {
     const c = blockRows(H, S, Object.assign({}, H.FULL_INTEGRATION, {years: 20, nAgents: n}), s).length, want = MANIFEST_ROWS[n >= 50000 ? s + '50' : s];
     console.log('study ' + s + ' at ' + n + ' adults: ' + c + ' rows per environment and horizon (run manifest: ' + want + ')'); if (c !== want) bad.push(s + ' n' + n); }); });
+  Object.keys(STUDY).filter(s => STUDY[s].pa).forEach(s => { const S = STUDY[s]; S.sizes.forEach(n => {  /* S55: each open row is a frozen-batch row with pa added */
+    const P = Object.assign({}, H.FULL_INTEGRATION, {years: 20, nAgents: n}), src = {};
+    S.src.split(',').forEach(x => blockRows(H, STUDY[x], P, x).forEach(([nm, c]) => { src[nm] = JSON.stringify(c); }));
+    let bad1 = 0; const rows = blockRows(H, S, P, s);
+    rows.forEach(([nm, c]) => { const base = nm.replace(/\.open(\..*)?$/, '').replace(/\.fix\d+$/, ''), c2 = JSON.parse(JSON.stringify(c)); delete c2.pa;
+      if (!c.pa || src[base] === undefined || src[base] !== JSON.stringify(c2)) { bad1++; console.log('  ' + s + ' ' + nm + ': no equal frozen row ' + base); } });
+    console.log('study ' + s + ' at ' + n + ' adults: ' + (bad1 ? bad1 + ' rows NOT' : 'every row is') + ' a frozen ' + S.src + ' row with pa added'); if (bad1) bad.push(s + ' pairing n' + n); }); });
   const cp = require('child_process'), os = require('os'), tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'prog-'));
   Object.keys(ENVN).forEach(env => {
     cp.execFileSync(process.execPath, [path.join(__dirname, 'release-pair.js'), '--env=' + env, '--seeds=1-2', '--adults=500', '--years=20', '--out=' + path.join(tmp, env + '.json')], {stdio: 'ignore'});
@@ -227,12 +270,12 @@ function checks() {
 }
 
 if (process.argv.includes('--check')) { checks(); return; }
-const study = arg('study', ''), envA = arg('env', ''), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1), S = STUDY[study];
+const study = arg('study', ''), envA = arg('env', ''), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1), MEM = process.argv.includes('--members') && study === 'T', S = STUDY[study] && Object.assign({}, STUDY[study], MEM ? {members: true} : {});
 const envs = envA === 'all' ? Object.keys(ENVN) : [envA];
-if (!S || !envs.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: program.js --study=R|A|B|B10|C|D|D10|F|G|G10|H|I|J --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--sizes=..] [--years=..]'); process.exit(1); }
+if (!S || !envs.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: program.js --study=R|A|B|B10|C|D|D10|F|G|G10|H|I|J|T|U|U10|V|V10|VJ|W|W10|Y --env=ref|adv|st|all --seeds=A-B --out=FILE [--procs=1] [--sizes=..] [--years=..] [--members]'); process.exit(1); }
 const sizes = arg('sizes') ? arg('sizes').split(',').map(Number) : S.sizes, years = arg('years') ? arg('years').split(',').map(Number) : S.years;
 if (!sizes.every(x => [500, 2000, 10000, 50000].includes(x)) || !years.every(x => S.years.includes(x))) { console.error('--sizes: among 500, 2000, 10000, 50000; --years: among the study\'s'); process.exit(1); }
-const lo = +m[1], hi = +m[2], t0 = Date.now(), pass = ['--study=' + study, '--env=' + envA].concat(arg('sizes') ? ['--sizes=' + arg('sizes')] : [], arg('years') ? ['--years=' + arg('years')] : []);
+const lo = +m[1], hi = +m[2], t0 = Date.now(), pass = ['--study=' + study, '--env=' + envA].concat(arg('sizes') ? ['--sizes=' + arg('sizes')] : [], arg('years') ? ['--years=' + arg('years')] : [], MEM ? ['--members'] : []);
 const command = 'node runner/jobs/program.js ' + pass.join(' ') + ' --seeds=' + lo + '-' + hi;
 if (procs > 1 && hi > lo) {  /* parent: run the pieces as child processes, then join their per-seed arrays in seed order */
   const cp = require('child_process'), k = Math.min(procs, hi - lo + 1), n0 = hi - lo + 1, parts = []; let s0 = lo;
