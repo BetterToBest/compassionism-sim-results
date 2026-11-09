@@ -1,0 +1,10 @@
+study s58-price (plan step S58; preregistration BetterToBest/research-update prereg/2026-11-s58-price-rule.md, with Amendments 1 and 2 of Nov 9, 2026)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze; nothing here costs money)
+engine 74ca1a8 (BetterToBest/compassionism-simulation, branch claude/s58-price-rule, pull request 90; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-09
+rows: np, np-cap (no programme, today's rule and the capacity rule); rel, rel-cap, rel-k25 (release row); c22, c22-cap, c22-k25, c22-k1, c22-r0, c22-r45, c22-a0, c22-h, c22-k2z, c22-k2h, c22-nest (C2.2 design); every row on the frozen yardstick (frozenRow, CPS earnings, today's safety net) with the money-flow table (mf)
+commands (in the engine checkout):
+  node dev/tools/s58_price.js ENV 100 20 --out=s58-price-ENV.json      ENV = ref, adv, st
+  python3 dev/tools/s58_table.py DIR                                    (tables.md, estimates.csv)
+  python3 sources/s58_price_rule.py sources/s58_fred                    (the rule's derived parameters, from FRED files downloaded Nov 9, 2026)
+report: compassionism-simulation dev/reports/s58-price-rule.md
+note: a first pilot run on engine 295dbee failed the preregistered nesting check in Adverse and Stress (the nesting point still counted the recession's idle income as slack); option rs was added (prereg Amendment 2) and the whole pilot rerun here. The first run is not published.
