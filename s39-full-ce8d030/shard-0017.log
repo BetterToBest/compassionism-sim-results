@@ -1,0 +1,186 @@
+shard 17 seeds 18-18; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T20:47:02Z
+  Installing known registries into `~/.julia`
+       Added `General` registry to ~/.julia/registries
+   Installed Crayons ───────────────────── v4.2.0
+   Installed Rmath ─────────────────────── v0.9.0
+   Installed IrrationalConstants ───────── v0.2.7
+   Installed HypergeometricFunctions ───── v0.3.31
+   Installed CSV ───────────────────────── v0.10.17
+   Installed JSON ──────────────────────── v1.13.4
+   Installed JLD2 ──────────────────────── v0.6.7
+   Installed Zstd_jll ──────────────────── v1.5.7+1
+   Installed ChunkCodecLibZlib ─────────── v1.1.0
+   Installed PtrArrays ─────────────────── v1.4.0
+   Installed TableTraits ───────────────── v1.0.1
+   Installed Accessors ─────────────────── v0.1.46
+   Installed StatsFuns ─────────────────── v2.2.1
+   Installed Preferences ───────────────── v1.6.1
+   Installed PrettyTables ──────────────── v3.5.1
+   Installed Tables ────────────────────── v1.14.0
+   Installed Parsers ───────────────────── v2.8.11
+   Installed DataAPI ───────────────────── v1.16.0
+   Installed PooledArrays ──────────────── v1.4.3
+   Installed SpecialFunctions ──────────── v2.9.1
+   Installed JLLWrappers ───────────────── v1.8.0
+   Installed InlineStrings ─────────────── v1.4.6
+   Installed Unrolled ──────────────────── v0.1.5
+   Installed StaticArrays ──────────────── v1.9.24
+   Installed ChunkCodecLibZstd ─────────── v1.0.0
+   Installed StaticArraysCore ──────────── v1.4.5
+   Installed Roots ─────────────────────── v3.0.14
+   Installed PrecompileTools ───────────── v1.2.1
+   Installed HashArrayMappedTries ──────── v0.2.0
+   Installed SentinelArrays ────────────── v1.4.11
+   Installed PDMats ────────────────────── v0.11.41
+   Installed DataValueInterfaces ───────── v1.0.0
+   Installed OrderedCollections ────────── v2.0.3
+   Installed ChunkCodecCore ────────────── v1.0.2
+   Installed WorkerUtilities ───────────── v1.6.1
+   Installed LaTeXStrings ──────────────── v1.4.1
+   Installed ScopedValues ──────────────── v1.6.2
+   Installed WeightVectors ─────────────── v0.1.1
+   Installed TranscodingStreams ────────── v0.11.3
+   Installed FileIO ────────────────────── v1.20.0
+   Installed InvertedIndices ───────────── v1.3.1
+   Installed IteratorInterfaceExtensions ─ v1.0.0
+   Installed FilePathsBase ─────────────── v0.9.24
+   Installed QuadGK ────────────────────── v2.11.3
+   Installed FillArrays ────────────────── v1.18.2
+   Installed ConstructionBase ──────────── v1.6.1
+   Installed DataFrames ────────────────── v1.8.3
+   Installed BitIntegers ───────────────── v0.3.7
+   Installed Rmath_jll ─────────────────── v0.5.2+0
+   Installed Quadmath ──────────────────── v1.1.0
+   Installed Reexport ──────────────────── v1.2.2
+   Installed Statistics ────────────────── v1.11.5
+   Installed WeakRefStrings ────────────── v1.4.3
+   Installed DataStructures ────────────── v0.19.6
+   Installed Requires ──────────────────── v1.3.1
+   Installed AliasTables ───────────────── v1.1.3
+   Installed StatsAPI ──────────────────── v1.8.0
+   Installed MacroTools ────────────────── v0.5.16
+   Installed LogExpFunctions ───────────── v1.0.3
+   Installed LazyArrays ────────────────── v2.14.7
+   Installed Gamma ─────────────────────── v1.2.0
+   Installed Distributions ─────────────── v0.25.134
+   Installed OpenSpecFun_jll ───────────── v0.5.6+0
+   Installed Compat ────────────────────── v4.18.1
+   Installed CodecZlib ─────────────────── v0.7.9
+   Installed CommonSolve ───────────────── v0.2.14
+   Installed InverseFunctions ──────────── v0.1.18
+   Installed BeforeIT ──────────────────── v0.6.0
+   Installed SortingAlgorithms ─────────── v1.2.3
+   Installed Missings ──────────────────── v1.2.1
+   Installed ArrayLayouts ──────────────── v1.16.0
+   Installed StructUtils ───────────────── v2.12.0
+   Installed StatsBase ─────────────────── v0.34.13
+   Installed DocStringExtensions ───────── v0.10.2
+   Installed CompositionsBase ──────────── v0.1.2
+   Installed StringManipulation ────────── v0.6.1
+Precompiling project...
+    653.2 ms  ✓ LaTeXStrings
+    712.2 ms  ✓ InvertedIndices
+    742.3 ms  ✓ DataValueInterfaces
+    821.1 ms  ✓ OrderedCollections
+    405.5 ms  ✓ Reexport
+    749.8 ms  ✓ InverseFunctions
+   1531.3 ms  ✓ FillArrays
+   1159.9 ms  ✓ InlineStrings
+   1196.0 ms  ✓ Statistics
+   1636.5 ms  ✓ DocStringExtensions
+    897.8 ms  ✓ ConstructionBase
+    694.1 ms  ✓ IteratorInterfaceExtensions
+    706.5 ms  ✓ DataAPI
+    689.3 ms  ✓ StatsAPI
+   1721.8 ms  ✓ IrrationalConstants
+    769.5 ms  ✓ WorkerUtilities
+    543.8 ms  ✓ CompositionsBase
+    404.6 ms  ✓ PtrArrays
+   1098.0 ms  ✓ BitIntegers
+    988.2 ms  ✓ ChunkCodecCore
+    562.9 ms  ✓ StaticArraysCore
+    802.2 ms  ✓ TranscodingStreams
+    812.6 ms  ✓ HashArrayMappedTries
+   2795.0 ms  ✓ Crayons
+    889.7 ms  ✓ Requires
+    957.4 ms  ✓ SuiteSparse
+    992.3 ms  ✓ Compat
+   2535.6 ms  ✓ StructUtils
+   4626.0 ms  ✓ MacroTools
+   2826.9 ms  ✓ SentinelArrays
+   1733.4 ms  ✓ Preferences
+    796.8 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    494.0 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    777.3 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1286.3 ms  ✓ Statistics → SparseArraysExt
+   1352.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    470.0 ms  ✓ TableTraits
+   3096.5 ms  ✓ DataStructures
+    543.7 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    948.5 ms  ✓ PooledArrays
+    916.0 ms  ✓ Missings
+    970.2 ms  ✓ LogExpFunctions
+    626.2 ms  ✓ ChunkCodecLibZlib
+    813.5 ms  ✓ AliasTables
+    711.9 ms  ✓ ScopedValues
+    998.5 ms  ✓ CodecZlib
+   1035.1 ms  ✓ Compat → CompatLinearAlgebraExt
+    860.3 ms  ✓ StructUtils → StructUtilsStaticArraysCoreExt
+   1336.3 ms  ✓ PDMats
+    611.8 ms  ✓ PrecompileTools
+    783.0 ms  ✓ JLLWrappers
+    637.6 ms  ✓ SortingAlgorithms
+   3042.3 ms  ✓ Unrolled
+   1860.8 ms  ✓ QuadGK
+   2588.7 ms  ✓ Tables
+    879.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1686.9 ms  ✓ Gamma
+   3226.1 ms  ✓ Accessors
+   2206.6 ms  ✓ FilePathsBase
+   1257.0 ms  ✓ FillArrays → FillArraysPDMatsExt
+   3617.6 ms  ✓ WeightVectors
+   2255.7 ms  ✓ Quadmath
+   1164.4 ms  ✓ CommonSolve
+   8563.2 ms  ✓ FileIO
+   1052.9 ms  ✓ Rmath_jll
+   1238.5 ms  ✓ Zstd_jll
+   1165.5 ms  ✓ OpenSpecFun_jll
+    861.1 ms  ✓ StructUtils → StructUtilsTablesExt
+   1698.2 ms  ✓ HypergeometricFunctions
+   3741.3 ms  ✓ StatsBase
+   1335.6 ms  ✓ Accessors → LinearAlgebraExt
+    867.6 ms  ✓ FilePathsBase → FilePathsBaseMmapExt
+   1171.2 ms  ✓ ChunkCodecLibZstd
+   1658.9 ms  ✓ Rmath
+   1485.2 ms  ✓ PDMats → StatsBaseExt
+  10656.6 ms  ✓ StringManipulation
+   4807.9 ms  ✓ SpecialFunctions
+  16243.2 ms  ✓ StaticArrays
+   1425.6 ms  ✓ Quadmath → QuadmathSpecialFunctionsExt
+   7087.3 ms  ✓ Roots
+   1026.5 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+  17815.1 ms  ✓ Parsers
+   1907.9 ms  ✓ StatsFuns
+   1001.7 ms  ✓ FillArrays → FillArraysStaticArraysExt
+   1279.9 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    533.4 ms  ✓ InlineStrings → ParsersExt
+   1649.9 ms  ✓ Accessors → StaticArraysExt
+    659.6 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1097.3 ms  ✓ WeakRefStrings
+  10022.2 ms  ✓ Distributions
+  24534.3 ms  ✓ JSON
+   1155.2 ms  ✓ JSON → JSONSerializationExt
+  24526.8 ms  ✓ ArrayLayouts
+   1802.8 ms  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+   5839.0 ms  ✓ LazyArrays
+   4048.6 ms  ✓ LazyArrays → LazyArraysStaticArraysExt
+  32760.4 ms  ✓ CSV
+  58559.0 ms  ✓ PrettyTables
+  63753.0 ms  ✓ JLD2
+  42688.0 ms  ✓ DataFrames
+   1393.7 ms  ✓ StructUtils → StructUtilsDataFramesExt
+  50281.5 ms  ✓ BeforeIT
+  102 dependencies successfully precompiled in 182 seconds. 34 already precompiled.
+run 18: c22-ref-dom seed 3, 6398.4 s
+beforeit.js: runs 18-18 in 6606 s
+ended 2026-11-08T22:37:08Z
