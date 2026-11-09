@@ -1,0 +1,9 @@
+study s57-distribution (plan step S57; preregistration BetterToBest/research-update prereg/2026-11-s57-distribution-measures.md, with Amendment 1 of Nov 9, 2026)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (reporting only; nothing here costs money)
+engine f156393 (BetterToBest/compassionism-simulation, branch claude/s57-distribution-measures, pull request 89; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-09
+rows: np (no programme), rel (release row), c22 (C2.2 design), each on the frozen yardstick (frozenRow, CPS earnings, today's safety net)
+commands (in the engine checkout):
+  node dev/tools/s57_dm.js ENV 100 20 --out=s57-dm-ENV.json                    ENV = ref, adv, st
+  python3 dev/tools/s57_table.py DIR --data data/studies/s57-distribution.json   (tables.md, estimates.csv)
+report: compassionism-simulation dev/reports/s57-distribution-measures.md
+notes: the analysis tool at this commit used a bootstrap tail p-value; Amendment 1 (Holm uses the normal tail of the mean over its bootstrap standard error) was added to the tool in the following commit of the same pull request; tables.md and estimates.csv here are from the amended tool. The per-seed JSON files are unaffected.
