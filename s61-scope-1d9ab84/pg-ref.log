@@ -1,0 +1,6 @@
+ref F0 debt y0/end 11.8 22.0 earnShare 100.0 fplAll 5.5 C2.2 fgt0PY -24.64 174 s
+ref DC debt y0/end 11.8 21.6 earnShare 100.0 fplAll 5.5 C2.2 fgt0PY -24.64 345 s
+ref DF debt y0/end 11.3 20.8 earnShare 100.0 fplAll 5.5 C2.2 fgt0PY -24.64 535 s
+ref L debt y0/end 12.6 27.9 earnShare 82.7 fplAll 13.9 C2.2 fgt0PY -31.42 700 s
+ref LC debt y0/end 12.6 27.7 earnShare 82.7 fplAll 13.9 C2.2 fgt0PY -31.43 879 s
+wrote s61-scope-ref-prog.json (879 s)
