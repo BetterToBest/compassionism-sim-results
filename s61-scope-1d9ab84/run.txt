@@ -1,0 +1,11 @@
+study s61-scope (plan step S61; preregistration BetterToBest/research-update prereg/2026-11-s61-baseline-scope.md, with Amendments 1 and 2 of Nov 9, 2026)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze)
+engine 1d9ab84 (BetterToBest/compassionism-simulation, branch claude/s61-baseline-scope, pull request 88; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-09
+commands (in the engine checkout):
+  node dev/tools/s61_scope.js ENV 100 20 --out=s61-scope-ENV.json                                     ENV = ref, adv, st
+  node dev/tools/s61_scope.js ENV 100 20 --prog --rows=F0,DC,DF,L,LC --out=s61-scope-ENV-prog.json
+  python3 dev/tools/s61_table.py DIR                                                                  (tables.md)
+  python3 sources/lf_scope.py DATA_DIR --json=lf_scope.json                                           (CPS ASEC 2026 asecpub26csv.zip, sha256 fe819d0d...)
+  python3 sources/s61_borrowing.py DATA_DIR > s61_borrowing.json                                      (SCF 2025 scfp2025s.zip, sha256 32dcf86b...)
+report: compassionism-simulation dev/reports/s61-baseline-scope.md
+note: a first pilot run on engine f756553 used a 5-point own-income table that overstated the mean own income (prereg Amendment 2); it is not published. Its rows without lf are identical to this run's (checked).

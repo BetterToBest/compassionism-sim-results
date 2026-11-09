@@ -1,0 +1,15 @@
+adv F0 debt y0/end 13.4 30.5 earnShare 100.0 fplAll 4.1  131 s
+adv DC debt y0/end 13.4 30.4 earnShare 100.0 fplAll 4.1  251 s
+adv DF debt y0/end 12.5 28.9 earnShare 100.0 fplAll 4.1  358 s
+adv DC0 debt y0/end 9.9 18.2 earnShare 100.0 fplAll 4.1  496 s
+adv DC5 debt y0/end 13.4 30.5 earnShare 100.0 fplAll 4.1  584 s
+adv DC87 debt y0/end 13.4 30.5 earnShare 100.0 fplAll 4.1  646 s
+adv DC10 debt y0/end 13.4 30.5 earnShare 100.0 fplAll 4.1  697 s
+adv DCL debt y0/end 10.6 24.4 earnShare 100.0 fplAll 4.1  750 s
+adv L debt y0/end 14.3 35.8 earnShare 82.7 fplAll 12.4  796 s
+adv LC debt y0/end 14.3 35.7 earnShare 82.7 fplAll 12.4  847 s
+adv LF debt y0/end 13.4 33.9 earnShare 82.7 fplAll 12.4  899 s
+adv LCn debt y0/end 14.3 35.7 earnShare 82.7 fplAll 12.4  957 s
+adv F0age debt y0/end 13.4 32.4 earnShare 100.0 fplAll 4.1  1037 s
+adv LCage debt y0/end 14.3 35.9 earnShare 81.3 fplAll 12.7  1106 s
+wrote s61-scope-adv.json (1106 s)

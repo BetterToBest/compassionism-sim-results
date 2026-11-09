@@ -1,0 +1,15 @@
+ref F0 debt y0/end 13.4 22.0 earnShare 100.0 fplAll 4.1  129 s
+ref DC debt y0/end 13.4 21.6 earnShare 100.0 fplAll 4.1  248 s
+ref DF debt y0/end 12.5 20.8 earnShare 100.0 fplAll 4.1  349 s
+ref DC0 debt y0/end 9.9 12.3 earnShare 100.0 fplAll 4.1  487 s
+ref DC5 debt y0/end 13.4 21.8 earnShare 100.0 fplAll 4.1  573 s
+ref DC87 debt y0/end 13.4 21.9 earnShare 100.0 fplAll 4.1  638 s
+ref DC10 debt y0/end 13.4 21.9 earnShare 100.0 fplAll 4.1  689 s
+ref DCL debt y0/end 10.6 18.3 earnShare 100.0 fplAll 4.1  741 s
+ref L debt y0/end 14.3 27.9 earnShare 82.7 fplAll 12.4  787 s
+ref LC debt y0/end 14.3 27.7 earnShare 82.7 fplAll 12.4  840 s
+ref LF debt y0/end 13.4 26.6 earnShare 82.7 fplAll 12.4  886 s
+ref LCn debt y0/end 14.3 27.7 earnShare 82.7 fplAll 12.4  939 s
+ref F0age debt y0/end 13.4 23.6 earnShare 100.0 fplAll 4.1  1018 s
+ref LCage debt y0/end 14.3 27.0 earnShare 81.3 fplAll 12.7  1088 s
+wrote s61-scope-ref.json (1088 s)
