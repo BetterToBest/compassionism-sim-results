@@ -1,0 +1,285 @@
+shard 11 seeds 1101-1200; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T18:51:19Z
+  Installing known registries into `~/.julia`
+       Added `General` registry to ~/.julia/registries
+   Installed IrrationalConstants ───────── v0.2.7
+   Installed Crayons ───────────────────── v4.2.0
+   Installed Rmath ─────────────────────── v0.9.0
+   Installed HypergeometricFunctions ───── v0.3.31
+   Installed CSV ───────────────────────── v0.10.17
+   Installed JSON ──────────────────────── v1.13.4
+   Installed JLD2 ──────────────────────── v0.6.7
+   Installed PrettyTables ──────────────── v3.5.1
+   Installed Zstd_jll ──────────────────── v1.5.7+1
+   Installed PtrArrays ─────────────────── v1.4.0
+   Installed ChunkCodecLibZlib ─────────── v1.1.0
+   Installed Accessors ─────────────────── v0.1.46
+   Installed TableTraits ───────────────── v1.0.1
+   Installed StatsFuns ─────────────────── v2.2.1
+   Installed Preferences ───────────────── v1.6.1
+   Installed SpecialFunctions ──────────── v2.9.1
+   Installed Parsers ───────────────────── v2.8.11
+   Installed SentinelArrays ────────────── v1.4.11
+   Installed Tables ────────────────────── v1.14.0
+   Installed DataAPI ───────────────────── v1.16.0
+   Installed HashArrayMappedTries ──────── v0.2.0
+   Installed PDMats ────────────────────── v0.11.41
+   Installed PooledArrays ──────────────── v1.4.3
+   Installed WeightVectors ─────────────── v0.1.1
+   Installed InlineStrings ─────────────── v1.4.6
+   Installed JLLWrappers ───────────────── v1.8.0
+   Installed StaticArrays ──────────────── v1.9.24
+   Installed ChunkCodecLibZstd ─────────── v1.0.0
+   Installed Unrolled ──────────────────── v0.1.5
+   Installed Roots ─────────────────────── v3.0.14
+   Installed StaticArraysCore ──────────── v1.4.5
+   Installed PrecompileTools ───────────── v1.2.1
+   Installed IteratorInterfaceExtensions ─ v1.0.0
+   Installed ConstructionBase ──────────── v1.6.1
+   Installed DataValueInterfaces ───────── v1.0.0
+   Installed ChunkCodecCore ────────────── v1.0.2
+   Installed OrderedCollections ────────── v2.0.3
+   Installed WorkerUtilities ───────────── v1.6.1
+   Installed LaTeXStrings ──────────────── v1.4.1
+   Installed ScopedValues ──────────────── v1.6.2
+   Installed TranscodingStreams ────────── v0.11.3
+   Installed FileIO ────────────────────── v1.20.0
+   Installed InvertedIndices ───────────── v1.3.1
+   Installed BitIntegers ───────────────── v0.3.7
+   Installed FilePathsBase ─────────────── v0.9.24
+   Installed QuadGK ────────────────────── v2.11.3
+   Installed FillArrays ────────────────── v1.18.2
+   Installed DataFrames ────────────────── v1.8.3
+   Installed BeforeIT ──────────────────── v0.6.0
+   Installed Reexport ──────────────────── v1.2.2
+   Installed WeakRefStrings ────────────── v1.4.3
+   Installed Rmath_jll ─────────────────── v0.5.2+0
+   Installed Quadmath ──────────────────── v1.1.0
+   Installed Statistics ────────────────── v1.11.5
+   Installed LazyArrays ────────────────── v2.14.7
+   Installed LogExpFunctions ───────────── v1.0.3
+   Installed DataStructures ────────────── v0.19.6
+   Installed Requires ──────────────────── v1.3.1
+   Installed StatsAPI ──────────────────── v1.8.0
+   Installed Gamma ─────────────────────── v1.2.0
+   Installed AliasTables ───────────────── v1.1.3
+   Installed MacroTools ────────────────── v0.5.16
+   Installed Compat ────────────────────── v4.18.1
+   Installed OpenSpecFun_jll ───────────── v0.5.6+0
+   Installed CompositionsBase ──────────── v0.1.2
+   Installed Distributions ─────────────── v0.25.134
+   Installed CommonSolve ───────────────── v0.2.14
+   Installed CodecZlib ─────────────────── v0.7.9
+   Installed Missings ──────────────────── v1.2.1
+   Installed InverseFunctions ──────────── v0.1.18
+   Installed StringManipulation ────────── v0.6.1
+   Installed StatsBase ─────────────────── v0.34.13
+   Installed DocStringExtensions ───────── v0.10.2
+   Installed SortingAlgorithms ─────────── v1.2.3
+   Installed ArrayLayouts ──────────────── v1.16.0
+   Installed StructUtils ───────────────── v2.12.0
+Precompiling project...
+    622.2 ms  ✓ LaTeXStrings
+    627.7 ms  ✓ DataValueInterfaces
+    681.8 ms  ✓ InvertedIndices
+    839.0 ms  ✓ OrderedCollections
+    678.4 ms  ✓ InverseFunctions
+    746.3 ms  ✓ Reexport
+   1885.3 ms  ✓ FillArrays
+    788.4 ms  ✓ Statistics
+   1572.0 ms  ✓ DocStringExtensions
+   1524.5 ms  ✓ InlineStrings
+    449.7 ms  ✓ IteratorInterfaceExtensions
+   1040.0 ms  ✓ ConstructionBase
+    798.5 ms  ✓ DataAPI
+    847.1 ms  ✓ WorkerUtilities
+    696.2 ms  ✓ StatsAPI
+   2016.3 ms  ✓ IrrationalConstants
+    611.5 ms  ✓ CompositionsBase
+    708.5 ms  ✓ ChunkCodecCore
+   1196.5 ms  ✓ BitIntegers
+    540.8 ms  ✓ StaticArraysCore
+    802.6 ms  ✓ PtrArrays
+    776.3 ms  ✓ TranscodingStreams
+    732.7 ms  ✓ HashArrayMappedTries
+    964.8 ms  ✓ Requires
+   2696.7 ms  ✓ Crayons
+   1271.6 ms  ✓ Compat
+   1445.8 ms  ✓ SuiteSparse
+   4249.6 ms  ✓ MacroTools
+   2761.7 ms  ✓ StructUtils
+   3159.6 ms  ✓ SentinelArrays
+   1555.0 ms  ✓ Preferences
+   1129.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    524.5 ms  ✓ TableTraits
+   1068.1 ms  ✓ Statistics → SparseArraysExt
+   1247.3 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1044.5 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2627.9 ms  ✓ DataStructures
+    739.9 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    848.0 ms  ✓ PooledArrays
+    751.6 ms  ✓ Missings
+   1029.2 ms  ✓ LogExpFunctions
+    941.8 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    864.2 ms  ✓ ChunkCodecLibZlib
+    696.9 ms  ✓ CodecZlib
+   1023.3 ms  ✓ AliasTables
+    649.1 ms  ✓ ScopedValues
+    588.6 ms  ✓ Compat → CompatLinearAlgebraExt
+    982.3 ms  ✓ StructUtils → StructUtilsStaticArraysCoreExt
+   1340.1 ms  ✓ PDMats
+   1014.7 ms  ✓ PrecompileTools
+    889.1 ms  ✓ JLLWrappers
+    808.6 ms  ✓ SortingAlgorithms
+    930.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   2162.7 ms  ✓ Tables
+   3301.7 ms  ✓ Unrolled
+   1562.6 ms  ✓ QuadGK
+   2050.1 ms  ✓ Gamma
+   2295.1 ms  ✓ FilePathsBase
+   3386.1 ms  ✓ WeightVectors
+   3813.1 ms  ✓ Accessors
+   2189.6 ms  ✓ Quadmath
+   1496.7 ms  ✓ FillArrays → FillArraysPDMatsExt
+    851.1 ms  ✓ CommonSolve
+   9231.9 ms  ✓ FileIO
+   1101.2 ms  ✓ Rmath_jll
+   1121.9 ms  ✓ Zstd_jll
+   1263.1 ms  ✓ OpenSpecFun_jll
+    842.7 ms  ✓ StructUtils → StructUtilsTablesExt
+   2257.6 ms  ✓ HypergeometricFunctions
+   4463.9 ms  ✓ StatsBase
+   1235.8 ms  ✓ FilePathsBase → FilePathsBaseMmapExt
+   1043.0 ms  ✓ Accessors → LinearAlgebraExt
+   1344.1 ms  ✓ ChunkCodecLibZstd
+   2205.4 ms  ✓ Rmath
+  10212.0 ms  ✓ StringManipulation
+   1512.2 ms  ✓ PDMats → StatsBaseExt
+   5778.5 ms  ✓ Roots
+  16738.3 ms  ✓ StaticArrays
+   6797.4 ms  ✓ SpecialFunctions
+   1273.2 ms  ✓ FillArrays → FillArraysStaticArraysExt
+   1441.9 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1273.6 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+  18809.4 ms  ✓ Parsers
+   1246.5 ms  ✓ Accessors → StaticArraysExt
+   1011.9 ms  ✓ Quadmath → QuadmathSpecialFunctionsExt
+   1933.4 ms  ✓ StatsFuns
+   1080.3 ms  ✓ InlineStrings → ParsersExt
+   1108.8 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1534.0 ms  ✓ WeakRefStrings
+   9756.9 ms  ✓ Distributions
+  25575.0 ms  ✓ ArrayLayouts
+  25180.8 ms  ✓ JSON
+   1151.9 ms  ✓ JSON → JSONSerializationExt
+   2612.2 ms  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+   4140.8 ms  ✓ LazyArrays
+   3010.6 ms  ✓ LazyArrays → LazyArraysStaticArraysExt
+  34126.1 ms  ✓ CSV
+  57735.9 ms  ✓ PrettyTables
+  65945.5 ms  ✓ JLD2
+  44244.5 ms  ✓ DataFrames
+   1445.0 ms  ✓ StructUtils → StructUtilsDataFramesExt
+  52442.5 ms  ✓ BeforeIT
+  102 dependencies successfully precompiled in 189 seconds. 34 already precompiled.
+run 1101: dose10-ea seed 1, 3.1 s
+run 1102: dose10-ea seed 2, 3.0 s
+run 1103: dose10-ea seed 3, 2.6 s
+run 1104: dose10-ea seed 4, 2.7 s
+run 1105: dose10-ea seed 5, 2.7 s
+run 1106: dose10-ea seed 6, 2.7 s
+run 1107: dose10-ea seed 7, 2.8 s
+run 1108: dose10-ea seed 8, 2.7 s
+run 1109: dose10-ea seed 9, 2.6 s
+run 1110: dose10-ea seed 10, 2.7 s
+run 1111: dose10-ea seed 11, 2.9 s
+run 1112: dose10-ea seed 12, 2.7 s
+run 1113: dose10-ea seed 13, 2.6 s
+run 1114: dose10-ea seed 14, 2.7 s
+run 1115: dose10-ea seed 15, 2.7 s
+run 1116: dose10-ea seed 16, 2.7 s
+run 1117: dose10-ea seed 17, 2.8 s
+run 1118: dose10-ea seed 18, 2.7 s
+run 1119: dose10-ea seed 19, 2.8 s
+run 1120: dose10-ea seed 20, 2.6 s
+run 1121: dose10-ea seed 21, 2.6 s
+run 1122: dose10-ea seed 22, 2.7 s
+run 1123: dose10-ea seed 23, 2.9 s
+run 1124: dose10-ea seed 24, 2.7 s
+run 1125: dose10-ea seed 25, 2.6 s
+run 1126: dose10-ea seed 26, 2.8 s
+run 1127: dose10-ea seed 27, 2.6 s
+run 1128: dose10-ea seed 28, 2.5 s
+run 1129: dose10-ea seed 29, 2.6 s
+run 1130: dose10-ea seed 30, 2.6 s
+run 1131: dose10-ea seed 31, 2.8 s
+run 1132: dose10-ea seed 32, 2.6 s
+run 1133: dose10-ea seed 33, 2.6 s
+run 1134: dose10-ea seed 34, 2.6 s
+run 1135: dose10-ea seed 35, 2.8 s
+run 1136: dose10-ea seed 36, 2.6 s
+run 1137: dose10-ea seed 37, 2.8 s
+run 1138: dose10-ea seed 38, 2.6 s
+run 1139: dose10-ea seed 39, 2.7 s
+run 1140: dose10-ea seed 40, 2.8 s
+run 1141: dose10-ea seed 41, 2.6 s
+run 1142: dose10-ea seed 42, 2.6 s
+run 1143: dose10-ea seed 43, 2.7 s
+run 1144: dose10-ea seed 44, 2.9 s
+run 1145: dose10-ea seed 45, 2.6 s
+run 1146: dose10-ea seed 46, 2.7 s
+run 1147: dose10-ea seed 47, 2.8 s
+run 1148: dose10-ea seed 48, 2.7 s
+run 1149: dose10-ea seed 49, 2.6 s
+run 1150: dose10-ea seed 50, 2.7 s
+run 1151: dose10-ea seed 51, 2.9 s
+run 1152: dose10-ea seed 52, 2.6 s
+run 1153: dose10-ea seed 53, 2.6 s
+run 1154: dose10-ea seed 54, 2.7 s
+run 1155: dose10-ea seed 55, 2.8 s
+run 1156: dose10-ea seed 56, 2.7 s
+run 1157: dose10-ea seed 57, 2.7 s
+run 1158: dose10-ea seed 58, 2.6 s
+run 1159: dose10-ea seed 59, 2.9 s
+run 1160: dose10-ea seed 60, 2.7 s
+run 1161: dose10-ea seed 61, 2.6 s
+run 1162: dose10-ea seed 62, 2.7 s
+run 1163: dose10-ea seed 63, 2.7 s
+run 1164: dose10-ea seed 64, 2.9 s
+run 1165: dose10-ea seed 65, 2.5 s
+run 1166: dose10-ea seed 66, 2.9 s
+run 1167: dose10-ea seed 67, 2.7 s
+run 1168: dose10-ea seed 68, 2.6 s
+run 1169: dose10-ea seed 69, 2.7 s
+run 1170: dose10-ea seed 70, 2.6 s
+run 1171: dose10-ea seed 71, 2.7 s
+run 1172: dose10-ea seed 72, 2.8 s
+run 1173: dose10-ea seed 73, 2.7 s
+run 1174: dose10-ea seed 74, 2.6 s
+run 1175: dose10-ea seed 75, 2.7 s
+run 1176: dose10-ea seed 76, 2.6 s
+run 1177: dose10-ea seed 77, 2.8 s
+run 1178: dose10-ea seed 78, 2.6 s
+run 1179: dose10-ea seed 79, 2.7 s
+run 1180: dose10-ea seed 80, 2.7 s
+run 1181: dose10-ea seed 81, 2.8 s
+run 1182: dose10-ea seed 82, 2.6 s
+run 1183: dose10-ea seed 83, 2.6 s
+run 1184: dose10-ea seed 84, 2.7 s
+run 1185: dose10-ea seed 85, 2.7 s
+run 1186: dose10-ea seed 86, 2.9 s
+run 1187: dose10-ea seed 87, 2.7 s
+run 1188: dose10-ea seed 88, 2.6 s
+run 1189: dose10-ea seed 89, 2.7 s
+run 1190: dose10-ea seed 90, 2.7 s
+run 1191: dose10-ea seed 91, 2.7 s
+run 1192: dose10-ea seed 92, 2.9 s
+run 1193: dose10-ea seed 93, 2.7 s
+run 1194: dose10-ea seed 94, 2.6 s
+run 1195: dose10-ea seed 95, 2.7 s
+run 1196: dose10-ea seed 96, 2.7 s
+run 1197: dose10-ea seed 97, 2.6 s
+run 1198: dose10-ea seed 98, 2.7 s
+run 1199: dose10-ea seed 99, 2.9 s
+run 1200: dose10-ea seed 100, 2.7 s
+beforeit.js: runs 1101-1200 in 485 s
+ended 2026-11-08T18:59:24Z

@@ -1,0 +1,285 @@
+shard 1 seeds 101-200; 4 vCPU; 15 GB; node v22.22.0; 2026-11-08T18:52:12Z
+  Installing known registries into `~/.julia`
+       Added `General` registry to ~/.julia/registries
+   Installed Rmath ─────────────────────── v0.9.0
+   Installed IrrationalConstants ───────── v0.2.7
+   Installed Crayons ───────────────────── v4.2.0
+   Installed HypergeometricFunctions ───── v0.3.31
+   Installed CSV ───────────────────────── v0.10.17
+   Installed JSON ──────────────────────── v1.13.4
+   Installed JLD2 ──────────────────────── v0.6.7
+   Installed PrettyTables ──────────────── v3.5.1
+   Installed StatsFuns ─────────────────── v2.2.1
+   Installed Zstd_jll ──────────────────── v1.5.7+1
+   Installed PtrArrays ─────────────────── v1.4.0
+   Installed Preferences ───────────────── v1.6.1
+   Installed TableTraits ───────────────── v1.0.1
+   Installed ChunkCodecLibZlib ─────────── v1.1.0
+   Installed Accessors ─────────────────── v0.1.46
+   Installed Parsers ───────────────────── v2.8.11
+   Installed SpecialFunctions ──────────── v2.9.1
+   Installed SentinelArrays ────────────── v1.4.11
+   Installed PooledArrays ──────────────── v1.4.3
+   Installed DataAPI ───────────────────── v1.16.0
+   Installed HashArrayMappedTries ──────── v0.2.0
+   Installed InlineStrings ─────────────── v1.4.6
+   Installed Tables ────────────────────── v1.14.0
+   Installed WeightVectors ─────────────── v0.1.1
+   Installed StaticArrays ──────────────── v1.9.24
+   Installed PDMats ────────────────────── v0.11.41
+   Installed Unrolled ──────────────────── v0.1.5
+   Installed ChunkCodecLibZstd ─────────── v1.0.0
+   Installed StaticArraysCore ──────────── v1.4.5
+   Installed Roots ─────────────────────── v3.0.14
+   Installed PrecompileTools ───────────── v1.2.1
+   Installed JLLWrappers ───────────────── v1.8.0
+   Installed IteratorInterfaceExtensions ─ v1.0.0
+   Installed ConstructionBase ──────────── v1.6.1
+   Installed ChunkCodecCore ────────────── v1.0.2
+   Installed DataValueInterfaces ───────── v1.0.0
+   Installed LaTeXStrings ──────────────── v1.4.1
+   Installed WorkerUtilities ───────────── v1.6.1
+   Installed OrderedCollections ────────── v2.0.3
+   Installed TranscodingStreams ────────── v0.11.3
+   Installed ScopedValues ──────────────── v1.6.2
+   Installed FileIO ────────────────────── v1.20.0
+   Installed InvertedIndices ───────────── v1.3.1
+   Installed QuadGK ────────────────────── v2.11.3
+   Installed FillArrays ────────────────── v1.18.2
+   Installed BitIntegers ───────────────── v0.3.7
+   Installed DataFrames ────────────────── v1.8.3
+   Installed Reexport ──────────────────── v1.2.2
+   Installed Rmath_jll ─────────────────── v0.5.2+0
+   Installed Quadmath ──────────────────── v1.1.0
+   Installed BeforeIT ──────────────────── v0.6.0
+   Installed Statistics ────────────────── v1.11.5
+   Installed LazyArrays ────────────────── v2.14.7
+   Installed DataStructures ────────────── v0.19.6
+   Installed Requires ──────────────────── v1.3.1
+   Installed LogExpFunctions ───────────── v1.0.3
+   Installed AliasTables ───────────────── v1.1.3
+   Installed Gamma ─────────────────────── v1.2.0
+   Installed FilePathsBase ─────────────── v0.9.24
+   Installed MacroTools ────────────────── v0.5.16
+   Installed Distributions ─────────────── v0.25.134
+   Installed StatsAPI ──────────────────── v1.8.0
+   Installed Compat ────────────────────── v4.18.1
+   Installed WeakRefStrings ────────────── v1.4.3
+   Installed OpenSpecFun_jll ───────────── v0.5.6+0
+   Installed CodecZlib ─────────────────── v0.7.9
+   Installed CompositionsBase ──────────── v0.1.2
+   Installed InverseFunctions ──────────── v0.1.18
+   Installed CommonSolve ───────────────── v0.2.14
+   Installed StringManipulation ────────── v0.6.1
+   Installed SortingAlgorithms ─────────── v1.2.3
+   Installed StatsBase ─────────────────── v0.34.13
+   Installed Missings ──────────────────── v1.2.1
+   Installed StructUtils ───────────────── v2.12.0
+   Installed ArrayLayouts ──────────────── v1.16.0
+   Installed DocStringExtensions ───────── v0.10.2
+Precompiling project...
+    428.8 ms  ✓ DataValueInterfaces
+    606.1 ms  ✓ InvertedIndices
+    683.5 ms  ✓ LaTeXStrings
+    848.9 ms  ✓ OrderedCollections
+    397.0 ms  ✓ Reexport
+    644.0 ms  ✓ InverseFunctions
+   1103.7 ms  ✓ FillArrays
+    779.8 ms  ✓ InlineStrings
+    624.2 ms  ✓ Statistics
+    785.2 ms  ✓ ConstructionBase
+    366.4 ms  ✓ IteratorInterfaceExtensions
+   1569.7 ms  ✓ DocStringExtensions
+    663.3 ms  ✓ DataAPI
+    566.2 ms  ✓ WorkerUtilities
+    572.4 ms  ✓ StatsAPI
+   1656.1 ms  ✓ IrrationalConstants
+    446.3 ms  ✓ CompositionsBase
+    800.1 ms  ✓ BitIntegers
+    409.0 ms  ✓ PtrArrays
+    450.2 ms  ✓ StaticArraysCore
+    826.1 ms  ✓ ChunkCodecCore
+    455.1 ms  ✓ HashArrayMappedTries
+    726.6 ms  ✓ TranscodingStreams
+   1851.8 ms  ✓ Crayons
+    766.2 ms  ✓ Requires
+    738.3 ms  ✓ SuiteSparse
+   1065.5 ms  ✓ Compat
+   1655.9 ms  ✓ StructUtils
+   1147.1 ms  ✓ Preferences
+   1996.5 ms  ✓ SentinelArrays
+   4003.3 ms  ✓ MacroTools
+    855.7 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    878.8 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    977.0 ms  ✓ Statistics → SparseArraysExt
+    558.5 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    817.3 ms  ✓ FillArrays → FillArraysStatisticsExt
+    409.5 ms  ✓ TableTraits
+    605.5 ms  ✓ PooledArrays
+   2265.3 ms  ✓ DataStructures
+    635.9 ms  ✓ Missings
+    528.3 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    809.6 ms  ✓ LogExpFunctions
+    659.5 ms  ✓ AliasTables
+    604.7 ms  ✓ ChunkCodecLibZlib
+    487.9 ms  ✓ ScopedValues
+    697.1 ms  ✓ CodecZlib
+    532.5 ms  ✓ Compat → CompatLinearAlgebraExt
+    613.3 ms  ✓ StructUtils → StructUtilsStaticArraysCoreExt
+    587.3 ms  ✓ PrecompileTools
+   1302.6 ms  ✓ PDMats
+    850.7 ms  ✓ JLLWrappers
+    823.5 ms  ✓ SortingAlgorithms
+   1744.4 ms  ✓ Tables
+   2181.4 ms  ✓ Unrolled
+    516.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1851.4 ms  ✓ QuadGK
+   1179.8 ms  ✓ Gamma
+   2056.3 ms  ✓ FilePathsBase
+   5550.7 ms  ✓ FileIO
+   3370.1 ms  ✓ Accessors
+   1685.5 ms  ✓ Quadmath
+   2611.1 ms  ✓ WeightVectors
+    626.6 ms  ✓ CommonSolve
+    813.7 ms  ✓ FillArrays → FillArraysPDMatsExt
+    673.0 ms  ✓ Rmath_jll
+    947.9 ms  ✓ Zstd_jll
+   1071.9 ms  ✓ OpenSpecFun_jll
+    858.7 ms  ✓ StructUtils → StructUtilsTablesExt
+   1778.0 ms  ✓ HypergeometricFunctions
+   3153.8 ms  ✓ StatsBase
+   1114.8 ms  ✓ FilePathsBase → FilePathsBaseMmapExt
+   1036.8 ms  ✓ Accessors → LinearAlgebraExt
+    769.9 ms  ✓ ChunkCodecLibZstd
+   1044.0 ms  ✓ Rmath
+   7986.4 ms  ✓ StringManipulation
+   1149.5 ms  ✓ PDMats → StatsBaseExt
+   9118.9 ms  ✓ StaticArrays
+   3683.8 ms  ✓ SpecialFunctions
+   1460.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   5117.8 ms  ✓ Roots
+   1332.8 ms  ✓ FillArrays → FillArraysStaticArraysExt
+  13875.5 ms  ✓ Parsers
+   1021.8 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    988.7 ms  ✓ Accessors → StaticArraysExt
+    653.0 ms  ✓ Quadmath → QuadmathSpecialFunctionsExt
+   1797.3 ms  ✓ StatsFuns
+    911.7 ms  ✓ InlineStrings → ParsersExt
+   1093.9 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1134.0 ms  ✓ WeakRefStrings
+   6976.3 ms  ✓ Distributions
+  17012.8 ms  ✓ ArrayLayouts
+  18241.9 ms  ✓ JSON
+   1610.5 ms  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+    947.4 ms  ✓ JSON → JSONSerializationExt
+   3185.7 ms  ✓ LazyArrays
+   2079.9 ms  ✓ LazyArrays → LazyArraysStaticArraysExt
+  25619.0 ms  ✓ CSV
+  44542.8 ms  ✓ PrettyTables
+  46902.8 ms  ✓ JLD2
+  33327.3 ms  ✓ DataFrames
+   1203.5 ms  ✓ StructUtils → StructUtilsDataFramesExt
+  36022.2 ms  ✓ BeforeIT
+  102 dependencies successfully precompiled in 137 seconds. 34 already precompiled.
+run 101: base-dom seed 1, 2.6 s
+run 102: base-dom seed 2, 2.2 s
+run 103: base-dom seed 3, 2.2 s
+run 104: base-dom seed 4, 2.2 s
+run 105: base-dom seed 5, 2.2 s
+run 106: base-dom seed 6, 2.2 s
+run 107: base-dom seed 7, 2.2 s
+run 108: base-dom seed 8, 2.1 s
+run 109: base-dom seed 9, 2.2 s
+run 110: base-dom seed 10, 2.2 s
+run 111: base-dom seed 11, 2.2 s
+run 112: base-dom seed 12, 2.2 s
+run 113: base-dom seed 13, 2.2 s
+run 114: base-dom seed 14, 2.2 s
+run 115: base-dom seed 15, 2.2 s
+run 116: base-dom seed 16, 2.0 s
+run 117: base-dom seed 17, 2.2 s
+run 118: base-dom seed 18, 2.2 s
+run 119: base-dom seed 19, 2.1 s
+run 120: base-dom seed 20, 2.2 s
+run 121: base-dom seed 21, 2.2 s
+run 122: base-dom seed 22, 2.2 s
+run 123: base-dom seed 23, 2.2 s
+run 124: base-dom seed 24, 2.2 s
+run 125: base-dom seed 25, 2.2 s
+run 126: base-dom seed 26, 2.0 s
+run 127: base-dom seed 27, 2.2 s
+run 128: base-dom seed 28, 2.2 s
+run 129: base-dom seed 29, 2.2 s
+run 130: base-dom seed 30, 2.2 s
+run 131: base-dom seed 31, 2.2 s
+run 132: base-dom seed 32, 2.2 s
+run 133: base-dom seed 33, 2.2 s
+run 134: base-dom seed 34, 2.2 s
+run 135: base-dom seed 35, 2.2 s
+run 136: base-dom seed 36, 2.2 s
+run 137: base-dom seed 37, 2.2 s
+run 138: base-dom seed 38, 2.2 s
+run 139: base-dom seed 39, 2.2 s
+run 140: base-dom seed 40, 2.2 s
+run 141: base-dom seed 41, 2.2 s
+run 142: base-dom seed 42, 2.2 s
+run 143: base-dom seed 43, 2.2 s
+run 144: base-dom seed 44, 2.2 s
+run 145: base-dom seed 45, 2.2 s
+run 146: base-dom seed 46, 2.2 s
+run 147: base-dom seed 47, 2.2 s
+run 148: base-dom seed 48, 2.2 s
+run 149: base-dom seed 49, 2.2 s
+run 150: base-dom seed 50, 2.0 s
+run 151: base-dom seed 51, 2.2 s
+run 152: base-dom seed 52, 2.2 s
+run 153: base-dom seed 53, 2.2 s
+run 154: base-dom seed 54, 2.2 s
+run 155: base-dom seed 55, 2.2 s
+run 156: base-dom seed 56, 2.0 s
+run 157: base-dom seed 57, 2.2 s
+run 158: base-dom seed 58, 2.2 s
+run 159: base-dom seed 59, 2.2 s
+run 160: base-dom seed 60, 2.2 s
+run 161: base-dom seed 61, 2.2 s
+run 162: base-dom seed 62, 2.2 s
+run 163: base-dom seed 63, 2.2 s
+run 164: base-dom seed 64, 2.1 s
+run 165: base-dom seed 65, 2.2 s
+run 166: base-dom seed 66, 2.1 s
+run 167: base-dom seed 67, 2.2 s
+run 168: base-dom seed 68, 2.2 s
+run 169: base-dom seed 69, 2.2 s
+run 170: base-dom seed 70, 2.2 s
+run 171: base-dom seed 71, 2.2 s
+run 172: base-dom seed 72, 2.2 s
+run 173: base-dom seed 73, 2.2 s
+run 174: base-dom seed 74, 2.2 s
+run 175: base-dom seed 75, 2.0 s
+run 176: base-dom seed 76, 2.2 s
+run 177: base-dom seed 77, 2.2 s
+run 178: base-dom seed 78, 2.3 s
+run 179: base-dom seed 79, 2.2 s
+run 180: base-dom seed 80, 2.2 s
+run 181: base-dom seed 81, 2.2 s
+run 182: base-dom seed 82, 2.2 s
+run 183: base-dom seed 83, 2.2 s
+run 184: base-dom seed 84, 2.0 s
+run 185: base-dom seed 85, 2.2 s
+run 186: base-dom seed 86, 2.2 s
+run 187: base-dom seed 87, 2.1 s
+run 188: base-dom seed 88, 2.2 s
+run 189: base-dom seed 89, 2.2 s
+run 190: base-dom seed 90, 2.2 s
+run 191: base-dom seed 91, 2.2 s
+run 192: base-dom seed 92, 2.2 s
+run 193: base-dom seed 93, 2.2 s
+run 194: base-dom seed 94, 2.2 s
+run 195: base-dom seed 95, 2.0 s
+run 196: base-dom seed 96, 2.2 s
+run 197: base-dom seed 97, 2.2 s
+run 198: base-dom seed 98, 2.2 s
+run 199: base-dom seed 99, 2.2 s
+run 200: base-dom seed 100, 2.2 s
+beforeit.js: runs 101-200 in 376 s
+ended 2026-11-08T18:58:29Z
