@@ -1,0 +1,11 @@
+study s66-trace (plan step S66; preregistration BetterToBest/research-update prereg/2026-11-s66-low-share-trace.md, committed before any run)
+trace, not a study of the programme: seeds 1-100, 500 adults; Part A (fixed-share C2.2 rows and five switch-offs) 20 years in three environments, A40 40 years in Reference and Adverse; Part B (erosion, members-only main rows) and Part C (S61's lf rows) 20 years in three environments
+engine 4e9d841 (BetterToBest/compassionism-simulation, branch claude/s66-low-share-trace, pull request 91; the engine text is main's 78e1dd7, the branch adds only tools and reports; clean worktree; each file's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-10
+commands (in the engine checkout):
+  node dev/tools/s66_trace.js --check                                           (check.log: the tool's copy equals the harness; the damping switch-off is identical in Reference)
+  node dev/tools/s66_trace.js A ENV --seeds=1-50 --out=s66-A-ENV-1-50.json.gz    and --seeds=51-100; ENV = ref, adv, st
+  node dev/tools/s66_trace.js A40 ENV --seeds=1-100 --out=s66-A40-ENV-1-100.json.gz   ENV = ref, adv
+  node dev/tools/s66_trace.js B ENV --seeds=1-100 --out=s66-B-ENV-1-100.json.gz       ENV = ref, adv, st (and C the same)
+  python3 dev/tools/s66_table.py DIR                                             (tables.md)
+report: compassionism-simulation dev/reports/s66-low-share-trace.md
+note: a first launch (same tool, before the commit that keeps the snapshot years' wealth bands) was stopped after a few minutes and its files discarded; no figure from it was read.

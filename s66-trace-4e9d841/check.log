@@ -1,0 +1,2 @@
+check 1: 7080 row-keys compared, seeds 1-5, Reference, 20 years: all identical
+check 2: K2 against the main reading in Reference: identical on every key
