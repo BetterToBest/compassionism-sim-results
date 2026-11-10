@@ -1,0 +1,13 @@
+adv off pov effect rls 45.03 c22 30.16 | median real wealth none/rls/c22 115988 / 11479 / 20392 91 s
+adv main pov effect rls -13.15 c22 -20.24 | median real wealth none/rls/c22 232500 / 277486 / 296307 181 s
+adv phi0 pov effect rls -11.78 c22 -17.99 | median real wealth none/rls/c22 226039 / 261967 / 274763 272 s
+adv phi1 pov effect rls -15.38 c22 -22.08 | median real wealth none/rls/c22 241271 / 382728 / 447098 362 s
+adv ix05 pov effect rls 9.05 c22 -8.19 | median real wealth none/rls/c22 190832 / 40396 / 52115 452 s
+adv rho0 pov effect rls -14.81 c22 -22.52 | median real wealth none/rls/c22 179717 / 223395 / 243149 540 s
+adv rho83 pov effect rls -12.05 c22 -18.75 | median real wealth none/rls/c22 279799 / 326134 / 344373 628 s
+adv rho90 pov effect rls -13.81 c22 -21.15 | median real wealth none/rls/c22 208700 / 253260 / 272650 715 s
+adv port pov effect rls -15.19 c22 -21.94 | median real wealth none/rls/c22 242082 / 359374 / 421251 801 s
+adv chi1 pov effect rls -7.80 c22 -15.71 | median real wealth none/rls/c22 205015 / 188205 / 207733 885 s
+adv check pov effect rls 45.03 c22 30.16 | median real wealth none/rls/c22 115988 / 11479 / 20392 968 s
+check row equals off on every kept key: true
+wrote s59-assets-adv.json (968 s)
