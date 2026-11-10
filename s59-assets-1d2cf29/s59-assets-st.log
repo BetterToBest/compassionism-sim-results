@@ -1,0 +1,13 @@
+st off pov effect rls 24.81 c22 41.65 | median real wealth none/rls/c22 115988 / 18695 / 15730 82 s
+st main pov effect rls -7.09 c22 -18.71 | median real wealth none/rls/c22 232500 / 271433 / 287538 165 s
+st phi0 pov effect rls -6.39 c22 -16.53 | median real wealth none/rls/c22 226039 / 253442 / 269896 246 s
+st phi1 pov effect rls -8.02 c22 -21.57 | median real wealth none/rls/c22 241271 / 333190 / 426515 327 s
+st ix05 pov effect rls 3.63 c22 -0.03 | median real wealth none/rls/c22 190832 / 78341 / 43170 406 s
+st rho0 pov effect rls -8.36 c22 -20.85 | median real wealth none/rls/c22 179717 / 218458 / 234398 486 s
+st rho83 pov effect rls -6.38 c22 -17.36 | median real wealth none/rls/c22 279799 / 319475 / 336093 564 s
+st rho90 pov effect rls -7.58 c22 -19.56 | median real wealth none/rls/c22 208700 / 248033 / 263835 642 s
+st port pov effect rls -7.85 c22 -21.41 | median real wealth none/rls/c22 242082 / 317340 / 400954 720 s
+st chi1 pov effect rls -2.78 c22 -13.39 | median real wealth none/rls/c22 205015 / 184415 / 198681 798 s
+st check pov effect rls 24.81 c22 41.65 | median real wealth none/rls/c22 115988 / 18695 / 15730 872 s
+check row equals off on every kept key: true
+wrote s59-assets-st.json (872 s)

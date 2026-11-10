@@ -1,0 +1,11 @@
+study s59-assets (plan step S59, part 1; preregistration BetterToBest/research-update prereg/2026-11-s59-asset-classes.md, committed Nov 10, 2026 before the switch was built; Amendment 1 before the pilot, Amendment 2 after it)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine 1d2cf29 (BetterToBest/compassionism-simulation, branch claude/s59-asset-classes, pull request 92; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-10
+rows: the frozen release row and the C2.2 design, each against its own no-programme run on the same seeds (frozenRow, today's safety net, CPS earnings: S66's rows), with wealth as today (off) and by asset class (row option rt): the main reading and one change at a time; a check row (every asset nominal, no pass-through) that must equal off
+commands (in the engine checkout):
+  node dev/tools/s59_assets.js ENV 100 20 --out=s59-assets-ENV.json      ENV = ref, adv, st
+  python3 dev/tools/s59_table.py DIR                                     (tables.md)
+  python3 sources/s59_portfolio.py                                       (s59_portfolio.json; SCF 2022 scfp2022s.zip and scf2022s.zip, federalreserve.gov)
+  python3 sources/s59_real_gains.py                                      (s59_real_gains.json; Shiller's ie_data.xls and Fig3-1.xls, sha256 inside)
+checks: the check row equals off on every kept key in all three environments (each JSON's _meta.checkEqualsOff); off reproduces S66's published wealth-poverty effects (+21.51 release, +0.66 C2.2, Reference)
+report: compassionism-simulation dev/reports/s59-asset-classes.md
