@@ -1,0 +1,14 @@
+study s67-price (plan step S67; preregistration BetterToBest/research-update prereg/2026-11-s67-price-rule-derivation.md, with Amendment 1 and its note of Nov 13, 2026)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze; nothing here costs money)
+engine 985f0c3 (BetterToBest/compassionism-simulation, branch claude/s67-price-rule, pull request 96; clean worktree; each JSON's _meta.manifest records the full hash and file hashes). The engine files are those of commit 975622f, named in Amendment 1; 985f0c3 changes one description string in the pilot runner. node v22; session machine, 4 cores; 2026-11-13
+rows: np, np-cap (no programme, today's rule and the capacity rule); rel, rel-cap (release row); c22, c22-cap (C2.2 design); these six also ran in S58 and reproduce its per-seed values exactly (tables.md, section 1)
+      c22-wy, c22-wyroot, c22-qt4 (four sub-steps a year: fitted on quarterly data; the yearly rule's roots; today's rule); c22-vel, c22-velh, c22-qtvel (velocity response); c22-drift, c22-qtdrift (velocity drift); rel-wy, rel-vel, rel-drift
+      every row on the frozen yardstick (frozenRow, CPS earnings, today's safety net) with the money-flow table (mf); row options are listed at the top of tables.md and in each JSON's _meta.rows
+commands (in the engine checkout):
+  node dev/tools/s67_price.js ENV 100 20 --out=s67-price-ENV.json      ENV = ref, adv, st (run side by side, one process each)
+  python3 dev/tools/s67_table.py DIR ../compassionism-sim-results/s58-price-74ca1a8      (tables.md, estimates.csv; the second argument is the S58 results folder, for the reproduction check)
+  python3 dev/tools/s67_closed_form.py > closed_form.md                (the closed form, and its check against S58's yearly paths)
+  python3 sources/s67_pstar.py sources/s67_fred > s67_pstar.json       (US price-gap regressions; FRED files downloaded Nov 13, 2026)
+  python3 sources/s67_panel.py sources/s67_wdi > s67_panel.json        (high-inflation episodes; World Bank data downloaded Nov 13, 2026)
+report: compassionism-simulation dev/reports/s67-price-rule-derivation.md
+note: the first start of the pilot failed before any row ran (a quote in the runner's description string); fixed in 985f0c3 and noted in the preregistration. No earlier run exists.
