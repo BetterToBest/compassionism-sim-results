@@ -1,0 +1,6 @@
+ref ubi earnings per adult-year -1544 per dollar -0.129 | adults with earnings (points) -0.00 | hours -0.0342 | bargained raise a year 0 19 s
+ref ubi03 earnings per adult-year -1200 per dollar -0.100 | adults with earnings (points) -0.00 | hours -0.0324 | bargained raise a year 348 19 s
+ref ubi10 earnings per adult-year -401 per dollar -0.033 | adults with earnings (points) 0.00 | hours -0.0287 | bargained raise a year 1158 19 s
+ref ubi24 earnings per adult-year 1189 per dollar 0.099 | adults with earnings (points) 0.00 | hours -0.0221 | bargained raise a year 2763 19 s
+ref ubi48 earnings per adult-year 3753 per dollar 0.313 | adults with earnings (points) 0.00 | hours -0.0138 | bargained raise a year 5332 19 s
+wrote s60-validate-ref.json (19 s)
