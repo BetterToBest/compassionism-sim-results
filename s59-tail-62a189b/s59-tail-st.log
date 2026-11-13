@@ -1,0 +1,31 @@
+st off weighted wealth-poverty effect rls 24.81 c22 41.65 | top 1% share start 20.8 end none/rls/c22 19.3 / 12.2 / 5.5 76 s
+st p1 weighted wealth-poverty effect rls -7.13 c22 -18.82 | top 1% share start 20.8 end none/rls/c22 21.9 / 21.2 / 20.8 154 s
+st p1chi weighted wealth-poverty effect rls -2.80 c22 -13.40 | top 1% share start 20.8 end none/rls/c22 22.5 / 23.2 / 22.9 231 s
+st flat weighted wealth-poverty effect rls -7.13 c22 -18.82 | top 1% share start 20.8 end none/rls/c22 21.9 / 21.2 / 20.8 309 s
+check row (flat) equals p1 on every kept key: true
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-1.json.tmp (309 s)
+st r2 weighted wealth-poverty effect rls -6.94 c22 -18.54 | top 1% share start 20.8 end none/rls/c22 22.3 / 21.5 / 21.0 83 s
+st main weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 30.1 end none/rls/c22 32.0 / 31.1 / 30.5 167 s
+st tailonly weighted wealth-poverty effect rls -7.22 c22 -18.94 | top 1% share start 30.1 end none/rls/c22 31.6 / 30.8 / 30.3 246 s
+st a135 weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 35.0 end none/rls/c22 37.1 / 36.2 / 35.5 328 s
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-2.json.tmp (328 s)
+st a163 weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 26.8 end none/rls/c22 28.4 / 27.6 / 27.0 87 s
+st p99 weighted wealth-poverty effect rls -7.00 c22 -18.68 | top 1% share start 33.3 end none/rls/c22 35.6 / 34.6 / 34.0 168 s
+st gpd weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 28.9 end none/rls/c22 30.7 / 29.8 / 29.2 250 s
+st gpd90 weighted wealth-poverty effect rls -6.90 c22 -18.32 | top 1% share start 23.6 end none/rls/c22 24.6 / 24.0 / 23.5 330 s
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-3.json.tmp (330 s)
+st m1 weighted wealth-poverty effect rls -6.99 c22 -18.50 | top 1% share start 24.8 end none/rls/c22 26.0 / 25.2 / 24.7 85 s
+st m6 weighted wealth-poverty effect rls -7.06 c22 -18.74 | top 1% share start 31.6 end none/rls/c22 34.0 / 33.0 / 32.3 169 s
+st ng0 weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 30.1 end none/rls/c22 31.9 / 31.1 / 30.5 253 s
+st ngall weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 30.1 end none/rls/c22 32.2 / 35.2 / 54.7 335 s
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-4.json.tmp (335 s)
+st rg weighted wealth-poverty effect rls -7.01 c22 -18.63 | top 1% share start 30.1 end none/rls/c22 32.0 / 31.2 / 30.6 85 s
+st bo0 weighted wealth-poverty effect rls -7.06 c22 -18.73 | top 1% share start 30.1 end none/rls/c22 32.0 / 31.1 / 30.5 167 s
+st ci0 weighted wealth-poverty effect rls -7.17 c22 -18.86 | top 1% share start 30.1 end none/rls/c22 31.5 / 30.8 / 30.3 247 s
+st chi1 weighted wealth-poverty effect rls -2.77 c22 -13.26 | top 1% share start 30.1 end none/rls/c22 32.7 / 33.4 / 33.0 329 s
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-5.json.tmp (329 s)
+st ix05 weighted wealth-poverty effect rls 3.65 c22 0.25 | top 1% share start 30.1 end none/rls/c22 32.0 / 28.6 / 17.1 86 s
+st ownW weighted wealth-poverty effect rls -5.40 c22 -12.56 | top 1% share start 20.8 end none/rls/c22 22.3 / 21.6 / 21.5 172 s
+st ownE weighted wealth-poverty effect rls -5.34 c22 -12.35 | top 1% share start 20.8 end none/rls/c22 22.3 / 21.7 / 21.6 241 s
+wrote /tmp/claude-0/-home-user-research-update/1a98ff09-2615-5b8d-970e-2ee6d95367fc/scratchpad/out/s59-tail-st-6.json.tmp (241 s)
+DONE st

@@ -1,0 +1,18 @@
+study s59-tail (plan step S59, part 2; preregistration BetterToBest/research-update prereg/2026-11-s59-tail-returns.md, committed Nov 12, 2026 before the switches were built; Amendment 1 at the pilot's start, Amendment 2 after it)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine 62a189b (BetterToBest/compassionism-simulation 62a189b6b4a0ca8e44b37f23f7639e0fae54b523, branch claude/s59-tail-returns, pull request 93; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-12 and 13 (UTC)
+rows: the frozen release row and the C2.2 design, each against its own no-programme run on the same seeds (frozenRow, today's safety net, CPS earnings: the rows of part 1 and S66), in 23 readings: off (all wealth is cash); p1 and p1chi (part 1's main and no-debt-relief readings at the corrected wealth-group edges); r2 (p1 with business owners and capital income); main (r2 with the weighted top tail); tailonly; one change at a time from main (a135, a163, p99, gpd, gpd90, m1, m6, ng0, ngall, rg, bo0, ci0, chi1, ix05); the owners readings without the tail (ownW, ownE); flat, a check row (the tail with every weight 1 and no change of wealth) that must equal p1
+how it ran: the first start (one process per environment, all readings in one invocation) was lost to a restart of the session's machine about five minutes in, before any file was written; it was started again as the same tool on the same engine commit in six chunks of readings per environment, each chunk writing its own file (s59-tail-ENV-1.json ... -6.json). Seeds are paired and every reading is its own study, so the split changes no figure; the three chunk-1 "off" rows reproduce part 1's and S66's published effects (+21.51 release, +0.66 C2.2, Reference).
+commands (in the engine checkout):
+  node dev/tools/s59_tail.js ENV 100 20 --rows=off,p1,flat,p1chi --out=s59-tail-ENV-1.json        ENV = ref, adv, st
+  node dev/tools/s59_tail.js ENV 100 20 --rows=r2,main,tailonly,a135 --out=s59-tail-ENV-2.json
+  node dev/tools/s59_tail.js ENV 100 20 --rows=a163,p99,gpd,gpd90 --out=s59-tail-ENV-3.json
+  node dev/tools/s59_tail.js ENV 100 20 --rows=m1,m6,ng0,ngall --out=s59-tail-ENV-4.json
+  node dev/tools/s59_tail.js ENV 100 20 --rows=rg,bo0,ci0,chi1 --out=s59-tail-ENV-5.json
+  node dev/tools/s59_tail.js ENV 100 20 --rows=ix05,ownW,ownE --out=s59-tail-ENV-6.json
+  python3 dev/tools/s59_tail_table.py DIR --part1=../s59-assets-1d2cf29      (merges the chunks, writes tables.md and summary.json; engine commit b6b6c39 or later)
+  python3 sources/s59_tail.py                                                (s59_tail.json; SCF 2022 scfp2022s.zip, the Forbes 400 of 2022, the Fed's dfa.zip; hashes inside)
+  python3 sources/s59_capital.py                                             (s59_capital.json; SCF 2022 scfp2022s.zip and scf2022s.zip)
+  python3 sources/s59_portfolio.py                                           (s59_portfolio.json, corrected Nov 12: the wealth-group edges)
+checks: the check row equals p1 on every kept key in all three environments (each chunk-1 JSON's _meta.checkEqualsOff); guard test identical and 8 unit tests (wtUnitSuite) on the engine commit
+report: compassionism-simulation dev/reports/s59-tail-returns.md
