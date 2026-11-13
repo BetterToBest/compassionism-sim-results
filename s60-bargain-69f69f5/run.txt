@@ -10,7 +10,7 @@ commands (in a clean worktree of the engine commit):
   node dev/tools/s60_bargain.js ENV 100 20 --rows=nash24,nash48 --out=s60-bargain-ENV-3.json
   node dev/tools/s60_bargain.js ENV 100 20 --rows=nash48y,nash48n --out=s60-bargain-ENV-4.json
   node dev/tools/s60_bargain.js ref 100 3 --validate --out=s60-validate-ref.json
-  python3 dev/tools/s60_table.py DIR tables.md      (merges the chunks, writes tables.md and summary.json)
+  python3 dev/tools/s60_table.py DIR tables.md      (merges the chunks, writes tables.md and summary.json; the script as of engine commit 5bad7fb, which renames one row label, household basket poverty; no figure differs)
   python3 sources/s60_bargain.py                     (the sources' figures as read and the readings derived from them; no download)
 the logs' output paths are shortened to file names (the session's scratch folder removed); nothing else in them is edited
 checks: bg0 and nash48n equal off on every kept series (210 per environment) in all three environments; guard test identical, engine lineage linked and 7 unit tests (bgUnitSuite) on the engine commit
