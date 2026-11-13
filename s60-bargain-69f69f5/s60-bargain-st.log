@@ -1,0 +1,13 @@
+st off weighted wealth-poverty effect rls -7.82 c22 -20.82 | basket poverty rls -8.05 c22 -37.14 | bargained raise per worker-year rls NaN c22 NaN | share of raises NaN NaN 101 s
+st bg0 weighted wealth-poverty effect rls -7.82 c22 -20.82 | basket poverty rls -8.05 c22 -37.14 | bargained raise per worker-year rls 0 c22 0 | share of raises 0.0 0.0 177 s
+wrote s60-bargain-st-1.json (177 s)
+st bg03 weighted wealth-poverty effect rls -7.95 c22 -21.12 | basket poverty rls -8.30 c22 -37.49 | bargained raise per worker-year rls 278 c22 902 | share of raises 5.9 9.0 98 s
+st bg10 weighted wealth-poverty effect rls -8.25 c22 -21.76 | basket poverty rls -8.91 c22 -38.05 | bargained raise per worker-year rls 923 c22 2949 | share of raises 17.3 24.3 172 s
+wrote s60-bargain-st-2.json (172 s)
+st nash24 weighted wealth-poverty effect rls -8.68 c22 -22.40 | basket poverty rls -9.97 c22 -38.34 | bargained raise per worker-year rls 2125 c22 6261 | share of raises 32.2 40.0 99 s
+st nash48 weighted wealth-poverty effect rls -9.02 c22 -22.63 | basket poverty rls -10.74 c22 -38.45 | bargained raise per worker-year rls 3692 c22 9548 | share of raises 45.1 50.0 174 s
+wrote s60-bargain-st-3.json (174 s)
+st nash48y weighted wealth-poverty effect rls -9.58 c22 -24.00 | basket poverty rls -11.78 c22 -39.28 | bargained raise per worker-year rls 4339 c22 13206 | share of raises 49.1 59.0 98 s
+st nash48n weighted wealth-poverty effect rls -7.82 c22 -20.82 | basket poverty rls -8.05 c22 -37.14 | bargained raise per worker-year rls 0 c22 0 | share of raises 0.0 0.0 173 s
+wrote s60-bargain-st-4.json (173 s)
+DONE st

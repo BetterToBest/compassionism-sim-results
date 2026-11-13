@@ -1,0 +1,17 @@
+study s60-bargain (plan step S60; preregistration BetterToBest/research-update prereg/2026-11-s60-bargaining-power.md, committed Nov 13, 2026 before the switch was built and before any run; Amendment 1 before the pilot)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine 69f69f5 (BetterToBest/compassionism-simulation 69f69f5f038ef88e3b40098f0c1600be90311f8f, branch claude/s60-bargaining-power, pull request 98; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-13 (UTC)
+rows: the frozen release row and the C2.2 design, each against its own no-programme run on the same seeds, on S71's rows (frozenRow, today's safety net, CPS earnings, wealth by asset class with owners, capital income and the creditor side under its main reading, the weighted tail) with adults outside the labour force (lf); 8 readings of BARGAIN (row option bg): off; bg0 (pass-through 0, markdown 1/1.21; must equal off); bg03 (0.03, the bound of Jager, Schoefer, Young and Zweimuller 2020); bg10 (0.10, the bound on hourly pay of Vivalt et al. 2026); nash24 and nash48 (the Nash benchmarks the evidence rejects); nash48y (0.48 with markdown 1/1.53); nash48n (0.48 with no markdown; must equal off)
+validation: s60-validate-ref.json, no programme, the same base row, $12,000 a year to every adult (unfinanced) against nothing, 3 years, seeds 1-100, Reference; rows base, ubi, ubi03, ubi10, ubi24, ubi48
+how it ran: one process per environment, four chunks of two readings each, each chunk saved to its own file (resumable); the first attempt was lost to a restart of the session machine before any chunk was saved and was rerun from the start with the same commands; nothing else was rerun
+commands (in a clean worktree of the engine commit):
+  node dev/tools/s60_bargain.js ENV 100 20 --rows=off,bg0 --out=s60-bargain-ENV-1.json            ENV = ref, adv, st
+  node dev/tools/s60_bargain.js ENV 100 20 --rows=bg03,bg10 --out=s60-bargain-ENV-2.json
+  node dev/tools/s60_bargain.js ENV 100 20 --rows=nash24,nash48 --out=s60-bargain-ENV-3.json
+  node dev/tools/s60_bargain.js ENV 100 20 --rows=nash48y,nash48n --out=s60-bargain-ENV-4.json
+  node dev/tools/s60_bargain.js ref 100 3 --validate --out=s60-validate-ref.json
+  python3 dev/tools/s60_table.py DIR tables.md      (merges the chunks, writes tables.md and summary.json)
+  python3 sources/s60_bargain.py                     (the sources' figures as read and the readings derived from them; no download)
+the logs' output paths are shortened to file names (the session's scratch folder removed); nothing else in them is edited
+checks: bg0 and nash48n equal off on every kept series (210 per environment) in all three environments; guard test identical, engine lineage linked and 7 unit tests (bgUnitSuite) on the engine commit
+report: compassionism-simulation dev/reports/s60-bargaining-power.md
