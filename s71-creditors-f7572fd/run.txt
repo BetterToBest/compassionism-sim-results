@@ -1,0 +1,15 @@
+study s71-creditors (plan step S71; preregistration BetterToBest/research-update prereg/2026-11-s71-creditor-side.md, committed Nov 13, 2026 before the option was built and before any coefficient was computed; Amendment 1 before the pilot)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine f7572fd (BetterToBest/compassionism-simulation f7572fd4c3efec2393df779df2d3459269cdb217, branch claude/s71-creditor-side, pull request 97; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-13 (UTC)
+rows: the frozen release row and the C2.2 design, each against its own no-programme run on the same seeds (frozenRow, today's safety net, CPS earnings: the rows of S59 and S66), in 10 readings: main and chi1 (S59's main and no-debt-relief readings; the creditor side off), cr (the creditor side, main: bond-like claims charged, deposits keep their pass-through, lenders' shareholders take the rest; the government's, foreigners' and outside households' parts left outside; weighted totals), crhold (holders of record), crhedge (lenders' shareholders not charged), crpop (the model's families as the whole household sector), crall (nothing outside), cru (unweighted totals), r2 and r2cr (without the tail, without and with the creditor side)
+how it ran: one process per environment, three chunks of readings each, each chunk saved to its own file (the session machine can restart); no restart happened
+commands (in a clean checkout of the engine commit):
+  node dev/tools/s71_creditors.js ENV 100 20 --rows=main,chi1,cr,crhold --out=s71-creditors-ENV-1.json        ENV = ref, adv, st
+  node dev/tools/s71_creditors.js ENV 100 20 --rows=crhedge,crpop,crall --out=s71-creditors-ENV-2.json
+  node dev/tools/s71_creditors.js ENV 100 20 --rows=cru,r2,r2cr --out=s71-creditors-ENV-3.json
+  python3 dev/tools/s71_table.py DIR tables.md --s59=../s59-tail-62a189b      (merges the chunks, writes tables.md and summary.json; engine commit 8db7b22 or later)
+  python3 sources/s71_creditors.py                                           (s71_creditors.json: the Fed's z1_csv_files.zip of Sep 11, 2026, SCF 2022 scfp2022s.zip, the Fed's dfa.zip; hashes inside)
+the logs' output paths are shortened to file names (the session's scratch folder removed); nothing else in them is edited
+checks: the rows main, chi1 and r2 equal S59's per-seed values on every key S59 kept (3,186 series, compassionism-sim-results s59-tail-62a189b); the ledger gap is at most 1.2e-14 of the debt relief in any seed of any row; unplaced claims at most 0.05% of the relief; guard test identical, engine lineage linked and 7 unit tests (crUnitSuite) on the engine commit
+note on cru: with unweighted totals the ledger keys (cr*) are unweighted means over the model's 500 adults, 18 of whom are tail adults holding billions; they are not comparable in dollars with the other rows' weighted keys (the shares of relief are)
+report: compassionism-simulation dev/reports/s71-creditor-side.md

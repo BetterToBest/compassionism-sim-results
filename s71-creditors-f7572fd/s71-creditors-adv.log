@@ -1,0 +1,14 @@
+adv main weighted wealth-poverty effect rls -12.96 c22 -20.15 | top 1% share effect rls -1.11 c22 -1.70 | relief, new charges, gap (rls) NaN NaN NaN 114 s
+adv chi1 weighted wealth-poverty effect rls -7.78 c22 -15.59 | top 1% share effect rls 0.74 c22 0.12 | relief, new charges, gap (rls) NaN NaN NaN 228 s
+adv cr weighted wealth-poverty effect rls -12.94 c22 -20.16 | top 1% share effect rls -1.00 c22 -1.61 | relief, new charges, gap (rls) 102860 23484 -2.8e-12 323 s
+adv crhold weighted wealth-poverty effect rls -12.95 c22 -20.18 | top 1% share effect rls -1.04 c22 -1.65 | relief, new charges, gap (rls) 102860 25060 1.3e-11 434 s
+wrote s71-creditors-adv-1.json.tmp (434 s)
+adv crhedge weighted wealth-poverty effect rls -12.97 c22 -20.15 | top 1% share effect rls -1.11 c22 -1.71 | relief, new charges, gap (rls) 102860 2426 -1.9e-12 114 s
+adv crpop weighted wealth-poverty effect rls -12.94 c22 -20.18 | top 1% share effect rls -0.92 c22 -1.55 | relief, new charges, gap (rls) 102860 37783 6.0e-12 213 s
+adv crall weighted wealth-poverty effect rls -12.90 c22 -20.21 | top 1% share effect rls -0.67 c22 -1.34 | relief, new charges, gap (rls) 102860 75105 1.7e-11 310 s
+wrote s71-creditors-adv-2.json.tmp (310 s)
+adv cru weighted wealth-poverty effect rls -12.95 c22 -20.15 | top 1% share effect rls -1.09 c22 -1.69 | relief, new charges, gap (rls) 877307 200296 -2.9e-11 101 s
+adv r2 weighted wealth-poverty effect rls -12.91 c22 -20.05 | top 1% share effect rls -0.96 c22 -1.47 | relief, new charges, gap (rls) NaN NaN NaN 197 s
+adv r2cr weighted wealth-poverty effect rls -12.89 c22 -20.09 | top 1% share effect rls -0.85 c22 -1.38 | relief, new charges, gap (rls) 100421 22927 -4.7e-12 291 s
+wrote s71-creditors-adv-3.json.tmp (291 s)
+DONE adv
