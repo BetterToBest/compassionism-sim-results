@@ -1,0 +1,117 @@
+shard 1 seeds 2-2; 4 vCPU; 15 GB; node v22.22.0; 2026-11-14T20:13:36Z
+r2 part M ref 20y seeds 2-2 units 4-4: 2.5 s, peak memory 168 MB
+r2 part M ref 20y seeds 2-2 units 5-5: 3.1 s, peak memory 171 MB
+r2 part M ref 20y seeds 2-2 units 0-1: 3.2 s, peak memory 177 MB
+r2 part M ref 20y seeds 2-2 units 2-3: 3.3 s, peak memory 178 MB
+r2 part M ref 20y seeds 2-2: 3.4 s in 4 processes
+r2 part M ref 40y seeds 2-2 units 4-4: 3.9 s, peak memory 171 MB
+r2 part M ref 40y seeds 2-2 units 5-5: 4.1 s, peak memory 174 MB
+r2 part M ref 40y seeds 2-2 units 0-1: 4.6 s, peak memory 195 MB
+r2 part M ref 40y seeds 2-2 units 2-3: 4.8 s, peak memory 186 MB
+r2 part M ref 40y seeds 2-2: 4.8 s in 4 processes
+r2 part M adv 20y seeds 2-2 units 4-4: 3.1 s, peak memory 172 MB
+r2 part M adv 20y seeds 2-2 units 5-5: 3.2 s, peak memory 171 MB
+r2 part M adv 20y seeds 2-2 units 0-1: 3.7 s, peak memory 181 MB
+r2 part M adv 20y seeds 2-2 units 2-3: 3.8 s, peak memory 177 MB
+r2 part M adv 20y seeds 2-2: 3.8 s in 4 processes
+r2 part M adv 40y seeds 2-2 units 5-5: 3.9 s, peak memory 173 MB
+r2 part M adv 40y seeds 2-2 units 4-4: 4.1 s, peak memory 172 MB
+r2 part M adv 40y seeds 2-2 units 0-1: 5.2 s, peak memory 191 MB
+r2 part M adv 40y seeds 2-2 units 2-3: 5.2 s, peak memory 188 MB
+r2 part M adv 40y seeds 2-2: 5.2 s in 4 processes
+r2 part M str 20y seeds 2-2 units 5-5: 2.4 s, peak memory 164 MB
+r2 part M str 20y seeds 2-2 units 4-4: 2.7 s, peak memory 168 MB
+r2 part M str 20y seeds 2-2 units 2-3: 2.9 s, peak memory 173 MB
+r2 part M str 20y seeds 2-2 units 0-1: 3.1 s, peak memory 204 MB
+r2 part M str 20y seeds 2-2: 3.2 s in 4 processes
+r2 part M str 40y seeds 2-2 units 5-5: 3.6 s, peak memory 170 MB
+r2 part M str 40y seeds 2-2 units 4-4: 3.9 s, peak memory 172 MB
+r2 part M str 40y seeds 2-2 units 0-1: 4.5 s, peak memory 189 MB
+r2 part M str 40y seeds 2-2 units 2-3: 4.5 s, peak memory 191 MB
+r2 part M str 40y seeds 2-2: 4.6 s in 4 processes
+r2 part S ref 20y seeds 2-2 units 54-80: 53.9 s, peak memory 239 MB
+r2 part S ref 20y seeds 2-2 units 81-106: 59.4 s, peak memory 244 MB
+r2 part S ref 20y seeds 2-2 units 27-53: 59.7 s, peak memory 234 MB
+r2 part S ref 20y seeds 2-2 units 0-26: 60.7 s, peak memory 251 MB
+r2 part S ref 20y seeds 2-2: 60.7 s in 4 processes
+r2 part S ref 40y seeds 2-2 units 54-80: 103.8 s, peak memory 237 MB
+r2 part S ref 40y seeds 2-2 units 81-106: 113.3 s, peak memory 231 MB
+r2 part S ref 40y seeds 2-2 units 27-53: 116.4 s, peak memory 225 MB
+r2 part S ref 40y seeds 2-2 units 0-26: 117.9 s, peak memory 244 MB
+r2 part S ref 40y seeds 2-2: 118.0 s in 4 processes
+r2 part S adv 20y seeds 2-2 units 54-80: 54.0 s, peak memory 228 MB
+r2 part S adv 20y seeds 2-2 units 81-106: 58.8 s, peak memory 249 MB
+r2 part S adv 20y seeds 2-2 units 27-53: 60.3 s, peak memory 241 MB
+r2 part S adv 20y seeds 2-2 units 0-26: 61.3 s, peak memory 243 MB
+r2 part S adv 20y seeds 2-2: 61.3 s in 4 processes
+r2 part S adv 40y seeds 2-2 units 54-80: 103.5 s, peak memory 255 MB
+r2 part S adv 40y seeds 2-2 units 81-106: 113.0 s, peak memory 233 MB
+r2 part S adv 40y seeds 2-2 units 0-26: 115.5 s, peak memory 245 MB
+r2 part S adv 40y seeds 2-2 units 27-53: 115.8 s, peak memory 229 MB
+r2 part S adv 40y seeds 2-2: 115.9 s in 4 processes
+r2 part S str 20y seeds 2-2 units 54-80: 53.7 s, peak memory 232 MB
+r2 part S str 20y seeds 2-2 units 81-106: 58.4 s, peak memory 228 MB
+r2 part S str 20y seeds 2-2 units 0-26: 59.0 s, peak memory 243 MB
+r2 part S str 20y seeds 2-2 units 27-53: 60.0 s, peak memory 234 MB
+r2 part S str 20y seeds 2-2: 60.0 s in 4 processes
+r2 part S str 40y seeds 2-2 units 54-80: 93.2 s, peak memory 247 MB
+r2 part S str 40y seeds 2-2 units 81-106: 100.6 s, peak memory 240 MB
+r2 part S str 40y seeds 2-2 units 27-53: 105.3 s, peak memory 232 MB
+r2 part S str 40y seeds 2-2 units 0-26: 106.1 s, peak memory 230 MB
+r2 part S str 40y seeds 2-2: 106.2 s in 4 processes
+r2 part F ref 20y seeds 2-2 units 95-125: 64.6 s, peak memory 227 MB
+r2 part F ref 20y seeds 2-2 units 64-94: 69.3 s, peak memory 227 MB
+r2 part F ref 20y seeds 2-2 units 32-63: 70.8 s, peak memory 227 MB
+r2 part F ref 20y seeds 2-2 units 0-31: 73.2 s, peak memory 245 MB
+r2 part F ref 20y seeds 2-2: 73.3 s in 4 processes
+r2 part F ref 40y seeds 2-2 units 95-125: 121.8 s, peak memory 231 MB
+r2 part F ref 40y seeds 2-2 units 64-94: 140.2 s, peak memory 228 MB
+r2 part F ref 40y seeds 2-2 units 32-63: 140.4 s, peak memory 231 MB
+r2 part F ref 40y seeds 2-2 units 0-31: 141.7 s, peak memory 249 MB
+r2 part F ref 40y seeds 2-2: 141.8 s in 4 processes
+r2 part F adv 20y seeds 2-2 units 95-125: 66.1 s, peak memory 241 MB
+r2 part F adv 20y seeds 2-2 units 64-94: 72.6 s, peak memory 229 MB
+r2 part F adv 20y seeds 2-2 units 32-63: 74.2 s, peak memory 240 MB
+r2 part F adv 20y seeds 2-2 units 0-31: 75.2 s, peak memory 228 MB
+r2 part F adv 20y seeds 2-2: 75.3 s in 4 processes
+r2 part F adv 40y seeds 2-2 units 95-125: 118.8 s, peak memory 245 MB
+r2 part F adv 40y seeds 2-2 units 64-94: 133.7 s, peak memory 242 MB
+r2 part F adv 40y seeds 2-2 units 32-63: 133.9 s, peak memory 229 MB
+r2 part F adv 40y seeds 2-2 units 0-31: 136.1 s, peak memory 243 MB
+r2 part F adv 40y seeds 2-2: 136.2 s in 4 processes
+r2 part F str 20y seeds 2-2 units 95-125: 60.6 s, peak memory 253 MB
+r2 part F str 20y seeds 2-2 units 32-63: 66.1 s, peak memory 227 MB
+r2 part F str 20y seeds 2-2 units 64-94: 66.1 s, peak memory 246 MB
+r2 part F str 20y seeds 2-2 units 0-31: 69.9 s, peak memory 243 MB
+r2 part F str 20y seeds 2-2: 70.0 s in 4 processes
+r2 part F str 40y seeds 2-2 units 95-125: 113.3 s, peak memory 229 MB
+r2 part F str 40y seeds 2-2 units 64-94: 127.8 s, peak memory 241 MB
+r2 part F str 40y seeds 2-2 units 32-63: 129.2 s, peak memory 231 MB
+r2 part F str 40y seeds 2-2 units 0-31: 130.3 s, peak memory 248 MB
+r2 part F str 40y seeds 2-2: 130.3 s in 4 processes
+r2 part B ref 20y seeds 2-2 units 0-0: 12.7 s, peak memory 297 MB
+r2 part B ref 20y seeds 2-2 units 2-2: 19.5 s, peak memory 330 MB
+r2 part B ref 20y seeds 2-2 units 1-1: 19.8 s, peak memory 398 MB
+r2 part B ref 20y seeds 2-2: 19.8 s in 3 processes
+r2 part B ref 40y seeds 2-2 units 0-0: 20.7 s, peak memory 301 MB
+r2 part B ref 40y seeds 2-2 units 1-1: 34.9 s, peak memory 403 MB
+r2 part B ref 40y seeds 2-2 units 2-2: 36.5 s, peak memory 384 MB
+r2 part B ref 40y seeds 2-2: 36.6 s in 3 processes
+r2 part B adv 20y seeds 2-2 units 0-0: 13.0 s, peak memory 317 MB
+r2 part B adv 20y seeds 2-2 units 1-1: 19.3 s, peak memory 414 MB
+r2 part B adv 20y seeds 2-2 units 2-2: 20.4 s, peak memory 399 MB
+r2 part B adv 20y seeds 2-2: 20.5 s in 3 processes
+r2 part B adv 40y seeds 2-2 units 0-0: 19.9 s, peak memory 300 MB
+r2 part B adv 40y seeds 2-2 units 1-1: 33.3 s, peak memory 396 MB
+r2 part B adv 40y seeds 2-2 units 2-2: 37.5 s, peak memory 389 MB
+r2 part B adv 40y seeds 2-2: 37.5 s in 3 processes
+r2 part B str 20y seeds 2-2 units 0-0: 12.8 s, peak memory 308 MB
+r2 part B str 20y seeds 2-2 units 2-2: 18.5 s, peak memory 395 MB
+r2 part B str 20y seeds 2-2 units 1-1: 19.5 s, peak memory 385 MB
+r2 part B str 20y seeds 2-2: 19.5 s in 3 processes
+r2 part B str 40y seeds 2-2 units 0-0: 21.1 s, peak memory 304 MB
+r2 part B str 40y seeds 2-2 units 1-1: 32.8 s, peak memory 385 MB
+r2 part B str 40y seeds 2-2 units 2-2: 34.2 s, peak memory 407 MB
+r2 part B str 40y seeds 2-2: 34.3 s in 3 processes
+r2 dry run seeds 2-2: 1343.0 s
+ended 2026-11-14T20:35:59Z
