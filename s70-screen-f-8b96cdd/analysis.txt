@@ -1,0 +1,2 @@
+analysis of s70-screen-f-8b96cdd: node dev/tools/s70_table.js <this folder> <out> in BetterToBest/compassionism-simulation at commit 281af5909f373d50403137a534ce256307ef965e (branch claude/s70-screen, pull request 106); node v22.23.4; 2026-11-14T18:20:07Z
+outputs: s70-F-tables.md, s70-F-summary.json (also in compassionism-simulation dev/runs/s70-screen/); report: dev/reports/s70-screen.md
