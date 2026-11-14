@@ -1,0 +1,7 @@
+shard 0 seeds 1-2; 4 vCPU; 15 GB; node v22.22.0; 2026-11-14T16:59:18Z
+block S both seeds 1-2 points 204-305: 1963.3 s, peak memory 275 MB
+block S both seeds 1-2 points 0-101: 1967.6 s, peak memory 245 MB
+block S both seeds 1-2 points 306-407: 2009.4 s, peak memory 281 MB
+block S both seeds 1-2 points 102-203: 2041.4 s, peak memory 259 MB
+block S both seeds 1-2: 2041.6 s in 4 processes
+ended 2026-11-14T17:33:19Z
