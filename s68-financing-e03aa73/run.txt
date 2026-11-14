@@ -1,0 +1,10 @@
+study s68-financing (plan step S68, items 5 and 6; preregistration BetterToBest/research-update prereg/2026-11-s68-financing-identity.md, committed Nov 14, 2026 before the engine change and before any run; Amendment 1 before the pilot)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine e03aa73 (BetterToBest/compassionism-simulation e03aa736770f0206d46ecbd17d2a544ac41fb3ef, branch claude/s68-financing-identity, pull request 100; clean worktree; each JSON's manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-14 (UTC)
+rows: the frozen row (frozenRow, today's safety net, CPS earnings), round-2 switches off. (A) no programme; the release design and C2.2 under the Source; C2.2 under the flat contribution (o.fin 'tax') and under 'hybrid', each with fx.fin 'report' (the gap unpaid, as the engine was) and 'money' (the gap as new money); the release design under the flat contribution, both ways. (B) no programme, the release design and C2.2 (Source) on the quarterly count of today's price rule (pr {q:4, k:1, a:0, r:0, h:0, rs:false}) with o.wy (costs at the within-year price level)
+how it ran: one process per environment, all rows in one study per part; nothing was rerun
+commands (in the engine worktree at e03aa73):
+  node dev/tools/s68_pilot.js ENV 100        ENV = ref, adv, st   (writes s68-ENV.json)
+  node dev/tools/s68_table.js DIR            (writes tables.md and summary.json)
+checks: guard test identical (25 rows x 20 seeds x 483 outputs, three environments); engine lineage linked; unit 336 passed (s68UnitSuite 8), validate, domtest 153
+report: compassionism-simulation dev/reports/s68-financing-identity.md
