@@ -1,0 +1,21 @@
+st open wealth poverty rls -7.86 c22 -21.02 | basket poverty rls -8.01 c22 -37.30 | cost rls 12261 | subsidy rls 0 (0.0%) | PTF share 19.8 | eps 0.000 129 s
+st hub0 wealth poverty rls -7.86 c22 -21.02 | basket poverty rls -8.01 c22 -37.30 | cost rls 12261 | subsidy rls 408 (3.3%) | PTF share 19.8 | eps 1.770 256 s
+st main wealth poverty rls -7.86 c22 -20.86 | basket poverty rls -7.98 c22 -37.19 | cost rls 12273 | subsidy rls 443 (3.6%) | PTF share 19.8 | eps 1.789 336 s
+st hubSt wealth poverty rls -8.00 c22 -21.01 | basket poverty rls -8.29 c22 -37.27 | cost rls 11831 | subsidy rls 0 (0.0%) | PTF share 19.8 | eps 1.789 403 s
+wrote s62-ptf-ops-st-1.json (403 s)
+st price wealth poverty rls -7.74 c22 -20.48 | basket poverty rls -7.90 c22 -36.66 | cost rls 11836 | subsidy rls 0 (0.0%) | PTF share 19.8 | eps 1.033 94 s
+st sector wealth poverty rls -7.86 c22 -20.86 | basket poverty rls -7.97 c22 -37.18 | cost rls 12285 | subsidy rls 454 (3.7%) | PTF share 19.8 | eps 1.789 166 s
+st res0 wealth poverty rls -7.87 c22 -20.87 | basket poverty rls -8.00 c22 -37.19 | cost rls 12251 | subsidy rls 421 (3.4%) | PTF share 19.8 | eps 1.789 244 s
+st members wealth poverty rls -7.87 c22 -20.96 | basket poverty rls -7.99 c22 -37.26 | cost rls 12295 | subsidy rls 443 (3.6%) | PTF share 19.8 | eps 1.788 321 s
+wrote s62-ptf-ops-st-2.json (321 s)
+st step wealth poverty rls -7.85 c22 -20.91 | basket poverty rls -7.98 c22 -37.22 | cost rls 12261 | subsidy rls 430 (3.5%) | PTF share 19.8 | eps 1.770 98 s
+st w10 wealth poverty rls -7.86 c22 -20.89 | basket poverty rls -7.98 c22 -37.21 | cost rls 12264 | subsidy rls 434 (3.5%) | PTF share 19.8 | eps 1.765 169 s
+st w40 wealth poverty rls -7.87 c22 -20.85 | basket poverty rls -7.98 c22 -37.17 | cost rls 12297 | subsidy rls 468 (3.8%) | PTF share 19.8 | eps 1.874 239 s
+st tMem wealth poverty rls -7.85 c22 -20.73 | basket poverty rls -7.97 c22 -37.07 | cost rls 12232 | subsidy rls 401 (3.3%) | PTF share 19.8 | eps 1.656 308 s
+wrote s62-ptf-ops-st-3.json (308 s)
+st tCap wealth poverty rls -7.89 c22 -20.93 | basket poverty rls -8.00 c22 -37.25 | cost rls 12366 | subsidy rls 537 (4.3%) | PTF share 19.8 | eps 2.219 93 s
+st hire5 wealth poverty rls -7.86 c22 -20.85 | basket poverty rls -7.98 c22 -37.17 | cost rls 12273 | subsidy rls 443 (3.6%) | PTF share 19.8 | eps 1.789 165 s
+st hire2 wealth poverty rls -7.86 c22 -20.71 | basket poverty rls -7.98 c22 -37.06 | cost rls 12243 | subsidy rls 413 (3.4%) | PTF share 19.0 | eps 1.750 235 s
+st bg03 wealth poverty rls -7.99 c22 -21.21 | basket poverty rls -8.26 c22 -37.54 | cost rls 12278 | subsidy rls 443 (3.6%) | PTF share 19.8 | eps 1.789 304 s
+wrote s62-ptf-ops-st-4.json (304 s)
+DONE st
