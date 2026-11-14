@@ -1,0 +1,7 @@
+shard 8 seeds 17-18; 4 vCPU; 15 GB; node v22.22.0; 2026-11-14T17:19:58Z
+block F both seeds 17-18 points 126-251: 669.0 s, peak memory 264 MB
+block F both seeds 17-18 points 378-503: 674.6 s, peak memory 283 MB
+block F both seeds 17-18 points 252-377: 686.5 s, peak memory 307 MB
+block F both seeds 17-18 points 0-125: 695.7 s, peak memory 291 MB
+block F both seeds 17-18: 695.8 s in 4 processes
+ended 2026-11-14T17:31:34Z
