@@ -1,0 +1,13 @@
+study s72-government (plan step S72; preregistration BetterToBest/research-update prereg/2026-11-s72-government-budget.md, committed Nov 14, 2026 before the engine change and before any run; Amendment 1 before the pilot; Amendment 2 after the frontier ran, adding the check without the weighted tail)
+pilot: seeds 1-100; frontier: seeds 1-20; 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine df9cfbe (BetterToBest/compassionism-simulation, branch claude/s72-government-budget, pull request 102; clean worktree; each JSON's manifest records the full hash and file hashes); the frontier without the tail ran at c5db934 (the frontier tool's --nowt option added; engine identical); the on-together tests at e9143e9 (docs only after df9cfbe); node v22; session machine, 4 cores; 2026-11-14 (UTC)
+rows: the candidate main row (r2MainRow, r2MainStudy) in both runs. Pilot (A): no programme; the release design and C2.2 under the Source (gv {} and gv {wb:false}); under the flat contribution on wages, cap 0.9, share 1 with fx.fin 'money', 'debt' (fixed rate), 'debt' (policy-rate rule), 'cap' (0.99). (B) C2.2 flat contribution with 'debt', each reading moved alone (rule a 0.25, 1; b 0, 1; rs 0, 0.02; rr 0, 0.0196; dk 0, 0.021; ip borrow) and 'cap' 0.95. Frontier: both designs x share (0, .25, .5, .75, 1) x base (w, wc, all) x cap (.5, .7, .9), share 0 once, each with fx.fin 'money' and 'debt'; and the same without the weighted tail (s72-frontier-nowt-*)
+how it ran: one process per environment and study; nothing was rerun
+commands (in the engine worktree):
+  node dev/tools/s72_pilot.js ENV 100 DIR             ENV = ref, adv, st   (writes s72-pilot-ENV.json)
+  node dev/tools/s72_frontier.js ENV 20 DIR           (writes s72-frontier-ENV.json)
+  node dev/tools/s72_frontier.js ENV 20 DIR --nowt    (writes s72-frontier-nowt-ENV.json; at c5db934)
+  node dev/tools/s72_table.js DIR; node dev/tools/s72_summary.js DIR   (tables.md, summary.md, summary.json)
+  node dev/tools/s68_pairs.js ENV 5                   (on-together tests, pairs-ENV.log; results in compassionism-simulation dev/runs/s68-pairs/)
+checks: guard test identical; engine lineage linked (six release panels identical); unit 350 passed (s72UnitSuite 9); validate; domtest 153; on-together 137 rows x 3 environments pass, run order identical
+report: compassionism-simulation dev/reports/s72-government-budget.md
