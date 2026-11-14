@@ -1,0 +1,12 @@
+study s73-participation (plan step S73; preregistration BetterToBest/research-update prereg/2026-11-s73-participation.md, committed Nov 14, 2026 before the engine change and before any run; Amendment 1 before the pilot)
+pilot: seeds 1-100; 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine d12fd0f (BetterToBest/compassionism-simulation, branch claude/s73-participation, pull request 103; clean worktree; each JSON's manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-14 (UTC)
+rows: the candidate main row (r2MainRow, r2MainStudy) in both runs, each lf reading with its own no-programme run. (A) lf {} (today's main row), lf {fl:'stock'}, lf {fl:'stock', pm:0.43}; (B) pm 0.25, 0.7, 1 with fl 'stock'; ageing (ag) with lf {}, {fl:'panel', pm:0.43}, {fl:'stock', pm:0.43}; (C) C2.2 under the flat contribution on wages (share 1, base w, cap 0.9, fx.fin 'money') with fl 'stock' and pm 0 or 0.43; (V) $12,000 a year to every adult and no programme otherwise (S60's check), fl 'stock' with pm 0, 0.43, 1, study fin 'none', no government account
+how it ran: one process per environment; nothing was rerun
+commands (in the engine worktree):
+  node dev/tools/s73_pilot.js ENV 100 DIR             ENV = ref, adv, st   (writes s73-pilot-ENV.json; pilot-ENV.log)
+  node dev/tools/s73_table.js DIR                     (tables.md, summary.json)
+  node dev/tools/s68_pairs.js ENV 5 --out=FILE        (on-together tests, pairs-ENV.log; results in compassionism-simulation dev/runs/s68-pairs/)
+source: python3 sources/s73_lf_flows.py DIR25 DIR26 --json=sources/s73_lf_flows.json (Census CPS ASEC 2025 and 2026 public-use files; sha256 in the script)
+checks: guard test identical; engine lineage linked (six release panels identical); unit 358 (s73UnitSuite 7 and the 100-seed stock test); validate; on-together 154 rows x 3 environments pass, run order identical
+report: compassionism-simulation dev/reports/s73-participation.md
