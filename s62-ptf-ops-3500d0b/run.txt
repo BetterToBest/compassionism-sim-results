@@ -1,0 +1,15 @@
+study s62-ptf-ops (plan step S62; preregistration BetterToBest/research-update prereg/2026-11-s62-ptf-realism.md, committed Nov 14, 2026 before the switch was built and before any run; Amendment 1 before the pilot)
+pilot: seeds 1-100, 500 adults, 20 years, three environments (round 2 runs nothing at 500 seeds before S63's freeze); a mechanism check, not a result
+engine 3500d0b (BetterToBest/compassionism-simulation 3500d0b6918df9e88849e83e5c361b10c9dce3de, branch claude/s62-ptf-realism, pull request 99; clean worktree; each JSON's _meta.manifest records the full hash and file hashes); node v22; session machine, 4 cores; 2026-11-14 (UTC)
+rows: the frozen release row and the C2.2 design, each against its own no-programme run on the same seeds, on S60's rows (frozenRow, today's safety net, CPS earnings, wealth by asset class with owners, capital income and the creditor side under its main reading, the weighted tail, adults outside the labour force, S60's wage setting at pass-through 0) with S55's open PTF access and growth (pa 'open'); 16 readings of PTF_OPS (row option po): open (no po); hub0 (the step-5 accounting, bonus on members, the step, tests on sales: must equal open); main; hubSt (the Hub's costs as stated); price (prices rise to full cost); sector (observed sector costs); res0 (no reserve); members (bonus on members); step (the papers' step); w10, w40 (band half-widths); tMem, tCap (what the tests read); hire5, hire2 (hiring limits, stress); bg03 (main with bargaining pass-through 0.03)
+how it ran: one process per environment, four chunks of four readings each, each chunk saved to its own file (resumable); nothing was rerun
+commands (in a clean worktree of the engine commit):
+  node dev/tools/s62_ptf_ops.js ENV 100 20 --rows=open,hub0,main,hubSt --out=s62-ptf-ops-ENV-1.json          ENV = ref, adv, st
+  node dev/tools/s62_ptf_ops.js ENV 100 20 --rows=price,sector,res0,members --out=s62-ptf-ops-ENV-2.json
+  node dev/tools/s62_ptf_ops.js ENV 100 20 --rows=step,w10,w40,tMem --out=s62-ptf-ops-ENV-3.json
+  node dev/tools/s62_ptf_ops.js ENV 100 20 --rows=tCap,hire5,hire2,bg03 --out=s62-ptf-ops-ENV-4.json
+  python3 dev/tools/s62_table.py DIR tables.md      (merges the chunks, writes tables.md and summary.json)
+  python3 sources/s62_ptf_ops.py --eia table_6.xlsx (the sources' figures as read and the readings derived from them)
+the logs' output paths are shortened to file names (the session's scratch folder removed); the JSONs' recorded commands keep the full output path; nothing else is edited
+checks: hub0 equals open on every kept series (201 per environment) in all three environments; guard test identical, engine lineage linked, 10 unit tests (poUnitSuite) and the repository's checks on the engine branch
+report: compassionism-simulation dev/reports/s62-ptf-realism.md
