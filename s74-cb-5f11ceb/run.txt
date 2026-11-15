@@ -1,0 +1,12 @@
+study s74-cb (plan step S74, part 2; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, committed Nov 14, 2026 before the engine change and before any run; Amendment 1, Nov 15, 2026, before this pilot)
+pilot: seeds 1-100; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs (C2.2, the release design); a mechanism check before part 3's sweep and report, not the study's result
+engine 5f11ceb (BetterToBest/compassionism-simulation, branch claude/s74-cb-build, pull request 123; clean worktree; each JSON's manifest records the engine fingerprint); node v22; session machine, 4 cores; 2026-11-15 (UTC)
+rows: the frozen round-2 main pair (r2FreezePair: no programme, programme) with the stability measures (study option stab). Arms: Reference, Adverse, Stress: off (today's engine) and cb (the policy-rate rule at its main values, forced sales on); History: infl (no central bank), actual (the actual rate path), cb (the rule)
+how it ran: one process per environment, beside the on-together tests; nothing was rerun
+commands (in the engine worktree):
+  node dev/tools/s74_pilot.js ENV 100        ENV = ref, adv, st, hx   (writes dev/runs/s74-pilot/s74-pilot-ENV.json; pilot-ENV.log)
+  node dev/tools/s74_table.js                (tables.md, tables.json)
+  node dev/tools/s68_pairs.js ENV 5 --out=dev/runs/s74-pairs/s74-pairs-ENV.json   (on-together tests on engine 8b8ea97, four environments; pairs-ENV.log)
+source: sources/s74_history.py (S74 part 1, pull request 109); the engine's copy HX by dev/tools/s74_hx_copy.py (check passes); sources/unemp_flows.py rerun Nov 15, 2026 for the unemployment anchors (4.2%, 9.4%)
+checks: guard test identical (three times); round-2 main pair identical in three environments (dev/tools/s74_offsig.js); s74UnitSuite 15 of 15; on-together 172 rows x 4 environments pass, run order identical; engine lineage: see the pull request
+report: compassionism-simulation dev/reports/s74-pilot.md (part 3 writes dev/reports/s74-central-bank.md)
