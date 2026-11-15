@@ -1,0 +1,7 @@
+shard 0 seeds 1-36; 4 vCPU; 15 GB; node v22.22.0; 2026-11-14T23:13:33Z
+r2 part F ref 40y seeds 1-36 units 95-125: 3455.9 s, peak memory 287 MB
+r2 part F ref 40y seeds 1-36 units 64-94: 3919.6 s, peak memory 275 MB
+r2 part F ref 40y seeds 1-36 units 32-63: 3938.7 s, peak memory 295 MB
+r2 part F ref 40y seeds 1-36 units 0-31: 4081.4 s, peak memory 273 MB
+r2 part F ref 40y seeds 1-36: 4081.5 s in 4 processes
+ended 2026-11-15T00:21:34Z
