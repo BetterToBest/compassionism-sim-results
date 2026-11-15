@@ -1,0 +1,7 @@
+shard 6 seeds 430-500; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T05:51:20Z
+r2 part F str 20y seeds 430-500 units 95-125: 4048.4 s, peak memory 294 MB
+r2 part F str 20y seeds 430-500 units 64-94: 4411.6 s, peak memory 273 MB
+r2 part F str 20y seeds 430-500 units 32-63: 4483.2 s, peak memory 322 MB
+r2 part F str 20y seeds 430-500 units 0-31: 4626.9 s, peak memory 300 MB
+r2 part F str 20y seeds 430-500: 4627.1 s in 4 processes
+ended 2026-11-15T07:08:27Z
