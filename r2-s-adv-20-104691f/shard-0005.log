@@ -1,0 +1,7 @@
+shard 5 seeds 418-500; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T01:16:45Z
+r2 part S adv 20y seeds 418-500 units 54-80: 4044.2 s, peak memory 265 MB
+r2 part S adv 20y seeds 418-500 units 81-106: 4417.9 s, peak memory 301 MB
+r2 part S adv 20y seeds 418-500 units 27-53: 4552.5 s, peak memory 281 MB
+r2 part S adv 20y seeds 418-500 units 0-26: 4612.5 s, peak memory 320 MB
+r2 part S adv 20y seeds 418-500: 4612.7 s in 4 processes
+ended 2026-11-15T02:33:38Z
