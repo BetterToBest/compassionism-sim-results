@@ -1,0 +1,7 @@
+shard 4 seeds 288-358; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T02:03:18Z
+r2 part F ref 20y seeds 288-358 units 95-125: 5104.7 s, peak memory 284 MB
+r2 part F ref 20y seeds 288-358 units 64-94: 5623.2 s, peak memory 295 MB
+r2 part F ref 20y seeds 288-358 units 32-63: 5687.5 s, peak memory 296 MB
+r2 part F ref 20y seeds 288-358 units 0-31: 5869.5 s, peak memory 286 MB
+r2 part F ref 20y seeds 288-358: 5869.6 s in 4 processes
+ended 2026-11-15T03:41:08Z
