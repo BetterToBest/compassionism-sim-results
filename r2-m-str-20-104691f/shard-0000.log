@@ -1,0 +1,7 @@
+shard 0 seeds 1-500; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T05:55:06Z
+r2 part M str 20y seeds 1-500 units 5-5: 432.5 s, peak memory 244 MB
+r2 part M str 20y seeds 1-500 units 4-4: 437.0 s, peak memory 249 MB
+r2 part M str 20y seeds 1-500 units 0-1: 546.3 s, peak memory 268 MB
+r2 part M str 20y seeds 1-500 units 2-3: 568.2 s, peak memory 266 MB
+r2 part M str 20y seeds 1-500: 568.7 s in 4 processes
+ended 2026-11-15T06:04:35Z
