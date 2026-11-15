@@ -1,0 +1,6 @@
+shard 2 seeds 251-375; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T03:17:05Z
+r2 part B str 40y seeds 251-375 units 0-0: 2723.9 s, peak memory 407 MB
+r2 part B str 40y seeds 251-375 units 1-1: 4309.4 s, peak memory 479 MB
+r2 part B str 40y seeds 251-375 units 2-2: 4492.2 s, peak memory 479 MB
+r2 part B str 40y seeds 251-375: 4492.3 s in 3 processes
+ended 2026-11-15T04:31:57Z
