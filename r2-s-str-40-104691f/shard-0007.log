@@ -1,0 +1,7 @@
+shard 7 seeds 321-365; 4 vCPU; 15 GB; node v22.22.0; 2026-11-15T02:33:12Z
+r2 part S str 40y seeds 321-365 units 54-80: 4140.2 s, peak memory 282 MB
+r2 part S str 40y seeds 321-365 units 81-106: 4531.0 s, peak memory 271 MB
+r2 part S str 40y seeds 321-365 units 27-53: 4686.5 s, peak memory 276 MB
+r2 part S str 40y seeds 321-365 units 0-26: 4727.6 s, peak memory 268 MB
+r2 part S str 40y seeds 321-365: 4727.7 s in 4 processes
+ended 2026-11-15T03:52:00Z
