@@ -1,0 +1,12 @@
+study s74-final, corrected (plan step S76; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, Amendment 4, committed Nov 16, 2026 before this run)
+why: S74's tools did not set the release's global settings (applyNR6, tbSetG(TB_PROFILE_G)) that the round-2 runner (runner/jobs/r2.js) sets, so the earlier folders' "no central bank" arm was not release 2's main row; this run sets them. It supersedes s74-final-a60ecd1 and s74-cb-5f11ceb (kept as published).
+what: as s74-final-a60ecd1: seeds 1-100; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs (C2.2, the release design); the frozen round-2 main pair (r2FreezePair) with the stability measures (study option stab); basic living (bNAPy, bOAPy) and children's basket poverty (hhCostKidPY) also saved
+arms: Reference, Adverse, Stress: off (no central bank) and cb (the policy-rate rule at its main values, forced sales on); History: infl (no central bank), actual (the actual rate path), cb (the rule)
+engine 3beb5ff (BetterToBest/compassionism-simulation, branch claude/s76-cb-profile; the engine block is unchanged since a60ecd1, only dev/tools/s74_pilot.js changed); clean worktree (each JSON's manifest: commit 3beb5ff, dirty false); node v22; session machine, 4 cores; 2026-11-16 (UTC)
+how it ran: one process per environment, at once; nothing was rerun
+commands (in a clean worktree of the engine at 3beb5ff):
+  node dev/tools/s74_pilot.js ENV 100 --out=DIR        ENV = ref, adv, st, hx   (s74-pilot-ENV.json; pilot-ENV.log)
+  node dev/tools/s74_table.js DIR                      (the engine repository's dev/runs/s74-corrected/tables.md, tables.json)
+  python3 dev/tools/s76_cb_data.py DIR --check-r2=<folder with r2-m-*-20-104691f>   (the engine repository's data/studies/s74-cb.json)
+check (Amendment 4's condition, passed before anything was read): the "off" arm equals release 2's main row (r2-m-ref|adv|str-20-104691f) on seeds 1-100, per seed, on basket poverty, wealth poverty, median real wealth, basic living, children's basket poverty and programme inflation, both designs, both runs (72 series; 0 differ)
+report: compassionism-simulation dev/reports/s74-central-bank.md (dated correction, Nov 16)
