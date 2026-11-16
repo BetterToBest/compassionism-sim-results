@@ -1,0 +1,11 @@
+study s74-final (plan step S74, part 3; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, committed Nov 14, 2026 before the engine change and before any run; Amendment 1, Nov 15, 2026, before the pilot; Amendment 2, Nov 16, 2026, before this run)
+what: the pilot's rows rerun with part 3's reporting (who gains and who pays by wealth group, P2 as a share of income, own inflation in History, yearly paths). Seeds 1-100; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs (C2.2, the release design); the frozen round-2 main pair (r2FreezePair) with the stability measures (study option stab)
+arms: Reference, Adverse, Stress: off (no central bank) and cb (the policy-rate rule at its main values, forced sales on); History: infl (no central bank), actual (the actual rate path), cb (the rule)
+engine a60ecd1 (BetterToBest/compassionism-simulation, branch claude/s74-part3, pull request 124); clean worktree (each JSON's manifest: commit a60ecd1, dirty false); node v22; session machine, 4 cores; 2026-11-16 (UTC)
+how it ran: one process per environment, at once; each environment's sweep (s74-sweep-a60ecd1) ran after it in the same chain; nothing was rerun
+commands (in a clean worktree of the engine at a60ecd1):
+  node dev/tools/s74_pilot.js ENV 100 --out=DIR        ENV = ref, adv, st, hx   (s74-pilot-ENV.json; pilot-ENV.log)
+  node dev/tools/s74_table.js DIR                      (tables.md, tables.json)
+  node dev/tools/s74_repro.js s74-cb-5f11ceb s74-final-a60ecd1   (repro.log: every value the pilot saved, 542,000, reproduces exactly)
+checks before the run: guard test identical; the round-2 main pair's full-output signatures identical on the old and new engine (dev/tools/s74_offsig.js); s74UnitSuite 17 of 17; unit 377 of 377; validate passes
+report: compassionism-simulation dev/reports/s74-central-bank.md
