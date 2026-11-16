@@ -1,0 +1,5 @@
+study s74-rcpi (plan step S74, after its report; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, item 4's check and Amendment 3, Nov 16, 2026)
+what: the R-CPI-I check, a derived calculation outside the engine. BLS's research CPI by income quintile (R-CPI-I, its chained version, its relative importances; supplied by Duke Nov 15, 2026, SHA-256 in compassionism-simulation sources/s74_history/raw/R-CPI-I-README.md) beside CPI-U (FRED CPIAUCSL), December 2005 to December 2025; the engine's own-inflation method on BLS's December 2005 shares; the engine's own-inflation figures from s74-final-a60ecd1 (History).
+inputs: compassionism-simulation sources/s74_history/raw/ (R-CPI-I.xlsx, R-C-CPI-I.xlsx, R-CPI-I-relative-importance.xlsx, CPIAUCSL.csv, CUSR0000SAF11.csv, CUSR0000SAH1.csv, CPIMEDSL.csv) and dev/runs/s74-final/tables.md; python 3, openpyxl
+command: python3 dev/tools/s74_rcpi.py   (writes dev/runs/s74-rcpi/rcpi.md and rcpi.json; copied here)
+report: compassionism-simulation dev/reports/s74-central-bank.md ("BLS's check")
