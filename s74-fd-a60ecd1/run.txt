@@ -1,0 +1,8 @@
+study s74-fd (plan step S74, after its report; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, Amendment 3, Nov 16, 2026, committed before this run)
+what: the forced-sale discount from its source, Campbell, Giglio and Pathak (2011), Table 2: bankruptcy-related discounts 3.4% (all sales; fd 0.034) and 6.2% (one seller; fd 0.062), added as readings to the S74 forward sweep. Seeds 1-20; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs (C2.2, the release design); the frozen round-2 main pair (r2FreezePair) with the stability measures (study option stab). Settings: off (no central bank; History hx.rp 'infl'), main, fd0.034, fd0.062. Descriptive only.
+engine a60ecd1's index.html and harness.js (BetterToBest/compassionism-simulation; unchanged since a60ecd1); the sweep tool with the two readings added (branch claude/s74-sources-amendment); node v22; session machine, 4 cores; 2026-11-16 (UTC)
+reproduction check: the off and main rows (183,040 values, 4 environments, both designs) equal s74-sweep-a60ecd1 exactly
+commands:
+  node dev/tools/s74_sweep.js ENV 20 --only=off,main,fd0.034,fd0.062 --out=DIR        ENV = ref, adv, st, hx   (s74-sweep-ENV.json, stored here gzipped; sweep-ENV.log)
+  node dev/tools/s74_sweep_table.js DIR               (sweep-tables.md, sweep-tables.json)
+report: compassionism-simulation dev/reports/s74-central-bank.md ("The discount, from its source")
