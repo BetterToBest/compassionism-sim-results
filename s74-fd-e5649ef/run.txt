@@ -1,0 +1,10 @@
+study s74-fd, corrected (plan step S77; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, Amendments 3 and 4, both committed Nov 16, 2026 before this run)
+why: the source-based forced-sale discount readings (Amendment 3: Campbell, Giglio and Pathak 2011, 0.034 and 0.062), rerun with the release's global settings (applyNR6, tbSetG(TB_PROFILE_G)) that the first run left out (Amendment 4). It supersedes s74-fd-a60ecd1 (kept as published).
+what: seeds 1-20; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs; the frozen round-2 main pair (r2FreezePair) with the stability measures; four settings: off (no central bank; History hx.rp 'infl'), main (the rule at its main values), fd0.034 and fd0.062
+engine e5649ef (BetterToBest/compassionism-simulation, branch claude/s77-reruns; the engine block is unchanged since a60ecd1; dev/tools/s74_sweep.js is d94b73c's); clean worktree (each file's manifest: commit e5649ef, dirty false); node v22.23.4; session machine, 4 cores; 2026-11-16 (UTC)
+how it ran: one process per environment, at once; nothing was rerun
+commands (in a clean worktree of the engine at e5649ef):
+  node dev/tools/s74_sweep.js ENV 20 --only=off,main,fd0.034,fd0.062 --out=DIR    ENV = ref, adv, st, hx   (s74-sweep-ENV.json, stored here gzipped; sweep-ENV.log)
+  node dev/tools/s74_sweep_table.js DIR                                         (sweep-tables.md, sweep-tables.json)
+checks: (1) python3 dev/tools/s77_check_off.py DIR <folder with r2-m-*-20-104691f>: the "off" arm equals release 2's main row per seed (720 values, 0 differ); (2) every saved value (410,880) equals the same setting's value in s74-sweep-d94b73c, exactly
+report: compassionism-simulation dev/reports/s74-central-bank.md ("The discount, from its source"; second dated correction, S77)
