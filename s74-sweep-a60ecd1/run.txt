@@ -1,0 +1,8 @@
+study s74-sweep (plan step S74, part 3; preregistration BetterToBest/research-update prereg/2026-11-s74-central-bank.md, item 3 "Forward sweep"; Amendment 2, Nov 16, 2026, before this run, lists every setting)
+what: the forward sweep. Seeds 1-20; 500 adults; Reference, Adverse and Stress 20 years, History (2005-2025) 21 years; both designs (C2.2, the release design); the frozen round-2 main pair (r2FreezePair) with the stability measures (study option stab); one setting of the policy-rate rule changed at a time from its main values, three named regimes, the design parameters' readings; no central bank (History: hx.rp 'infl') and, in History, the actual rate path and its spread readings. 33 settings (History 35). Descriptive only: means and 10th-90th percentiles across seeds, fans of the yearly paths
+engine a60ecd1 (BetterToBest/compassionism-simulation, branch claude/s74-part3, pull request 124); clean worktree (each file's manifest: commit a60ecd1, dirty false); node v22; session machine, 4 cores; 2026-11-16 (UTC)
+how it ran: one process per environment, at once, each after its environment's 100-seed rerun (s74-final-a60ecd1) in the same chain; nothing was rerun
+commands (in a clean worktree of the engine at a60ecd1):
+  node dev/tools/s74_sweep.js ENV 20 --out=DIR        ENV = ref, adv, st, hx   (s74-sweep-ENV.json, stored here gzipped; sweep-ENV.log)
+  node dev/tools/s74_sweep_table.js DIR               (sweep-tables.md, sweep-tables.json; reads the .json.gz files directly)
+report: compassionism-simulation dev/reports/s74-central-bank.md
