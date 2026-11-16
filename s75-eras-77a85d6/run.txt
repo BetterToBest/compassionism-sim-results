@@ -1,0 +1,11 @@
+study s75-eras (plan step S75, part 2; preregistration BetterToBest/research-update prereg/2026-11-s75-deep-history.md, committed Nov 16, 2026 before any panel figure; Amendment 4, Nov 16, 2026, the engine build's mechanics, committed before this run)
+what: the engine readings: today's households (the frozen round-2 main pair, r2FreezePair: no programme, programme) under each US policy era's measured settings. Seeds 1-100; 500 adults; both designs (C2.2, the release design); study option stab
+eras (engine years: the December before the era, then each of its years): e1 1946-1972 (27), e2 1972-1983 (12), e3 1983-2007 (25), e4 2007-2025 (19); paths sources/s75_hx.json
+arms: P the era's path (actual rates, central bank off); R + the era's fitted rule (cb with the era's a, b, r); S + S74's rule (cb at its main values); T + the era's tax schedule (hx.T, revenue-neutral); H + the era's health cost growth (hx.H); A R, T and H together; Tn (reading) T with nothing returned
+engine 77a85d6 (BetterToBest/compassionism-simulation, branch claude/s75-part2, pull request 129); clean worktree (each JSON's manifest: commit 77a85d6b1e2a9610a5f12c03b313eaa4980c9c75, dirty false); node v22; session machine, 4 cores; 2026-11-16 (UTC)
+how it ran: one process per era, all four at once; nothing was rerun
+commands (in a clean worktree of the engine at 77a85d6):
+  node dev/tools/s75_eras.js ERA 100 --out=DIR        ERA = e1, e2, e3, e4   (s75-eras-ERA.json; run-ERA.log)
+  node dev/tools/s75_table.js DIR                     (tables.md, tables.json)
+checks before the run: guard test identical; lineage proved (six release panels unchanged); s75UnitSuite 7 of 7; unit 384 of 384; validate passes; domtest 153 of 153
+report: compassionism-simulation dev/reports/s75-deep-history.md
