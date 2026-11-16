@@ -1,0 +1,4 @@
+shard 5 seeds 6-6; 4 vCPU; 15 GB; node v22.22.0; 2026-11-16T21:07:17Z
+self-check passed; wrote /home/runner/work/compassionism-sim-results/compassionism-sim-results/out/shard-0005.series.json (1696 s)
+series-r2 st 40 years, 500 seeds: 1696.3 s
+ended 2026-11-16T21:35:34Z
