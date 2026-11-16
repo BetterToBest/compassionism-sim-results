@@ -1,0 +1,7 @@
+study s75-panel (plan step S75, part 1; preregistration BetterToBest/research-update prereg/2026-11-s75-deep-history.md, committed Nov 16, 2026 before any figure; Amendment 1, Nov 16, 2026, after the downloads and before any figure; Amendments 2 and 3, Nov 16, 2026, the hospital ownership and SCF+ sources supplied by Duke, before any figure from them)
+what: the descriptive panel of US policy eras (no engine): eras 1947-1972, 1973-1983, 1984-2007, 2008-2025 (1913-1946 a reading; 2005-2025 beside them); stability measures A1-A5 with block-bootstrap era comparisons (block 3, 10,000 replicates, seed 75, Holm across 14 tests per pair); policy and distribution measures B1-B4; the fitted rate rule B5
+source: BetterToBest/compassionism-simulation commit 54e88bc (branch claude/s75-eras-panel, pull request 128); the raw files in sources/s75_eras/raw/, sources/s74_history/raw/ and sources/s59_shiller/ (SHA-256 of each in s75_eras.json _meta)
+command (repository root, clean worktree at 54e88bc): python3 sources/s75_eras.py   (writes sources/s75_eras.json and dev/runs/s75-panel/tables.md); python3 sources/s75_eras.py check   (identical)
+environment: python 3.13, numpy, pandas, openpyxl, xlrd, statsmodels 0.15.0, scipy 1.18.1; session machine; 2026-11-16 (UTC)
+report: compassionism-simulation dev/reports/s75-panel.md
+supersedes: s75-panel-c5759be (same figures, plus hospital ownership and SCF+; every earlier figure unchanged)
