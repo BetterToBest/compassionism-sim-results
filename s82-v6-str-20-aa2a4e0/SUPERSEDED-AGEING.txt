@@ -1,0 +1,11 @@
+Partly superseded (Nov 18, 2026). The three ageing rows in these shard files (E.age.none, E.age.a0, E.age.a1, rows 134-136) are
+superseded. Do not quote them. Every other row in this folder stands.
+
+With ageing, a new adult who started outside the labour force kept the wage it entered with but not the price level of the time, so when
+it later went back to work the engine raised the wage by all the price rises since year 0, counting prices twice. It needs ageing, the
+yearly labour-force flows and a price level that has moved: it reached the ageing programme runs in every environment, and the
+no-programme ageing runs in Adverse and Stress (outside inflation).
+
+The rerun of these three rows on the fixed engine is in s82-v6-age-str-20-ab11c05/; the corrected tables are in s82-tables-ab11c05/.
+Fix: BetterToBest/compassionism-simulation pull request 160 (dev/DECISIONS.md, "S91").
+Record: BetterToBest/research-update prereg/2026-11-s82-v6-supply-indexing.md, Amendment 6, its addendum, and Amendment 7.
