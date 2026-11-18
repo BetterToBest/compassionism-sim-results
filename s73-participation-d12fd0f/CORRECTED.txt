@@ -1,0 +1,14 @@
+Partly corrected (Nov 18, 2026). The ageing rows with the labour-force flows (agP and agS) in this pilot measured a defect.
+
+With ageing, a new adult who started outside the labour force kept the wage it entered with but not the price level of the time,
+so when it later went back to work the engine raised the wage by all the price rises since year 0, counting prices twice. Such
+wages then fed the average that set later new adults' wages. It needs ageing, the yearly flows and moving prices, so in this
+pilot it reached agP and agS: their programme runs in all three environments, and their no-programme runs in Adverse and Stress
+(outside inflation). Nothing else in this folder is reached: agL0 and every row without ageing reproduce exactly on the fixed
+engine.
+
+Do not quote agP or agS figures from this folder, nor the ageing contrasts (agP - agL0, agS - agL0). Their corrected values, with
+every other row unchanged, are in s73-ageing-b362152/ (tables.md there).
+
+Fix: BetterToBest/compassionism-simulation pull request 160 (dev/DECISIONS.md, "S91").
+Record: BetterToBest/research-update prereg/2026-11-s82-v6-supply-indexing.md, addendum to Amendment 6, "Reach beyond S82".
