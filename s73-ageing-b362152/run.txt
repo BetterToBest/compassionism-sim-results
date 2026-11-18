@@ -1,0 +1,10 @@
+study s73-ageing (research-update PLAN.md step S91; preregistration research-update prereg/2026-11-s82-v6-supply-indexing.md, addendum to Amendment 6, "Reach beyond S82")
+what: the participation study's pilot (s73-participation-d12fd0f), its ageing rows rerun on the engine with the ageing defect fixed (a newcomer drawn out of the labour force at entry now stores the price level of the draw), spliced into a copy of the published pilot files; every other row is the published pilot's, unchanged
+engine b362152eca3ecd69011b7617f40c86fe094ade84 (BetterToBest/compassionism-simulation, head of pull request 160, merged as ab11c05; clean worktree; each JSON's s91.manifest records the hashes); node v22.23.5; session machine, 4 cores; 2026-11-18
+commands (in the engine worktree):
+  node dev/tools/s91_s73_age.js ref 100 <results>/s73-participation-d12fd0f <out>
+  node dev/tools/s91_s73_age.js adv 100 <results>/s73-participation-d12fd0f <out>
+  node dev/tools/s91_s73_age.js st 100 <results>/s73-participation-d12fd0f <out>
+  node dev/tools/s73_table.js <out>        (tables.md, summary.json)
+rows rerun: agL0, agP, agS x none, rel, c22 (seeds 1-100, 500 adults, 20 years). Moved (s91.moved in each file): Reference agP and agS programme runs; Adverse and Stress agP and agS, no-programme runs too (those environments have outside inflation, so prices move with no programme). agL0 (ageing without the flows) reproduces the published values exactly in all three environments, so the splice is clean.
+note: tables.md's headers still say "engine d12fd0f" (the tool prints the pilot's engine); the ageing rows in it are from b362152.
