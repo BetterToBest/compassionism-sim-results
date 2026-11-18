@@ -1,0 +1,7 @@
+shard 9 seeds 19-20; 4 vCPU; 15 GB; node v22.22.0; 2026-11-18T04:26:45Z
+block S str seeds 19-20 points 0-101: 518.3 s, peak memory 254 MB
+block S str seeds 19-20 points 204-305: 520.6 s, peak memory 268 MB
+block S str seeds 19-20 points 306-407: 533.5 s, peak memory 249 MB
+block S str seeds 19-20 points 102-203: 547.4 s, peak memory 278 MB
+block S str seeds 19-20: 547.5 s in 4 processes
+ended 2026-11-18T04:35:52Z
