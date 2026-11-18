@@ -24,7 +24,7 @@
  * Rows are named ENV.pNNNN.ROW (NNNN the design point, 0-based). _meta.design holds every point's grid values u and the readings they map to.
  *
  * Run in an engine checkout (a clean worktree of the pinned commit):
- *   node RESULTS/runner/jobs/s70-screen.js --block=S|F|FT --env=ref|adv|str|both --seeds=A-B --out=FILE [--procs=K] [--points=A-B]   (both: ref and adv; str: Stress, S82)
+ *   node RESULTS/runner/jobs/s70-screen.js --block=S|F|FT --env=ref|adv|str|both|all --seeds=A-B --out=FILE [--procs=K] [--points=A-B]   (both: ref and adv; str: Stress; all: the three, S82)
  *   node RESULTS/runner/jobs/s70-screen.js --block=S|F|FT --check      (the design's size against the preregistration; no output)
  * --procs=K cuts the design points into K pieces run as K processes and joins them (the same bytes as one process). --points runs a subset (tests only).
  * FILE holds only deterministic content; seconds and memory go to stderr and FILE without .json plus .timing.json. */
@@ -178,9 +178,9 @@ if (process.argv.includes('--selftest')) {
   } finally { H.resetNR6(svN); H.tbSetG(svG); }
 }
 const env = arg('env', 'both'), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
-const ENVS = env === 'both' ? ['ref', 'adv'] : [env];
+const ENVS = env === 'both' ? ['ref', 'adv'] : env === 'all' ? ['ref', 'adv', 'str'] : [env];  /* all: S82 question 7 */
 const ALL = design(block), pm = /^(\d+)-(\d+)$/.exec(arg('points', '0-' + (ALL.length - 1))), p0 = +pm[1], p1 = Math.min(ALL.length - 1, +pm[2]);
-if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: s70-screen.js --block=S|F|FT --env=ref|adv|str|both --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
+if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: s70-screen.js --block=S|F|FT --env=ref|adv|str|both|all --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
 const lo = +m[1], hi = +m[2], t0 = Date.now();
 const pass = process.argv.filter(x => /^--(block|env|seeds)=/.test(x));
 if (procs > 1 && p1 > p0) {
