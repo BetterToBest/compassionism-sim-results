@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /* S82 part 2 (Nov 17, 2026): the v6 batch of the Compassionism Simulation, as preregistered in research-update prereg/2026-11-s82-v6-supply-indexing.md
- * (with its Amendments 1 and 2). Every reading is a row option of the pinned engine; this script changes no engine line.
+ * (with its Amendments 1-4). Every reading is a row option of the pinned engine; this script changes no engine line.
  *
  * The pair: harness.js r2FreezePair (the frozen round-2 main row, C2.2 design, full coverage, today's price rule), the programme run at backed share a.
- * Rows per environment and horizon (prereg Design table; the two fs rows dropped by Amendment 2: 137 rows):
+ * Rows per environment and horizon (prereg Design table; the two fs rows dropped by Amendment 2; Amendment 3's strict-bound sweep and Amendment 4's price-response sweep added: 231 rows):
  *   base   the no-programme run; the programme run at a = 0, 0.25, 0.5, 0.75, 1                                                   6
  *   A      the supply limit (price option sl): readings sourced, restricted, strict x rules pay, even, bu x a = 0-0.75           36
  *   Achk   sl full at a = 0 (must equal base a = 0); sl strict with each rule at a = 1 (must equal base a = 1)                      4
@@ -14,6 +14,12 @@
  *   E      the smaller readings, each its own pair at a = 0 and 1 with its no-programme run: the wage-only spending share 0.862
  *          (sc), the tail exponent at minus and plus two standard errors (1.218, 1.762), the tail cut at the 95th percentile,
  *          the PTH equity base from the basket (fx.eb), ageing (ag {} with lf.fl 'panel')                                        18
+ *   Slam   Amendment 3: the building speed of medical care and food (sl.lam 0, 0.1, 0.5, 1; the sourced row's 0.25) with every other
+ *          value sourced x rules pay, even, bu x a = 0-0.75; at lam 0 medical care and food are at the strict bound              48
+ *   Sgrid  Amendment 3: the strict bound at a = 0.125, 0.375, 0.625, 0.875 x rules pay, even, bu (the finer backing grid)          12
+ *   Th     Amendment 4: the essentials price response theta at half (housing 0.3, medical 0.25) and double (1.2, 1.0) the engine's own, food 0;
+ *          at each: the programme run at a = 0-1, and sl sourced x rules pay, even, bu x a = 0-0.75 (the no-programme run is shared)  34
+ * The rows of Amendments 3 and 4 come after row 136, so rows 0-136 keep their numbers. Every run has the study option s82 (section D's reporting keys).
  * Outputs (per seed, 7 significant digits): KEYS, the derived yearly averages ppovA and pmedWA (and ppov20, pmedW20 at 40 years), and every key the
  * engine reports with the prefix sl or s82 (the limit's and the study's reporting keys). One results folder per environment and horizon:
  * s82-v6-<env>-<years>-<engine 7>.
@@ -36,11 +42,14 @@ const SHARES = [0, 0.25, 0.5, 0.75, 1], LOW = [0, 0.25, 0.5, 0.75], RD = ['sourc
 const WI = [0.5, 0.75], WC = [0, 1], LAGS = [0.125, 0.25, 1, 2], CEN = {w: 0.75, wc: 1, L: 1};
 const TAIL = {a: 1.4901, se: 0.136};  /* WT_CUTS.main; the prereg's readings 1.490 -/+ 2 x 0.136 = 1.218, 1.762 */
 const EREAD = ['sc', 'tailLo', 'tailHi', 'p95', 'eb', 'age'];
-const PREREG = {base: 6, A: 36, Achk: 4, B: 24, C: 20, X: 29, E: 18};  /* Design table, less the two fs rows (Amendment 2) */
+const PREREG = {base: 6, A: 36, Achk: 4, B: 24, C: 20, X: 29, E: 18, Slam: 48, Sgrid: 12, Th: 34};  /* Design table, less the two fs rows (Amendment 2), plus the strict-bound sweep (Amendment 3) and the price-response sweep (Amendment 4) */
+const LAMS = [0, 0.1, 0.5, 1], FINE = [0.125, 0.375, 0.625, 0.875], NROWS = 231;
+const THETAS = [['half', {housing: 0.3, medical: 0.25}], ['double', {housing: 1.2, medical: 1.0}]];  /* PM_DEFAULTS.theta: food 0, housing 0.6, medical 0.5 */
+const study = H => Object.assign(H.r2MainStudy(), {s82: true});  /* section D's reporting keys (engine v5.9.18) */
 
 /* the rows: {name, part, prog, a, sl, w, wc, L, e} */
 function design() {
-  const R = [], add = (part, name, x) => R.push(Object.assign({part, name: part + '.' + name, prog: true, a: null, sl: null, w: null, wc: null, L: null, e: null}, x));
+  const R = [], add = (part, name, x) => R.push(Object.assign({part, name: part + '.' + name, prog: true, a: null, sl: null, w: null, wc: null, L: null, e: null, th: null}, x));
   add('base', 'none', {prog: false}); SHARES.forEach(a => add('base', 'a' + a, {a}));
   RD.forEach(rd => SH.forEach(sh => LOW.forEach(a => add('A', rd + '.' + sh + '.a' + a, {a, sl: {rd, sh}}))));
   add('Achk', 'full.a0', {a: 0, sl: {rd: 'full', sh: 'pay'}}); SH.forEach(sh => add('Achk', 'strict.' + sh + '.a1', {a: 1, sl: {rd: 'strict', sh}}));
@@ -52,6 +61,9 @@ function design() {
     add('X', 'BC.a' + a, {a, w: CEN.w, wc: CEN.wc, L: CEN.L}); });
   add('X', 'BC.a1', {a: 1, w: CEN.w, wc: CEN.wc, L: CEN.L});
   EREAD.forEach(e => { add('E', e + '.none', {prog: false, e}); [0, 1].forEach(a => add('E', e + '.a' + a, {a, e})); });
+  LAMS.forEach(l => SH.forEach(sh => LOW.forEach(a => add('Slam', 'lam' + l + '.' + sh + '.a' + a, {a, sl: {rd: 'sourced', sh, lam: {medical: l, food: l}}}))));
+  FINE.forEach(a => SH.forEach(sh => add('Sgrid', 'strict.' + sh + '.a' + a, {a, sl: {rd: 'strict', sh}})));
+  THETAS.forEach(([n, th]) => { SHARES.forEach(a => add('Th', n + '.base.a' + a, {a, th})); SH.forEach(sh => LOW.forEach(a => add('Th', n + '.sourced.' + sh + '.a' + a, {a, sl: {rd: 'sourced', sh}, th}))); });
   return R;
 }
 /* one row's configuration (r: a design row; extra: options added by the selftest) */
@@ -59,9 +71,10 @@ function build(H, P, r, extra) {
   const c = H.r2FreezePair(P, 'c22')[r.prog ? 1 : 0];
   c.o = Object.assign({}, c.o || {});
   if (r.prog) c.o.a = r.a;
-  if (r.sl) c.o.sl = Object.assign({}, r.sl);
+  if (r.sl) { c.o.sl = Object.assign({}, r.sl); if (r.sl.lam) c.o.sl.lam = Object.assign({}, r.sl.lam); }
   if (r.w !== null) { c.o.wIdx = r.w; c.o.wc = r.wc; }
   if (r.L !== null) c.o.bl = r.L;
+  if (r.th) c.o.theta = Object.assign({}, r.th);
   const wt = () => { c.wt = Object.assign({}, c.wt && typeof c.wt === 'object' ? c.wt : {}); return c.wt; };
   if (r.e === 'sc') c.sc = 0.862;
   else if (r.e === 'tailLo') wt().a = +(TAIL.a - 2*TAIL.se).toFixed(4);
@@ -91,8 +104,8 @@ if (process.argv.includes('--check')) {
   const names = new Set(D.map(r => r.name)), bad = Object.keys(PREREG).filter(k => PREREG[k] !== (n[k] || 0));
   Object.keys(PREREG).forEach(k => console.log(k + ': ' + (n[k] || 0) + ' rows' + (PREREG[k] === n[k] ? '' : ' (prereg ' + PREREG[k] + ')')));
   console.log('every row: ' + D.map((r, i) => i + ' ' + r.name).join('; '));
-  const ok = !bad.length && names.size === D.length && D.length === 137;
-  console.log(ok ? 'PASS  ' + D.length + ' rows, the preregistration\'s counts (Amendment 2: fs rows dropped)' : 'FAIL  the design differs from the preregistration');
+  const ok = !bad.length && names.size === D.length && D.length === NROWS;
+  console.log(ok ? 'PASS  ' + D.length + ' rows, the preregistration\'s counts (Amendment 2: fs rows dropped; Amendments 3 and 4: the strict-bound and price-response sweeps)' : 'FAIL  the design differs from the preregistration');
   process.exit(ok ? 0 : 1);
 }
 
@@ -103,7 +116,7 @@ if (process.argv.includes('--selftest')) {
   const S = H.startRelease({baseline: {env: 'ref'}});
   say(S.baseline && S.baseline.checked, 'check 8: the release start\'s baseline check (no-programme arm equals the release, Reference, seeds 1-' + (S.baseline ? S.baseline.seeds : '?') + ', ' + (S.baseline ? S.baseline.values : 0) + ' values)');
   try {
-    const P = Object.assign({}, H.FULL_INTEGRATION, {years: 20, nAgents: 500}), D = design(), so = H.r2MainStudy(), N = 2;
+    const P = Object.assign({}, H.FULL_INTEGRATION, {years: 20, nAgents: 500}), D = design(), so = study(H), N = 2;
     const row = name => D.find(r => r.name === name), run = cfs => H.tbStudy(cfs, N, P, so);
     const diff = (A, B, skip) => Object.keys(Object.assign({}, A._s, B._s)).filter(k => !(skip && skip.test(k))).filter(k => { const a = A._s[k], b = B._s[k]; if (!a || !b || a.length !== b.length) return true;
       for (let j = 0; j < a.length; j++) if (!(a[j] === b[j] || (isNaN(a[j]) && isNaN(b[j])))) return true; return false; });
@@ -125,6 +138,18 @@ if (process.argv.includes('--selftest')) {
     const A = H.acctDrawCheck(on.map(n => build(H, P, row(n))), 1, P, so);
     say(A.acct.nFail === 0, 'check 6: the money accounts (MODEL_SPEC section 11) close with the new options on (' + on.length + ' rows, seed 1): ' + Object.keys(A.acct.byId || {}).length + ' identities failing; checks ' + JSON.stringify(A.acct.n));
     say(A.draws.bad === 0 && A.draws.runs > 0, 'check 7: eight draws per adult-year in every run (' + A.draws.runs + ' runs; ' + A.draws.bad + ' off)' + (A.nonFinite.length ? '; non-finite outputs ' + A.nonFinite.slice(0, 6).join(',') : ''));
+    /* check 9 (Amendment 3): the building speed given at the sourced values is the sourced row; at 0 it moves the limit; the reporting keys move no
+     * other key; every run reads the same seed's no-programme median (s82Ok 1), and the no-programme run reads its own (s82Mw0 = medWealthReal) */
+    const R9 = run([build(H, P, row('A.sourced.pay.a0')), build(H, P, row('A.sourced.pay.a0'), c => { c.o.sl.lam = {medical: 0.25, food: 0.25}; }), build(H, P, row('Slam.lam0.pay.a0'))]);
+    const R9o = H.tbStudy([build(H, P, row('base.none')), build(H, P, row('base.a0'))], N, P, H.r2MainStudy());
+    const d9 = [diff(R9[0], R9[1]), diff(Rb[0], R9o[0], /^s82/), diff(Rb[1], R9o[1], /^s82/)], mv9 = diff(R9[0], R9[2]).length;
+    const own9 = Array.from(Rb[0]._s.s82Mw0).every((x, j) => x === Rb[0]._s.medWealthReal[j]) && [Rb[0], Rb[1], Rb[2], R9[2]].every(r => Array.from(r._s.s82Ok).every(x => x === 1));
+    /* check 10 (Amendment 4): theta at the engine's own values given explicitly is the base row; doubled it moves the programme run and leaves the
+     * no-programme run unchanged (its supply path is its own demand, so no essentials price moves there) */
+    const R10 = run([build(H, P, row('base.a0'), c => { c.o.theta = {food: 0, housing: 0.6, medical: 0.5}; }), build(H, P, row('Th.double.base.a0')), build(H, P, row('base.none'), c => { c.o.theta = {housing: 1.2, medical: 1.0}; })]);
+    const d10 = [diff(Rb[1], R10[0]), diff(Rb[0], R10[2])], mv10 = diff(Rb[1], R10[1]).length;
+    say(d10.every(d => !d.length) && mv10 > 0, 'check 10 (Amendment 4): theta at its own values changes nothing (' + d10[0].length + ' keys differ); doubled it moves ' + mv10 + ' keys of the programme run and ' + d10[1].length + ' of the no-programme run');
+    say(d9.every(d => !d.length) && mv9 > 0 && own9, 'check 9 (Amendment 3): sl.lam at the sourced values equals the sourced row (' + d9[0].length + ' keys differ), at 0 moves ' + mv9 + ' keys; the study option s82 moves no other key (' + d9[1].length + ' / ' + d9[2].length + '); s82Ok 1 and the no-programme run\'s s82Mw0 equals its median: ' + own9);
     const P3 = Object.assign({}, P, {years: 3}), t0 = Date.now(), nf = [];
     D.forEach(r => { try { const R = H.tbStudy([build(H, P3, r)], 1, P3, so); KEYS.forEach(k => { if (R[0]._s[k] && !Number.isFinite(R[0]._s[k][0])) nf.push(r.name + ':' + k); }); }
       catch (e) { nf.push(r.name + ': threw ' + e.message); } });
@@ -180,12 +205,12 @@ if (procs > 1 && r1 > r0) {
   }).catch(e => { console.error(e.message); process.exit(1); });
 } else {
   const H = engine(), S = H.startRelease({baseline: {env: BASE_ENV[env]}});
-  const res = {_meta: {what: 'S82 v6 batch (research-update prereg/2026-11-s82-v6-supply-indexing.md, Amendments 1 and 2): per-seed values, every row', env, years, adults: 500,
+  const res = {_meta: {what: 'S82 v6 batch (research-update prereg/2026-11-s82-v6-supply-indexing.md, Amendments 1-4): per-seed values, every row', env, years, adults: 500,
     seeds: [lo, hi], rowsRun: [r0, r1], keys: KEYS.concat(['ppovA', 'pmedWA'], years > 20 ? ['ppov20', 'pmedW20'] : [], ['every key with the prefix sl or s82']), digits: DIGITS,
     manifest: H.runManifest(), baseline: S.baseline, design: D.slice(r0, r1 + 1), command: cmd + (r0 === 0 && r1 === D.length - 1 ? '' : ' --rows=' + r0 + '-' + r1)}, rows: {}};
   const tRow = [];
   try {
-    const P = Object.assign({}, H[ENVN[env]], {years, nAgents: 500}), so = H.r2MainStudy();
+    const P = Object.assign({}, H[ENVN[env]], {years, nAgents: 500}), so = study(H);
     for (let i = r0; i <= r1; i++) { const t1 = Date.now(), R = H.tbStudy([build(H, P, D[i])], hi, P, so, lo);
       res.rows[env + '.' + String(i).padStart(3, '0') + '.' + D[i].name] = values(R[0]._s, years); tRow.push(+((Date.now() - t1)/1000/(hi - lo + 1)).toFixed(3)); }
   } finally { S.restore(); }
