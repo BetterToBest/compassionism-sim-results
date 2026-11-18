@@ -1,0 +1,4 @@
+study s82-screen-ft; engine eb0969cc56615d3c268c7a9dd17951be0b8d3d37; runner commit 4881a8403669d1d93cc949ae7a6a654f435b5d59 of BetterToBest/compassionism-sim-results; node 22.22.0; GitHub-hosted ubuntu-latest, 20 shard(s); 2026-11-18T05:51:40Z
+workflow run: https://github.com/BetterToBest/compassionism-sim-results/actions/runs/44218250947
+command per shard (in a clean checkout of the engine commit): node runner/jobs/s70-screen.js --block=FT --env=all --procs=4 --seeds=A-B --out=shard-NNNN.json   (seeds 1-40 cut into 20 contiguous ranges)
+checks: every shard file covers exactly its seed range, records the engine commit and a clean engine; the ranges cover 1-40 once

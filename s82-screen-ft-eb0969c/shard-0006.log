@@ -1,0 +1,7 @@
+shard 6 seeds 13-14; 4 vCPU; 15 GB; node v22.22.0; 2026-11-18T01:49:17Z
+block FT all seeds 13-14 points 0-131: 1890.7 s, peak memory 280 MB
+block FT all seeds 13-14 points 396-527: 2015.9 s, peak memory 260 MB
+block FT all seeds 13-14 points 264-395: 2027.9 s, peak memory 255 MB
+block FT all seeds 13-14 points 132-263: 2051.5 s, peak memory 258 MB
+block FT all seeds 13-14: 2051.9 s in 4 processes
+ended 2026-11-18T02:23:29Z
