@@ -1,0 +1,10 @@
+Superseded (Nov 18, 2026). Do not quote any figure from this folder.
+
+This is the first run of the S82 batch, on engine eb0969c (v5.9.18). Reading it, S82 part 3 found a defect in the design's
+sharing rule (sh 'bu'): its realised supply cut was two to four times its target, because the rule divided this year's cut by
+last year's totals and the share of spending bought with cash swings from year to year. The engine was fixed (v5.9.19) and,
+under the preregistration's decision rule 1, the whole batch is rerun on the new engine commit; only the rerun is reported.
+Every row that does not use the design's rule below full backing is identical in the rerun (its check 11).
+
+Preregistration: BetterToBest/research-update prereg/2026-11-s82-v6-supply-indexing.md, Amendment 5.
+The rerun: the folder with the same name and the new engine's 7-character commit.
