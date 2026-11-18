@@ -1,0 +1,7 @@
+shard 3 seeds 7-8; 4 vCPU; 15 GB; node v22.22.0; 2026-11-18T05:08:24Z
+block F str seeds 7-8 points 126-251: 618.2 s, peak memory 254 MB
+block F str seeds 7-8 points 378-503: 636.3 s, peak memory 255 MB
+block F str seeds 7-8 points 0-125: 653.9 s, peak memory 246 MB
+block F str seeds 7-8 points 252-377: 654.7 s, peak memory 273 MB
+block F str seeds 7-8: 654.9 s in 4 processes
+ended 2026-11-18T05:19:19Z

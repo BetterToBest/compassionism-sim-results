@@ -1,0 +1,7 @@
+shard 15 seeds 31-32; 4 vCPU; 15 GB; node v22.22.0; 2026-11-18T05:16:26Z
+block F str seeds 31-32 points 126-251: 387.4 s, peak memory 260 MB
+block F str seeds 31-32 points 378-503: 394.0 s, peak memory 260 MB
+block F str seeds 31-32 points 0-125: 404.3 s, peak memory 274 MB
+block F str seeds 31-32 points 252-377: 406.6 s, peak memory 247 MB
+block F str seeds 31-32: 406.7 s in 4 processes
+ended 2026-11-18T05:23:13Z
