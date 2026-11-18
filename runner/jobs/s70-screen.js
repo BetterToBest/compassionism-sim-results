@@ -10,6 +10,9 @@
  *   F  the financed rows (S72; D23): the C2.2 design and the release design paid for by a contribution (o.fin 'tax'), the rest met as fx.fin says.
  *      Inputs IN_F (41): IN_S without the weighted tail's three (block F runs without the tail, S72 Amendment 2: the bases 'wc' and 'all' are not read
  *      with the tail on) plus the financing readings. Three rows per point: the no-programme run and the two financed designs.
+ *   FT the financed rows with the weighted tail on (S82 question 7, research-update prereg/2026-11-s82-v6-supply-indexing.md, Amendment 3): block F's
+ *      rows and readings with the tail kept and its three inputs added, and the contribution's base held at wages (S72 Amendment 2: the bases 'wc' and
+ *      'all' are not read with the tail on; they are read in block F, without the tail, in each environment). Inputs IN_FT (43). Seed 70003.
  * Every input is applied to both runs of a pair (r2MainRow's convention); the financing options of the programme run only (as S72's pilot).
  *
  * Design (fixed by the preregistration): R = 12 trajectories per block, a 4-level grid on each input's range, step 2/3 of the range; the start of each
@@ -21,16 +24,16 @@
  * Rows are named ENV.pNNNN.ROW (NNNN the design point, 0-based). _meta.design holds every point's grid values u and the readings they map to.
  *
  * Run in an engine checkout (a clean worktree of the pinned commit):
- *   node RESULTS/runner/jobs/s70-screen.js --block=S|F --env=ref|adv|both --seeds=A-B --out=FILE [--procs=K] [--points=A-B]
- *   node RESULTS/runner/jobs/s70-screen.js --block=S|F --check      (the design's size against the preregistration; no output)
+ *   node RESULTS/runner/jobs/s70-screen.js --block=S|F|FT --env=ref|adv|str|both --seeds=A-B --out=FILE [--procs=K] [--points=A-B]   (both: ref and adv; str: Stress, S82)
+ *   node RESULTS/runner/jobs/s70-screen.js --block=S|F|FT --check      (the design's size against the preregistration; no output)
  * --procs=K cuts the design points into K pieces run as K processes and joins them (the same bytes as one process). --points runs a subset (tests only).
  * FILE holds only deterministic content; seconds and memory go to stderr and FILE without .json plus .timing.json. */
 'use strict';
 const fs = require('fs'), path = require('path');
-const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE'};
+const ENVN = {ref: 'FULL_INTEGRATION', adv: 'ADVERSE_REFERENCE', str: 'STRESS_TEST'};  /* str: S82 question 7 */
 const arg = (k, d) => { const a = process.argv.find(x => x.startsWith('--' + k + '=')); return a ? a.slice(k.length + 3) : d; };
 const KEYS = ['bNAPy', 'fgt0PY', 'ppovA', 'pov', 'wtMedE', 'endoAnn', 'cost', 'tauMean', 'gvDebtY', 'gvY100'];
-const R_TRAJ = 12, PREREG = {S: {k: 33, points: 12*34, rows: 5}, F: {k: 41, points: 12*42, rows: 3}};
+const R_TRAJ = 12, PREREG = {S: {k: 33, points: 12*34, rows: 5}, F: {k: 41, points: 12*42, rows: 3}, FT: {k: 43, points: 12*44, rows: 3}};  /* FT: S82 Amendment 3 */
 
 /* [name, kind, spec, what, set(c, v, prog)]: kind 'c' continuous [lo, hi]; 'i' integer [lo, hi]; 'k' categorical [main, ...]. */
 const pr = c => { c.pr = Object.assign({k2: 0.051, q: 1, bv: 0}, c.pr || {}); return c.pr; };
@@ -88,11 +91,11 @@ const FIN = [
   ['gvB', 'c', [0, 1], 'policy-rate rule: response to the output gap, b (0.5 main)', (c, v) => { gv(c).b = v; }],
   ['gvRs', 'c', [0, 0.02], 'policy-rate rule: the neutral real rate, rs (0.0097 main)', (c, v) => { gv(c).rs = v; }],
   ['gvIp', 'k', ['tax', 'borrow'], 'interest on the debt paid by the contribution (main) or borrowed', (c, v) => { gv(c).ip = v; }]];
-const IN = {S: COMMON.concat(TAIL), F: COMMON.concat(FIN)};
+const IN = {S: COMMON.concat(TAIL), F: COMMON.concat(FIN), FT: COMMON.concat(TAIL, FIN.filter(x => x[0] !== 'gvBase'))};  /* FT: the base held at wages (GV_DEFAULTS base 'w') */
 
 function rng(seed) { let s = seed >>> 0; return () => { s = (s + 0x6D2B79F5) >>> 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0)/4294967296; }; }
 function design(block) {
-  const I = IN[block], k = I.length, p = 4, D = p/(2*(p - 1)), r = rng(block === 'S' ? 70001 : 70002), pts = [];
+  const I = IN[block], k = I.length, p = 4, D = p/(2*(p - 1)), r = rng(block === 'S' ? 70001 : block === 'F' ? 70002 : 70003), pts = [];
   for (let t = 0; t < R_TRAJ; t++) {
     let u = I.map(() => Math.floor(r()*(p/2))/(p - 1)); pts.push({t, moved: null, u: u.slice()});
     const ord = I.map((_, i) => i).sort(() => r() - 0.5);
@@ -113,10 +116,10 @@ function pointRows(H, P, block, pt) {
   const I = IN[block], vals = I.map((inp, i) => value(inp, pt.u[i]));
   const mk = (d, prog) => {
     const c = H.r2MainPair(P, d)[prog ? 1 : 0];
-    if (block === 'F') { delete c.wt; c.gv = {}; }
+    if (block === 'F') { delete c.wt; c.gv = {}; } else if (block === 'FT') c.gv = {};
     I.forEach((inp, i) => inp[4](c, vals[i], prog, H));
     if (c.wt && c.wt.aShift !== undefined) { const cut = H.WT_CUTS ? H.WT_CUTS[c.wt.cut || 'main'] : null; if (!cut) throw new Error('WT_CUTS not exported'); c.wt.a = cut.a + c.wt.aShift; delete c.wt.aShift; }
-    if (block === 'F' && prog) {
+    if (block !== 'S' && prog) {
       const fin = c._fin, u = c._capU; delete c._fin; delete c._capU;
       c.o = Object.assign({}, c.o, {fin: 'tax'}); c.fx.fin = fin;
       if (fin === 'cap') c.gv.capHi = 0.95 + 0.04*u; else c.o.tauMax = 0.5 + 0.4*u;
@@ -132,7 +135,7 @@ function pointRows(H, P, block, pt) {
 function readings(block, pt) { const I = IN[block]; const o2 = {}; I.forEach((inp, i) => { o2[inp[0]] = value(inp, pt.u[i]); }); return o2; }
 
 const block = arg('block', ''), check = process.argv.includes('--check');
-if (!IN[block]) { console.error('usage: s70-screen.js --block=S|F ...'); process.exit(1); }
+if (!IN[block]) { console.error('usage: s70-screen.js --block=S|F|FT ...'); process.exit(1); }
 if (check) {
   const pts = design(block), I = IN[block], P = PREREG[block], names = new Set(I.map(x => x[0]));
   const moves = {}; pts.forEach(p => { if (p.moved) moves[p.moved] = (moves[p.moved] || 0) + 1; });
@@ -151,9 +154,9 @@ if (process.argv.includes('--selftest')) {
       rtPhi: 0.46, rtNs: 'nom', rtIx: 1, rtChi: 0, bgPi: 0, bgM: 1/1.21, poCost: 'full', poRes: 0.017, poW: 0.20, poTest: 'sales', poHire: null, poBonus: 'workers', poPay: 'source',
       crInc: 'pass', crOut: 1, crPop: 0, wtCut: 'main', wtA: 0, wtM: 3, gvSh: 1, gvBase: 'w', cap: 1, fin: 'debt', gvRr: 0.0097, gvDk: 0.04, gvR: 'fixed', gvA: 0.5, gvB: 0.5, gvRs: 0.0097, gvIp: 'tax'};
     const build = (d, prog, setAll) => { const c = H.r2MainPair(P, d)[prog ? 1 : 0];
-      if (block === 'F') { delete c.wt; c.gv = {}; }
+      if (block === 'F') { delete c.wt; c.gv = {}; } else if (block === 'FT') c.gv = {};
       if (setAll) { I.forEach(inp => inp[4](c, MAIN[inp[0]], prog, H)); if (c.wt && c.wt.aShift !== undefined) { c.wt.a = H.WT_CUTS[c.wt.cut || 'main'].a + c.wt.aShift; delete c.wt.aShift; } }
-      if (block === 'F' && prog) { const fin = setAll ? c._fin : 'debt'; c.o = Object.assign({}, c.o, {fin: 'tax'}); c.fx.fin = fin; c.o.tauMax = 0.9; }
+      if (block !== 'S' && prog) { const fin = setAll ? c._fin : 'debt'; c.o = Object.assign({}, c.o, {fin: 'tax'}); c.fx.fin = fin; c.o.tauMax = 0.9; }
       delete c._fin; delete c._capU; c.o = Object.assign({}, c.o, prog && block === 'S' ? {a: 1} : {}); return c; };
     const rowsA = [build('c22', false, false), build('c22', true, false), build('rel', true, false)], rowsB = [build('c22', false, true), build('c22', true, true), build('rel', true, true)];
     const RA = H.tbStudy(rowsA, 2, P, H.r2MainStudy()), RB = H.tbStudy(rowsB, 2, P, H.r2MainStudy());
@@ -177,7 +180,7 @@ if (process.argv.includes('--selftest')) {
 const env = arg('env', 'both'), m = /^(\d+)-(\d+)$/.exec(arg('seeds', '')), out = arg('out', ''), procs = +arg('procs', 1);
 const ENVS = env === 'both' ? ['ref', 'adv'] : [env];
 const ALL = design(block), pm = /^(\d+)-(\d+)$/.exec(arg('points', '0-' + (ALL.length - 1))), p0 = +pm[1], p1 = Math.min(ALL.length - 1, +pm[2]);
-if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: s70-screen.js --block=S|F --env=ref|adv|both --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
+if (!ENVS.every(e => ENVN[e]) || !m || !out || !Number.isInteger(procs) || procs < 1) { console.error('usage: s70-screen.js --block=S|F|FT --env=ref|adv|str|both --seeds=A-B --out=FILE [--procs=1]'); process.exit(1); }
 const lo = +m[1], hi = +m[2], t0 = Date.now();
 const pass = process.argv.filter(x => /^--(block|env|seeds)=/.test(x));
 if (procs > 1 && p1 > p0) {
