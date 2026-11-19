@@ -1,0 +1,138 @@
+{
+ "what": "S92 check 3: accounting identities on the at-sale rows",
+ "seeds": [
+  1,
+  5
+ ],
+ "years": 20,
+ "adults": 500,
+ "cells": [
+  {
+   "env": "ref",
+   "row": "c22.sale",
+   "pass": true,
+   "checks": {
+    "money": 145000,
+    "household": 33810,
+    "fin": 210,
+    "gov": 210,
+    "pth-books": 10332,
+    "equity": 10332,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105
+   },
+   "fails": []
+  },
+  {
+   "env": "ref",
+   "row": "rel.sale",
+   "pass": true,
+   "checks": {
+    "money": 52500,
+    "pth-books": 10332,
+    "equity": 10332,
+    "household": 16905,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105,
+    "fin": 105,
+    "gov": 105
+   },
+   "fails": []
+  },
+  {
+   "env": "adv",
+   "row": "c22.sale",
+   "pass": true,
+   "checks": {
+    "money": 155000,
+    "household": 33810,
+    "fin": 210,
+    "gov": 210,
+    "pth-books": 10332,
+    "equity": 10332,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105
+   },
+   "fails": []
+  },
+  {
+   "env": "adv",
+   "row": "rel.sale",
+   "pass": true,
+   "checks": {
+    "money": 52500,
+    "pth-books": 10332,
+    "equity": 10332,
+    "household": 16905,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105,
+    "fin": 105,
+    "gov": 105
+   },
+   "fails": []
+  },
+  {
+   "env": "st",
+   "row": "c22.sale",
+   "pass": true,
+   "checks": {
+    "money": 52500,
+    "pth-books": 5187,
+    "equity": 5187,
+    "household": 16905,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105,
+    "fin": 105,
+    "gov": 105
+   },
+   "fails": []
+  },
+  {
+   "env": "st",
+   "row": "rel.sale",
+   "pass": true,
+   "checks": {
+    "money": 52500,
+    "pth-books": 5187,
+    "equity": 5187,
+    "household": 16905,
+    "bu": 105,
+    "premium": 105,
+    "books-bu": 105,
+    "books-conv": 105,
+    "books-issued": 105,
+    "books-prices": 105,
+    "source": 105,
+    "fin": 105,
+    "gov": 105
+   },
+   "fails": []
+  }
+ ],
+ "pass": true
+}
