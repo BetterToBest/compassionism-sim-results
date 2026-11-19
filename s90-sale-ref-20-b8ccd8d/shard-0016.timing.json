@@ -1,0 +1,1 @@
+{"env":"ref","years":20,"seeds":25,"rows":5,"procs":4,"seconds":35.25,"secondsPerSeed":1.41,"rowSeconds":[0.488,0.661,0.986,0.867,0.962],"peakRssMB":255,"node":"v22.22.0"}
