@@ -60,7 +60,11 @@ function design() {
   const N = Object.keys(none).sort().map(k => none[k]);
   return N.concat(R);
 }
-const ROWS = design(), NAMES = ROWS.map(r => r.name);
+/* --sec (S85 part 3, the preregistration's Amendment 3): blocks A and F and the no-programme runs they pair with, with the security measures on (o.sec,
+ * reporting only, no draw), for the preregistered savings measure. Without the flag the job is unchanged. */
+const SEC = process.argv.includes('--sec');
+const ROWS = (D => { if (!SEC) return D; const P = D.filter(r => r.prog && /^[AF]\./.test(r.name)), need = new Set(P.map(r => r.none));
+  return D.filter(r => !r.prog && need.has(r.name)).concat(P); })(design()), NAMES = ROWS.map(r => r.name);
 
 /* one row's configuration */
 function build(H, P, r) {
@@ -68,6 +72,7 @@ function build(H, P, r) {
   c.sp = Object.assign({}, c.sp || {}, {vAt: 'sale'});
   if (r.oh) { const o = Object.assign({}, r.oh); if (!o.kp) delete o.kp; if (!o.bk) delete o.bk; c.oh = JSON.parse(JSON.stringify(o)); }
   c.o = Object.assign({}, c.o || {});
+  if (SEC) c.o.sec = true;
   if (r.prog && r.a !== null) c.o.a = r.a;
   if (r.sl) c.o.sl = Object.assign({}, r.sl);
   if (r.w !== null) { c.o.wIdx = r.w; c.o.wc = r.wc; }
@@ -78,7 +83,7 @@ const full = x => Number.isFinite(x) ? x : null;
 const values = s => { const v = {}; Object.keys(s).forEach(k => { v[k] = Array.from(s[k], full); }); return v; };
 
 if (process.argv.includes('--check')) {
-  const H = engine(), S = H.startRelease(); let ok = ROWS.length === 179 && new Set(NAMES).size === NAMES.length;
+  const H = engine(), S = H.startRelease(); let ok = ROWS.length === (SEC ? 48 : 179) && new Set(NAMES).size === NAMES.length;
   try {
     const P = Object.assign({}, H.FULL_INTEGRATION, {years: 20, nAgents: 500}), byName = {}; ROWS.forEach(r => { byName[r.name] = r; });
     ROWS.filter(r => r.prog).forEach(r => { const n = byName[r.none]; if (!n || n.prog) ok = false;
@@ -95,8 +100,8 @@ if (!ENVN[env] || ![20, 40].includes(years) || !m || !out || !Number.isInteger(p
   console.error('usage: s85.js --env=ref|adv|str --years=20|40 --seeds=A-B --out=FILE [--procs=K] [--rows=A-B]'); process.exit(1); }
 const lo = +m[1], hi = +m[2], t0 = Date.now();
 const rm = /^(\d+)-(\d+)$/.exec(arg('rows', '0-' + (NAMES.length - 1))), r0 = +rm[1], r1 = Math.min(NAMES.length - 1, +rm[2]);
-const pass = process.argv.filter(x => /^--(env|years|seeds)=/.test(x));
-const cmd = 'node runner/jobs/s85.js --env=' + env + ' --years=' + years + ' --seeds=' + lo + '-' + hi;
+const pass = process.argv.filter(x => /^--(env|years|seeds)=/.test(x) || x === '--sec');
+const cmd = 'node runner/jobs/s85.js --env=' + env + ' --years=' + years + ' --seeds=' + lo + '-' + hi + (SEC ? ' --sec' : '');
 if (procs > 1 && r1 > r0) {
   const cp = require('child_process'), n0 = r1 - r0 + 1, k = Math.min(procs, n0), parts = []; let s0 = r0;
   for (let i = 0; i < k; i++) { const c = Math.floor(n0/k) + (i < n0 % k ? 1 : 0); parts.push({from: s0, to: s0 + c - 1, file: out.replace(/\.json$/, '') + '.part' + i + '.json'}); s0 += c; }
