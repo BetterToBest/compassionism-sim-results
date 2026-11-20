@@ -1,0 +1,7 @@
+shard 9 seeds 226-250; 4 vCPU; 15 GB; node v22.22.0; 2026-11-20T00:31:56Z
+s85 adv 40y seeds 226-250 rows 0-44: 2190.3 s, peak memory 345 MB
+s85 adv 40y seeds 226-250 rows 135-178: 2562.0 s, peak memory 346 MB
+s85 adv 40y seeds 226-250 rows 90-134: 2573.4 s, peak memory 351 MB
+s85 adv 40y seeds 226-250 rows 45-89: 2592.1 s, peak memory 351 MB
+s85 adv 40y seeds 226-250: 2593.5 s in 4 processes
+ended 2026-11-20T01:15:09Z
