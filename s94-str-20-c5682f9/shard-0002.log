@@ -1,0 +1,7 @@
+shard 2 seeds 51-75; 4 vCPU; 15 GB; node v22.22.0; 2026-11-21T01:32:24Z
+s94 str 20y seeds 51-75 rows 24-30: 231.8 s, peak memory 284 MB
+s94 str 20y seeds 51-75 rows 0-7: 244.3 s, peak memory 275 MB
+s94 str 20y seeds 51-75 rows 16-23: 249.0 s, peak memory 296 MB
+s94 str 20y seeds 51-75 rows 8-15: 251.2 s, peak memory 254 MB
+s94 str 20y seeds 51-75: 251.5 s in 4 processes
+ended 2026-11-21T01:36:35Z
